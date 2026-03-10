@@ -1,0 +1,18 @@
+{
+    "name": "dmenu",
+    "slug": "dmenu",
+    "description": "Dynamic menu for X",
+    "git_repo": "https://tools.suckless.org/dmenu/",
+    "website": "https://tools.suckless.org/dmenu/",
+    "license": "MIT",
+    "package_names": {
+        "default": "dmenu",
+        "arch": "dmenu",
+        "ubuntu": "dmenu",
+        "void": "dmenu"
+    },
+    "categories": [
+        "launcher",
+        "theming"
+    ]
+}

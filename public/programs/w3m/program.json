@@ -1,0 +1,18 @@
+{
+    "name": "w3m",
+    "slug": "w3m",
+    "description": "Terminal web browser",
+    "git_repo": "https://github.com/tats/w3m",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "w3m",
+        "arch": "w3m",
+        "ubuntu": "w3m",
+        "void": "w3m"
+    },
+    "categories": [
+        "browser",
+        "terminal"
+    ]
+}

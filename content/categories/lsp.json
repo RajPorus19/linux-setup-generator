@@ -1,0 +1,5 @@
+{
+    "slug": "lsp",
+    "name": "LSP",
+    "description": "Tools related to the Language Server Protocol for editor integrations."
+}

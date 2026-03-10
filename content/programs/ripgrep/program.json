@@ -1,0 +1,17 @@
+{
+    "name": "ripgrep",
+    "slug": "ripgrep",
+    "description": "Recursively search directories with regex",
+    "git_repo": "https://github.com/BurntSushi/ripgrep",
+    "website": null,
+    "license": "MIT/Unlicense",
+    "package_names": {
+        "default": "ripgrep",
+        "arch": "ripgrep",
+        "ubuntu": "ripgrep",
+        "void": "ripgrep"
+    },
+    "categories": [
+        "search"
+    ]
+}

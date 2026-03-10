@@ -1,0 +1,6 @@
+{
+    "name": "Arch Linux",
+    "slug": "arch",
+    "description": "Arch Linux bleeding edge rolling release distribution",
+    "install_package_command": "pacman -S"
+}

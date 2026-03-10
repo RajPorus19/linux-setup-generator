@@ -1,0 +1,18 @@
+{
+    "name": "Doom Emacs",
+    "slug": "doom-emacs",
+    "description": "Emacs framework for the stubborn martian hacker",
+    "git_repo": "https://github.com/doomemacs/doomemacs",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "CUSTOM_INSTALL"
+    },
+    "dependencies": [
+        "emacs", "git", "fd", "ripgrep"
+    ],
+    "categories": [
+        "text-editor",
+        "emacs-framework"
+    ]
+}

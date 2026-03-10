@@ -1,0 +1,5 @@
+{
+    "slug": "system",
+    "name": "System",
+    "description": "Low-level utilities for interacting with or configuring the operating system."
+}

@@ -1,0 +1,17 @@
+{
+    "name": "tree",
+    "slug": "tree",
+    "description": "Recursive directory listing command",
+    "git_repo": "https://github.com/Old-Man-Programmer/tree",
+    "website": null,
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "tree",
+        "arch": "tree",
+        "ubuntu": "tree",
+        "void": "tree"
+    },
+    "categories": [
+        "file-management"
+    ]
+}

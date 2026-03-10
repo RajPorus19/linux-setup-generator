@@ -1,0 +1,18 @@
+{
+    "name": "elinks",
+    "slug": "elinks",
+    "description": "Feature-rich text-mode web browser",
+    "git_repo": "https://github.com/rkd77/elinks",
+    "website": "http://elinks.or.cz",
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "elinks",
+        "arch": "elinks",
+        "ubuntu": "elinks",
+        "void": "elinks"
+    },
+    "categories": [
+        "browser",
+        "terminal"
+    ]
+}

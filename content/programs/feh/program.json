@@ -1,0 +1,17 @@
+{
+    "name": "feh",
+    "slug": "feh",
+    "description": "Image viewer and wallpaper setter",
+    "git_repo": "https://github.com/derf/feh",
+    "website": "https://feh.finalrewind.org",
+    "license": "MIT",
+    "package_names": {
+        "default": "feh",
+        "arch": "feh",
+        "ubuntu": "feh",
+        "void": "feh"
+    },
+    "categories": [
+        "image-viewer"
+    ]
+}

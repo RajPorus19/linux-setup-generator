@@ -1,0 +1,5 @@
+{
+    "slug": "network",
+    "name": "Network",
+    "description": "Utilities for configuring, monitoring, or interacting with networks."
+}

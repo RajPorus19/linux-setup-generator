@@ -1,0 +1,5 @@
+{
+    "slug": "privilege-escalation",
+    "name": "Privilege Escalation",
+    "description": "Tools for executing commands with elevated (root) privileges."
+}

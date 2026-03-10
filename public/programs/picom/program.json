@@ -1,0 +1,17 @@
+{
+    "name": "picom",
+    "slug": "picom",
+    "description": "A lightweight compositor for X11",
+    "git_repo": "https://github.com/yshui/picom",
+    "website": "https://github.com/yshui/picom",
+    "license": "MIT",
+    "package_names": {
+        "default": "picom",
+        "arch": "picom",
+        "ubuntu": "picom",
+        "void": "picom"
+    },
+    "categories": [
+        "compositor"
+    ]
+}

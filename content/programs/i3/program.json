@@ -1,0 +1,17 @@
+{
+    "name": "i3",
+    "slug": "i3",
+    "description": "A tiling window manager for X11",
+    "git_repo": "https://github.com/i3/i3",
+    "website": "https://i3wm.org",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "i3",
+        "arch": "i3-wm",
+        "ubuntu": "i3",
+        "void": "i3"
+    },
+    "categories": [
+        "window-manager"
+    ]
+}

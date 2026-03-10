@@ -1,0 +1,18 @@
+{
+    "name": "ccls",
+    "slug": "ccls",
+    "description": "C/C++/ObjC language server",
+    "git_repo": "https://github.com/MaskRay/ccls",
+    "website": null,
+    "license": "Apache-2.0",
+    "package_names": {
+        "default": "ccls",
+        "arch": "ccls",
+        "ubuntu": "ccls",
+        "void": "ccls"
+    },
+    "categories": [
+        "lsp",
+        "language-server"
+    ]
+}

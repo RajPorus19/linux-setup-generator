@@ -1,0 +1,5 @@
+{
+    "slug": "package-manager",
+    "name": "Package Manager",
+    "description": "Tools for installing, updating, and removing software packages."
+}

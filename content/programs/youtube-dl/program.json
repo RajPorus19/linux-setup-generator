@@ -1,0 +1,17 @@
+{
+    "name": "youtube-dl",
+    "slug": "youtube-dl",
+    "description": "Download videos from YouTube and other sites",
+    "git_repo": "https://github.com/ytdl-org/youtube-dl",
+    "website": "https://youtube-dl.org",
+    "license": "Unlicense",
+    "package_names": {
+        "default": "youtube-dl",
+        "arch": "youtube-dl",
+        "ubuntu": "youtube-dl",
+        "void": "youtube-dl"
+    },
+    "categories": [
+        "media-downloader"
+    ]
+}

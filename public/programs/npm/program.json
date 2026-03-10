@@ -1,0 +1,17 @@
+{
+    "name": "npm",
+    "slug": "npm",
+    "description": "Node.js package manager",
+    "git_repo": "https://github.com/npm/cli",
+    "website": "https://www.npmjs.com",
+    "license": "Artistic-2.0",
+    "package_names": {
+        "default": "npm",
+        "arch": "npm",
+        "ubuntu": "npm",
+        "void": "nodejs"
+    },
+    "categories": [
+        "package-manager"
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "slug": "build-tool",
+    "name": "Build Tool",
+    "description": "Tools that automate compiling and linking source code into executables."
+}

@@ -1,0 +1,17 @@
+{
+    "name": "i3-gaps",
+    "slug": "i3-gaps",
+    "description": "i3 fork with gaps support (now merged into i3)",
+    "git_repo": "https://github.com/Airblader/i3",
+    "website": null,
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "i3-gaps",
+        "arch": "i3-gaps",
+        "ubuntu": "i3-gaps",
+        "void": "i3-gaps"
+    },
+    "categories": [
+        "window-manager"
+    ]
+}

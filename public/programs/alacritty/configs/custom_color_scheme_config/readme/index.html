@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> | My New Hugo Site</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem 2rem; line-height: 1.6; color: #333; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: center; }
+    nav .site-title { font-weight: bold; font-size: 1.1rem; color: #333; }
+    h1 { margin-top: 0; }
+    .post-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+    .post-list { list-style: none; padding: 0; }
+    .post-list li { border-bottom: 1px solid #eee; padding: 0.75rem 0; }
+    .post-list li:last-child { border-bottom: none; }
+    .post-date { color: #888; font-size: 0.85rem; margin-left: 0.5rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #888; font-size: 0.85rem; }
+    .program-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+    .program-item { border: 1px solid #e0e0e0; border-radius: 6px; padding: 0.75rem 1rem; }
+    .program-name strong { font-size: 1rem; }
+    .program-desc { margin: 0.35rem 0 0.5rem; font-size: 0.875rem; color: #555; }
+    .program-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .badge { background: #f0f0f0; border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.75rem; color: #555; }
+    .badge-link { color: #0066cc; }
+    .programs-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; gap: 1rem; }
+    #program-count { color: #888; font-size: 0.875rem; white-space: nowrap; }
+    #program-search { flex: 1; max-width: 320px; padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; outline: none; }
+    #program-search:focus { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
+    .pagination { display: flex; gap: 0.35rem; align-items: center; margin-top: 1.25rem; flex-wrap: wrap; }
+    .pagination button { border: 1px solid #ddd; background: #fff; border-radius: 4px; padding: 0.3rem 0.65rem; cursor: pointer; font-size: 0.875rem; color: #333; }
+    .pagination button:hover { background: #f5f5f5; }
+    .pagination button.page-active { background: #0066cc; color: #fff; border-color: #0066cc; font-weight: bold; }
+    .page-ellipsis { padding: 0 0.25rem; color: #888; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="site-title" href="/">My New Hugo Site</a>
+    <a href="/posts/">Posts</a>
+    <a href="/programs/">Programs</a>
+  </nav>
+  <main>
+    
+<article>
+  <h1></h1>
+  
+  <div class="content">
+    <h1 id="alacritty-custom-color-scheme-config">Alacritty Custom Color Scheme Config</h1>
+<p><code>set_config.sh</code> is a template script that applies a custom color scheme to an existing Alacritty TOML config file. It is meant to be rendered before execution — all <code>{{TERMINAL_COLOR_*}}</code> placeholders are replaced with actual hex color values by whatever tooling manages this config.</p>
+<h2 id="how-it-works">How it works</h2>
+<h3 id="1-color-variables-top-of-file">1. Color variables (top of file)</h3>
+<p>The script opens with a block of shell variable assignments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>COLOR_BACKGROUND<span style="color:#f92672">={{</span>TERMINAL_COLOR_BACKGROUND<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>COLOR_FOREGROUND<span style="color:#f92672">={{</span>TERMINAL_COLOR_FOREGROUND<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>Each <code>{{...}}</code> is a template placeholder. After rendering, these become quoted hex strings (e.g. <code>'#343d46'</code>). The variables cover every color slot Alacritty exposes: primary, cursor, 8 normal colors, 8 bright colors, and selection.</p>
+<h3 id="2-config-file-discovery">2. Config file discovery</h3>
+<p>The script searches for the Alacritty config file in the standard locations, in order:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Priority</th>
+          <th>Path</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><code>$XDG_CONFIG_HOME/alacritty/alacritty.toml</code></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><code>$XDG_CONFIG_HOME/alacritty.toml</code></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><code>$HOME/.config/alacritty/alacritty.toml</code></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><code>$HOME/.alacritty.toml</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>The first path that points to an existing file wins and is stored in <code>CONFIG_PATH</code>.</p>
+<p>If no file is found, a default config is bootstrapped by copying <code>/etc/alacritty/alacritty.toml</code> into <code>$XDG_CONFIG_HOME/alacritty/</code>.</p>
+<h3 id="3-toml-patching--set_toml_value">3. TOML patching — <code>set_toml_value</code></h3>
+<p>The core of the script is the <code>set_toml_value</code> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>set_toml_value &lt;file&gt; &lt;section&gt; &lt;key&gt; &lt;value&gt;
+</span></span></code></pre></div><p>It edits the TOML file in pure bash (using <code>grep</code> and <code>awk</code>) without any external TOML library. It handles three cases:</p>
+<ul>
+<li><strong>Section and key both exist</strong> — the existing value is replaced in-place, scoped to that section only (identical keys in other sections are untouched).</li>
+<li><strong>Section exists, key is absent</strong> — the key is inserted on the line immediately after the section header.</li>
+<li><strong>Section is absent</strong> — the section header and key are appended at the end of the file.</li>
+</ul>
+<p>Section names like <code>colors.primary</code> are dot-escaped before being used as awk regex patterns so the dot matches literally.</p>
+<h3 id="4-applying-the-colors">4. Applying the colors</h3>
+<p>After the function is defined, it is called once per color slot across all five TOML sections:</p>
+<table>
+  <thead>
+      <tr>
+          <th>TOML section</th>
+          <th>Keys written</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>[colors.primary]</code></td>
+          <td><code>background</code>, <code>foreground</code></td>
+      </tr>
+      <tr>
+          <td><code>[colors.cursor]</code></td>
+          <td><code>cursor</code>, <code>text</code></td>
+      </tr>
+      <tr>
+          <td><code>[colors.normal]</code></td>
+          <td><code>black</code>, <code>red</code>, <code>green</code>, <code>yellow</code>, <code>blue</code>, <code>magenta</code>, <code>cyan</code>, <code>white</code></td>
+      </tr>
+      <tr>
+          <td><code>[colors.bright]</code></td>
+          <td>same 8 keys as normal</td>
+      </tr>
+      <tr>
+          <td><code>[colors.selection]</code></td>
+          <td><code>background</code>, <code>text</code></td>
+      </tr>
+  </tbody>
+</table>
+
+  </div>
+</article>
+
+  </main>
+  <footer>
+    <p>My New Hugo Site</p>
+  </footer>
+</body>
+</html>

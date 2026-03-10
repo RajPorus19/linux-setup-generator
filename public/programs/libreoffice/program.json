@@ -1,0 +1,17 @@
+{
+    "name": "LibreOffice",
+    "slug": "libreoffice",
+    "description": "Free and open-source office suite",
+    "git_repo": "https://git.libreoffice.org/core",
+    "website": "https://www.libreoffice.org",
+    "license": "MPL-2.0",
+    "package_names": {
+        "default": "libreoffice",
+        "arch": "libreoffice-fresh",
+        "ubuntu": "libreoffice",
+        "void": "libreoffice"
+    },
+    "categories": [
+        "office"
+    ]
+}

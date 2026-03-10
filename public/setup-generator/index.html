@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Generator | My New Hugo Site</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem 2rem; line-height: 1.6; color: #333; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: center; }
+    nav .site-title { font-weight: bold; font-size: 1.1rem; color: #333; }
+    .btn-generate { margin-left: auto; background: #22c55e; color: #fff; border: none; border-radius: 999px; padding: 0.4rem 1.1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; }
+    .btn-generate:hover { background: #16a34a; text-decoration: none; }
+    h1 { margin-top: 0; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #888; font-size: 0.85rem; }
+    .program-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+    .program-item { border: 1px solid #e0e0e0; border-radius: 6px; padding: 0.75rem 1rem; }
+    .program-name strong { font-size: 1rem; }
+    .program-desc { margin: 0.35rem 0 0.5rem; font-size: 0.875rem; color: #555; }
+    .program-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .badge { background: #f0f0f0; border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.75rem; color: #555; }
+    .badge-link { color: #0066cc; }
+    .programs-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; gap: 1rem; }
+    #program-count, #pkg-count { color: #888; font-size: 0.875rem; white-space: nowrap; }
+    #program-search, #pkg-search { flex: 1; max-width: 320px; padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; outline: none; }
+    #program-search:focus, #pkg-search:focus { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
+    .pagination { display: flex; gap: 0.35rem; align-items: center; margin-top: 1.25rem; flex-wrap: wrap; }
+    .pagination button { border: 1px solid #ddd; background: #fff; border-radius: 4px; padding: 0.3rem 0.65rem; cursor: pointer; font-size: 0.875rem; color: #333; }
+    .pagination button:hover { background: #f5f5f5; }
+    .pagination button.page-active { background: #0066cc; color: #fff; border-color: #0066cc; font-weight: bold; }
+    .page-ellipsis { padding: 0 0.25rem; color: #888; }
+    .distro-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+    .distro-card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+    .distro-card:hover { border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,0.15); }
+    .distro-card.selected { border-color: #22c55e; background: #f0fdf4; box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
+    .distro-name { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .distro-desc { font-size: 0.875rem; color: #555; margin: 0 0 0.6rem; }
+    .distro-cmd { display: block; font-size: 0.8rem; background: #f5f5f5; border-radius: 4px; padding: 0.3rem 0.6rem; color: #333; }
+    .step2-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+    .chosen-msg { font-size: 1.2rem; margin: 0; }
+    .summary-title { margin-top: 0; }
+    .summary-sub { color: #555; margin-bottom: 1rem; }
+    .summary-scroll { overflow-x: auto; padding-bottom: 0.5rem; }
+    .summary-list { list-style: none; padding: 0; margin: 0; display: grid; grid-auto-flow: column; grid-template-rows: repeat(var(--summary-rows, 3), auto); gap: 0.5rem; width: max-content; }
+    .summary-item { border: 1px solid #e0e0e0; border-radius: 6px; padding: 0.4rem 0.85rem; font-weight: 500; font-size: 0.9rem; white-space: nowrap; }
+    .program-item { cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+    .program-item.selected { border-color: #22c55e; background: #f0fdf4; box-shadow: 0 0 0 2px rgba(34,197,94,0.15); }
+    .pkg-layout { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; margin-top: 1.25rem; align-items: start; }
+    .cat-sidebar { position: sticky; top: 1rem; max-height: calc(100vh - 6rem); overflow-y: auto; }
+    .cat-list { list-style: none; padding: 0; margin: 0; }
+    .cat-item { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.75rem; border-radius: 6px; cursor: pointer; font-size: 0.875rem; color: #444; gap: 0.5rem; }
+    .cat-item:hover { background: #f5f5f5; }
+    .cat-item.active { background: #f0fdf4; color: #16a34a; font-weight: 600; }
+    .cat-count { background: #e5e7eb; border-radius: 999px; padding: 0.05rem 0.5rem; font-size: 0.75rem; color: #555; font-weight: 400; }
+    .cat-item.active .cat-count { background: #dcfce7; color: #16a34a; }
+    .setup-footer { display: flex; justify-content: flex-end; margin-top: 2rem; }
+    .btn-next { padding: 0.5rem 1.5rem; border: none; border-radius: 999px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: background 0.15s; background: #d1d5db; color: #fff; }
+    .btn-next:not(:disabled) { background: #22c55e; cursor: pointer; }
+    .btn-next:not(:disabled):hover { background: #16a34a; }
+    .btn-next:disabled { cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="site-title" href="/">My New Hugo Site</a>
+    <a href="/programs/">Programs</a>
+    <a class="btn-generate" href="/setup-generator/">Generate Setup</a>
+  </nav>
+  <main>
+    
+<h1>Setup Generator</h1>
+
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+<div id="step-select">
+  <p>Select your distro to get started:</p>
+  <div class="distro-grid">
+    
+    <div class="distro-card" data-slug="arch" data-name="Arch Linux" onclick="selectDistro(this)">
+      <div class="distro-name">Arch Linux</div>
+      <p class="distro-desc">Arch Linux bleeding edge rolling release distribution</p>
+      <code class="distro-cmd">pacman -S &lt;package&gt;</code>
+    </div>
+    
+    <div class="distro-card" data-slug="ubuntu" data-name="Ubuntu" onclick="selectDistro(this)">
+      <div class="distro-name">Ubuntu</div>
+      <p class="distro-desc">Ubuntu is a Debian-based Linux distribution.</p>
+      <code class="distro-cmd">apt-get install -y &lt;package&gt;</code>
+    </div>
+    
+    <div class="distro-card" data-slug="void" data-name="Void Linux" onclick="selectDistro(this)">
+      <div class="distro-name">Void Linux</div>
+      <p class="distro-desc">Void Linux is an independent, stable rolling release distribution.</p>
+      <code class="distro-cmd">xbps-install -S &lt;package&gt;</code>
+    </div>
+    
+  </div>
+  <div class="setup-footer">
+    <button id="btn-next" class="btn-next" disabled onclick="goNext()">Next →</button>
+  </div>
+</div>
+
+
+<div id="step-packages" style="display:none">
+  <div class="step2-header">
+    <p class="chosen-msg">You've chosen <strong id="chosen-name"></strong></p>
+    <button id="btn-install" class="btn-next" disabled onclick="goInstall()">Install 0 programs</button>
+  </div>
+
+  <div class="pkg-layout">
+    <aside class="cat-sidebar" id="cat-sidebar"></aside>
+    <div class="pkg-main">
+      <div class="programs-header">
+        <span id="pkg-count"></span>
+        <input id="pkg-search" type="search" placeholder="Search programs…" autocomplete="off" oninput="onSearch()">
+      </div>
+      <ul class="program-list" id="pkg-list"></ul>
+      <div id="pkg-pagination" class="pagination"></div>
+    </div>
+  </div>
+</div>
+
+
+<div id="step-summary" style="display:none">
+  <h2 class="summary-title">Your setup</h2>
+  <p class="summary-sub">You will install the following programs on <strong id="summary-distro"></strong>:</p>
+  <div class="summary-scroll">
+    <ul id="summary-list" class="summary-list"></ul>
+  </div>
+</div>
+
+<script>
+const DISTROS  = [{"description":"Arch Linux bleeding edge rolling release distribution","install_package_command":"pacman -S","name":"Arch Linux","slug":"arch"},{"description":"Ubuntu is a Debian-based Linux distribution.","install_package_command":"apt-get install -y","name":"Ubuntu","slug":"ubuntu"},{"description":"Void Linux is an independent, stable rolling release distribution.","install_package_command":"xbps-install -S","name":"Void Linux","slug":"void"}];
+const PROGRAMS = [{"categories":["terminal"],"description":"A cross-platform, fast, GPU-accelerated terminal emulator","git_repo":"https://github.com/alacritty/alacritty","license":"MIT","name":"Alacritty","package_names":{"default":"alacritty"},"slug":"alacritty","website":"https://alacritty.org/"},{"categories":["browser","terminal","gemini"],"description":"Terminal Gemini browser","git_repo":"https://github.com/makeworld-the-better-one/amfora","license":"GPL-3.0","name":"amfora","package_names":{"arch":"amfora","default":"CUSTOM_INSTALL"},"slug":"amfora","website":null},{"categories":["shell"],"description":"GNU Bourne Again SHell","git_repo":"https://git.savannah.gnu.org/cgit/bash.git","license":"GPL-3.0","name":"bash","package_names":{"default":"bash"},"slug":"bash","website":"https://www.gnu.org/software/bash/"},{"categories":["cli","pager"],"description":"cat clone with syntax highlighting","git_repo":"https://github.com/sharkdp/bat","license":"MIT/Apache-2.0","name":"bat","package_names":{"arch":"bat","default":"bat","ubuntu":"bat","void":"bat"},"slug":"bat","website":null},{"categories":["package-manager","build-tool"],"description":"Rust package manager and build tool","git_repo":"https://github.com/rust-lang/cargo","license":"MIT/Apache-2.0","name":"cargo","package_names":{"arch":"rust","default":"cargo","ubuntu":"cargo","void":"cargo"},"slug":"cargo","website":"https://doc.rust-lang.org/cargo/"},{"categories":["lsp","language-server"],"description":"C/C++/ObjC language server","git_repo":"https://github.com/MaskRay/ccls","license":"Apache-2.0","name":"ccls","package_names":{"arch":"ccls","default":"ccls","ubuntu":"ccls","void":"ccls"},"slug":"ccls","website":null},{"categories":["browser"],"description":"Open-source web browser project","git_repo":"https://chromium.googlesource.com/chromium/src","license":"BSD-3-Clause","name":"Chromium","package_names":{"arch":"chromium","default":"chromium","ubuntu":"chromium-browser","void":"chromium"},"slug":"chromium","website":"https://www.chromium.org"},{"categories":["clipboard"],"description":"Clipboard management with dmenu","git_repo":"https://github.com/cdown/clipmenu","license":"MIT","name":"clipmenu","package_names":{"arch":"clipmenu","default":"clipmenu","ubuntu":"clipmenu","void":"clipmenu"},"slug":"clipmenu","website":null},{"categories":["clipboard"],"description":"Clipboard daemon (part of clipmenu)","git_repo":"https://github.com/cdown/clipmenu","license":"MIT","name":"clipmenud","package_names":{"arch":"clipmenu","default":"clipmenu","ubuntu":"clipmenu","void":"clipmenu"},"slug":"clipmenud","website":null},{"categories":["package-manager"],"description":"Cross-platform package and environment manager","git_repo":"https://github.com/conda/conda","license":"BSD-3-Clause","name":"conda","package_names":{"arch":"conda","default":"conda","ubuntu":"conda","void":null},"slug":"conda","website":"https://conda.io"},{"categories":["system-monitor"],"description":"Lightweight system monitor","git_repo":"https://github.com/brndnmtthws/conky","license":"GPL-3.0","name":"conky","package_names":{"arch":"conky","default":"conky","ubuntu":"conky","void":"conky"},"slug":"conky","website":"https://conky.cc"},{"categories":["network","cli"],"description":"Command-line tool for transferring data with URLs","git_repo":"https://github.com/curl/curl","license":"MIT/curl","name":"curl","package_names":{"arch":"curl","default":"curl","ubuntu":"curl","void":"curl"},"slug":"curl","website":"https://curl.se"},{"categories":["system"],"description":"Message bus system","git_repo":"https://gitlab.freedesktop.org/dbus/dbus","license":"GPL-2.0/AFL-2.1","name":"dbus","package_names":{"arch":"dbus","default":"dbus","ubuntu":"dbus","void":"dbus"},"slug":"dbus","website":"https://www.freedesktop.org/wiki/Software/dbus/"},{"categories":["launcher","theming"],"description":"Dynamic menu for X","git_repo":"https://tools.suckless.org/dmenu/","license":"MIT","name":"dmenu","package_names":{"arch":"dmenu","default":"dmenu","ubuntu":"dmenu","void":"dmenu"},"slug":"dmenu","website":"https://tools.suckless.org/dmenu/"},{"categories":["system","privilege-escalation"],"description":"Lightweight sudo alternative from OpenBSD","git_repo":"https://github.com/Duncaen/OpenDoas","license":"ISC","name":"doas","package_names":{"arch":"opendoas","default":"opendoas","ubuntu":"opendoas","void":"opendoas"},"slug":"doas","website":null},{"categories":["text-editor","emacs-framework"],"dependencies":["emacs","git","fd","ripgrep"],"description":"Emacs framework for the stubborn martian hacker","git_repo":"https://github.com/doomemacs/doomemacs","license":"MIT","name":"Doom Emacs","package_names":{"default":"CUSTOM_INSTALL"},"slug":"doom-emacs","website":null},{"categories":["notifications"],"description":"Customizable notification daemon","git_repo":"https://github.com/dunst-project/dunst","license":"BSD-3-Clause","name":"dunst","package_names":{"arch":"dunst","default":"dunst","ubuntu":"dunst","void":"dunst"},"slug":"dunst","website":"https://dunst-project.org"},{"categories":["rss","emacs"],"description":"RSS/Atom feed reader for Emacs","git_repo":"https://github.com/skeeto/elfeed","license":"Unlicense","name":"elfeed","package_names":{"arch":null,"default":null,"ubuntu":null,"void":null},"slug":"elfeed","website":null},{"categories":["browser","terminal"],"description":"Feature-rich text-mode web browser","git_repo":"https://github.com/rkd77/elinks","license":"GPL-2.0","name":"elinks","package_names":{"arch":"elinks","default":"elinks","ubuntu":"elinks","void":"elinks"},"slug":"elinks","website":"http://elinks.or.cz"},{"categories":["text-editor"],"description":"Extensible self-documenting text editor","git_repo":"https://git.savannah.gnu.org/cgit/emacs.git","license":"GPL-3.0","name":"Emacs","package_names":{"arch":"emacs","default":"emacs","ubuntu":"emacs","void":"emacs"},"slug":"emacs","website":"https://www.gnu.org/software/emacs/"},{"categories":["file-management"],"description":"Modern replacement for ls","git_repo":"https://github.com/ogham/exa","license":"MIT","name":"exa","package_names":{"arch":"exa","default":"exa","ubuntu":"exa","void":"exa"},"slug":"exa","website":"https://the.exa.website"},{"categories":["search","cli"],"description":"A simple, fast, and user-friendly alternative to find","git_repo":"https://github.com/sharkdp/fd","license":"MIT/Apache-2.0","name":"fd","package_names":{"arch":"fd","default":"fd","ubuntu":"fd-find","void":"fd"},"slug":"fd","website":"https://github.com/sharkdp/fd"},{"categories":["image-viewer"],"description":"Image viewer and wallpaper setter","git_repo":"https://github.com/derf/feh","license":"MIT","name":"feh","package_names":{"arch":"feh","default":"feh","ubuntu":"feh","void":"feh"},"slug":"feh","website":"https://feh.finalrewind.org"},{"categories":["media-processing"],"description":"Multimedia framework for audio/video processing","git_repo":"https://github.com/FFmpeg/FFmpeg","license":"LGPL-2.1+/GPL-2.0+","name":"FFmpeg","package_names":{"arch":"ffmpeg","default":"ffmpeg","ubuntu":"ffmpeg","void":"ffmpeg"},"slug":"ffmpeg","website":"https://ffmpeg.org"},{"categories":["browser"],"description":"Free and open-source web browser","git_repo":"https://hg.mozilla.org/mozilla-central","license":"MPL-2.0","name":"Firefox","package_names":{"arch":"firefox","default":"firefox","ubuntu":"firefox","void":"firefox"},"slug":"firefox","website":"https://www.mozilla.org/firefox/"},{"categories":["search","tui"],"description":"Command-line fuzzy finder","git_repo":"https://github.com/junegunn/fzf","license":"MIT","name":"fzf","package_names":{"arch":"fzf","default":"fzf","ubuntu":"fzf","void":"fzf"},"slug":"fzf","website":null},{"categories":["compiler"],"description":"GNU Compiler Collection","git_repo":"https://gcc.gnu.org/git.html","license":"GPL-3.0","name":"GCC","package_names":{"arch":"gcc","default":"gcc","ubuntu":"gcc","void":"gcc"},"slug":"gcc","website":"https://gcc.gnu.org"},{"categories":["version-control"],"description":"Distributed version control system","git_repo":"https://github.com/git/git","license":"GPL-2.0","name":"git","package_names":{"arch":"git","default":"git","ubuntu":"git","void":"git"},"slug":"git","website":"https://git-scm.com"},{"categories":["cli","markdown"],"description":"Terminal markdown renderer","git_repo":"https://github.com/charmbracelet/glow","license":"MIT","name":"glow","package_names":{"arch":"glow","default":"glow","ubuntu":"glow","void":"glow"},"slug":"glow","website":null},{"categories":["window-manager"],"description":"A tiling window manager for X11","git_repo":"https://github.com/i3/i3","license":"BSD-3-Clause","name":"i3","package_names":{"arch":"i3-wm","default":"i3","ubuntu":"i3","void":"i3"},"slug":"i3","website":"https://i3wm.org"},{"categories":["window-manager"],"description":"i3 fork with gaps support (now merged into i3)","git_repo":"https://github.com/Airblader/i3","license":"BSD-3-Clause","name":"i3-gaps","package_names":{"arch":"i3-gaps","default":"i3-gaps","ubuntu":"i3-gaps","void":"i3-gaps"},"slug":"i3-gaps","website":null},{"categories":["status-bar"],"description":"Status bar bundled with i3 window manager","git_repo":"https://github.com/i3/i3","license":"BSD-3-Clause","name":"i3bar","package_names":{"arch":"i3-wm","default":"i3-wm","ubuntu":"i3","void":"i3"},"slug":"i3bar","website":"https://i3wm.org"},{"categories":["status-bar"],"description":"Scriptable status bar for i3bar","git_repo":"https://github.com/vivien/i3blocks","license":"GPL-3.0","name":"i3blocks","package_names":{"arch":"i3blocks","default":"i3blocks","ubuntu":"i3blocks","void":"i3blocks"},"slug":"i3blocks","website":"https://vivien.github.io/i3blocks/"},{"categories":["screen-locker"],"description":"Simple screen locker for X11","git_repo":"https://github.com/i3/i3lock","license":"BSD-3-Clause","name":"i3lock","package_names":{"arch":"i3lock","default":"i3lock","ubuntu":"i3lock","void":"i3lock"},"slug":"i3lock","website":"https://i3wm.org/i3lock/"},{"categories":["status-bar"],"description":"Status bar generator for i3bar and swaybar","git_repo":"https://github.com/i3/i3status","license":"BSD-3-Clause","name":"i3status","package_names":{"arch":"i3status","default":"i3status","ubuntu":"i3status","void":"i3status"},"slug":"i3status","website":"https://i3wm.org/i3status/"},{"categories":["image-processing"],"description":"Image manipulation tools","git_repo":"https://github.com/ImageMagick/ImageMagick","license":"Apache-2.0-like","name":"ImageMagick","package_names":{"arch":"imagemagick","default":"imagemagick","ubuntu":"imagemagick","void":"ImageMagick"},"slug":"imagemagick","website":"https://imagemagick.org"},{"categories":["runtime","language"],"description":"Java runtime and development kit (OpenJDK)","git_repo":"https://github.com/openjdk/jdk","license":"GPL-2.0","name":"Java","package_names":{"arch":"jdk-openjdk","default":"jdk-openjdk","ubuntu":"default-jdk","void":"openjdk"},"slug":"java","website":"https://openjdk.org"},{"categories":["terminal"],"description":"GPU-accelerated terminal emulator","git_repo":"https://github.com/kovidgoyal/kitty","license":"GPL-3.0","name":"kitty","package_names":{"arch":"kitty","default":"kitty","ubuntu":"kitty","void":"kitty"},"slug":"kitty","website":"https://sw.kovidgoyal.net/kitty/"},{"categories":["cli","pager"],"description":"Terminal pager","git_repo":"https://github.com/gwsw/less","license":"GPL-3.0/BSD-2-Clause","name":"less","package_names":{"arch":"less","default":"less","ubuntu":"less","void":"less"},"slug":"less","website":"https://www.greenwoodsoftware.com/less/"},{"categories":["office"],"description":"Free and open-source office suite","git_repo":"https://git.libreoffice.org/core","license":"MPL-2.0","name":"LibreOffice","package_names":{"arch":"libreoffice-fresh","default":"libreoffice","ubuntu":"libreoffice","void":"libreoffice"},"slug":"libreoffice","website":"https://www.libreoffice.org"},{"categories":["lsp","language-server"],"description":"Java language server (Eclipse JDT LS)","git_repo":"https://github.com/eclipse/eclipse.jdt.ls","license":"EPL-2.0","name":"lsp-java","package_names":{"arch":null,"default":null,"ubuntu":null,"void":null},"slug":"lsp-java","website":null},{"categories":["browser","terminal"],"description":"Text-mode web browser","git_repo":"https://github.com/ThomasDickey/lynx-snapshots","license":"GPL-2.0","name":"lynx","package_names":{"arch":"lynx","default":"lynx","ubuntu":"lynx","void":"lynx"},"slug":"lynx","website":"https://lynx.browser.org"},{"categories":["screenshot"],"description":"Screenshot tool","git_repo":"https://github.com/naelstrof/maim","license":"GPL-3.0","name":"maim","package_names":{"arch":"maim","default":"maim","ubuntu":"maim","void":"maim"},"slug":"maim","website":null},{"categories":["build-tool"],"description":"GNU make build tool","git_repo":"https://git.savannah.gnu.org/cgit/make.git","license":"GPL-3.0","name":"make","package_names":{"arch":"make","default":"make","ubuntu":"make","void":"make"},"slug":"make","website":"https://www.gnu.org/software/make/"},{"categories":["music","cli"],"description":"Command-line MPD client","git_repo":"https://github.com/MusicPlayerDaemon/mpc","license":"GPL-2.0","name":"mpc","package_names":{"arch":"mpc","default":"mpc","ubuntu":"mpc","void":"mpc"},"slug":"mpc","website":null},{"categories":["music"],"description":"Music player daemon","git_repo":"https://github.com/MusicPlayerDaemon/MPD","license":"GPL-2.0","name":"MPD","package_names":{"arch":"mpd","default":"mpd","ubuntu":"mpd","void":"mpd"},"slug":"mpd","website":"https://www.musicpd.org"},{"categories":["media-player"],"description":"Free and open-source media player","git_repo":"https://github.com/mpv-player/mpv","license":"GPL-2.0+","name":"mpv","package_names":{"arch":"mpv","default":"mpv","ubuntu":"mpv","void":"mpv"},"slug":"mpv","website":"https://mpv.io"},{"categories":["email"],"description":"Email client for Emacs (part of mu)","git_repo":"https://github.com/djcb/mu","license":"GPL-3.0","name":"mu4e","package_names":{"arch":"mu","default":"mu","ubuntu":"maildir-utils","void":"mu"},"slug":"mu4e","website":"https://www.djcbsoftware.nl/code/mu/mu4e.html"},{"categories":["music","tui"],"description":"Ncurses-based MPD client","git_repo":"https://github.com/ncmpcpp/ncmpcpp","license":"GPL-2.0","name":"ncmpcpp","package_names":{"arch":"ncmpcpp","default":"ncmpcpp","ubuntu":"ncmpcpp","void":"ncmpcpp"},"slug":"ncmpcpp","website":null},{"categories":["text-editor"],"description":"Hyperextensible Vim-based text editor","git_repo":"https://github.com/neovim/neovim","license":"Apache-2.0","name":"Neovim","package_names":{"arch":"neovim","default":"neovim","ubuntu":"neovim","void":"neovim"},"slug":"neovim","website":"https://neovim.io"},{"categories":["network"],"description":"Network management daemon","git_repo":"https://github.com/NetworkManager/NetworkManager","license":"GPL-2.0+","name":"NetworkManager","package_names":{"arch":"networkmanager","default":"networkmanager","ubuntu":"network-manager","void":"NetworkManager"},"slug":"networkmanager","website":"https://networkmanager.dev"},{"categories":["rss","tui"],"description":"RSS/Atom feed reader for the terminal","git_repo":"https://github.com/newsboat/newsboat","license":"MIT","name":"newsboat","package_names":{"arch":"newsboat","default":"newsboat","ubuntu":"newsboat","void":"newsboat"},"slug":"newsboat","website":"https://newsboat.org"},{"categories":["file-manager"],"description":"Fast and featureful terminal file manager","git_repo":"https://github.com/jarun/nnn","license":"BSD-2-Clause","name":"nnn","package_names":{"arch":"nnn","default":"nnn","ubuntu":"nnn","void":"nnn"},"slug":"nnn","website":null},{"categories":["notifications","cli"],"description":"Send desktop notifications via libnotify","git_repo":"https://gitlab.gnome.org/GNOME/libnotify","license":"LGPL-2.1","name":"notify-send","package_names":{"arch":"libnotify","default":"libnotify","ubuntu":"libnotify-bin","void":"libnotify"},"slug":"notify-send","website":null},{"categories":["package-manager"],"description":"Node.js package manager","git_repo":"https://github.com/npm/cli","license":"Artistic-2.0","name":"npm","package_names":{"arch":"npm","default":"npm","ubuntu":"npm","void":"nodejs"},"slug":"npm","website":"https://www.npmjs.com"},{"categories":["package-manager"],"description":"Arch Linux package manager","git_repo":"https://gitlab.archlinux.org/pacman/pacman","license":"GPL-2.0","name":"pacman","package_names":{"arch":"pacman","default":"pacman","ubuntu":null,"void":null},"slug":"pacman","website":"https://archlinux.org/pacman/"},{"categories":["audio","cli"],"description":"PulseAudio/PipeWire control CLI (part of pulseaudio/pipewire)","git_repo":"https://gitlab.freedesktop.org/pulseaudio/pulseaudio","license":"LGPL-2.1","name":"pactl","package_names":{"arch":"libpulse","default":"pulseaudio-utils","ubuntu":"pulseaudio-utils","void":"pulseaudio-utils"},"slug":"pactl","website":"https://www.freedesktop.org/wiki/Software/PulseAudio/"},{"categories":["file-manager"],"description":"Fast and lightweight file manager","git_repo":"https://github.com/lxde/pcmanfm","license":"GPL-2.0","name":"PCManFM","package_names":{"arch":"pcmanfm","default":"pcmanfm","ubuntu":"pcmanfm","void":"pcmanfm"},"slug":"pcmanfm","website":null},{"categories":["document-processing"],"description":"PDF to PPM/PNG/JPEG converter (part of poppler)","git_repo":"https://gitlab.freedesktop.org/poppler/poppler","license":"GPL-2.0","name":"pdftoppm","package_names":{"arch":"poppler","default":"poppler","ubuntu":"poppler-utils","void":"poppler-utils"},"slug":"pdftoppm","website":"https://poppler.freedesktop.org"},{"categories":["compositor"],"description":"A lightweight compositor for X11","git_repo":"https://github.com/yshui/picom","license":"MIT","name":"picom","package_names":{"arch":"picom","default":"picom","ubuntu":"picom","void":"picom"},"slug":"picom","website":"https://github.com/yshui/picom"},{"categories":["package-manager"],"description":"Python package installer","git_repo":"https://github.com/pypa/pip","license":"MIT","name":"pip","package_names":{"arch":"python-pip","default":"pip","ubuntu":"python3-pip","void":"python3-pip"},"slug":"pip","website":"https://pip.pypa.io"},{"categories":["audio"],"description":"TUI PulseAudio mixer","git_repo":"https://github.com/GeorgeFilipkin/pulsemixer","license":"MIT","name":"pulsemixer","package_names":{"arch":"pulsemixer","default":"pulsemixer","ubuntu":"pulsemixer","void":"pulsemixer"},"slug":"pulsemixer","website":null},{"categories":["lsp","language-server"],"description":"Static type checker and language server for Python","git_repo":"https://github.com/microsoft/pyright","license":"MIT","name":"pyright","package_names":{"arch":"pyright","default":"pyright","ubuntu":"pyright","void":"pyright"},"slug":"pyright","website":null},{"categories":["file-manager"],"description":"Console file manager with VI key bindings","git_repo":"https://github.com/ranger/ranger","license":"GPL-3.0","name":"ranger","package_names":{"arch":"ranger","default":"ranger","ubuntu":"ranger","void":"ranger"},"slug":"ranger","website":"https://ranger.github.io"},{"categories":["display"],"description":"Adjusts screen color temperature based on location","git_repo":"https://github.com/jonls/redshift","license":"GPL-3.0","name":"redshift","package_names":{"arch":"redshift","default":"redshift","ubuntu":"redshift","void":"redshift"},"slug":"redshift","website":"http://jonls.dk/redshift/"},{"categories":["search"],"description":"Recursively search directories with regex","git_repo":"https://github.com/BurntSushi/ripgrep","license":"MIT/Unlicense","name":"ripgrep","package_names":{"arch":"ripgrep","default":"ripgrep","ubuntu":"ripgrep","void":"ripgrep"},"slug":"ripgrep","website":null},{"categories":["terminal"],"description":"Simple terminal from suckless","git_repo":"https://git.suckless.org/st","license":"MIT","name":"st","package_names":{"arch":"st","default":"st","ubuntu":"stterm","void":"st"},"slug":"st","website":"https://st.suckless.org"},{"categories":["browser"],"description":"Simple web browser from suckless","git_repo":"https://git.suckless.org/surf","license":"MIT","name":"surf","package_names":{"arch":"surf","default":"surf","ubuntu":"surf","void":"surf"},"slug":"surf","website":"https://surf.suckless.org"},{"categories":["hotkey-daemon"],"description":"Simple X hotkey daemon","git_repo":"https://github.com/baskerville/sxhkd","license":"BSD-2-Clause","name":"sxhkd","package_names":{"arch":"sxhkd","default":"sxhkd","ubuntu":"sxhkd","void":"sxhkd"},"slug":"sxhkd","website":null},{"categories":["system","service-manager"],"description":"systemd service manager CLI","git_repo":"https://github.com/systemd/systemd","license":"GPL-2.0+","name":"systemctl","package_names":{"arch":"systemd","default":"systemd","ubuntu":"systemd","void":null},"slug":"systemctl","website":"https://systemd.io"},{"categories":["messaging","emacs"],"description":"Telegram client for Emacs","git_repo":"https://github.com/zevlg/telega.el","license":"GPL-3.0","name":"telega","package_names":{"arch":"emacs-telega","default":null,"ubuntu":null,"void":null},"slug":"telega","website":null},{"categories":["terminal-multiplexer"],"description":"Terminal multiplexer","git_repo":"https://github.com/tmux/tmux","license":"ISC","name":"tmux","package_names":{"arch":"tmux","default":"tmux","ubuntu":"tmux","void":"tmux"},"slug":"tmux","website":"https://github.com/tmux/tmux"},{"categories":["terminal-multiplexer","plugin-manager"],"description":"Tmux Plugin Manager","git_repo":"https://github.com/tmux-plugins/tpm","license":"MIT","name":"tpm","package_names":{"arch":null,"default":null,"ubuntu":null,"void":null},"slug":"tpm","website":null},{"categories":["file-management"],"description":"Command-line interface to the freedesktop.org trash","git_repo":"https://github.com/andreafrancia/trash-cli","license":"GPL-2.0","name":"trash-cli","package_names":{"arch":"trash-cli","default":"trash-cli","ubuntu":"trash-cli","void":"trash-cli"},"slug":"trash-cli","website":null},{"categories":["file-management"],"description":"Recursive directory listing command","git_repo":"https://github.com/Old-Man-Programmer/tree","license":"GPL-2.0","name":"tree","package_names":{"arch":"tree","default":"tree","ubuntu":"tree","void":"tree"},"slug":"tree","website":null},{"categories":["lsp","language-server"],"description":"TypeScript language server (part of TypeScript)","git_repo":"https://github.com/microsoft/TypeScript","license":"Apache-2.0","name":"tsserver","package_names":{"arch":"typescript","default":"typescript","ubuntu":"node-typescript","void":null},"slug":"tsserver","website":"https://www.typescriptlang.org"},{"categories":["text-editor"],"description":"Highly configurable text editor","git_repo":"https://github.com/vim/vim","license":"VIM","name":"Vim","package_names":{"arch":"vim","default":"vim","ubuntu":"vim","void":"vim"},"slug":"vim","website":"https://www.vim.org"},{"categories":["python","environment-manager"],"description":"Tool to create isolated Python environments","git_repo":"https://github.com/pypa/virtualenv","license":"MIT","name":"virtualenv","package_names":{"arch":"python-virtualenv","default":"virtualenv","ubuntu":"python3-virtualenv","void":"python3-virtualenv"},"slug":"virtualenv","website":"https://virtualenv.pypa.io"},{"categories":["browser","terminal"],"description":"Terminal web browser","git_repo":"https://github.com/tats/w3m","license":"MIT","name":"w3m","package_names":{"arch":"w3m","default":"w3m","ubuntu":"w3m","void":"w3m"},"slug":"w3m","website":null},{"categories":["window-management"],"description":"Command-line tool to interact with EWMH/NetWM window managers","git_repo":"http://tripie.sweb.cz/utils/wmctrl/","license":"GPL-2.0","name":"wmctrl","package_names":{"arch":"wmctrl","default":"wmctrl","ubuntu":"wmctrl","void":"wmctrl"},"slug":"wmctrl","website":null},{"categories":["display-server"],"description":"X.Org display server","git_repo":"https://gitlab.freedesktop.org/xorg","license":"MIT","name":"Xorg","package_names":{"arch":"xorg","default":"xorg","ubuntu":"xorg","void":"xorg"},"slug":"xorg","website":"https://www.x.org"},{"categories":["media-downloader"],"description":"Download videos from YouTube and other sites","git_repo":"https://github.com/ytdl-org/youtube-dl","license":"Unlicense","name":"youtube-dl","package_names":{"arch":"youtube-dl","default":"youtube-dl","ubuntu":"youtube-dl","void":"youtube-dl"},"slug":"youtube-dl","website":"https://youtube-dl.org"},{"categories":["media","tui"],"description":"Fuzzy finder for YouTube using fzf","git_repo":"https://github.com/pystardust/ytfzf","license":"GPL-3.0","name":"ytfzf","package_names":{"arch":"ytfzf","default":"ytfzf","ubuntu":null,"void":null},"slug":"ytfzf","website":null},{"categories":["document-viewer"],"description":"Minimalistic document viewer","git_repo":"https://github.com/pwmt/zathura","license":"Zlib","name":"zathura","package_names":{"arch":"zathura","default":"zathura","ubuntu":"zathura","void":"zathura"},"slug":"zathura","website":"https://pwmt.org/projects/zathura/"},{"categories":["shell"],"description":"Extended Bourne shell with many improvements","git_repo":"https://sourceforge.net/p/zsh/code","license":"MIT-like","name":"zsh","package_names":{"arch":"zsh","default":"zsh","ubuntu":"zsh","void":"zsh"},"slug":"zsh","website":"https://www.zsh.org"}];
+const CATEGORIES = [{"description":"Tools for controlling or mixing audio/sound output.","name":"Audio","slug":"audio"},{"description":"Applications for browsing the web or internet protocols.","name":"Browser","slug":"browser"},{"description":"Tools that automate compiling and linking source code into executables.","name":"Build Tool","slug":"build-tool"},{"description":"Command-line interface utilities that operate in a terminal.","name":"CLI","slug":"cli"},{"description":"Tools for managing the system clipboard (copy/paste history, daemons).","name":"Clipboard","slug":"clipboard"},{"description":"Programs that translate source code into machine code or bytecode.","name":"Compiler","slug":"compiler"},{"description":"Programs that manage window rendering, transparency, and visual effects on a display server.","name":"Compositor","slug":"compositor"},{"description":"Low-level software that manages rendering windows and input on a screen.","name":"Display Server","slug":"display-server"},{"description":"Utilities that control display settings such as color temperature or brightness.","name":"Display","slug":"display"},{"description":"Tools for converting, transforming, or processing document files.","name":"Document Processing","slug":"document-processing"},{"description":"Applications for viewing documents such as PDFs or ebooks.","name":"Document Viewer","slug":"document-viewer"},{"description":"Opinionated configurations or distributions built on top of Emacs.","name":"Emacs Framework","slug":"emacs-framework"},{"description":"Packages, plugins, or extensions that run inside the Emacs editor.","name":"Emacs","slug":"emacs"},{"description":"Applications for reading, writing, and managing email.","name":"Email","slug":"email"},{"description":"Tools for creating and managing isolated runtime environments.","name":"Environment Manager","slug":"environment-manager"},{"description":"Command-line or GUI utilities for navigating and manipulating files.","name":"File Management","slug":"file-management"},{"description":"Dedicated applications for browsing and managing the filesystem.","name":"File Manager","slug":"file-manager"},{"description":"Clients or tools for the Gemini internet protocol.","name":"Gemini","slug":"gemini"},{"description":"Background services that listen for and dispatch keyboard shortcuts.","name":"Hotkey Daemon","slug":"hotkey-daemon"},{"description":"Tools for transforming, converting, or manipulating image files programmatically.","name":"Image Processing","slug":"image-processing"},{"description":"Applications for displaying and browsing image files.","name":"Image Viewer","slug":"image-viewer"},{"description":"LSP-compatible servers that provide IDE features for a specific language.","name":"Language Server","slug":"language-server"},{"description":"Programming language runtimes or interpreters.","name":"Language","slug":"language"},{"description":"Application launchers and dynamic menu programs.","name":"Launcher","slug":"launcher"},{"description":"Tools related to the Language Server Protocol for editor integrations.","name":"LSP","slug":"lsp"},{"description":"Tools for rendering or processing Markdown documents.","name":"Markdown","slug":"markdown"},{"description":"Tools for downloading audio or video from online platforms.","name":"Media Downloader","slug":"media-downloader"},{"description":"Applications for playing audio or video files.","name":"Media Player","slug":"media-player"},{"description":"Tools for encoding, decoding, or transforming audio/video streams.","name":"Media Processing","slug":"media-processing"},{"description":"General-purpose tools for handling audio, video, or mixed media.","name":"Media","slug":"media"},{"description":"Applications for real-time chat or instant messaging.","name":"Messaging","slug":"messaging"},{"description":"Tools specifically for playing or managing music libraries.","name":"Music","slug":"music"},{"description":"Utilities for configuring, monitoring, or interacting with networks.","name":"Network","slug":"network"},{"description":"Tools for sending or managing desktop notification messages.","name":"Notifications","slug":"notifications"},{"description":"Full-featured productivity suites for documents, spreadsheets, and presentations.","name":"Office","slug":"office"},{"description":"Tools for installing, updating, and removing software packages.","name":"Package Manager","slug":"package-manager"},{"description":"Terminal programs for scrolling through and reading text output page by page.","name":"Pager","slug":"pager"},{"description":"Tools for installing and managing plugins within another application.","name":"Plugin Manager","slug":"plugin-manager"},{"description":"Tools for executing commands with elevated (root) privileges.","name":"Privilege Escalation","slug":"privilege-escalation"},{"description":"Tools, utilities, or runtimes specific to the Python ecosystem.","name":"Python","slug":"python"},{"description":"Readers or aggregators for RSS/Atom subscription feeds.","name":"RSS","slug":"rss"},{"description":"Execution environments required to run programs written in a specific language.","name":"Runtime","slug":"runtime"},{"description":"Programs that lock the screen and require authentication to unlock.","name":"Screen Locker","slug":"screen-locker"},{"description":"Tools for capturing screenshots or regions of the screen.","name":"Screenshot","slug":"screenshot"},{"description":"Tools for searching file contents or filenames quickly.","name":"Search","slug":"search"},{"description":"Systems for starting, stopping, and monitoring background services.","name":"Service Manager","slug":"service-manager"},{"description":"Command interpreters that provide a user interface to the operating system.","name":"Shell","slug":"shell"},{"description":"Programs that display system information in a bar on the desktop.","name":"Status Bar","slug":"status-bar"},{"description":"Tools for displaying real-time system resource usage.","name":"System Monitor","slug":"system-monitor"},{"description":"Low-level utilities for interacting with or configuring the operating system.","name":"System","slug":"system"},{"description":"Programs that allow multiple terminal sessions within a single window.","name":"Terminal Multiplexer","slug":"terminal-multiplexer"},{"description":"Terminal emulator applications that provide a shell interface.","name":"Terminal","slug":"terminal"},{"description":"Applications for writing and editing plain text or source code.","name":"Text Editor","slug":"text-editor"},{"description":"Tools related to customizing the visual appearance of the desktop or applications.","name":"Theming","slug":"theming"},{"description":"Applications with a text-based user interface that run inside a terminal.","name":"TUI","slug":"tui"},{"description":"Systems for tracking changes to files and collaborating on code.","name":"Version Control","slug":"version-control"},{"description":"Utilities for controlling, querying, or scripting window behavior.","name":"Window Management","slug":"window-management"},{"description":"Programs that control the placement and appearance of windows on a display.","name":"Window Manager","slug":"window-manager"}];
+
+let selectedCat = null;
+let pkgPage = 1;
+const PKG_PAGE_SIZE = 10;
+const selectedPrograms = new Set();
+
+function toggleProgram(slug) {
+  if (selectedPrograms.has(slug)) selectedPrograms.delete(slug);
+  else selectedPrograms.add(slug);
+  updateInstallBtn();
+  
+  document.querySelectorAll(".program-item[data-slug]").forEach(el => {
+    el.classList.toggle("selected", selectedPrograms.has(el.dataset.slug));
+  });
+}
+
+function updateInstallBtn() {
+  const n = selectedPrograms.size;
+  const btn = document.getElementById("btn-install");
+  if (!btn) return;
+  btn.disabled = n === 0;
+  btn.textContent = n === 0 ? "Install 0 programs" : `Install ${n} program${n !== 1 ? "s" : ""}`;
+}
+
+function selectDistro(card) {
+  document.querySelectorAll(".distro-card").forEach(c => c.classList.remove("selected"));
+  card.classList.add("selected");
+  document.getElementById("btn-next").disabled = false;
+}
+
+function goNext() {
+  const selected = document.querySelector(".distro-card.selected");
+  if (!selected) return;
+  const params = new URLSearchParams(window.location.search);
+  params.set("distro", selected.dataset.slug);
+  window.history.pushState({}, "", "?" + params.toString());
+  showPackageStep();
+}
+
+function showPackageStep() {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("distro");
+  if (!slug) return;
+  const distro = DISTROS.find(d => d.slug === slug);
+  if (!distro) return;
+
+  document.getElementById("step-select").style.display = "none";
+  document.getElementById("chosen-name").textContent = distro.name;
+  document.getElementById("step-packages").style.display = "";
+
+  renderPrograms();
+}
+
+const catMap = {};
+CATEGORIES.forEach(c => catMap[c.slug] = c.name);
+
+function buildSidebar(searchFiltered) {
+  const counts = {};
+  searchFiltered.forEach(p => (p.categories || []).forEach(c => {
+    counts[c] = (counts[c] || 0) + 1;
+  }));
+
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  
+  if (selectedCat && !counts[selectedCat]) selectedCat = null;
+
+  const sidebar = document.getElementById("cat-sidebar");
+  sidebar.innerHTML = `
+    <ul class="cat-list">
+      <li class="cat-item ${!selectedCat ? "active" : ""}" onclick="filterCat(null, this)">
+        All <span class="cat-count">${searchFiltered.length}</span>
+      </li>
+      ${sorted.map(([slug, count]) => `
+        <li class="cat-item ${selectedCat === slug ? "active" : ""}" data-slug="${slug}" onclick="filterCat('${slug}', this)">
+          ${catMap[slug] || slug} <span class="cat-count">${count}</span>
+        </li>
+      `).join("")}
+    </ul>
+  `;
+}
+
+function filterCat(slug) {
+  selectedCat = slug;
+  pkgPage = 1;
+  renderPrograms();
+}
+
+function onSearch() {
+  pkgPage = 1;
+  renderPrograms();
+}
+
+function pkgGoTo(page) {
+  pkgPage = page;
+  renderPrograms();
+  document.getElementById("step-packages").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPrograms() {
+  const query = (document.getElementById("pkg-search")?.value || "").toLowerCase().trim();
+
+  
+  const searchFiltered = query
+    ? PROGRAMS.filter(p =>
+        (p.name || "").toLowerCase().includes(query) ||
+        (p.description || "").toLowerCase().includes(query) ||
+        (p.categories || []).some(c => c.toLowerCase().includes(query))
+      )
+    : PROGRAMS;
+
+  buildSidebar(searchFiltered);
+
+  
+  const list = selectedCat
+    ? searchFiltered.filter(p => (p.categories || []).includes(selectedCat))
+    : searchFiltered;
+
+  const countEl = document.getElementById("pkg-count");
+  if (countEl) countEl.textContent = `${list.length} program${list.length !== 1 ? "s" : ""}`;
+
+  const totalPages = Math.ceil(list.length / PKG_PAGE_SIZE);
+  if (pkgPage > totalPages) pkgPage = Math.max(1, totalPages);
+  const paged = list.slice((pkgPage - 1) * PKG_PAGE_SIZE, pkgPage * PKG_PAGE_SIZE);
+
+  renderPkgPagination(totalPages);
+
+  document.getElementById("pkg-list").innerHTML = paged.map(p => `
+    <li class="program-item ${selectedPrograms.has(p.slug) ? "selected" : ""}" data-slug="${escHtml(p.slug)}" onclick="toggleProgram('${escHtml(p.slug)}')">
+      <div class="program-name"><strong>${escHtml(p.name)}</strong></div>
+      ${p.description ? `<p class="program-desc">${escHtml(p.description)}</p>` : ""}
+      <div class="program-meta">
+        ${p.license ? `<span class="badge">${escHtml(p.license)}</span>` : ""}
+        ${p.git_repo ? `<a href="${escHtml(p.git_repo)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Source</a>` : ""}
+        ${p.website ? `<a href="${escHtml(p.website)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Website</a>` : ""}
+      </div>
+    </li>
+  `).join("");
+}
+
+function renderPkgPagination(total) {
+  const pag = document.getElementById("pkg-pagination");
+  if (total <= 1) { pag.innerHTML = ""; return; }
+
+  const range = [];
+  if (total <= 7) {
+    for (let i = 1; i <= total; i++) range.push(i);
+  } else {
+    range.push(1);
+    if (pkgPage > 3) range.push("…");
+    for (let i = Math.max(2, pkgPage - 1); i <= Math.min(total - 1, pkgPage + 1); i++) range.push(i);
+    if (pkgPage < total - 2) range.push("…");
+    range.push(total);
+  }
+
+  let html = "";
+  if (pkgPage > 1) html += `<button onclick="pkgGoTo(${pkgPage - 1})">&#8592; Prev</button>`;
+  range.forEach(p => {
+    if (p === "…") html += `<span class="page-ellipsis">…</span>`;
+    else html += `<button class="${p === pkgPage ? "page-active" : ""}" onclick="pkgGoTo(${p})">${p}</button>`;
+  });
+  if (pkgPage < total) html += `<button onclick="pkgGoTo(${pkgPage + 1})">Next &#8594;</button>`;
+
+  pag.innerHTML = html;
+}
+
+function goInstall() {
+  if (selectedPrograms.size === 0) return;
+  const distroSlug = new URLSearchParams(window.location.search).get("distro");
+  const distro = DISTROS.find(d => d.slug === distroSlug);
+  const programs = PROGRAMS.filter(p => selectedPrograms.has(p.slug));
+
+  document.getElementById("step-packages").style.display = "none";
+  document.getElementById("summary-distro").textContent = distro ? distro.name : distroSlug;
+  document.getElementById("summary-list").innerHTML = programs.map(p => `
+    <li class="summary-item">${escHtml(p.name)}</li>
+  `).join("");
+  document.getElementById("summary-list").style.setProperty("--summary-rows", Math.min(programs.length, 3));
+  document.getElementById("step-summary").style.display = "";
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (new URLSearchParams(window.location.search).get("distro")) showPackageStep();
+});
+
+window.addEventListener("popstate", () => {
+  const slug = new URLSearchParams(window.location.search).get("distro");
+  if (slug) {
+    showPackageStep();
+  } else {
+    document.getElementById("step-packages").style.display = "none";
+    document.getElementById("step-select").style.display = "";
+  }
+});
+</script>
+
+  </main>
+  <footer>
+    <p>My New Hugo Site</p>
+  </footer>
+</body>
+</html>

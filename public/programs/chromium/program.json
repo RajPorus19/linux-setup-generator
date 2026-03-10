@@ -1,0 +1,17 @@
+{
+    "name": "Chromium",
+    "slug": "chromium",
+    "description": "Open-source web browser project",
+    "git_repo": "https://chromium.googlesource.com/chromium/src",
+    "website": "https://www.chromium.org",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "chromium",
+        "arch": "chromium",
+        "ubuntu": "chromium-browser",
+        "void": "chromium"
+    },
+    "categories": [
+        "browser"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Emacs",
+    "slug": "emacs",
+    "description": "Extensible self-documenting text editor",
+    "git_repo": "https://git.savannah.gnu.org/cgit/emacs.git",
+    "website": "https://www.gnu.org/software/emacs/",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "emacs",
+        "arch": "emacs",
+        "ubuntu": "emacs",
+        "void": "emacs"
+    },
+    "categories": [
+        "text-editor"
+    ]
+}

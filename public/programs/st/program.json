@@ -1,0 +1,17 @@
+{
+    "name": "st",
+    "slug": "st",
+    "description": "Simple terminal from suckless",
+    "git_repo": "https://git.suckless.org/st",
+    "website": "https://st.suckless.org",
+    "license": "MIT",
+    "package_names": {
+        "default": "st",
+        "arch": "st",
+        "ubuntu": "stterm",
+        "void": "st"
+    },
+    "categories": [
+        "terminal"
+    ]
+}

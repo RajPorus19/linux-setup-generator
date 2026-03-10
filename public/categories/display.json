@@ -1,0 +1,5 @@
+{
+    "slug": "display",
+    "name": "Display",
+    "description": "Utilities that control display settings such as color temperature or brightness."
+}

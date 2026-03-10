@@ -1,0 +1,18 @@
+{
+    "name": "pactl",
+    "slug": "pactl",
+    "description": "PulseAudio/PipeWire control CLI (part of pulseaudio/pipewire)",
+    "git_repo": "https://gitlab.freedesktop.org/pulseaudio/pulseaudio",
+    "website": "https://www.freedesktop.org/wiki/Software/PulseAudio/",
+    "license": "LGPL-2.1",
+    "package_names": {
+        "default": "pulseaudio-utils",
+        "arch": "libpulse",
+        "ubuntu": "pulseaudio-utils",
+        "void": "pulseaudio-utils"
+    },
+    "categories": [
+        "audio",
+        "cli"
+    ]
+}

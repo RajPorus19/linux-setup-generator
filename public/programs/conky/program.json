@@ -1,0 +1,17 @@
+{
+    "name": "conky",
+    "slug": "conky",
+    "description": "Lightweight system monitor",
+    "git_repo": "https://github.com/brndnmtthws/conky",
+    "website": "https://conky.cc",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "conky",
+        "arch": "conky",
+        "ubuntu": "conky",
+        "void": "conky"
+    },
+    "categories": [
+        "system-monitor"
+    ]
+}

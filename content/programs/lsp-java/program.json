@@ -1,0 +1,18 @@
+{
+    "name": "lsp-java",
+    "slug": "lsp-java",
+    "description": "Java language server (Eclipse JDT LS)",
+    "git_repo": "https://github.com/eclipse/eclipse.jdt.ls",
+    "website": null,
+    "license": "EPL-2.0",
+    "package_names": {
+        "default": null,
+        "arch": null,
+        "ubuntu": null,
+        "void": null
+    },
+    "categories": [
+        "lsp",
+        "language-server"
+    ]
+}

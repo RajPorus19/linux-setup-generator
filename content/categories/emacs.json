@@ -1,0 +1,5 @@
+{
+    "slug": "emacs",
+    "name": "Emacs",
+    "description": "Packages, plugins, or extensions that run inside the Emacs editor."
+}

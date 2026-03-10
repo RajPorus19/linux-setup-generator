@@ -1,0 +1,17 @@
+{
+    "name": "clipmenu",
+    "slug": "clipmenu",
+    "description": "Clipboard management with dmenu",
+    "git_repo": "https://github.com/cdown/clipmenu",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "clipmenu",
+        "arch": "clipmenu",
+        "ubuntu": "clipmenu",
+        "void": "clipmenu"
+    },
+    "categories": [
+        "clipboard"
+    ]
+}

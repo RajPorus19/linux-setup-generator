@@ -1,0 +1,17 @@
+{
+    "name": "ImageMagick",
+    "slug": "imagemagick",
+    "description": "Image manipulation tools",
+    "git_repo": "https://github.com/ImageMagick/ImageMagick",
+    "website": "https://imagemagick.org",
+    "license": "Apache-2.0-like",
+    "package_names": {
+        "default": "imagemagick",
+        "arch": "imagemagick",
+        "ubuntu": "imagemagick",
+        "void": "ImageMagick"
+    },
+    "categories": [
+        "image-processing"
+    ]
+}

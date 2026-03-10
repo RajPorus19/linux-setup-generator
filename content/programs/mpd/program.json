@@ -1,0 +1,17 @@
+{
+    "name": "MPD",
+    "slug": "mpd",
+    "description": "Music player daemon",
+    "git_repo": "https://github.com/MusicPlayerDaemon/MPD",
+    "website": "https://www.musicpd.org",
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "mpd",
+        "arch": "mpd",
+        "ubuntu": "mpd",
+        "void": "mpd"
+    },
+    "categories": [
+        "music"
+    ]
+}

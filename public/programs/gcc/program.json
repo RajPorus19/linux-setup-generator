@@ -1,0 +1,17 @@
+{
+    "name": "GCC",
+    "slug": "gcc",
+    "description": "GNU Compiler Collection",
+    "git_repo": "https://gcc.gnu.org/git.html",
+    "website": "https://gcc.gnu.org",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "gcc",
+        "arch": "gcc",
+        "ubuntu": "gcc",
+        "void": "gcc"
+    },
+    "categories": [
+        "compiler"
+    ]
+}

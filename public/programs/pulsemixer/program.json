@@ -1,0 +1,17 @@
+{
+    "name": "pulsemixer",
+    "slug": "pulsemixer",
+    "description": "TUI PulseAudio mixer",
+    "git_repo": "https://github.com/GeorgeFilipkin/pulsemixer",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "pulsemixer",
+        "arch": "pulsemixer",
+        "ubuntu": "pulsemixer",
+        "void": "pulsemixer"
+    },
+    "categories": [
+        "audio"
+    ]
+}

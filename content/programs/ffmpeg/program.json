@@ -1,0 +1,17 @@
+{
+    "name": "FFmpeg",
+    "slug": "ffmpeg",
+    "description": "Multimedia framework for audio/video processing",
+    "git_repo": "https://github.com/FFmpeg/FFmpeg",
+    "website": "https://ffmpeg.org",
+    "license": "LGPL-2.1+/GPL-2.0+",
+    "package_names": {
+        "default": "ffmpeg",
+        "arch": "ffmpeg",
+        "ubuntu": "ffmpeg",
+        "void": "ffmpeg"
+    },
+    "categories": [
+        "media-processing"
+    ]
+}

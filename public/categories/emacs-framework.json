@@ -1,0 +1,5 @@
+{
+    "slug": "emacs-framework",
+    "name": "Emacs Framework",
+    "description": "Opinionated configurations or distributions built on top of Emacs."
+}

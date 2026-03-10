@@ -1,0 +1,17 @@
+{
+    "name": "clipmenud",
+    "slug": "clipmenud",
+    "description": "Clipboard daemon (part of clipmenu)",
+    "git_repo": "https://github.com/cdown/clipmenu",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "clipmenu",
+        "arch": "clipmenu",
+        "ubuntu": "clipmenu",
+        "void": "clipmenu"
+    },
+    "categories": [
+        "clipboard"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Firefox",
+    "slug": "firefox",
+    "description": "Free and open-source web browser",
+    "git_repo": "https://hg.mozilla.org/mozilla-central",
+    "website": "https://www.mozilla.org/firefox/",
+    "license": "MPL-2.0",
+    "package_names": {
+        "default": "firefox",
+        "arch": "firefox",
+        "ubuntu": "firefox",
+        "void": "firefox"
+    },
+    "categories": [
+        "browser"
+    ]
+}

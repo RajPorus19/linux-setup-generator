@@ -1,0 +1,5 @@
+{
+    "slug": "language-server",
+    "name": "Language Server",
+    "description": "LSP-compatible servers that provide IDE features for a specific language."
+}

@@ -1,0 +1,17 @@
+{
+    "name": "nnn",
+    "slug": "nnn",
+    "description": "Fast and featureful terminal file manager",
+    "git_repo": "https://github.com/jarun/nnn",
+    "website": null,
+    "license": "BSD-2-Clause",
+    "package_names": {
+        "default": "nnn",
+        "arch": "nnn",
+        "ubuntu": "nnn",
+        "void": "nnn"
+    },
+    "categories": [
+        "file-manager"
+    ]
+}

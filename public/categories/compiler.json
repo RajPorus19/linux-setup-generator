@@ -1,0 +1,5 @@
+{
+    "slug": "compiler",
+    "name": "Compiler",
+    "description": "Programs that translate source code into machine code or bytecode."
+}

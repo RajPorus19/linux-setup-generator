@@ -1,0 +1,18 @@
+{
+    "name": "notify-send",
+    "slug": "notify-send",
+    "description": "Send desktop notifications via libnotify",
+    "git_repo": "https://gitlab.gnome.org/GNOME/libnotify",
+    "website": null,
+    "license": "LGPL-2.1",
+    "package_names": {
+        "default": "libnotify",
+        "arch": "libnotify",
+        "ubuntu": "libnotify-bin",
+        "void": "libnotify"
+    },
+    "categories": [
+        "notifications",
+        "cli"
+    ]
+}

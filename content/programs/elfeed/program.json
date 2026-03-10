@@ -1,0 +1,18 @@
+{
+    "name": "elfeed",
+    "slug": "elfeed",
+    "description": "RSS/Atom feed reader for Emacs",
+    "git_repo": "https://github.com/skeeto/elfeed",
+    "website": null,
+    "license": "Unlicense",
+    "package_names": {
+        "default": null,
+        "arch": null,
+        "ubuntu": null,
+        "void": null
+    },
+    "categories": [
+        "rss",
+        "emacs"
+    ]
+}

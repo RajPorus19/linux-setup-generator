@@ -1,0 +1,18 @@
+{
+    "name": "bat",
+    "slug": "bat",
+    "description": "cat clone with syntax highlighting",
+    "git_repo": "https://github.com/sharkdp/bat",
+    "website": null,
+    "license": "MIT/Apache-2.0",
+    "package_names": {
+        "default": "bat",
+        "arch": "bat",
+        "ubuntu": "bat",
+        "void": "bat"
+    },
+    "categories": [
+        "cli",
+        "pager"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "conda",
+    "slug": "conda",
+    "description": "Cross-platform package and environment manager",
+    "git_repo": "https://github.com/conda/conda",
+    "website": "https://conda.io",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "conda",
+        "arch": "conda",
+        "ubuntu": "conda",
+        "void": null
+    },
+    "categories": [
+        "package-manager"
+    ]
+}

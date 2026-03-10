@@ -1,0 +1,17 @@
+{
+    "name": "mpv",
+    "slug": "mpv",
+    "description": "Free and open-source media player",
+    "git_repo": "https://github.com/mpv-player/mpv",
+    "website": "https://mpv.io",
+    "license": "GPL-2.0+",
+    "package_names": {
+        "default": "mpv",
+        "arch": "mpv",
+        "ubuntu": "mpv",
+        "void": "mpv"
+    },
+    "categories": [
+        "media-player"
+    ]
+}

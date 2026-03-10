@@ -1,0 +1,17 @@
+{
+    "name": "pip",
+    "slug": "pip",
+    "description": "Python package installer",
+    "git_repo": "https://github.com/pypa/pip",
+    "website": "https://pip.pypa.io",
+    "license": "MIT",
+    "package_names": {
+        "default": "pip",
+        "arch": "python-pip",
+        "ubuntu": "python3-pip",
+        "void": "python3-pip"
+    },
+    "categories": [
+        "package-manager"
+    ]
+}

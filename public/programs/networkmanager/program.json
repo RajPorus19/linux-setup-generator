@@ -1,0 +1,17 @@
+{
+    "name": "NetworkManager",
+    "slug": "networkmanager",
+    "description": "Network management daemon",
+    "git_repo": "https://github.com/NetworkManager/NetworkManager",
+    "website": "https://networkmanager.dev",
+    "license": "GPL-2.0+",
+    "package_names": {
+        "default": "networkmanager",
+        "arch": "networkmanager",
+        "ubuntu": "network-manager",
+        "void": "NetworkManager"
+    },
+    "categories": [
+        "network"
+    ]
+}

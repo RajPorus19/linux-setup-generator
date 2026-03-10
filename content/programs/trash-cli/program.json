@@ -1,0 +1,17 @@
+{
+    "name": "trash-cli",
+    "slug": "trash-cli",
+    "description": "Command-line interface to the freedesktop.org trash",
+    "git_repo": "https://github.com/andreafrancia/trash-cli",
+    "website": null,
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "trash-cli",
+        "arch": "trash-cli",
+        "ubuntu": "trash-cli",
+        "void": "trash-cli"
+    },
+    "categories": [
+        "file-management"
+    ]
+}

@@ -1,0 +1,275 @@
+{{ define "main" }}
+<h1>Setup Generator</h1>
+
+{{/* Load distros */}}
+{{ $distros := slice }}
+{{ range readDir "content/distros" }}
+  {{ $distros = $distros | append (readFile (printf "content/distros/%s" .Name) | transform.Unmarshal) }}
+{{ end }}
+{{ $distros = sort $distros "name" }}
+
+{{/* Load programs */}}
+{{ $programs := slice }}
+{{ range readDir "content/programs" }}
+  {{ if .IsDir }}
+    {{ $programs = $programs | append (readFile (printf "content/programs/%s/program.json" .Name) | transform.Unmarshal) }}
+  {{ end }}
+{{ end }}
+{{ $programs = sort $programs "name" }}
+
+{{/* Load categories */}}
+{{ $categories := slice }}
+{{ range readDir "content/categories" }}
+  {{ $categories = $categories | append (readFile (printf "content/categories/%s" .Name) | transform.Unmarshal) }}
+{{ end }}
+
+{{/* Step 1: Select Distro */}}
+<div id="step-select">
+  <p>Select your distro to get started:</p>
+  <div class="distro-grid">
+    {{ range $distros }}
+    <div class="distro-card" data-slug="{{ .slug }}" data-name="{{ .name }}" onclick="selectDistro(this)">
+      <div class="distro-name">{{ .name }}</div>
+      {{ with .description }}<p class="distro-desc">{{ . }}</p>{{ end }}
+      <code class="distro-cmd">{{ .install_package_command }} &lt;package&gt;</code>
+    </div>
+    {{ end }}
+  </div>
+  <div class="setup-footer">
+    <button id="btn-next" class="btn-next" disabled onclick="goNext()">Next →</button>
+  </div>
+</div>
+
+{{/* Step 2: Choose packages */}}
+<div id="step-packages" style="display:none">
+  <div class="step2-header">
+    <p class="chosen-msg">You've chosen <strong id="chosen-name"></strong></p>
+    <button id="btn-install" class="btn-next" disabled onclick="goInstall()">Install 0 programs</button>
+  </div>
+
+  <div class="pkg-layout">
+    <aside class="cat-sidebar" id="cat-sidebar"></aside>
+    <div class="pkg-main">
+      <div class="programs-header">
+        <span id="pkg-count"></span>
+        <input id="pkg-search" type="search" placeholder="Search programs…" autocomplete="off" oninput="onSearch()">
+      </div>
+      <ul class="program-list" id="pkg-list"></ul>
+      <div id="pkg-pagination" class="pagination"></div>
+    </div>
+  </div>
+</div>
+
+{{/* Step 3: Summary */}}
+<div id="step-summary" style="display:none">
+  <h2 class="summary-title">Your setup</h2>
+  <p class="summary-sub">You will install the following programs on <strong id="summary-distro"></strong>:</p>
+  <div class="summary-scroll">
+    <ul id="summary-list" class="summary-list"></ul>
+  </div>
+</div>
+
+<script>
+const DISTROS  = {{ $distros   | jsonify | safeJS }};
+const PROGRAMS = {{ $programs  | jsonify | safeJS }};
+const CATEGORIES = {{ $categories | jsonify | safeJS }};
+
+let selectedCat = null;
+let pkgPage = 1;
+const PKG_PAGE_SIZE = 10;
+const selectedPrograms = new Set();
+
+function toggleProgram(slug) {
+  if (selectedPrograms.has(slug)) selectedPrograms.delete(slug);
+  else selectedPrograms.add(slug);
+  updateInstallBtn();
+  // Re-render to reflect selected state without rebuilding sidebar/search
+  document.querySelectorAll(".program-item[data-slug]").forEach(el => {
+    el.classList.toggle("selected", selectedPrograms.has(el.dataset.slug));
+  });
+}
+
+function updateInstallBtn() {
+  const n = selectedPrograms.size;
+  const btn = document.getElementById("btn-install");
+  if (!btn) return;
+  btn.disabled = n === 0;
+  btn.textContent = n === 0 ? "Install 0 programs" : `Install ${n} program${n !== 1 ? "s" : ""}`;
+}
+
+function selectDistro(card) {
+  document.querySelectorAll(".distro-card").forEach(c => c.classList.remove("selected"));
+  card.classList.add("selected");
+  document.getElementById("btn-next").disabled = false;
+}
+
+function goNext() {
+  const selected = document.querySelector(".distro-card.selected");
+  if (!selected) return;
+  const params = new URLSearchParams(window.location.search);
+  params.set("distro", selected.dataset.slug);
+  window.history.pushState({}, "", "?" + params.toString());
+  showPackageStep();
+}
+
+function showPackageStep() {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("distro");
+  if (!slug) return;
+  const distro = DISTROS.find(d => d.slug === slug);
+  if (!distro) return;
+
+  document.getElementById("step-select").style.display = "none";
+  document.getElementById("chosen-name").textContent = distro.name;
+  document.getElementById("step-packages").style.display = "";
+
+  renderPrograms();
+}
+
+const catMap = {};
+CATEGORIES.forEach(c => catMap[c.slug] = c.name);
+
+function buildSidebar(searchFiltered) {
+  const counts = {};
+  searchFiltered.forEach(p => (p.categories || []).forEach(c => {
+    counts[c] = (counts[c] || 0) + 1;
+  }));
+
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  // If selected category is no longer in results, reset it
+  if (selectedCat && !counts[selectedCat]) selectedCat = null;
+
+  const sidebar = document.getElementById("cat-sidebar");
+  sidebar.innerHTML = `
+    <ul class="cat-list">
+      <li class="cat-item ${!selectedCat ? "active" : ""}" onclick="filterCat(null, this)">
+        All <span class="cat-count">${searchFiltered.length}</span>
+      </li>
+      ${sorted.map(([slug, count]) => `
+        <li class="cat-item ${selectedCat === slug ? "active" : ""}" data-slug="${slug}" onclick="filterCat('${slug}', this)">
+          ${catMap[slug] || slug} <span class="cat-count">${count}</span>
+        </li>
+      `).join("")}
+    </ul>
+  `;
+}
+
+function filterCat(slug) {
+  selectedCat = slug;
+  pkgPage = 1;
+  renderPrograms();
+}
+
+function onSearch() {
+  pkgPage = 1;
+  renderPrograms();
+}
+
+function pkgGoTo(page) {
+  pkgPage = page;
+  renderPrograms();
+  document.getElementById("step-packages").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPrograms() {
+  const query = (document.getElementById("pkg-search")?.value || "").toLowerCase().trim();
+
+  // Search-filtered list (used for sidebar counts)
+  const searchFiltered = query
+    ? PROGRAMS.filter(p =>
+        (p.name || "").toLowerCase().includes(query) ||
+        (p.description || "").toLowerCase().includes(query) ||
+        (p.categories || []).some(c => c.toLowerCase().includes(query))
+      )
+    : PROGRAMS;
+
+  buildSidebar(searchFiltered);
+
+  // Then apply category filter for the program list
+  const list = selectedCat
+    ? searchFiltered.filter(p => (p.categories || []).includes(selectedCat))
+    : searchFiltered;
+
+  const countEl = document.getElementById("pkg-count");
+  if (countEl) countEl.textContent = `${list.length} program${list.length !== 1 ? "s" : ""}`;
+
+  const totalPages = Math.ceil(list.length / PKG_PAGE_SIZE);
+  if (pkgPage > totalPages) pkgPage = Math.max(1, totalPages);
+  const paged = list.slice((pkgPage - 1) * PKG_PAGE_SIZE, pkgPage * PKG_PAGE_SIZE);
+
+  renderPkgPagination(totalPages);
+
+  document.getElementById("pkg-list").innerHTML = paged.map(p => `
+    <li class="program-item ${selectedPrograms.has(p.slug) ? "selected" : ""}" data-slug="${escHtml(p.slug)}" onclick="toggleProgram('${escHtml(p.slug)}')">
+      <div class="program-name"><strong>${escHtml(p.name)}</strong></div>
+      ${p.description ? `<p class="program-desc">${escHtml(p.description)}</p>` : ""}
+      <div class="program-meta">
+        ${p.license ? `<span class="badge">${escHtml(p.license)}</span>` : ""}
+        ${p.git_repo ? `<a href="${escHtml(p.git_repo)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Source</a>` : ""}
+        ${p.website ? `<a href="${escHtml(p.website)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Website</a>` : ""}
+      </div>
+    </li>
+  `).join("");
+}
+
+function renderPkgPagination(total) {
+  const pag = document.getElementById("pkg-pagination");
+  if (total <= 1) { pag.innerHTML = ""; return; }
+
+  const range = [];
+  if (total <= 7) {
+    for (let i = 1; i <= total; i++) range.push(i);
+  } else {
+    range.push(1);
+    if (pkgPage > 3) range.push("…");
+    for (let i = Math.max(2, pkgPage - 1); i <= Math.min(total - 1, pkgPage + 1); i++) range.push(i);
+    if (pkgPage < total - 2) range.push("…");
+    range.push(total);
+  }
+
+  let html = "";
+  if (pkgPage > 1) html += `<button onclick="pkgGoTo(${pkgPage - 1})">&#8592; Prev</button>`;
+  range.forEach(p => {
+    if (p === "…") html += `<span class="page-ellipsis">…</span>`;
+    else html += `<button class="${p === pkgPage ? "page-active" : ""}" onclick="pkgGoTo(${p})">${p}</button>`;
+  });
+  if (pkgPage < total) html += `<button onclick="pkgGoTo(${pkgPage + 1})">Next &#8594;</button>`;
+
+  pag.innerHTML = html;
+}
+
+function goInstall() {
+  if (selectedPrograms.size === 0) return;
+  const distroSlug = new URLSearchParams(window.location.search).get("distro");
+  const distro = DISTROS.find(d => d.slug === distroSlug);
+  const programs = PROGRAMS.filter(p => selectedPrograms.has(p.slug));
+
+  document.getElementById("step-packages").style.display = "none";
+  document.getElementById("summary-distro").textContent = distro ? distro.name : distroSlug;
+  document.getElementById("summary-list").innerHTML = programs.map(p => `
+    <li class="summary-item">${escHtml(p.name)}</li>
+  `).join("");
+  document.getElementById("summary-list").style.setProperty("--summary-rows", Math.min(programs.length, 3));
+  document.getElementById("step-summary").style.display = "";
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (new URLSearchParams(window.location.search).get("distro")) showPackageStep();
+});
+
+window.addEventListener("popstate", () => {
+  const slug = new URLSearchParams(window.location.search).get("distro");
+  if (slug) {
+    showPackageStep();
+  } else {
+    document.getElementById("step-packages").style.display = "none";
+    document.getElementById("step-select").style.display = "";
+  }
+});
+</script>
+{{ end }}

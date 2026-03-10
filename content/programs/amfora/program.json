@@ -1,0 +1,17 @@
+{
+    "name": "amfora",
+    "slug": "amfora",
+    "description": "Terminal Gemini browser",
+    "git_repo": "https://github.com/makeworld-the-better-one/amfora",
+    "website": null,
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "CUSTOM_INSTALL",
+        "arch": "amfora"
+    },
+    "categories": [
+        "browser",
+        "terminal",
+        "gemini"
+    ]
+}

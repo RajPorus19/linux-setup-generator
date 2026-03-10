@@ -1,0 +1,18 @@
+{
+    "name": "mpc",
+    "slug": "mpc",
+    "description": "Command-line MPD client",
+    "git_repo": "https://github.com/MusicPlayerDaemon/mpc",
+    "website": null,
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "mpc",
+        "arch": "mpc",
+        "ubuntu": "mpc",
+        "void": "mpc"
+    },
+    "categories": [
+        "music",
+        "cli"
+    ]
+}

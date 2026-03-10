@@ -1,0 +1,17 @@
+{
+    "name": "dunst",
+    "slug": "dunst",
+    "description": "Customizable notification daemon",
+    "git_repo": "https://github.com/dunst-project/dunst",
+    "website": "https://dunst-project.org",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "dunst",
+        "arch": "dunst",
+        "ubuntu": "dunst",
+        "void": "dunst"
+    },
+    "categories": [
+        "notifications"
+    ]
+}

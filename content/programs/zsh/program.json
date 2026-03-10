@@ -1,0 +1,17 @@
+{
+    "name": "zsh",
+    "slug": "zsh",
+    "description": "Extended Bourne shell with many improvements",
+    "git_repo": "https://sourceforge.net/p/zsh/code",
+    "website": "https://www.zsh.org",
+    "license": "MIT-like",
+    "package_names": {
+        "default": "zsh",
+        "arch": "zsh",
+        "ubuntu": "zsh",
+        "void": "zsh"
+    },
+    "categories": [
+        "shell"
+    ]
+}

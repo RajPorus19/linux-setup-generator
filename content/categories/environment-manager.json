@@ -1,0 +1,5 @@
+{
+    "slug": "environment-manager",
+    "name": "Environment Manager",
+    "description": "Tools for creating and managing isolated runtime environments."
+}

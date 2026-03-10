@@ -1,0 +1,17 @@
+{
+    "name": "git",
+    "slug": "git",
+    "description": "Distributed version control system",
+    "git_repo": "https://github.com/git/git",
+    "website": "https://git-scm.com",
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "git",
+        "arch": "git",
+        "ubuntu": "git",
+        "void": "git"
+    },
+    "categories": [
+        "version-control"
+    ]
+}

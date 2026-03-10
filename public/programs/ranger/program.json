@@ -1,0 +1,17 @@
+{
+    "name": "ranger",
+    "slug": "ranger",
+    "description": "Console file manager with VI key bindings",
+    "git_repo": "https://github.com/ranger/ranger",
+    "website": "https://ranger.github.io",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "ranger",
+        "arch": "ranger",
+        "ubuntu": "ranger",
+        "void": "ranger"
+    },
+    "categories": [
+        "file-manager"
+    ]
+}

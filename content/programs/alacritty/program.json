@@ -1,0 +1,14 @@
+{
+    "name": "Alacritty",
+    "slug": "alacritty",
+    "description": "A cross-platform, fast, GPU-accelerated terminal emulator",
+    "git_repo": "https://github.com/alacritty/alacritty",
+    "website": "https://alacritty.org/",
+    "license": "MIT",
+    "package_names": {
+        "default": "alacritty"
+    },
+    "categories": [
+        "terminal"
+    ]
+}

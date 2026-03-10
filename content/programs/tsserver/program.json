@@ -1,0 +1,18 @@
+{
+    "name": "tsserver",
+    "slug": "tsserver",
+    "description": "TypeScript language server (part of TypeScript)",
+    "git_repo": "https://github.com/microsoft/TypeScript",
+    "website": "https://www.typescriptlang.org",
+    "license": "Apache-2.0",
+    "package_names": {
+        "default": "typescript",
+        "arch": "typescript",
+        "ubuntu": "node-typescript",
+        "void": null
+    },
+    "categories": [
+        "lsp",
+        "language-server"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "sxhkd",
+    "slug": "sxhkd",
+    "description": "Simple X hotkey daemon",
+    "git_repo": "https://github.com/baskerville/sxhkd",
+    "website": null,
+    "license": "BSD-2-Clause",
+    "package_names": {
+        "default": "sxhkd",
+        "arch": "sxhkd",
+        "ubuntu": "sxhkd",
+        "void": "sxhkd"
+    },
+    "categories": [
+        "hotkey-daemon"
+    ]
+}

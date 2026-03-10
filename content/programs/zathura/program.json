@@ -1,0 +1,17 @@
+{
+    "name": "zathura",
+    "slug": "zathura",
+    "description": "Minimalistic document viewer",
+    "git_repo": "https://github.com/pwmt/zathura",
+    "website": "https://pwmt.org/projects/zathura/",
+    "license": "Zlib",
+    "package_names": {
+        "default": "zathura",
+        "arch": "zathura",
+        "ubuntu": "zathura",
+        "void": "zathura"
+    },
+    "categories": [
+        "document-viewer"
+    ]
+}

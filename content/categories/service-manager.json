@@ -1,0 +1,5 @@
+{
+    "slug": "service-manager",
+    "name": "Service Manager",
+    "description": "Systems for starting, stopping, and monitoring background services."
+}

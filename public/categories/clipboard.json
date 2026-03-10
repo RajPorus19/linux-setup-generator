@@ -1,0 +1,5 @@
+{
+    "slug": "clipboard",
+    "name": "Clipboard",
+    "description": "Tools for managing the system clipboard (copy/paste history, daemons)."
+}

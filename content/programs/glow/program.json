@@ -1,0 +1,18 @@
+{
+    "name": "glow",
+    "slug": "glow",
+    "description": "Terminal markdown renderer",
+    "git_repo": "https://github.com/charmbracelet/glow",
+    "website": null,
+    "license": "MIT",
+    "package_names": {
+        "default": "glow",
+        "arch": "glow",
+        "ubuntu": "glow",
+        "void": "glow"
+    },
+    "categories": [
+        "cli",
+        "markdown"
+    ]
+}

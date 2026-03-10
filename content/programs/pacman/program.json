@@ -1,0 +1,17 @@
+{
+    "name": "pacman",
+    "slug": "pacman",
+    "description": "Arch Linux package manager",
+    "git_repo": "https://gitlab.archlinux.org/pacman/pacman",
+    "website": "https://archlinux.org/pacman/",
+    "license": "GPL-2.0",
+    "package_names": {
+        "default": "pacman",
+        "arch": "pacman",
+        "ubuntu": null,
+        "void": null
+    },
+    "categories": [
+        "package-manager"
+    ]
+}

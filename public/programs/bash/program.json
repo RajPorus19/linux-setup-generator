@@ -1,0 +1,14 @@
+{
+    "name": "bash",
+    "slug": "bash",
+    "description": "GNU Bourne Again SHell",
+    "git_repo": "https://git.savannah.gnu.org/cgit/bash.git",
+    "website": "https://www.gnu.org/software/bash/",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "bash"
+    },
+    "categories": [
+        "shell"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "i3lock",
+    "slug": "i3lock",
+    "description": "Simple screen locker for X11",
+    "git_repo": "https://github.com/i3/i3lock",
+    "website": "https://i3wm.org/i3lock/",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "i3lock",
+        "arch": "i3lock",
+        "ubuntu": "i3lock",
+        "void": "i3lock"
+    },
+    "categories": [
+        "screen-locker"
+    ]
+}

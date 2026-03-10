@@ -1,0 +1,17 @@
+{
+    "name": "Xorg",
+    "slug": "xorg",
+    "description": "X.Org display server",
+    "git_repo": "https://gitlab.freedesktop.org/xorg",
+    "website": "https://www.x.org",
+    "license": "MIT",
+    "package_names": {
+        "default": "xorg",
+        "arch": "xorg",
+        "ubuntu": "xorg",
+        "void": "xorg"
+    },
+    "categories": [
+        "display-server"
+    ]
+}

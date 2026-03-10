@@ -1,0 +1,17 @@
+{
+    "name": "Vim",
+    "slug": "vim",
+    "description": "Highly configurable text editor",
+    "git_repo": "https://github.com/vim/vim",
+    "website": "https://www.vim.org",
+    "license": "VIM",
+    "package_names": {
+        "default": "vim",
+        "arch": "vim",
+        "ubuntu": "vim",
+        "void": "vim"
+    },
+    "categories": [
+        "text-editor"
+    ]
+}

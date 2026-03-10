@@ -1,0 +1,5 @@
+{
+    "slug": "compositor",
+    "name": "Compositor",
+    "description": "Programs that manage window rendering, transparency, and visual effects on a display server."
+}

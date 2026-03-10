@@ -1,0 +1,17 @@
+{
+    "name": "surf",
+    "slug": "surf",
+    "description": "Simple web browser from suckless",
+    "git_repo": "https://git.suckless.org/surf",
+    "website": "https://surf.suckless.org",
+    "license": "MIT",
+    "package_names": {
+        "default": "surf",
+        "arch": "surf",
+        "ubuntu": "surf",
+        "void": "surf"
+    },
+    "categories": [
+        "browser"
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "slug": "hotkey-daemon",
+    "name": "Hotkey Daemon",
+    "description": "Background services that listen for and dispatch keyboard shortcuts."
+}

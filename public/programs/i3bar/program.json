@@ -1,0 +1,17 @@
+{
+    "name": "i3bar",
+    "slug": "i3bar",
+    "description": "Status bar bundled with i3 window manager",
+    "git_repo": "https://github.com/i3/i3",
+    "website": "https://i3wm.org",
+    "license": "BSD-3-Clause",
+    "package_names": {
+        "default": "i3-wm",
+        "arch": "i3-wm",
+        "ubuntu": "i3",
+        "void": "i3"
+    },
+    "categories": [
+        "status-bar"
+    ]
+}

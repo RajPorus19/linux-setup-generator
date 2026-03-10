@@ -1,0 +1,17 @@
+{
+    "name": "kitty",
+    "slug": "kitty",
+    "description": "GPU-accelerated terminal emulator",
+    "git_repo": "https://github.com/kovidgoyal/kitty",
+    "website": "https://sw.kovidgoyal.net/kitty/",
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "kitty",
+        "arch": "kitty",
+        "ubuntu": "kitty",
+        "void": "kitty"
+    },
+    "categories": [
+        "terminal"
+    ]
+}

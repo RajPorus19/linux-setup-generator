@@ -1,0 +1,5 @@
+{
+    "slug": "media-processing",
+    "name": "Media Processing",
+    "description": "Tools for encoding, decoding, or transforming audio/video streams."
+}

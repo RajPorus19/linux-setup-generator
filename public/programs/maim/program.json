@@ -1,0 +1,17 @@
+{
+    "name": "maim",
+    "slug": "maim",
+    "description": "Screenshot tool",
+    "git_repo": "https://github.com/naelstrof/maim",
+    "website": null,
+    "license": "GPL-3.0",
+    "package_names": {
+        "default": "maim",
+        "arch": "maim",
+        "ubuntu": "maim",
+        "void": "maim"
+    },
+    "categories": [
+        "screenshot"
+    ]
+}

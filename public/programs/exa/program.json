@@ -1,0 +1,17 @@
+{
+    "name": "exa",
+    "slug": "exa",
+    "description": "Modern replacement for ls",
+    "git_repo": "https://github.com/ogham/exa",
+    "website": "https://the.exa.website",
+    "license": "MIT",
+    "package_names": {
+        "default": "exa",
+        "arch": "exa",
+        "ubuntu": "exa",
+        "void": "exa"
+    },
+    "categories": [
+        "file-management"
+    ]
+}
