@@ -20,9 +20,16 @@ Everything runs in the browser. No account, no server, no data collection.
 
 ## Screenshots
 
-> _Coming soon_
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/540d8799-87d4-4177-9d1e-8601ae77eae3" /></td>
+    <td><img src="https://github.com/user-attachments/assets/3a7fb949-9d07-4069-81ed-92589adb520c" /></td>
+    <td><img src="https://github.com/user-attachments/assets/98be6bcc-9ba9-437b-a8df-1d05ddcd2443" /></td>
+    <td><img src="https://github.com/user-attachments/assets/cf0dc649-521d-43f2-b597-ed00af931623" /></td>
+  </tr>
+</table>
 
----
+
 
 ## How to use
 
