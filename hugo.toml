@@ -1,3 +1,4 @@
 baseURL = 'https://rajporus19.github.io/linux-setup-generator/'
 languageCode = 'en-us'
 title = 'Linux Setup Generator'
+ignoreFiles = ['README\.md']
