@@ -166,7 +166,7 @@ git clone https://github.com/rajporus19/linux-setup-generator.git
 cd linux-setup-generator
 
 # Start the dev server
-hugo server
+hugo server -b http://localhost:1313 -p 1313
 ```
 
 The site will be available at `http://localhost:1313/`.
