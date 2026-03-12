@@ -17,12 +17,13 @@
   <p>{{ .Description }}</p>
 </div>
 
-{{ $icons := dict "contributing" "🤝" "add-a-distro" "🐧" "add-a-program" "📦" "add-custom-install" "⚙️" }}
+{{ $icons := dict "contributing" "🤝" "add-a-distro" "🐧" "add-a-program" "📦" "add-custom-install" "⚙️" "add-a-dependency" "🔩" }}
 {{ $descs := dict
   "contributing" "How to open a pull request, report a broken package, or help improve the project."
   "add-a-distro" "Register a new Linux distribution so the generator can target it."
   "add-a-program" "Add a new app or tool to the program catalog."
-  "add-custom-install" "Handle programs that need custom install steps beyond a package manager." }}
+  "add-custom-install" "Handle programs that need custom install steps beyond a package manager."
+  "add-a-dependency" "Add build-time libs and dev packages used as prerequisites for custom installs." }}
 
 <div class="docs-cards">
   {{ range .Pages }}

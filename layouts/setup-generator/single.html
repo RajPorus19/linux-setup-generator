@@ -26,6 +26,14 @@
   {{ $categories = $categories | append (readFile (printf "content/categories/%s" .Name) | transform.Unmarshal) }}
 {{ end }}
 
+{{/* Load dependencies (build-time libs/dev packages — not shown in UI, used for dep resolution only) */}}
+{{ $dependencies := slice }}
+{{ range readDir "content/dependencies" }}
+  {{ if .IsDir }}
+    {{ $dependencies = $dependencies | append (readFile (printf "content/dependencies/%s/program.json" .Name) | transform.Unmarshal) }}
+  {{ end }}
+{{ end }}
+
 <style>
   .gen-header { margin-bottom: 2rem; }
   .gen-header h1 { margin: 0 0 0.25rem; }
@@ -176,9 +184,10 @@
 </div>
 
 <script>
-const DISTROS    = {{ $distros    | jsonify | safeJS }};
-const PROGRAMS   = {{ $programs   | jsonify | safeJS }};
-const CATEGORIES = {{ $categories | jsonify | safeJS }};
+const DISTROS      = {{ $distros      | jsonify | safeJS }};
+const PROGRAMS     = {{ $programs     | jsonify | safeJS }};
+const CATEGORIES   = {{ $categories   | jsonify | safeJS }};
+const DEPENDENCIES = {{ $dependencies | jsonify | safeJS }};
 
 const selectedPrograms = new Set();
 
@@ -276,7 +285,7 @@ async function goInstall() {
   document.getElementById("step-summary").style.display = "";
   setStep(3);
 
-  const script = await new ScriptGenerator(distro, programs).get_script();
+  const script = await new ScriptGenerator(distro, programs, DEPENDENCIES).get_script();
   const codeEl = document.getElementById("summary-script");
   codeEl.textContent = script;
   hljs.highlightElement(codeEl);

@@ -1,0 +1,6 @@
+{
+    "name": "openSUSE",
+    "slug": "opensuse",
+    "description": "openSUSE is a stable, enterprise-grade Linux distribution with excellent tooling.",
+    "install_package_command": "zypper install -y"
+}

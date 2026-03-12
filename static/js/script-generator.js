@@ -9,10 +9,20 @@ function getSiteBase() {
 }
 
 class ScriptGenerator {
-  constructor(distro, programs) {
+  constructor(distro, programs, dependencies = []) {
     this.distro = distro;
     this.programs = programs;
+    this.dependencies = dependencies;
     this.privilege_escalation_command = "sudo"; // TODO: make this configurable in a later version
+  }
+
+  // Returns { item, folder } for a given slug, searching programs then dependencies.
+  _findItem(slug) {
+    const prog = this.programs.find(p => p.slug === slug);
+    if (prog) return { item: prog, folder: 'programs' };
+    const dep = this.dependencies.find(d => d.slug === slug);
+    if (dep) return { item: dep, folder: 'dependencies' };
+    return null;
   }
 
   _retrievePackageNames() {
@@ -40,23 +50,24 @@ class ScriptGenerator {
   // Recursive DFS — resolves the full dependency tree for a given slug.
   // Fills result.order (topological install order) and result.packages (regular packages).
   // visited is shared across all calls to prevent duplicate installs and infinite loops.
+  // result.order entries are { slug, folder } objects so the fetch URL can be constructed correctly.
   _resolveDependencies(slug, visited, result) {
     if (visited.has(slug)) return;
     visited.add(slug);
 
-    const program = this.programs.find(p => p.slug === slug);
-    const deps = program?.dependencies || [];
+    const found = this._findItem(slug);
+    const deps = found?.item?.dependencies || [];
 
     for (const dep of deps) {
-      const depProgram = this.programs.find(p => p.slug === dep);
+      const depFound = this._findItem(dep);
 
-      if (!depProgram) {
-        // Not a known program slug — treat as a raw package name
+      if (!depFound) {
+        // Not a known slug — treat as a raw package name
         if (!result.packages.includes(dep)) result.packages.push(dep);
         continue;
       }
 
-      const pkgName = depProgram.package_names?.[this.distro.slug] || depProgram.package_names?.["default"];
+      const pkgName = depFound.item.package_names?.[this.distro.slug] || depFound.item.package_names?.["default"];
 
       if (pkgName === "CUSTOM_INSTALL") {
         // Recurse into this dependency before continuing (DFS post-order = topological sort)
@@ -67,7 +78,7 @@ class ScriptGenerator {
     }
 
     // Add to order only after all dependencies have been added (post-order)
-    result.order.push(slug);
+    result.order.push({ slug, folder: found?.folder || 'programs' });
   }
 
   async _get_custom_install(slug, visited) {
@@ -80,8 +91,8 @@ class ScriptGenerator {
       parts.push(this._buildPackageInstallCmd(result.packages));
     }
 
-    for (const s of result.order) {
-      const res = await fetch(`${getSiteBase()}programs/${s}/custom_install/install.sh`);
+    for (const { slug: s, folder } of result.order) {
+      const res = await fetch(`${getSiteBase()}${folder}/${s}/custom_install/install.sh`);
       if (!res.ok) continue;
       parts.push(await res.text());
     }

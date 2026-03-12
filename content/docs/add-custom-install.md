@@ -53,15 +53,16 @@ sudo apt-get install -y alacritty
 
 ## Step 3 — Declare dependencies (optional)
 
-If the install script relies on other programs that need to be present first, list them in the `dependencies` field of `program.json`:
+If the install script relies on other programs or libraries that need to be present first, list them in the `dependencies` field of `program.json`:
 
 ```json
-"dependencies": ["curl", "git"]
+"dependencies": ["curl", "git", "libssl-dev"]
 ```
 
 Each entry is either:
 
-- A **known program slug** from `content/programs/` — the generator will automatically include that program's install steps (recursively, in the correct order).
+- A **known program slug** from `content/programs/` — the generator will include that program's install steps (recursively, in the correct order).
+- A **known dependency slug** from `content/dependencies/` — for build-time libs and `-dev` packages that should not appear in the user-facing catalog. See [Add a dependency](/docs/add-a-dependency/).
 - A **raw package name** — treated as a plain package to be installed via the package manager before the custom script runs.
 
 ## How the generator handles it

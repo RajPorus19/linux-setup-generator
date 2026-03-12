@@ -1,0 +1,6 @@
+{
+    "name": "Fedora",
+    "slug": "fedora",
+    "description": "Fedora is a cutting-edge, community-supported Linux distribution sponsored by Red Hat.",
+    "install_package_command": "dnf install -y"
+}
