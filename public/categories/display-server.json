@@ -1,5 +1,0 @@
-{
-    "slug": "display-server",
-    "name": "Display Server",
-    "description": "Low-level software that manages rendering windows and input on a screen."
-}

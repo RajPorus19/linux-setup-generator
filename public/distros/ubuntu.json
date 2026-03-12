@@ -1,6 +1,0 @@
-{
-    "name": "Ubuntu",
-    "slug": "ubuntu",
-    "description": "Ubuntu is a Debian-based Linux distribution.",
-    "install_package_command": "apt-get install -y"
-}
