@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programs on My New Hugo Site</title>
+    <title>Programs on Linux Setup Generator</title>
     <link>http://localhost:1313/programs/</link>
-    <description>Recent content in Programs on My New Hugo Site</description>
+    <description>Recent content in Programs on Linux Setup Generator</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/programs/index.xml" rel="self" type="application/rss+xml" />

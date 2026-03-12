@@ -1,0 +1,121 @@
+<script>
+// Shared program browser — clickable: {{ .clickable }}
+const CLICKABLE = {{ if .clickable }}true{{ else }}false{{ end }};
+
+const catMap = {};
+CATEGORIES.forEach(c => catMap[c.slug] = c.name);
+
+let selectedCat = null;
+let currentPage = 1;
+const PAGE_SIZE = 10;
+
+function escHtml(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function buildSidebar(searchFiltered) {
+  const counts = {};
+  searchFiltered.forEach(p => (p.categories || []).forEach(c => {
+    counts[c] = (counts[c] || 0) + 1;
+  }));
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  if (selectedCat && !counts[selectedCat]) selectedCat = null;
+  document.getElementById("cat-sidebar").innerHTML = `
+    <ul class="cat-list">
+      <li class="cat-item ${!selectedCat ? "active" : ""}" onclick="filterCat(null)">
+        All <span class="cat-count">${searchFiltered.length}</span>
+      </li>
+      ${sorted.map(([slug, count]) => `
+        <li class="cat-item ${selectedCat === slug ? "active" : ""}" onclick="filterCat('${slug}')">
+          ${catMap[slug] || slug} <span class="cat-count">${count}</span>
+        </li>
+      `).join("")}
+    </ul>
+  `;
+}
+
+function filterCat(slug) {
+  selectedCat = slug;
+  currentPage = 1;
+  renderPrograms();
+}
+
+function onSearch() {
+  currentPage = 1;
+  renderPrograms();
+}
+
+function goTo(page) {
+  currentPage = page;
+  renderPrograms();
+  document.getElementById("prog-list").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPagination(total) {
+  const pag = document.getElementById("prog-pagination");
+  if (total <= 1) { pag.innerHTML = ""; return; }
+  const range = [];
+  if (total <= 7) {
+    for (let i = 1; i <= total; i++) range.push(i);
+  } else {
+    range.push(1);
+    if (currentPage > 3) range.push("…");
+    for (let i = Math.max(2, currentPage - 1); i <= Math.min(total - 1, currentPage + 1); i++) range.push(i);
+    if (currentPage < total - 2) range.push("…");
+    range.push(total);
+  }
+  let html = "";
+  if (currentPage > 1) html += `<button onclick="goTo(${currentPage - 1})">&#8592; Prev</button>`;
+  range.forEach(p => {
+    if (p === "…") html += `<span class="page-ellipsis">…</span>`;
+    else html += `<button class="${p === currentPage ? "page-active" : ""}" onclick="goTo(${p})">${p}</button>`;
+  });
+  if (currentPage < total) html += `<button onclick="goTo(${currentPage + 1})">Next &#8594;</button>`;
+  pag.innerHTML = html;
+}
+
+function renderPrograms() {
+  const query = (document.getElementById("prog-search")?.value || "").toLowerCase().trim();
+  const searchFiltered = query
+    ? PROGRAMS.filter(p =>
+        (p.name || "").toLowerCase().includes(query) ||
+        (p.description || "").toLowerCase().includes(query) ||
+        (p.categories || []).some(c => c.toLowerCase().includes(query))
+      )
+    : PROGRAMS;
+
+  buildSidebar(searchFiltered);
+
+  const list = selectedCat
+    ? searchFiltered.filter(p => (p.categories || []).includes(selectedCat))
+    : searchFiltered;
+
+  const countEl = document.getElementById("prog-count");
+  if (countEl) countEl.textContent = `${list.length} program${list.length !== 1 ? "s" : ""}`;
+
+  const total = Math.ceil(list.length / PAGE_SIZE);
+  if (currentPage > total) currentPage = Math.max(1, total);
+  const paged = list.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+  renderPagination(total);
+
+  document.getElementById("prog-list").innerHTML = paged.map(p => {
+    const isSelected = CLICKABLE && typeof selectedPrograms !== "undefined" && selectedPrograms.has(p.slug);
+    const clickAttr = CLICKABLE ? `onclick="toggleProgram('${escHtml(p.slug)}')"` : "";
+    const linkStop = CLICKABLE ? `onclick="event.stopPropagation()"` : "";
+    return `
+      <li class="program-item${isSelected ? " selected" : ""}" data-slug="${escHtml(p.slug)}" ${clickAttr}>
+        <div class="program-name"><strong>${escHtml(p.name)}</strong></div>
+        ${p.description ? `<p class="program-desc">${escHtml(p.description)}</p>` : ""}
+        <div class="program-meta">
+          ${p.license ? `<span class="badge">${escHtml(p.license)}</span>` : ""}
+          ${p.git_repo ? `<a href="${escHtml(p.git_repo)}" target="_blank" rel="noopener" class="badge badge-link" ${linkStop}>Source</a>` : ""}
+          ${p.website ? `<a href="${escHtml(p.website)}" target="_blank" rel="noopener" class="badge badge-link" ${linkStop}>Website</a>` : ""}
+        </div>
+      </li>
+    `;
+  }).join("");
+}
+
+document.addEventListener("DOMContentLoaded", () => renderPrograms());
+</script>

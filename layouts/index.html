@@ -1,3 +1,121 @@
 {{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
+
+<style>
+  .hero { text-align: center; padding: 2.5rem 1rem 2rem; }
+  .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+  .hero p { font-size: 1.1rem; color: #555; max-width: 540px; margin: 0 auto 1.75rem; }
+  .btn-hero { display: inline-block; background: #22c55e; color: #fff; border-radius: 999px; padding: 0.65rem 1.75rem; font-size: 1rem; font-weight: 700; text-decoration: none; }
+  .btn-hero:hover { background: #16a34a; text-decoration: none; }
+
+  .section-title { text-align: center; font-size: 1.3rem; font-weight: 700; margin: 2.5rem 0 1rem; }
+
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .step-card { background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem 1rem; text-align: center; }
+  .step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .step-num { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #22c55e; font-weight: 700; margin-bottom: 0.25rem; }
+  .step-card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+  .step-card p { margin: 0; font-size: 0.875rem; color: #555; }
+
+  .arrow { display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #ccc; }
+  @media (max-width: 600px) { .arrow { display: none; } }
+
+  .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .why-card { border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1rem; }
+  .why-card h3 { margin: 0 0 0.35rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem; }
+  .why-card p { margin: 0; font-size: 0.85rem; color: #555; }
+
+  .faq { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .faq-item { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.1rem; }
+  .faq-item strong { display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+  .faq-item p { margin: 0; font-size: 0.875rem; color: #555; }
+
+  .cta-bar { margin-top: 2.5rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 1.75rem 1.5rem; text-align: center; }
+  .cta-bar p { margin: 0.4rem 0 1.25rem; color: #555; font-size: 0.95rem; }
+</style>
+
+{{/* ── Hero ── */}}
+<div class="hero">
+  <h1>Set up Linux the easy way</h1>
+  <p>Pick your distro, choose your programs, and get a ready-to-run install script — no typing required.</p>
+  <a class="btn-hero" href="/setup-generator/">Get my setup script</a>
+</div>
+
+{{/* ── How it works ── */}}
+<p class="section-title">How it works</p>
+<div class="how-steps">
+  <div class="step-card">
+    <div class="step-icon">🐧</div>
+    <div class="step-num">Step 1</div>
+    <h3>Pick your distro</h3>
+    <p>Choose the Linux distribution you are running — for example Ubuntu, Void, or Arch.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">📦</div>
+    <div class="step-num">Step 2</div>
+    <h3>Choose your programs</h3>
+    <p>Browse the catalog and click the tools and apps you want to install.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">📄</div>
+    <div class="step-num">Step 3</div>
+    <h3>Get your script</h3>
+    <p>We generate a shell script with all the install commands ready to go.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">▶️</div>
+    <div class="step-num">Step 4</div>
+    <h3>Run it</h3>
+    <p>Copy the script into your terminal, or download it and run <code>bash script.sh</code>. Done!</p>
+  </div>
+</div>
+
+{{/* ── Why use this ── */}}
+<p class="section-title">Why use this?</p>
+<div class="why-cards">
+  <div class="why-card">
+    <h3>⚡ Fast</h3>
+    <p>Setting up a fresh Linux install takes minutes instead of hours of searching for commands.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔰 Beginner friendly</h3>
+    <p>No command-line knowledge needed to generate your script — just point and click.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔍 Curated catalog</h3>
+    <p>Every program in the list is hand-picked and described so you know exactly what you are installing.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔒 Nothing is sent</h3>
+    <p>Everything runs in your browser. No account, no data collection, no surprises.</p>
+  </div>
+</div>
+
+{{/* ── FAQ ── */}}
+<p class="section-title">Common questions</p>
+<div class="faq">
+  <div class="faq-item">
+    <strong>Do I need to know how to code?</strong>
+    <p>No. Just click the programs you want, then copy or download the script and run it.</p>
+  </div>
+  <div class="faq-item">
+    <strong>What is a terminal?</strong>
+    <p>The terminal is a text-based window where you type commands. On most Linux desktops you can open it by pressing <kbd>Ctrl+Alt+T</kbd>.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Will this work on my Linux?</strong>
+    <p>Pick your distro in the generator and the script will use the right install command for it automatically.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Is it safe to run the script?</strong>
+    <p>Yes. The script only installs the programs you selected using your distro's official package manager — the same tool you would use manually.</p>
+  </div>
+</div>
+
+{{/* ── CTA ── */}}
+<div class="cta-bar">
+  <strong>Ready to set up your Linux?</strong>
+  <p>It takes less than a minute to generate your script.</p>
+  <a class="btn-hero" href="/setup-generator/">Start now →</a>
+</div>
+
 {{ end }}

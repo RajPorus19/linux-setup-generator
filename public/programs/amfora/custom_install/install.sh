@@ -1,8 +1,5 @@
-#!/bin/bash
-# Custom binary installer for Amfora (Gemini terminal browser)
-# https://github.com/makeworld-the-better-one/amfora
-
-set -e
+# --- Custom Installer for Amfora ---
+echo "Amfora - installing..."
 
 LOG_PREFIX="Amfora - install:"
 REPO="makeworld-the-better-one/amfora"

@@ -1,5 +1,4 @@
 {{ define "main" }}
-<h1>Setup Generator</h1>
 
 {{/* Load distros */}}
 {{ $distros := slice }}
@@ -23,9 +22,70 @@
   {{ $categories = $categories | append (readFile (printf "content/categories/%s" .Name) | transform.Unmarshal) }}
 {{ end }}
 
+<style>
+  .gen-header { margin-bottom: 2rem; }
+  .gen-header h1 { margin: 0 0 0.25rem; }
+  .gen-header p { margin: 0; color: #555; font-size: 0.95rem; }
+
+  /* Step progress */
+  .step-progress { display: flex; align-items: center; gap: 0; margin-bottom: 2rem; }
+  .sp-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #aaa; }
+  .sp-item.active { color: #111; font-weight: 600; }
+  .sp-item.done { color: #22c55e; }
+  .sp-num { width: 1.6rem; height: 1.6rem; border-radius: 50%; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; background: #fff; }
+  .sp-item.active .sp-num { border-color: #22c55e; background: #22c55e; color: #fff; }
+  .sp-item.done .sp-num { border-color: #22c55e; background: #f0fdf4; color: #22c55e; }
+  .sp-line { flex: 1; height: 2px; background: #e5e7eb; margin: 0 0.5rem; min-width: 2rem; }
+  .sp-line.done { background: #22c55e; }
+
+  /* Step 1 */
+  .step-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.3rem; }
+  .step-sub { color: #555; font-size: 0.9rem; margin: 0 0 1.25rem; }
+
+  /* Step 2 */
+  .step2-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.85rem 1.1rem; margin-bottom: 1.25rem; }
+  .step2-info { display: flex; align-items: center; gap: 0.6rem; }
+  .step2-distro-badge { background: #dcfce7; color: #15803d; font-size: 0.8rem; font-weight: 600; padding: 0.2rem 0.65rem; border-radius: 999px; }
+  .step2-bar p { margin: 0; font-size: 0.95rem; }
+  .step2-actions { display: flex; gap: 0.5rem; align-items: center; }
+  .btn-back { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0.4rem 1rem; font-size: 0.875rem; cursor: pointer; color: #555; }
+  .btn-back:hover { background: #f5f5f5; }
+
+  /* Summary */
+  .summary-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+  .summary-header h2 { margin: 0 0 0.25rem; }
+  .summary-header p { margin: 0; color: #555; font-size: 0.9rem; }
+  .btn-restart { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0.4rem 1rem; font-size: 0.875rem; cursor: pointer; color: #555; white-space: nowrap; }
+  .btn-restart:hover { background: #f5f5f5; }
+</style>
+
+<div class="gen-header">
+  <h1>Setup Generator</h1>
+  <p>Build your personalised Linux install script in 3 steps.</p>
+</div>
+
+{{/* Step progress bar */}}
+<div class="step-progress" id="step-progress">
+  <div class="sp-item active" id="sp-1">
+    <div class="sp-num">1</div>
+    <span>Choose distro</span>
+  </div>
+  <div class="sp-line" id="sp-line-1"></div>
+  <div class="sp-item" id="sp-2">
+    <div class="sp-num">2</div>
+    <span>Pick programs</span>
+  </div>
+  <div class="sp-line" id="sp-line-2"></div>
+  <div class="sp-item" id="sp-3">
+    <div class="sp-num">3</div>
+    <span>Get script</span>
+  </div>
+</div>
+
 {{/* Step 1: Select Distro */}}
 <div id="step-select">
-  <p>Select your distro to get started:</p>
+  <p class="step-title">Which Linux distro are you using?</p>
+  <p class="step-sub">Click your distribution — this determines which install commands will be used.</p>
   <div class="distro-grid">
     {{ range $distros }}
     <div class="distro-card" data-slug="{{ .slug }}" data-name="{{ .name }}" onclick="selectDistro(this)">
@@ -36,54 +96,100 @@
     {{ end }}
   </div>
   <div class="setup-footer">
-    <button id="btn-next" class="btn-next" disabled onclick="goNext()">Next →</button>
+    <button id="btn-next" class="btn-next" disabled onclick="goNext()">Next: Pick programs →</button>
   </div>
 </div>
 
 {{/* Step 2: Choose packages */}}
 <div id="step-packages" style="display:none">
-  <div class="step2-header">
-    <p class="chosen-msg">You've chosen <strong id="chosen-name"></strong></p>
-    <button id="btn-install" class="btn-next" disabled onclick="goInstall()">Install 0 programs</button>
-  </div>
-
-  <div class="pkg-layout">
-    <aside class="cat-sidebar" id="cat-sidebar"></aside>
-    <div class="pkg-main">
-      <div class="programs-header">
-        <span id="pkg-count"></span>
-        <input id="pkg-search" type="search" placeholder="Search programs…" autocomplete="off" oninput="onSearch()">
-      </div>
-      <ul class="program-list" id="pkg-list"></ul>
-      <div id="pkg-pagination" class="pagination"></div>
+  <div class="step2-bar">
+    <div class="step2-info">
+      <p>Installing on</p>
+      <span class="step2-distro-badge" id="chosen-name"></span>
+    </div>
+    <div class="step2-actions">
+      <button class="btn-back" onclick="goBack()">← Change distro</button>
+      <button id="btn-install" class="btn-next" disabled onclick="goInstall()">Generate script →</button>
     </div>
   </div>
+  {{ partial "program-browser.html" . }}
 </div>
 
 {{/* Step 3: Summary */}}
 <div id="step-summary" style="display:none">
-  <h2 class="summary-title">Your setup</h2>
-  <p class="summary-sub">You will install the following programs on <strong id="summary-distro"></strong>:</p>
+  <div class="summary-header">
+    <div>
+      <h2>Your setup is ready</h2>
+      <p>Installing <strong id="summary-count"></strong> program(s) on <strong id="summary-distro"></strong></p>
+    </div>
+    <button class="btn-restart" onclick="restart()">↺ Start over</button>
+  </div>
+
   <div class="summary-scroll">
     <ul id="summary-list" class="summary-list"></ul>
+  </div>
+
+  <div class="setup-instructions">
+    <h3>How to run your setup script</h3>
+    <p>Your personalized install script is ready. Pick one of the two methods below:</p>
+    <div class="instruction-cards">
+      <div class="instruction-card">
+        <div class="instruction-num">1</div>
+        <div class="instruction-body">
+          <strong>Copy &amp; paste</strong>
+          <p>Click <em>Copy</em>, open a terminal on your Linux machine, paste the script with <kbd>Ctrl+Shift+V</kbd>, and press <kbd>Enter</kbd> to run it.</p>
+        </div>
+      </div>
+      <div class="instruction-card">
+        <div class="instruction-num">2</div>
+        <div class="instruction-body">
+          <strong>Download &amp; run</strong>
+          <p>Click <em>Download script.sh</em> to save the file, then open a terminal in the same folder and run:</p>
+          <pre class="inline-cmd"><code>bash script.sh</code></pre>
+        </div>
+      </div>
+    </div>
+    <p class="instruction-note">You may be asked to enter your password during installation — this is normal. The script only installs the programs you selected.</p>
+  </div>
+
+  <div id="script-spinner" class="script-spinner">
+    <div class="spinner-ring"></div>
+    <span class="spinner-label">Generating your script…</span>
+  </div>
+
+  <div id="script-output" class="code-section" style="display:none">
+    <div class="code-actions">
+      <button class="btn-code-copy" onclick="copyScript()">⧉ Copy to clipboard</button>
+      <button class="btn-code-download" onclick="downloadScript()">↓ Download script.sh</button>
+    </div>
+    <span class="code-label">bash</span>
+    <pre><code id="summary-script"></code></pre>
   </div>
 </div>
 
 <script>
-const DISTROS  = {{ $distros   | jsonify | safeJS }};
-const PROGRAMS = {{ $programs  | jsonify | safeJS }};
+const DISTROS    = {{ $distros    | jsonify | safeJS }};
+const PROGRAMS   = {{ $programs   | jsonify | safeJS }};
 const CATEGORIES = {{ $categories | jsonify | safeJS }};
 
-let selectedCat = null;
-let pkgPage = 1;
-const PKG_PAGE_SIZE = 10;
 const selectedPrograms = new Set();
+
+function setStep(n) {
+  [1, 2, 3].forEach(i => {
+    const item = document.getElementById(`sp-${i}`);
+    item.classList.remove("active", "done");
+    if (i < n) item.classList.add("done");
+    else if (i === n) item.classList.add("active");
+  });
+  [1, 2].forEach(i => {
+    document.getElementById(`sp-line-${i}`).classList.toggle("done", i < n);
+  });
+}
 
 function toggleProgram(slug) {
   if (selectedPrograms.has(slug)) selectedPrograms.delete(slug);
   else selectedPrograms.add(slug);
   updateInstallBtn();
-  // Re-render to reflect selected state without rebuilding sidebar/search
   document.querySelectorAll(".program-item[data-slug]").forEach(el => {
     el.classList.toggle("selected", selectedPrograms.has(el.dataset.slug));
   });
@@ -94,7 +200,7 @@ function updateInstallBtn() {
   const btn = document.getElementById("btn-install");
   if (!btn) return;
   btn.disabled = n === 0;
-  btn.textContent = n === 0 ? "Install 0 programs" : `Install ${n} program${n !== 1 ? "s" : ""}`;
+  btn.textContent = n === 0 ? "Generate script →" : `Generate script for ${n} program${n !== 1 ? "s" : ""} →`;
 }
 
 function selectDistro(card) {
@@ -112,134 +218,36 @@ function goNext() {
   showPackageStep();
 }
 
+function goBack() {
+  window.history.pushState({}, "", window.location.pathname);
+  document.getElementById("step-packages").style.display = "none";
+  document.getElementById("step-select").style.display = "";
+  setStep(1);
+}
+
+function restart() {
+  selectedPrograms.clear();
+  updateInstallBtn();
+  window.history.pushState({}, "", window.location.pathname);
+  document.getElementById("step-summary").style.display = "none";
+  document.getElementById("step-select").style.display = "";
+  setStep(1);
+}
+
 function showPackageStep() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("distro");
   if (!slug) return;
   const distro = DISTROS.find(d => d.slug === slug);
   if (!distro) return;
-
   document.getElementById("step-select").style.display = "none";
   document.getElementById("chosen-name").textContent = distro.name;
   document.getElementById("step-packages").style.display = "";
-
+  setStep(2);
   renderPrograms();
 }
 
-const catMap = {};
-CATEGORIES.forEach(c => catMap[c.slug] = c.name);
-
-function buildSidebar(searchFiltered) {
-  const counts = {};
-  searchFiltered.forEach(p => (p.categories || []).forEach(c => {
-    counts[c] = (counts[c] || 0) + 1;
-  }));
-
-  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-
-  // If selected category is no longer in results, reset it
-  if (selectedCat && !counts[selectedCat]) selectedCat = null;
-
-  const sidebar = document.getElementById("cat-sidebar");
-  sidebar.innerHTML = `
-    <ul class="cat-list">
-      <li class="cat-item ${!selectedCat ? "active" : ""}" onclick="filterCat(null, this)">
-        All <span class="cat-count">${searchFiltered.length}</span>
-      </li>
-      ${sorted.map(([slug, count]) => `
-        <li class="cat-item ${selectedCat === slug ? "active" : ""}" data-slug="${slug}" onclick="filterCat('${slug}', this)">
-          ${catMap[slug] || slug} <span class="cat-count">${count}</span>
-        </li>
-      `).join("")}
-    </ul>
-  `;
-}
-
-function filterCat(slug) {
-  selectedCat = slug;
-  pkgPage = 1;
-  renderPrograms();
-}
-
-function onSearch() {
-  pkgPage = 1;
-  renderPrograms();
-}
-
-function pkgGoTo(page) {
-  pkgPage = page;
-  renderPrograms();
-  document.getElementById("step-packages").scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
-function renderPrograms() {
-  const query = (document.getElementById("pkg-search")?.value || "").toLowerCase().trim();
-
-  // Search-filtered list (used for sidebar counts)
-  const searchFiltered = query
-    ? PROGRAMS.filter(p =>
-        (p.name || "").toLowerCase().includes(query) ||
-        (p.description || "").toLowerCase().includes(query) ||
-        (p.categories || []).some(c => c.toLowerCase().includes(query))
-      )
-    : PROGRAMS;
-
-  buildSidebar(searchFiltered);
-
-  // Then apply category filter for the program list
-  const list = selectedCat
-    ? searchFiltered.filter(p => (p.categories || []).includes(selectedCat))
-    : searchFiltered;
-
-  const countEl = document.getElementById("pkg-count");
-  if (countEl) countEl.textContent = `${list.length} program${list.length !== 1 ? "s" : ""}`;
-
-  const totalPages = Math.ceil(list.length / PKG_PAGE_SIZE);
-  if (pkgPage > totalPages) pkgPage = Math.max(1, totalPages);
-  const paged = list.slice((pkgPage - 1) * PKG_PAGE_SIZE, pkgPage * PKG_PAGE_SIZE);
-
-  renderPkgPagination(totalPages);
-
-  document.getElementById("pkg-list").innerHTML = paged.map(p => `
-    <li class="program-item ${selectedPrograms.has(p.slug) ? "selected" : ""}" data-slug="${escHtml(p.slug)}" onclick="toggleProgram('${escHtml(p.slug)}')">
-      <div class="program-name"><strong>${escHtml(p.name)}</strong></div>
-      ${p.description ? `<p class="program-desc">${escHtml(p.description)}</p>` : ""}
-      <div class="program-meta">
-        ${p.license ? `<span class="badge">${escHtml(p.license)}</span>` : ""}
-        ${p.git_repo ? `<a href="${escHtml(p.git_repo)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Source</a>` : ""}
-        ${p.website ? `<a href="${escHtml(p.website)}" target="_blank" rel="noopener" class="badge badge-link" onclick="event.stopPropagation()">Website</a>` : ""}
-      </div>
-    </li>
-  `).join("");
-}
-
-function renderPkgPagination(total) {
-  const pag = document.getElementById("pkg-pagination");
-  if (total <= 1) { pag.innerHTML = ""; return; }
-
-  const range = [];
-  if (total <= 7) {
-    for (let i = 1; i <= total; i++) range.push(i);
-  } else {
-    range.push(1);
-    if (pkgPage > 3) range.push("…");
-    for (let i = Math.max(2, pkgPage - 1); i <= Math.min(total - 1, pkgPage + 1); i++) range.push(i);
-    if (pkgPage < total - 2) range.push("…");
-    range.push(total);
-  }
-
-  let html = "";
-  if (pkgPage > 1) html += `<button onclick="pkgGoTo(${pkgPage - 1})">&#8592; Prev</button>`;
-  range.forEach(p => {
-    if (p === "…") html += `<span class="page-ellipsis">…</span>`;
-    else html += `<button class="${p === pkgPage ? "page-active" : ""}" onclick="pkgGoTo(${p})">${p}</button>`;
-  });
-  if (pkgPage < total) html += `<button onclick="pkgGoTo(${pkgPage + 1})">Next &#8594;</button>`;
-
-  pag.innerHTML = html;
-}
-
-function goInstall() {
+async function goInstall() {
   if (selectedPrograms.size === 0) return;
   const distroSlug = new URLSearchParams(window.location.search).get("distro");
   const distro = DISTROS.find(d => d.slug === distroSlug);
@@ -247,15 +255,41 @@ function goInstall() {
 
   document.getElementById("step-packages").style.display = "none";
   document.getElementById("summary-distro").textContent = distro ? distro.name : distroSlug;
+  document.getElementById("summary-count").textContent = programs.length;
   document.getElementById("summary-list").innerHTML = programs.map(p => `
     <li class="summary-item">${escHtml(p.name)}</li>
   `).join("");
   document.getElementById("summary-list").style.setProperty("--summary-rows", Math.min(programs.length, 3));
+  const params = new URLSearchParams(window.location.search);
+  params.set("step", "summary");
+  window.history.pushState({}, "", "?" + params.toString());
+  document.getElementById("script-spinner").style.display = "flex";
+  document.getElementById("script-output").style.display = "none";
   document.getElementById("step-summary").style.display = "";
+  setStep(3);
+
+  const script = await new ScriptGenerator(distro, programs).get_script();
+  document.getElementById("summary-script").textContent = script;
+  document.getElementById("script-spinner").style.display = "none";
+  document.getElementById("script-output").style.display = "";
 }
 
-function escHtml(s) {
-  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+function copyScript() {
+  const code = document.getElementById("summary-script").textContent;
+  navigator.clipboard.writeText(code).then(() => {
+    const btn = event.target;
+    btn.textContent = "Copied!";
+    setTimeout(() => btn.textContent = "Copy", 1500);
+  });
+}
+
+function downloadScript() {
+  const code = document.getElementById("summary-script").textContent;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([code], { type: "text/x-sh" }));
+  a.download = "script.sh";
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -263,13 +297,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("popstate", () => {
-  const slug = new URLSearchParams(window.location.search).get("distro");
-  if (slug) {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("distro");
+  const step = params.get("step");
+
+  document.getElementById("step-select").style.display = "none";
+  document.getElementById("step-packages").style.display = "none";
+  document.getElementById("step-summary").style.display = "none";
+
+  if (step === "summary" && slug) {
+    document.getElementById("step-summary").style.display = "";
+    setStep(3);
+  } else if (slug) {
     showPackageStep();
   } else {
-    document.getElementById("step-packages").style.display = "none";
     document.getElementById("step-select").style.display = "";
+    setStep(1);
   }
 });
 </script>
+
+{{ partial "program-browser-js.html" (dict "clickable" true) }}
+
 {{ end }}

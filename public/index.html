@@ -4,15 +4,20 @@
 	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My New Hugo Site</title>
+  <title>Linux Setup Generator</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem 2rem; line-height: 1.6; color: #333; }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    nav { border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: center; }
-    nav .site-title { font-weight: bold; font-size: 1.1rem; color: #333; }
-    .btn-generate { margin-left: auto; background: #22c55e; color: #fff; border: none; border-radius: 999px; padding: 0.4rem 1.1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.75rem 0; margin-bottom: 2rem; display: flex; gap: 0.5rem; align-items: center; }
+    nav .site-title { font-weight: 800; font-size: 1.05rem; color: #111; letter-spacing: -0.01em; display: flex; align-items: center; gap: 0.4rem; margin-right: 0.75rem; }
+    nav .site-title:hover { text-decoration: none; }
+    nav .site-title .logo-icon { background: #22c55e; color: #fff; border-radius: 6px; width: 1.55rem; height: 1.55rem; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
+    nav .nav-link { color: #555; font-size: 0.9rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+    nav .nav-link:hover { background: #f3f4f6; color: #111; text-decoration: none; }
+    nav .nav-link.active { color: #111; font-weight: 600; }
+    .btn-generate { margin-left: auto; background: #22c55e; color: #fff; border: none; border-radius: 8px; padding: 0.45rem 1.1rem; font-size: 0.875rem; font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; display: flex; align-items: center; gap: 0.35rem; transition: background 0.15s; }
     .btn-generate:hover { background: #16a34a; text-decoration: none; }
     h1 { margin-top: 0; }
     footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #888; font-size: 0.85rem; }
@@ -24,9 +29,9 @@
     .badge { background: #f0f0f0; border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.75rem; color: #555; }
     .badge-link { color: #0066cc; }
     .programs-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; gap: 1rem; }
-    #program-count, #pkg-count { color: #888; font-size: 0.875rem; white-space: nowrap; }
-    #program-search, #pkg-search { flex: 1; max-width: 320px; padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; outline: none; }
-    #program-search:focus, #pkg-search:focus { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
+    #program-count, #pkg-count, #prog-count { color: #888; font-size: 0.875rem; white-space: nowrap; }
+    #program-search, #pkg-search, #prog-search { flex: 1; max-width: 320px; padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; outline: none; }
+    #program-search:focus, #pkg-search:focus, #prog-search:focus { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
     .pagination { display: flex; gap: 0.35rem; align-items: center; margin-top: 1.25rem; flex-wrap: wrap; }
     .pagination button { border: 1px solid #ddd; background: #fff; border-radius: 4px; padding: 0.3rem 0.65rem; cursor: pointer; font-size: 0.875rem; color: #333; }
     .pagination button:hover { background: #f5f5f5; }
@@ -61,21 +66,167 @@
     .btn-next:not(:disabled) { background: #22c55e; cursor: pointer; }
     .btn-next:not(:disabled):hover { background: #16a34a; }
     .btn-next:disabled { cursor: not-allowed; }
+    .setup-instructions { margin-top: 2rem; padding: 1.25rem 1.5rem; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 10px; }
+    .setup-instructions h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+    .setup-instructions > p { margin: 0 0 1rem; color: #555; font-size: 0.9rem; }
+    .instruction-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    @media (max-width: 560px) { .instruction-cards { grid-template-columns: 1fr; } }
+    .instruction-card { display: flex; gap: 0.85rem; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; }
+    .instruction-num { flex-shrink: 0; width: 1.75rem; height: 1.75rem; background: #22c55e; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
+    .instruction-body { font-size: 0.875rem; }
+    .instruction-body strong { display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .instruction-body p { margin: 0 0 0.5rem; color: #555; }
+    kbd { background: #eee; border: 1px solid #ccc; border-radius: 4px; padding: 0.1rem 0.4rem; font-family: ui-monospace, monospace; font-size: 0.8rem; }
+    .inline-cmd { background: #1e1e1e; color: #d4d4d4; border-radius: 6px; padding: 0.4rem 0.75rem; margin: 0; font-size: 0.8rem; }
+    .inline-cmd code { font-family: ui-monospace, "Cascadia Code", "Fira Code", monospace; }
+    .instruction-note { margin: 0; font-size: 0.8rem; color: #888; border-top: 1px solid #e0e0e0; padding-top: 0.75rem; }
+    .script-spinner { display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 2.5rem 0; }
+    .spinner-ring { width: 2.5rem; height: 2.5rem; border: 3px solid #e5e7eb; border-top-color: #22c55e; border-radius: 50%; animation: spin 0.75s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner-label { font-size: 0.9rem; color: #555; }
+    .code-section { margin-top: 1.5rem; }
+    .code-actions { display: flex; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .btn-code-copy { display: flex; align-items: center; gap: 0.4rem; background: #22c55e; color: #fff; border: none; border-radius: 8px; padding: 0.6rem 1.25rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+    .btn-code-copy:hover { background: #16a34a; }
+    .btn-code-download { display: flex; align-items: center; gap: 0.4rem; background: #fff; color: #333; border: 1.5px solid #d1d5db; border-radius: 8px; padding: 0.6rem 1.25rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+    .btn-code-download:hover { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
+    .code-label { font-size: 0.8rem; color: #888; margin: 0 0 0.35rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
+    .code-section pre { background: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 1.25rem 1.5rem; overflow-x: auto; font-size: 0.875rem; line-height: 1.6; margin: 0; }
+    .code-section code { font-family: ui-monospace, "Cascadia Code", "Fira Code", monospace; }
   </style>
+  <script src="/js/script-generator.js"></script>
 </head>
 <body>
   <nav>
-    <a class="site-title" href="/">My New Hugo Site</a>
-    <a href="/programs/">Programs</a>
-    <a class="btn-generate" href="/setup-generator/">Generate Setup</a>
+    <a class="site-title" href="/"><span class="logo-icon">🐧</span>Linux Setup Generator</a>
+    <a class="nav-link" href="/programs/">Programs</a>
+    <a class="btn-generate" href="/setup-generator/">✦ Generate my setup</a>
   </nav>
   <main>
     
-<h1>My New Hugo Site</h1>
+
+<style>
+  .hero { text-align: center; padding: 2.5rem 1rem 2rem; }
+  .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+  .hero p { font-size: 1.1rem; color: #555; max-width: 540px; margin: 0 auto 1.75rem; }
+  .btn-hero { display: inline-block; background: #22c55e; color: #fff; border-radius: 999px; padding: 0.65rem 1.75rem; font-size: 1rem; font-weight: 700; text-decoration: none; }
+  .btn-hero:hover { background: #16a34a; text-decoration: none; }
+
+  .section-title { text-align: center; font-size: 1.3rem; font-weight: 700; margin: 2.5rem 0 1rem; }
+
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .step-card { background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem 1rem; text-align: center; }
+  .step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .step-num { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: #22c55e; font-weight: 700; margin-bottom: 0.25rem; }
+  .step-card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+  .step-card p { margin: 0; font-size: 0.875rem; color: #555; }
+
+  .arrow { display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #ccc; }
+  @media (max-width: 600px) { .arrow { display: none; } }
+
+  .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .why-card { border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1rem; }
+  .why-card h3 { margin: 0 0 0.35rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem; }
+  .why-card p { margin: 0; font-size: 0.85rem; color: #555; }
+
+  .faq { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .faq-item { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.1rem; }
+  .faq-item strong { display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+  .faq-item p { margin: 0; font-size: 0.875rem; color: #555; }
+
+  .cta-bar { margin-top: 2.5rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 1.75rem 1.5rem; text-align: center; }
+  .cta-bar p { margin: 0.4rem 0 1.25rem; color: #555; font-size: 0.95rem; }
+</style>
+
+
+<div class="hero">
+  <h1>Set up Linux the easy way</h1>
+  <p>Pick your distro, choose your programs, and get a ready-to-run install script — no typing required.</p>
+  <a class="btn-hero" href="/setup-generator/">Get my setup script</a>
+</div>
+
+
+<p class="section-title">How it works</p>
+<div class="how-steps">
+  <div class="step-card">
+    <div class="step-icon">🐧</div>
+    <div class="step-num">Step 1</div>
+    <h3>Pick your distro</h3>
+    <p>Choose the Linux distribution you are running — for example Ubuntu, Void, or Arch.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">📦</div>
+    <div class="step-num">Step 2</div>
+    <h3>Choose your programs</h3>
+    <p>Browse the catalog and click the tools and apps you want to install.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">📄</div>
+    <div class="step-num">Step 3</div>
+    <h3>Get your script</h3>
+    <p>We generate a shell script with all the install commands ready to go.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-icon">▶️</div>
+    <div class="step-num">Step 4</div>
+    <h3>Run it</h3>
+    <p>Copy the script into your terminal, or download it and run <code>bash script.sh</code>. Done!</p>
+  </div>
+</div>
+
+
+<p class="section-title">Why use this?</p>
+<div class="why-cards">
+  <div class="why-card">
+    <h3>⚡ Fast</h3>
+    <p>Setting up a fresh Linux install takes minutes instead of hours of searching for commands.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔰 Beginner friendly</h3>
+    <p>No command-line knowledge needed to generate your script — just point and click.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔍 Curated catalog</h3>
+    <p>Every program in the list is hand-picked and described so you know exactly what you are installing.</p>
+  </div>
+  <div class="why-card">
+    <h3>🔒 Nothing is sent</h3>
+    <p>Everything runs in your browser. No account, no data collection, no surprises.</p>
+  </div>
+</div>
+
+
+<p class="section-title">Common questions</p>
+<div class="faq">
+  <div class="faq-item">
+    <strong>Do I need to know how to code?</strong>
+    <p>No. Just click the programs you want, then copy or download the script and run it.</p>
+  </div>
+  <div class="faq-item">
+    <strong>What is a terminal?</strong>
+    <p>The terminal is a text-based window where you type commands. On most Linux desktops you can open it by pressing <kbd>Ctrl+Alt+T</kbd>.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Will this work on my Linux?</strong>
+    <p>Pick your distro in the generator and the script will use the right install command for it automatically.</p>
+  </div>
+  <div class="faq-item">
+    <strong>Is it safe to run the script?</strong>
+    <p>Yes. The script only installs the programs you selected using your distro's official package manager — the same tool you would use manually.</p>
+  </div>
+</div>
+
+
+<div class="cta-bar">
+  <strong>Ready to set up your Linux?</strong>
+  <p>It takes less than a minute to generate your script.</p>
+  <a class="btn-hero" href="/setup-generator/">Start now →</a>
+</div>
+
 
   </main>
   <footer>
-    <p>My New Hugo Site</p>
+    <p>Linux Setup Generator</p>
   </footer>
 </body>
 </html>
