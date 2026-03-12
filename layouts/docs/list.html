@@ -1,0 +1,36 @@
+{{ define "main" }}
+<style>
+  .docs-hero { margin-bottom: 2.5rem; }
+  .docs-hero h1 { margin: 0 0 0.5rem; }
+  .docs-hero p { margin: 0; color: #555; font-size: 1rem; }
+
+  .docs-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+  .docs-card { border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.15s, box-shadow 0.15s; display: block; }
+  .docs-card:hover { border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,0.12); text-decoration: none; }
+  .docs-card-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+  .docs-card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #111; }
+  .docs-card p { margin: 0; font-size: 0.875rem; color: #555; line-height: 1.5; }
+</style>
+
+<div class="docs-hero">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</div>
+
+{{ $icons := dict "contributing" "🤝" "add-a-distro" "🐧" "add-a-program" "📦" "add-custom-install" "⚙️" }}
+{{ $descs := dict
+  "contributing" "How to open a pull request, report a broken package, or help improve the project."
+  "add-a-distro" "Register a new Linux distribution so the generator can target it."
+  "add-a-program" "Add a new app or tool to the program catalog."
+  "add-custom-install" "Handle programs that need custom install steps beyond a package manager." }}
+
+<div class="docs-cards">
+  {{ range .Pages }}
+  <a class="docs-card" href="{{ .RelPermalink }}">
+    <div class="docs-card-icon">{{ index $icons .File.BaseFileName | default "📄" }}</div>
+    <h2>{{ .Title }}</h2>
+    <p>{{ index $descs .File.BaseFileName | default .Description }}</p>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

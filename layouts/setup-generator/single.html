@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+
 {{/* Load distros */}}
 {{ $distros := slice }}
 {{ range readDir "content/distros" }}
@@ -37,6 +41,10 @@
   .sp-item.done .sp-num { border-color: #22c55e; background: #f0fdf4; color: #22c55e; }
   .sp-line { flex: 1; height: 2px; background: #e5e7eb; margin: 0 0.5rem; min-width: 2rem; }
   .sp-line.done { background: #22c55e; }
+
+  /* Highlight.js overrides */
+  .code-section pre { background: #1e1e1e !important; }
+  .code-section .hljs { background: #1e1e1e !important; padding: 0; }
 
   /* Step 1 */
   .step-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.3rem; }
@@ -163,7 +171,7 @@
       <button class="btn-code-download" onclick="downloadScript()">↓ Download script.sh</button>
     </div>
     <span class="code-label">bash</span>
-    <pre><code id="summary-script"></code></pre>
+    <pre><code id="summary-script" class="language-bash"></code></pre>
   </div>
 </div>
 
@@ -269,7 +277,9 @@ async function goInstall() {
   setStep(3);
 
   const script = await new ScriptGenerator(distro, programs).get_script();
-  document.getElementById("summary-script").textContent = script;
+  const codeEl = document.getElementById("summary-script");
+  codeEl.textContent = script;
+  hljs.highlightElement(codeEl);
   document.getElementById("script-spinner").style.display = "none";
   document.getElementById("script-output").style.display = "";
 }
