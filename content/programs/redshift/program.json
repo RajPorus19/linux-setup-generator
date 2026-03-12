@@ -1,17 +1,19 @@
 {
-    "name": "redshift",
-    "slug": "redshift",
-    "description": "Adjusts screen color temperature based on location",
-    "git_repo": "https://github.com/jonls/redshift",
-    "website": "http://jonls.dk/redshift/",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "redshift",
-        "arch": "redshift",
-        "ubuntu": "redshift",
-        "void": "redshift"
-    },
-    "categories": [
-        "display"
-    ]
+  "name": "redshift",
+  "slug": "redshift",
+  "description": "Adjusts the color temperature of the screen based on time of day.",
+  "website": "http://jonls.dk/redshift/",
+  "git_repo": "https://github.com/jonls/redshift",
+  "license": "GPL-3.0",
+  "categories": ["x11", "utility"],
+  "package_names": {
+    "default": "redshift",
+    "arch": "redshift",
+    "ubuntu": "redshift",
+    "debian": "redshift",
+    "fedora": "redshift",
+    "opensuse": "redshift",
+    "void": "redshift",
+    "alpine": "redshift"
+  }
 }

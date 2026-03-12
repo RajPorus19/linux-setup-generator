@@ -1,17 +1,18 @@
 {
-    "name": "surf",
-    "slug": "surf",
-    "description": "Simple web browser from suckless",
-    "git_repo": "https://git.suckless.org/surf",
-    "website": "https://surf.suckless.org",
-    "license": "MIT",
-    "package_names": {
-        "default": "surf",
-        "arch": "surf",
-        "ubuntu": "surf",
-        "void": "surf"
-    },
-    "categories": [
-        "browser"
-    ]
+  "name": "surf",
+  "slug": "surf",
+  "description": "A simple web browser from suckless based on WebKit.",
+  "website": "https://surf.suckless.org/",
+  "license": "MIT",
+  "dependencies": ["libwebkit2gtk-dev", "libx11-dev"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "surf",
+    "ubuntu": "surf",
+    "debian": "surf",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "surf",
+    "alpine": "CUSTOM_INSTALL"
+  }
 }

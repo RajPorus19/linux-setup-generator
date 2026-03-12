@@ -1,18 +1,19 @@
 {
-    "name": "curl",
-    "slug": "curl",
-    "description": "Command-line tool for transferring data with URLs",
-    "git_repo": "https://github.com/curl/curl",
-    "website": "https://curl.se",
-    "license": "MIT/curl",
-    "package_names": {
-        "default": "curl",
-        "arch": "curl",
-        "ubuntu": "curl",
-        "void": "curl"
-    },
-    "categories": [
-        "network",
-        "cli"
-    ]
+  "name": "curl",
+  "slug": "curl",
+  "description": "A command-line tool and library for transferring data with URLs.",
+  "website": "https://curl.se/",
+  "git_repo": "https://github.com/curl/curl",
+  "license": "MIT",
+  "categories": ["network", "terminal"],
+  "package_names": {
+    "default": "curl",
+    "arch": "curl",
+    "ubuntu": "curl",
+    "debian": "curl",
+    "fedora": "curl",
+    "opensuse": "curl",
+    "void": "curl",
+    "alpine": "curl"
+  }
 }

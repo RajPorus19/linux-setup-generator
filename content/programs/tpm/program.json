@@ -1,18 +1,12 @@
 {
-    "name": "tpm",
-    "slug": "tpm",
-    "description": "Tmux Plugin Manager",
-    "git_repo": "https://github.com/tmux-plugins/tpm",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": null,
-        "arch": null,
-        "ubuntu": null,
-        "void": null
-    },
-    "categories": [
-        "terminal-multiplexer",
-        "plugin-manager"
-    ]
+  "name": "tpm",
+  "slug": "tpm",
+  "description": "Tmux Plugin Manager — installs and manages tmux plugins.",
+  "git_repo": "https://github.com/tmux-plugins/tpm",
+  "license": "MIT",
+  "categories": ["terminal"],
+  "dependencies": ["git", "tmux"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL"
+  }
 }

@@ -1,17 +1,18 @@
 {
-    "name": "ripgrep",
-    "slug": "ripgrep",
-    "description": "Recursively search directories with regex",
-    "git_repo": "https://github.com/BurntSushi/ripgrep",
-    "website": null,
-    "license": "MIT/Unlicense",
-    "package_names": {
-        "default": "ripgrep",
-        "arch": "ripgrep",
-        "ubuntu": "ripgrep",
-        "void": "ripgrep"
-    },
-    "categories": [
-        "search"
-    ]
+  "name": "ripgrep",
+  "slug": "ripgrep",
+  "description": "A line-oriented search tool that recursively searches directories.",
+  "git_repo": "https://github.com/BurntSushi/ripgrep",
+  "license": "MIT/Unlicense",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "ripgrep",
+    "arch": "ripgrep",
+    "ubuntu": "ripgrep",
+    "debian": "ripgrep",
+    "fedora": "ripgrep",
+    "opensuse": "ripgrep",
+    "void": "ripgrep",
+    "alpine": "ripgrep"
+  }
 }

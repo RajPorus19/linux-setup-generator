@@ -1,17 +1,18 @@
 {
-    "name": "trash-cli",
-    "slug": "trash-cli",
-    "description": "Command-line interface to the freedesktop.org trash",
-    "git_repo": "https://github.com/andreafrancia/trash-cli",
-    "website": null,
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "trash-cli",
-        "arch": "trash-cli",
-        "ubuntu": "trash-cli",
-        "void": "trash-cli"
-    },
-    "categories": [
-        "file-management"
-    ]
+  "name": "trash-cli",
+  "slug": "trash-cli",
+  "description": "A command-line interface to the FreeDesktop.org trash can.",
+  "git_repo": "https://github.com/andreafrancia/trash-cli",
+  "license": "GPL-2.0",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "trash-cli",
+    "arch": "trash-cli",
+    "ubuntu": "trash-cli",
+    "debian": "trash-cli",
+    "fedora": "trash-cli",
+    "opensuse": "python3-trash-cli",
+    "void": "trash-cli",
+    "alpine": "trash-cli"
+  }
 }

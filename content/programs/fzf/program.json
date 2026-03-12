@@ -1,18 +1,18 @@
 {
-    "name": "fzf",
-    "slug": "fzf",
-    "description": "Command-line fuzzy finder",
-    "git_repo": "https://github.com/junegunn/fzf",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": "fzf",
-        "arch": "fzf",
-        "ubuntu": "fzf",
-        "void": "fzf"
-    },
-    "categories": [
-        "search",
-        "tui"
-    ]
+  "name": "fzf",
+  "slug": "fzf",
+  "description": "A command-line fuzzy finder for files, history, and more.",
+  "git_repo": "https://github.com/junegunn/fzf",
+  "license": "MIT",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "fzf",
+    "arch": "fzf",
+    "ubuntu": "fzf",
+    "debian": "fzf",
+    "fedora": "fzf",
+    "opensuse": "fzf",
+    "void": "fzf",
+    "alpine": "fzf"
+  }
 }

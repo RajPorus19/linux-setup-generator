@@ -1,14 +1,19 @@
 {
-    "name": "Alacritty",
-    "slug": "alacritty",
-    "description": "A cross-platform, fast, GPU-accelerated terminal emulator",
-    "git_repo": "https://github.com/alacritty/alacritty",
-    "website": "https://alacritty.org/",
-    "license": "MIT",
-    "package_names": {
-        "default": "alacritty"
-    },
-    "categories": [
-        "terminal"
-    ]
+  "name": "Alacritty",
+  "slug": "alacritty",
+  "description": "A fast, GPU-accelerated terminal emulator written in Rust.",
+  "website": "https://alacritty.org/",
+  "git_repo": "https://github.com/alacritty/alacritty",
+  "license": "Apache-2.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "alacritty",
+    "arch": "alacritty",
+    "ubuntu": "alacritty",
+    "debian": "alacritty",
+    "fedora": "alacritty",
+    "opensuse": "alacritty",
+    "void": "alacritty",
+    "alpine": "alacritty"
+  }
 }

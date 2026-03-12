@@ -1,17 +1,19 @@
 {
-    "name": "st",
-    "slug": "st",
-    "description": "Simple terminal from suckless",
-    "git_repo": "https://git.suckless.org/st",
-    "website": "https://st.suckless.org",
-    "license": "MIT",
-    "package_names": {
-        "default": "st",
-        "arch": "st",
-        "ubuntu": "stterm",
-        "void": "st"
-    },
-    "categories": [
-        "terminal"
-    ]
+  "name": "st",
+  "slug": "st",
+  "description": "A simple, lightweight terminal emulator from suckless.",
+  "website": "https://st.suckless.org/",
+  "license": "MIT",
+  "categories": ["terminal"],
+  "dependencies": ["libx11-dev", "libxft-dev"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "st",
+    "ubuntu": "stterm",
+    "debian": "stterm",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "st",
+    "alpine": "CUSTOM_INSTALL"
+  }
 }

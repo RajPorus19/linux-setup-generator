@@ -1,0 +1,9 @@
+# Build maim from source on Alpine
+apk add --no-cache git cmake make g++ libx11-dev libxfixes-dev libxrandr-dev libxi-dev imlib2-dev
+git clone https://github.com/naelstrof/maim /tmp/maim-build
+mkdir -p /tmp/maim-build/build
+cd /tmp/maim-build/build
+cmake ..
+make -j$(nproc)
+sudo make install
+rm -rf /tmp/maim-build

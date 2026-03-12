@@ -1,17 +1,18 @@
 {
-    "name": "make",
-    "slug": "make",
-    "description": "GNU make build tool",
-    "git_repo": "https://git.savannah.gnu.org/cgit/make.git",
-    "website": "https://www.gnu.org/software/make/",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "make",
-        "arch": "make",
-        "ubuntu": "make",
-        "void": "make"
-    },
-    "categories": [
-        "build-tool"
-    ]
+  "name": "make",
+  "slug": "make",
+  "description": "GNU Make — a build automation tool.",
+  "website": "https://www.gnu.org/software/make/",
+  "license": "GPL-3.0",
+  "categories": ["development"],
+  "package_names": {
+    "default": "make",
+    "arch": "make",
+    "ubuntu": "make",
+    "debian": "make",
+    "fedora": "make",
+    "opensuse": "make",
+    "void": "make",
+    "alpine": "make"
+  }
 }

@@ -1,17 +1,18 @@
 {
-    "name": "i3-gaps",
-    "slug": "i3-gaps",
-    "description": "i3 fork with gaps support (now merged into i3)",
-    "git_repo": "https://github.com/Airblader/i3",
-    "website": null,
-    "license": "BSD-3-Clause",
-    "package_names": {
-        "default": "i3-gaps",
-        "arch": "i3-gaps",
-        "ubuntu": "i3-gaps",
-        "void": "i3-gaps"
-    },
-    "categories": [
-        "window-manager"
-    ]
+  "name": "i3-gaps",
+  "slug": "i3-gaps",
+  "description": "A fork of i3 window manager with gaps between windows (merged into i3 4.22+).",
+  "git_repo": "https://github.com/Airblader/i3",
+  "license": "BSD-3-Clause",
+  "categories": ["wm", "x11"],
+  "package_names": {
+    "default": "i3",
+    "arch": "i3-gaps",
+    "ubuntu": "i3-gaps",
+    "debian": "i3",
+    "fedora": "i3",
+    "opensuse": "i3",
+    "void": "i3-gaps",
+    "alpine": "i3wm"
+  }
 }

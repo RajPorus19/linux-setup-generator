@@ -1,18 +1,18 @@
 {
-    "name": "bat",
-    "slug": "bat",
-    "description": "cat clone with syntax highlighting",
-    "git_repo": "https://github.com/sharkdp/bat",
-    "website": null,
-    "license": "MIT/Apache-2.0",
-    "package_names": {
-        "default": "bat",
-        "arch": "bat",
-        "ubuntu": "bat",
-        "void": "bat"
-    },
-    "categories": [
-        "cli",
-        "pager"
-    ]
+  "name": "bat",
+  "slug": "bat",
+  "description": "A 'cat' clone with syntax highlighting and Git integration.",
+  "git_repo": "https://github.com/sharkdp/bat",
+  "license": "MIT/Apache-2.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "bat",
+    "arch": "bat",
+    "ubuntu": "bat",
+    "debian": "bat",
+    "fedora": "bat",
+    "opensuse": "bat",
+    "void": "bat",
+    "alpine": "bat"
+  }
 }

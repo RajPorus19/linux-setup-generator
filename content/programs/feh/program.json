@@ -1,17 +1,18 @@
 {
-    "name": "feh",
-    "slug": "feh",
-    "description": "Image viewer and wallpaper setter",
-    "git_repo": "https://github.com/derf/feh",
-    "website": "https://feh.finalrewind.org",
-    "license": "MIT",
-    "package_names": {
-        "default": "feh",
-        "arch": "feh",
-        "ubuntu": "feh",
-        "void": "feh"
-    },
-    "categories": [
-        "image-viewer"
-    ]
+  "name": "feh",
+  "slug": "feh",
+  "description": "A fast, lightweight image viewer for the terminal and X.",
+  "git_repo": "https://github.com/derf/feh",
+  "license": "MIT",
+  "categories": ["viewer", "x11"],
+  "package_names": {
+    "default": "feh",
+    "arch": "feh",
+    "ubuntu": "feh",
+    "debian": "feh",
+    "fedora": "feh",
+    "opensuse": "feh",
+    "void": "feh",
+    "alpine": "feh"
+  }
 }

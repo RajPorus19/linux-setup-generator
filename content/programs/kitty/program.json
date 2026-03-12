@@ -1,17 +1,19 @@
 {
-    "name": "kitty",
-    "slug": "kitty",
-    "description": "GPU-accelerated terminal emulator",
-    "git_repo": "https://github.com/kovidgoyal/kitty",
-    "website": "https://sw.kovidgoyal.net/kitty/",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "kitty",
-        "arch": "kitty",
-        "ubuntu": "kitty",
-        "void": "kitty"
-    },
-    "categories": [
-        "terminal"
-    ]
+  "name": "kitty",
+  "slug": "kitty",
+  "description": "A fast, feature-rich, GPU-based terminal emulator.",
+  "website": "https://sw.kovidgoyal.net/kitty/",
+  "git_repo": "https://github.com/kovidgoyal/kitty",
+  "license": "GPL-3.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "kitty",
+    "arch": "kitty",
+    "ubuntu": "kitty",
+    "debian": "kitty",
+    "fedora": "kitty",
+    "opensuse": "kitty",
+    "void": "kitty",
+    "alpine": "kitty"
+  }
 }

@@ -1,17 +1,18 @@
 {
-    "name": "pip",
-    "slug": "pip",
-    "description": "Python package installer",
-    "git_repo": "https://github.com/pypa/pip",
-    "website": "https://pip.pypa.io",
-    "license": "MIT",
-    "package_names": {
-        "default": "pip",
-        "arch": "python-pip",
-        "ubuntu": "python3-pip",
-        "void": "python3-pip"
-    },
-    "categories": [
-        "package-manager"
-    ]
+  "name": "pip",
+  "slug": "pip",
+  "description": "The Python package installer.",
+  "website": "https://pip.pypa.io/",
+  "license": "MIT",
+  "categories": ["development"],
+  "package_names": {
+    "default": "python3-pip",
+    "arch": "python-pip",
+    "ubuntu": "python3-pip",
+    "debian": "python3-pip",
+    "fedora": "python3-pip",
+    "opensuse": "python3-pip",
+    "void": "python3-pip",
+    "alpine": "py3-pip"
+  }
 }

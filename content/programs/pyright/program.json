@@ -1,18 +1,15 @@
 {
-    "name": "pyright",
-    "slug": "pyright",
-    "description": "Static type checker and language server for Python",
-    "git_repo": "https://github.com/microsoft/pyright",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": "pyright",
-        "arch": "pyright",
-        "ubuntu": "pyright",
-        "void": "pyright"
-    },
-    "categories": [
-        "lsp",
-        "language-server"
-    ]
+  "name": "pyright",
+  "slug": "pyright",
+  "description": "A fast Python type checker and language server by Microsoft.",
+  "git_repo": "https://github.com/microsoft/pyright",
+  "license": "MIT",
+  "categories": ["development", "lsp"],
+  "dependencies": ["npm"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "pyright",
+    "ubuntu": "pyright",
+    "void": "pyright"
+  }
 }

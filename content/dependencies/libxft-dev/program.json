@@ -1,0 +1,16 @@
+{
+  "name": "libxft-dev",
+  "slug": "libxft-dev",
+  "description": "X FreeType library development headers, used for font rendering in X11 programs.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "libxft-dev",
+    "arch": "libxft",
+    "ubuntu": "libxft-dev",
+    "debian": "libxft-dev",
+    "fedora": "libXft-devel",
+    "opensuse": "libXft-devel",
+    "void": "libXft-devel",
+    "alpine": "libxft-dev"
+  }
+}

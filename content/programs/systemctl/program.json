@@ -1,18 +1,18 @@
 {
-    "name": "systemctl",
-    "slug": "systemctl",
-    "description": "systemd service manager CLI",
-    "git_repo": "https://github.com/systemd/systemd",
-    "website": "https://systemd.io",
-    "license": "GPL-2.0+",
-    "package_names": {
-        "default": "systemd",
-        "arch": "systemd",
-        "ubuntu": "systemd",
-        "void": null
-    },
-    "categories": [
-        "system",
-        "service-manager"
-    ]
+  "name": "systemctl",
+  "slug": "systemctl",
+  "description": "The systemd service manager — controls system services.",
+  "website": "https://systemd.io/",
+  "license": "LGPL-2.1",
+  "categories": ["system"],
+  "package_names": {
+    "default": "systemd",
+    "arch": "systemd",
+    "ubuntu": "systemd",
+    "debian": "systemd",
+    "fedora": "systemd",
+    "opensuse": "systemd",
+    "void": null,
+    "alpine": null
+  }
 }

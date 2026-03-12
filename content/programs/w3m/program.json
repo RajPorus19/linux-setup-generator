@@ -1,18 +1,18 @@
 {
-    "name": "w3m",
-    "slug": "w3m",
-    "description": "Terminal web browser",
-    "git_repo": "https://github.com/tats/w3m",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": "w3m",
-        "arch": "w3m",
-        "ubuntu": "w3m",
-        "void": "w3m"
-    },
-    "categories": [
-        "browser",
-        "terminal"
-    ]
+  "name": "w3m",
+  "slug": "w3m",
+  "description": "A text-based web browser and pager.",
+  "website": "http://w3m.sourceforge.net/",
+  "license": "MIT",
+  "categories": ["browser", "terminal"],
+  "package_names": {
+    "default": "w3m",
+    "arch": "w3m",
+    "ubuntu": "w3m",
+    "debian": "w3m",
+    "fedora": "w3m",
+    "opensuse": "w3m",
+    "void": "w3m",
+    "alpine": "w3m"
+  }
 }

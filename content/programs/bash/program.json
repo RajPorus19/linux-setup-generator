@@ -1,14 +1,18 @@
 {
-    "name": "bash",
-    "slug": "bash",
-    "description": "GNU Bourne Again SHell",
-    "git_repo": "https://git.savannah.gnu.org/cgit/bash.git",
-    "website": "https://www.gnu.org/software/bash/",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "bash"
-    },
-    "categories": [
-        "shell"
-    ]
+  "name": "bash",
+  "slug": "bash",
+  "description": "The GNU Bourne Again SHell — the most common Linux shell.",
+  "website": "https://www.gnu.org/software/bash/",
+  "license": "GPL-3.0",
+  "categories": ["shell"],
+  "package_names": {
+    "default": "bash",
+    "arch": "bash",
+    "ubuntu": "bash",
+    "debian": "bash",
+    "fedora": "bash",
+    "opensuse": "bash",
+    "void": "bash",
+    "alpine": "bash"
+  }
 }

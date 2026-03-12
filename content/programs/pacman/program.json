@@ -1,17 +1,18 @@
 {
-    "name": "pacman",
-    "slug": "pacman",
-    "description": "Arch Linux package manager",
-    "git_repo": "https://gitlab.archlinux.org/pacman/pacman",
-    "website": "https://archlinux.org/pacman/",
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "pacman",
-        "arch": "pacman",
-        "ubuntu": null,
-        "void": null
-    },
-    "categories": [
-        "package-manager"
-    ]
+  "name": "pacman",
+  "slug": "pacman",
+  "description": "The package manager for Arch Linux.",
+  "website": "https://archlinux.org/pacman/",
+  "license": "GPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "pacman",
+    "arch": "pacman",
+    "ubuntu": null,
+    "debian": null,
+    "fedora": null,
+    "opensuse": null,
+    "void": null,
+    "alpine": null
+  }
 }

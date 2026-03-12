@@ -1,18 +1,18 @@
 {
-    "name": "lynx",
-    "slug": "lynx",
-    "description": "Text-mode web browser",
-    "git_repo": "https://github.com/ThomasDickey/lynx-snapshots",
-    "website": "https://lynx.browser.org",
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "lynx",
-        "arch": "lynx",
-        "ubuntu": "lynx",
-        "void": "lynx"
-    },
-    "categories": [
-        "browser",
-        "terminal"
-    ]
+  "name": "lynx",
+  "slug": "lynx",
+  "description": "A classic text-based web browser.",
+  "website": "https://lynx.browser.org/",
+  "license": "GPL-2.0",
+  "categories": ["browser", "terminal"],
+  "package_names": {
+    "default": "lynx",
+    "arch": "lynx",
+    "ubuntu": "lynx",
+    "debian": "lynx",
+    "fedora": "lynx",
+    "opensuse": "lynx",
+    "void": "lynx",
+    "alpine": "lynx"
+  }
 }

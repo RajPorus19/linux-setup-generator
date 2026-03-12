@@ -1,17 +1,19 @@
 {
-    "name": "FFmpeg",
-    "slug": "ffmpeg",
-    "description": "Multimedia framework for audio/video processing",
-    "git_repo": "https://github.com/FFmpeg/FFmpeg",
-    "website": "https://ffmpeg.org",
-    "license": "LGPL-2.1+/GPL-2.0+",
-    "package_names": {
-        "default": "ffmpeg",
-        "arch": "ffmpeg",
-        "ubuntu": "ffmpeg",
-        "void": "ffmpeg"
-    },
-    "categories": [
-        "media-processing"
-    ]
+  "name": "FFmpeg",
+  "slug": "ffmpeg",
+  "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
+  "website": "https://ffmpeg.org/",
+  "git_repo": "https://github.com/FFmpeg/FFmpeg",
+  "license": "GPL-2.0",
+  "categories": ["multimedia", "terminal"],
+  "package_names": {
+    "default": "ffmpeg",
+    "arch": "ffmpeg",
+    "ubuntu": "ffmpeg",
+    "debian": "ffmpeg",
+    "fedora": "ffmpeg",
+    "opensuse": "ffmpeg",
+    "void": "ffmpeg",
+    "alpine": "ffmpeg"
+  }
 }

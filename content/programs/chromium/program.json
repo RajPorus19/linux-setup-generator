@@ -1,17 +1,18 @@
 {
-    "name": "Chromium",
-    "slug": "chromium",
-    "description": "Open-source web browser project",
-    "git_repo": "https://chromium.googlesource.com/chromium/src",
-    "website": "https://www.chromium.org",
-    "license": "BSD-3-Clause",
-    "package_names": {
-        "default": "chromium",
-        "arch": "chromium",
-        "ubuntu": "chromium-browser",
-        "void": "chromium"
-    },
-    "categories": [
-        "browser"
-    ]
+  "name": "Chromium",
+  "slug": "chromium",
+  "description": "The open-source web browser project behind Google Chrome.",
+  "website": "https://www.chromium.org/",
+  "license": "BSD-3-Clause",
+  "categories": ["browser"],
+  "package_names": {
+    "default": "chromium",
+    "arch": "chromium",
+    "ubuntu": "chromium-browser",
+    "debian": "chromium",
+    "fedora": "chromium",
+    "opensuse": "chromium",
+    "void": "chromium",
+    "alpine": "chromium"
+  }
 }

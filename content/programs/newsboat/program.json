@@ -1,18 +1,19 @@
 {
-    "name": "newsboat",
-    "slug": "newsboat",
-    "description": "RSS/Atom feed reader for the terminal",
-    "git_repo": "https://github.com/newsboat/newsboat",
-    "website": "https://newsboat.org",
-    "license": "MIT",
-    "package_names": {
-        "default": "newsboat",
-        "arch": "newsboat",
-        "ubuntu": "newsboat",
-        "void": "newsboat"
-    },
-    "categories": [
-        "rss",
-        "tui"
-    ]
+  "name": "newsboat",
+  "slug": "newsboat",
+  "description": "An RSS/Atom feed reader for the terminal.",
+  "website": "https://newsboat.org/",
+  "git_repo": "https://github.com/newsboat/newsboat",
+  "license": "MIT",
+  "categories": ["rss", "terminal"],
+  "package_names": {
+    "default": "newsboat",
+    "arch": "newsboat",
+    "ubuntu": "newsboat",
+    "debian": "newsboat",
+    "fedora": "newsboat",
+    "opensuse": "newsboat",
+    "void": "newsboat",
+    "alpine": "newsboat"
+  }
 }

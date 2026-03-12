@@ -1,17 +1,19 @@
 {
-    "name": "Neovim",
-    "slug": "neovim",
-    "description": "Hyperextensible Vim-based text editor",
-    "git_repo": "https://github.com/neovim/neovim",
-    "website": "https://neovim.io",
-    "license": "Apache-2.0",
-    "package_names": {
-        "default": "neovim",
-        "arch": "neovim",
-        "ubuntu": "neovim",
-        "void": "neovim"
-    },
-    "categories": [
-        "text-editor"
-    ]
+  "name": "Neovim",
+  "slug": "neovim",
+  "description": "A hyperextensible Vim-based text editor.",
+  "website": "https://neovim.io/",
+  "git_repo": "https://github.com/neovim/neovim",
+  "license": "Apache-2.0",
+  "categories": ["editor"],
+  "package_names": {
+    "default": "neovim",
+    "arch": "neovim",
+    "ubuntu": "neovim",
+    "debian": "neovim",
+    "fedora": "neovim",
+    "opensuse": "neovim",
+    "void": "neovim",
+    "alpine": "neovim"
+  }
 }

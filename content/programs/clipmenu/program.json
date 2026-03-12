@@ -1,17 +1,18 @@
 {
-    "name": "clipmenu",
-    "slug": "clipmenu",
-    "description": "Clipboard management with dmenu",
-    "git_repo": "https://github.com/cdown/clipmenu",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": "clipmenu",
-        "arch": "clipmenu",
-        "ubuntu": "clipmenu",
-        "void": "clipmenu"
-    },
-    "categories": [
-        "clipboard"
-    ]
+  "name": "clipmenu",
+  "slug": "clipmenu",
+  "description": "A clipboard management using dmenu.",
+  "git_repo": "https://github.com/cdown/clipmenu",
+  "license": "Public Domain",
+  "categories": ["utility", "x11"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "clipmenu",
+    "ubuntu": "clipmenu",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "clipmenu",
+    "alpine": "CUSTOM_INSTALL"
+  }
 }

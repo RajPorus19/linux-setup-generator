@@ -1,17 +1,18 @@
 {
-    "name": "NetworkManager",
-    "slug": "networkmanager",
-    "description": "Network management daemon",
-    "git_repo": "https://github.com/NetworkManager/NetworkManager",
-    "website": "https://networkmanager.dev",
-    "license": "GPL-2.0+",
-    "package_names": {
-        "default": "networkmanager",
-        "arch": "networkmanager",
-        "ubuntu": "network-manager",
-        "void": "NetworkManager"
-    },
-    "categories": [
-        "network"
-    ]
+  "name": "NetworkManager",
+  "slug": "networkmanager",
+  "description": "A network management tool that makes network configuration automatic.",
+  "website": "https://networkmanager.dev/",
+  "license": "GPL-2.0",
+  "categories": ["network", "system"],
+  "package_names": {
+    "default": "networkmanager",
+    "arch": "networkmanager",
+    "ubuntu": "network-manager",
+    "debian": "network-manager",
+    "fedora": "NetworkManager",
+    "opensuse": "NetworkManager",
+    "void": "NetworkManager",
+    "alpine": "networkmanager"
+  }
 }

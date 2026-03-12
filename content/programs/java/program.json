@@ -1,18 +1,18 @@
 {
-    "name": "Java",
-    "slug": "java",
-    "description": "Java runtime and development kit (OpenJDK)",
-    "git_repo": "https://github.com/openjdk/jdk",
-    "website": "https://openjdk.org",
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "jdk-openjdk",
-        "arch": "jdk-openjdk",
-        "ubuntu": "default-jdk",
-        "void": "openjdk"
-    },
-    "categories": [
-        "runtime",
-        "language"
-    ]
+  "name": "Java",
+  "slug": "java",
+  "description": "OpenJDK — the open-source Java development kit.",
+  "website": "https://openjdk.org/",
+  "license": "GPL-2.0",
+  "categories": ["development", "runtime"],
+  "package_names": {
+    "default": "jdk-openjdk",
+    "arch": "jdk-openjdk",
+    "ubuntu": "default-jdk",
+    "debian": "default-jdk",
+    "fedora": "java-latest-openjdk",
+    "opensuse": "java-21-openjdk",
+    "void": "openjdk",
+    "alpine": "openjdk21"
+  }
 }

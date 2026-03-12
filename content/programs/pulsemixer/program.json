@@ -1,17 +1,18 @@
 {
-    "name": "pulsemixer",
-    "slug": "pulsemixer",
-    "description": "TUI PulseAudio mixer",
-    "git_repo": "https://github.com/GeorgeFilipkin/pulsemixer",
-    "website": null,
-    "license": "MIT",
-    "package_names": {
-        "default": "pulsemixer",
-        "arch": "pulsemixer",
-        "ubuntu": "pulsemixer",
-        "void": "pulsemixer"
-    },
-    "categories": [
-        "audio"
-    ]
+  "name": "pulsemixer",
+  "slug": "pulsemixer",
+  "description": "A CLI and curses mixer for PulseAudio.",
+  "git_repo": "https://github.com/GeorgeFilipkin/pulsemixer",
+  "license": "MIT",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "pulsemixer",
+    "arch": "pulsemixer",
+    "ubuntu": "pulsemixer",
+    "debian": "pulsemixer",
+    "fedora": "pulsemixer",
+    "opensuse": "pulsemixer",
+    "void": "pulsemixer",
+    "alpine": "pulsemixer"
+  }
 }

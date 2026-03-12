@@ -1,17 +1,18 @@
 {
-    "name": "dbus",
-    "slug": "dbus",
-    "description": "Message bus system",
-    "git_repo": "https://gitlab.freedesktop.org/dbus/dbus",
-    "website": "https://www.freedesktop.org/wiki/Software/dbus/",
-    "license": "GPL-2.0/AFL-2.1",
-    "package_names": {
-        "default": "dbus",
-        "arch": "dbus",
-        "ubuntu": "dbus",
-        "void": "dbus"
-    },
-    "categories": [
-        "system"
-    ]
+  "name": "dbus",
+  "slug": "dbus",
+  "description": "A message bus system for inter-process communication.",
+  "website": "https://www.freedesktop.org/wiki/Software/dbus/",
+  "license": "GPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "dbus",
+    "arch": "dbus",
+    "ubuntu": "dbus",
+    "debian": "dbus",
+    "fedora": "dbus",
+    "opensuse": "dbus-1",
+    "void": "dbus",
+    "alpine": "dbus"
+  }
 }

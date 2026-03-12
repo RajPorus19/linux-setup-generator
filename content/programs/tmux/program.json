@@ -1,17 +1,18 @@
 {
-    "name": "tmux",
-    "slug": "tmux",
-    "description": "Terminal multiplexer",
-    "git_repo": "https://github.com/tmux/tmux",
-    "website": "https://github.com/tmux/tmux",
-    "license": "ISC",
-    "package_names": {
-        "default": "tmux",
-        "arch": "tmux",
-        "ubuntu": "tmux",
-        "void": "tmux"
-    },
-    "categories": [
-        "terminal-multiplexer"
-    ]
+  "name": "tmux",
+  "slug": "tmux",
+  "description": "A terminal multiplexer — run multiple terminal sessions in one window.",
+  "git_repo": "https://github.com/tmux/tmux",
+  "license": "ISC",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "tmux",
+    "arch": "tmux",
+    "ubuntu": "tmux",
+    "debian": "tmux",
+    "fedora": "tmux",
+    "opensuse": "tmux",
+    "void": "tmux",
+    "alpine": "tmux"
+  }
 }

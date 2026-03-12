@@ -1,17 +1,18 @@
 {
-    "name": "i3blocks",
-    "slug": "i3blocks",
-    "description": "Scriptable status bar for i3bar",
-    "git_repo": "https://github.com/vivien/i3blocks",
-    "website": "https://vivien.github.io/i3blocks/",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "i3blocks",
-        "arch": "i3blocks",
-        "ubuntu": "i3blocks",
-        "void": "i3blocks"
-    },
-    "categories": [
-        "status-bar"
-    ]
+  "name": "i3blocks",
+  "slug": "i3blocks",
+  "description": "A feed generator for the i3bar status bar.",
+  "git_repo": "https://github.com/vivien/i3blocks",
+  "license": "GPL-3.0",
+  "categories": ["x11", "desktop"],
+  "package_names": {
+    "default": "i3blocks",
+    "arch": "i3blocks",
+    "ubuntu": "i3blocks",
+    "debian": "i3blocks",
+    "fedora": "i3blocks",
+    "opensuse": "i3blocks",
+    "void": "i3blocks",
+    "alpine": "CUSTOM_INSTALL"
+  }
 }

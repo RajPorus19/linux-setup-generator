@@ -1,0 +1,16 @@
+{
+  "name": "Go",
+  "slug": "golang",
+  "description": "The Go programming language toolchain, required to build Go programs from source.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "golang",
+    "arch": "go",
+    "ubuntu": "golang",
+    "debian": "golang",
+    "fedora": "golang",
+    "opensuse": "go",
+    "void": "go",
+    "alpine": "go"
+  }
+}

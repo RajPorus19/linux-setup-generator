@@ -1,18 +1,17 @@
 {
-    "name": "less",
-    "slug": "less",
-    "description": "Terminal pager",
-    "git_repo": "https://github.com/gwsw/less",
-    "website": "https://www.greenwoodsoftware.com/less/",
-    "license": "GPL-3.0/BSD-2-Clause",
-    "package_names": {
-        "default": "less",
-        "arch": "less",
-        "ubuntu": "less",
-        "void": "less"
-    },
-    "categories": [
-        "cli",
-        "pager"
-    ]
+  "name": "less",
+  "slug": "less",
+  "description": "A terminal pager program that allows backward movement in a file.",
+  "license": "GPL-3.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "less",
+    "arch": "less",
+    "ubuntu": "less",
+    "debian": "less",
+    "fedora": "less",
+    "opensuse": "less",
+    "void": "less",
+    "alpine": "less"
+  }
 }

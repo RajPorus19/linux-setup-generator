@@ -1,17 +1,19 @@
 {
-    "name": "dunst",
-    "slug": "dunst",
-    "description": "Customizable notification daemon",
-    "git_repo": "https://github.com/dunst-project/dunst",
-    "website": "https://dunst-project.org",
-    "license": "BSD-3-Clause",
-    "package_names": {
-        "default": "dunst",
-        "arch": "dunst",
-        "ubuntu": "dunst",
-        "void": "dunst"
-    },
-    "categories": [
-        "notifications"
-    ]
+  "name": "dunst",
+  "slug": "dunst",
+  "description": "A lightweight, customizable notification daemon.",
+  "website": "https://dunst-project.org/",
+  "git_repo": "https://github.com/dunst-project/dunst",
+  "license": "BSD-3-Clause",
+  "categories": ["x11", "system"],
+  "package_names": {
+    "default": "dunst",
+    "arch": "dunst",
+    "ubuntu": "dunst",
+    "debian": "dunst",
+    "fedora": "dunst",
+    "opensuse": "dunst",
+    "void": "dunst",
+    "alpine": "dunst"
+  }
 }

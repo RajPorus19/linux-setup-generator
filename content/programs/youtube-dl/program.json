@@ -1,17 +1,18 @@
 {
-    "name": "youtube-dl",
-    "slug": "youtube-dl",
-    "description": "Download videos from YouTube and other sites",
-    "git_repo": "https://github.com/ytdl-org/youtube-dl",
-    "website": "https://youtube-dl.org",
-    "license": "Unlicense",
-    "package_names": {
-        "default": "youtube-dl",
-        "arch": "youtube-dl",
-        "ubuntu": "youtube-dl",
-        "void": "youtube-dl"
-    },
-    "categories": [
-        "media-downloader"
-    ]
+  "name": "youtube-dl",
+  "slug": "youtube-dl",
+  "description": "A command-line tool to download videos from YouTube and other sites.",
+  "git_repo": "https://github.com/ytdl-org/youtube-dl",
+  "license": "Unlicense",
+  "categories": ["multimedia", "terminal"],
+  "package_names": {
+    "default": "youtube-dl",
+    "arch": "youtube-dl",
+    "ubuntu": "youtube-dl",
+    "debian": "youtube-dl",
+    "fedora": "youtube-dl",
+    "opensuse": "youtube-dl",
+    "void": "youtube-dl",
+    "alpine": "youtube-dl"
+  }
 }

@@ -1,17 +1,18 @@
 {
-    "name": "i3status",
-    "slug": "i3status",
-    "description": "Status bar generator for i3bar and swaybar",
-    "git_repo": "https://github.com/i3/i3status",
-    "website": "https://i3wm.org/i3status/",
-    "license": "BSD-3-Clause",
-    "package_names": {
-        "default": "i3status",
-        "arch": "i3status",
-        "ubuntu": "i3status",
-        "void": "i3status"
-    },
-    "categories": [
-        "status-bar"
-    ]
+  "name": "i3status",
+  "slug": "i3status",
+  "description": "A small program for generating a status bar for i3bar or dzen2.",
+  "git_repo": "https://github.com/i3/i3status",
+  "license": "BSD-3-Clause",
+  "categories": ["x11", "desktop"],
+  "package_names": {
+    "default": "i3status",
+    "arch": "i3status",
+    "ubuntu": "i3status",
+    "debian": "i3status",
+    "fedora": "i3status",
+    "opensuse": "i3status",
+    "void": "i3status",
+    "alpine": "i3status"
+  }
 }

@@ -1,18 +1,18 @@
 {
-    "name": "ncmpcpp",
-    "slug": "ncmpcpp",
-    "description": "Ncurses-based MPD client",
-    "git_repo": "https://github.com/ncmpcpp/ncmpcpp",
-    "website": null,
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "ncmpcpp",
-        "arch": "ncmpcpp",
-        "ubuntu": "ncmpcpp",
-        "void": "ncmpcpp"
-    },
-    "categories": [
-        "music",
-        "tui"
-    ]
+  "name": "ncmpcpp",
+  "slug": "ncmpcpp",
+  "description": "A fully featured ncurses-based MPD client.",
+  "git_repo": "https://github.com/ncmpcpp/ncmpcpp",
+  "license": "GPL-2.0",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "ncmpcpp",
+    "arch": "ncmpcpp",
+    "ubuntu": "ncmpcpp",
+    "debian": "ncmpcpp",
+    "fedora": "ncmpcpp",
+    "opensuse": "ncmpcpp",
+    "void": "ncmpcpp",
+    "alpine": "ncmpcpp"
+  }
 }

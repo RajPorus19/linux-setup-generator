@@ -1,17 +1,18 @@
 {
-    "name": "Xorg",
-    "slug": "xorg",
-    "description": "X.Org display server",
-    "git_repo": "https://gitlab.freedesktop.org/xorg",
-    "website": "https://www.x.org",
-    "license": "MIT",
-    "package_names": {
-        "default": "xorg",
-        "arch": "xorg",
-        "ubuntu": "xorg",
-        "void": "xorg"
-    },
-    "categories": [
-        "display-server"
-    ]
+  "name": "Xorg",
+  "slug": "xorg",
+  "description": "The X Window System display server.",
+  "website": "https://www.x.org/",
+  "license": "MIT",
+  "categories": ["x11", "system"],
+  "package_names": {
+    "default": "xorg",
+    "arch": "xorg",
+    "ubuntu": "xorg",
+    "debian": "xorg",
+    "fedora": "xorg-x11-server-Xorg",
+    "opensuse": "xorg-x11-server",
+    "void": "xorg",
+    "alpine": "xorg-server"
+  }
 }

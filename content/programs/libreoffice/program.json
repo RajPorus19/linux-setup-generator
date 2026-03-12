@@ -1,17 +1,18 @@
 {
-    "name": "LibreOffice",
-    "slug": "libreoffice",
-    "description": "Free and open-source office suite",
-    "git_repo": "https://git.libreoffice.org/core",
-    "website": "https://www.libreoffice.org",
-    "license": "MPL-2.0",
-    "package_names": {
-        "default": "libreoffice",
-        "arch": "libreoffice-fresh",
-        "ubuntu": "libreoffice",
-        "void": "libreoffice"
-    },
-    "categories": [
-        "office"
-    ]
+  "name": "LibreOffice",
+  "slug": "libreoffice",
+  "description": "A free and open-source office productivity suite.",
+  "website": "https://www.libreoffice.org/",
+  "license": "MPL-2.0",
+  "categories": ["office"],
+  "package_names": {
+    "default": "libreoffice",
+    "arch": "libreoffice-fresh",
+    "ubuntu": "libreoffice",
+    "debian": "libreoffice",
+    "fedora": "libreoffice",
+    "opensuse": "libreoffice",
+    "void": "libreoffice",
+    "alpine": "libreoffice"
+  }
 }

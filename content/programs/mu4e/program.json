@@ -1,17 +1,19 @@
 {
-    "name": "mu4e",
-    "slug": "mu4e",
-    "description": "Email client for Emacs (part of mu)",
-    "git_repo": "https://github.com/djcb/mu",
-    "website": "https://www.djcbsoftware.nl/code/mu/mu4e.html",
-    "license": "GPL-3.0",
-    "package_names": {
-        "default": "mu",
-        "arch": "mu",
-        "ubuntu": "maildir-utils",
-        "void": "mu"
-    },
-    "categories": [
-        "email"
-    ]
+  "name": "mu4e",
+  "slug": "mu4e",
+  "description": "An Emacs-based e-mail client using mu for fast maildir searching.",
+  "website": "https://www.djcbsoftware.nl/code/mu/mu4e.html",
+  "git_repo": "https://github.com/djcb/mu",
+  "license": "GPL-3.0",
+  "categories": ["email"],
+  "package_names": {
+    "default": "mu",
+    "arch": "mu",
+    "ubuntu": "maildir-utils",
+    "debian": "maildir-utils",
+    "fedora": "maildir-utils",
+    "opensuse": "mu",
+    "void": "mu",
+    "alpine": "mu"
+  }
 }

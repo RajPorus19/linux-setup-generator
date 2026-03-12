@@ -1,0 +1,16 @@
+{
+  "name": "libx11-dev",
+  "slug": "libx11-dev",
+  "description": "X11 client-side library development headers.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "libx11-dev",
+    "arch": "libx11",
+    "ubuntu": "libx11-dev",
+    "debian": "libx11-dev",
+    "fedora": "libX11-devel",
+    "opensuse": "libX11-devel",
+    "void": "libX11-devel",
+    "alpine": "libx11-dev"
+  }
+}

@@ -1,18 +1,18 @@
 {
-    "name": "virtualenv",
-    "slug": "virtualenv",
-    "description": "Tool to create isolated Python environments",
-    "git_repo": "https://github.com/pypa/virtualenv",
-    "website": "https://virtualenv.pypa.io",
-    "license": "MIT",
-    "package_names": {
-        "default": "virtualenv",
-        "arch": "python-virtualenv",
-        "ubuntu": "python3-virtualenv",
-        "void": "python3-virtualenv"
-    },
-    "categories": [
-        "python",
-        "environment-manager"
-    ]
+  "name": "virtualenv",
+  "slug": "virtualenv",
+  "description": "Creates isolated Python environments.",
+  "website": "https://virtualenv.pypa.io/",
+  "license": "MIT",
+  "categories": ["development"],
+  "package_names": {
+    "default": "python3-virtualenv",
+    "arch": "python-virtualenv",
+    "ubuntu": "python3-virtualenv",
+    "debian": "python3-virtualenv",
+    "fedora": "python3-virtualenv",
+    "opensuse": "python3-virtualenv",
+    "void": "python3-virtualenv",
+    "alpine": "py3-virtualenv"
+  }
 }

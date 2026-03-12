@@ -1,17 +1,18 @@
 {
-    "name": "PCManFM",
-    "slug": "pcmanfm",
-    "description": "Fast and lightweight file manager",
-    "git_repo": "https://github.com/lxde/pcmanfm",
-    "website": null,
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "pcmanfm",
-        "arch": "pcmanfm",
-        "ubuntu": "pcmanfm",
-        "void": "pcmanfm"
-    },
-    "categories": [
-        "file-manager"
-    ]
+  "name": "PCManFM",
+  "slug": "pcmanfm",
+  "description": "A fast and lightweight file manager.",
+  "git_repo": "https://github.com/lxde/pcmanfm",
+  "license": "GPL-2.0",
+  "categories": ["file-manager"],
+  "package_names": {
+    "default": "pcmanfm",
+    "arch": "pcmanfm",
+    "ubuntu": "pcmanfm",
+    "debian": "pcmanfm",
+    "fedora": "pcmanfm",
+    "opensuse": "pcmanfm",
+    "void": "pcmanfm",
+    "alpine": "pcmanfm"
+  }
 }

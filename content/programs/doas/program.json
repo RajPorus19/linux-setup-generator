@@ -1,18 +1,18 @@
 {
-    "name": "doas",
-    "slug": "doas",
-    "description": "Lightweight sudo alternative from OpenBSD",
-    "git_repo": "https://github.com/Duncaen/OpenDoas",
-    "website": null,
-    "license": "ISC",
-    "package_names": {
-        "default": "opendoas",
-        "arch": "opendoas",
-        "ubuntu": "opendoas",
-        "void": "opendoas"
-    },
-    "categories": [
-        "system",
-        "privilege-escalation"
-    ]
+  "name": "doas",
+  "slug": "doas",
+  "description": "A minimal alternative to sudo from OpenBSD.",
+  "git_repo": "https://github.com/Duncaen/OpenDoas",
+  "license": "ISC",
+  "categories": ["system", "security"],
+  "package_names": {
+    "default": "opendoas",
+    "arch": "opendoas",
+    "ubuntu": "opendoas",
+    "debian": "opendoas",
+    "fedora": "opendoas",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "opendoas",
+    "alpine": "doas"
+  }
 }

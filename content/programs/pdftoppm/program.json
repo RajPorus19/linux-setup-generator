@@ -1,17 +1,18 @@
 {
-    "name": "pdftoppm",
-    "slug": "pdftoppm",
-    "description": "PDF to PPM/PNG/JPEG converter (part of poppler)",
-    "git_repo": "https://gitlab.freedesktop.org/poppler/poppler",
-    "website": "https://poppler.freedesktop.org",
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "poppler",
-        "arch": "poppler",
-        "ubuntu": "poppler-utils",
-        "void": "poppler-utils"
-    },
-    "categories": [
-        "document-processing"
-    ]
+  "name": "pdftoppm",
+  "slug": "pdftoppm",
+  "description": "Converts PDF pages to images — part of the poppler utilities.",
+  "website": "https://poppler.freedesktop.org/",
+  "license": "GPL-2.0",
+  "categories": ["utility"],
+  "package_names": {
+    "default": "poppler-utils",
+    "arch": "poppler",
+    "ubuntu": "poppler-utils",
+    "debian": "poppler-utils",
+    "fedora": "poppler-utils",
+    "opensuse": "poppler-tools",
+    "void": "poppler-utils",
+    "alpine": "poppler-utils"
+  }
 }

@@ -1,17 +1,17 @@
 {
-    "name": "wmctrl",
-    "slug": "wmctrl",
-    "description": "Command-line tool to interact with EWMH/NetWM window managers",
-    "git_repo": "http://tripie.sweb.cz/utils/wmctrl/",
-    "website": null,
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "wmctrl",
-        "arch": "wmctrl",
-        "ubuntu": "wmctrl",
-        "void": "wmctrl"
-    },
-    "categories": [
-        "window-management"
-    ]
+  "name": "wmctrl",
+  "slug": "wmctrl",
+  "description": "A command-line tool to interact with an EWMH/NetWM compatible X Window Manager.",
+  "license": "GPL-2.0",
+  "categories": ["x11", "terminal"],
+  "package_names": {
+    "default": "wmctrl",
+    "arch": "wmctrl",
+    "ubuntu": "wmctrl",
+    "debian": "wmctrl",
+    "fedora": "wmctrl",
+    "opensuse": "wmctrl",
+    "void": "wmctrl",
+    "alpine": "wmctrl"
+  }
 }

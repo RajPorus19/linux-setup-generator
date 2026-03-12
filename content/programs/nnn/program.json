@@ -1,17 +1,18 @@
 {
-    "name": "nnn",
-    "slug": "nnn",
-    "description": "Fast and featureful terminal file manager",
-    "git_repo": "https://github.com/jarun/nnn",
-    "website": null,
-    "license": "BSD-2-Clause",
-    "package_names": {
-        "default": "nnn",
-        "arch": "nnn",
-        "ubuntu": "nnn",
-        "void": "nnn"
-    },
-    "categories": [
-        "file-manager"
-    ]
+  "name": "nnn",
+  "slug": "nnn",
+  "description": "A full-featured terminal file manager.",
+  "git_repo": "https://github.com/jarun/nnn",
+  "license": "BSD-2-Clause",
+  "categories": ["file-manager", "terminal"],
+  "package_names": {
+    "default": "nnn",
+    "arch": "nnn",
+    "ubuntu": "nnn",
+    "debian": "nnn",
+    "fedora": "nnn",
+    "opensuse": "nnn",
+    "void": "nnn",
+    "alpine": "nnn"
+  }
 }

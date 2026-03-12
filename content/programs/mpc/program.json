@@ -1,18 +1,18 @@
 {
-    "name": "mpc",
-    "slug": "mpc",
-    "description": "Command-line MPD client",
-    "git_repo": "https://github.com/MusicPlayerDaemon/mpc",
-    "website": null,
-    "license": "GPL-2.0",
-    "package_names": {
-        "default": "mpc",
-        "arch": "mpc",
-        "ubuntu": "mpc",
-        "void": "mpc"
-    },
-    "categories": [
-        "music",
-        "cli"
-    ]
+  "name": "mpc",
+  "slug": "mpc",
+  "description": "A command-line client for the Music Player Daemon.",
+  "website": "https://www.musicpd.org/clients/mpc/",
+  "license": "GPL-2.0",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "mpc",
+    "arch": "mpc",
+    "ubuntu": "mpc",
+    "debian": "mpc",
+    "fedora": "mpc",
+    "opensuse": "mpc",
+    "void": "mpc",
+    "alpine": "mpc"
+  }
 }
