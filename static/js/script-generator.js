@@ -1,3 +1,13 @@
+function getSiteBase() {
+  const path = window.location.pathname;
+  const knownPages = ['/setup-generator/', '/programs/'];
+  for (const page of knownPages) {
+    const idx = path.indexOf(page);
+    if (idx !== -1) return path.slice(0, idx) + '/';
+  }
+  return '/';
+}
+
 class ScriptGenerator {
   constructor(distro, programs) {
     this.distro = distro;
@@ -23,22 +33,73 @@ class ScriptGenerator {
   }
 
   _buildPackageInstallCmd(packageNames) {
+    if (!packageNames.length) return "";
     return `${this.privilege_escalation_command} ${this.distro.install_package_command} ${packageNames.join(" ")}`;
   }
 
-  async _get_custom_install(slug) {
+  // Recursive DFS — resolves the full dependency tree for a given slug.
+  // Fills result.order (topological install order) and result.packages (regular packages).
+  // visited is shared across all calls to prevent duplicate installs and infinite loops.
+  _resolveDependencies(slug, visited, result) {
+    if (visited.has(slug)) return;
+    visited.add(slug);
+
     const program = this.programs.find(p => p.slug === slug);
-    const customScript = await fetch(`/programs/${slug}/custom_install/install.sh`).then(r => r.text());
-    if (program?.dependencies?.length) {
-      const packageInstallCmd = this._buildPackageInstallCmd(program.dependencies);
-      return packageInstallCmd + "\n" + customScript;
+    const deps = program?.dependencies || [];
+
+    for (const dep of deps) {
+      const depProgram = this.programs.find(p => p.slug === dep);
+
+      if (!depProgram) {
+        // Not a known program slug — treat as a raw package name
+        if (!result.packages.includes(dep)) result.packages.push(dep);
+        continue;
+      }
+
+      const pkgName = depProgram.package_names?.[this.distro.slug] || depProgram.package_names?.["default"];
+
+      if (pkgName === "CUSTOM_INSTALL") {
+        // Recurse into this dependency before continuing (DFS post-order = topological sort)
+        this._resolveDependencies(dep, visited, result);
+      } else if (pkgName && !result.packages.includes(pkgName)) {
+        result.packages.push(pkgName);
+      }
     }
-    return customScript;
+
+    // Add to order only after all dependencies have been added (post-order)
+    result.order.push(slug);
+  }
+
+  async _get_custom_install(slug, visited) {
+    const result = { order: [], packages: [] };
+    this._resolveDependencies(slug, visited, result);
+
+    const parts = [];
+
+    if (result.packages.length) {
+      parts.push(this._buildPackageInstallCmd(result.packages));
+    }
+
+    for (const s of result.order) {
+      const res = await fetch(`${getSiteBase()}programs/${s}/custom_install/install.sh`);
+      if (!res.ok) continue;
+      parts.push(await res.text());
+    }
+
+    return parts.join("\n");
   }
 
   async _custom_installs(customSlugs) {
-    const scripts = await Promise.all(customSlugs.map(slug => this._get_custom_install(slug)));
-    return scripts.join("\n");
+    // Shared visited set ensures no slug is installed twice across all custom installs
+    const visited = new Set();
+    const parts = [];
+
+    for (const slug of customSlugs) {
+      const script = await this._get_custom_install(slug, visited);
+      if (script) parts.push(script);
+    }
+
+    return parts.join("\n");
   }
 
   _script_header() {
