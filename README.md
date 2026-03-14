@@ -2,7 +2,7 @@
 
 A browser-based tool that generates a personalised Linux install script in a few clicks — no terminal knowledge required.
 
-**Live site:** [https://rajporus19.github.io/linux-setup-generator/](https://linux-setup-generator.online/)
+**Live site:** [linux-setup-generator.online](https://linux-setup-generator.online/)
 
 ---
 
