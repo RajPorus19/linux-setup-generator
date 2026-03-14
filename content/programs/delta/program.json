@@ -5,7 +5,10 @@
   "website": "https://dandavison.github.io/delta/",
   "git_repo": "https://github.com/dandavison/delta",
   "license": "MIT",
-  "categories": ["development", "terminal"],
+  "categories": [
+    "development",
+    "terminal"
+  ],
   "package_names": {
     "default": "git-delta",
     "arch": "git-delta",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "delta",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

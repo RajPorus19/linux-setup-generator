@@ -5,7 +5,10 @@
   "website": "https://github.com/sharkdp/hexyl",
   "git_repo": "https://github.com/sharkdp/hexyl",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "hexyl",
     "arch": "hexyl",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "hexyl",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

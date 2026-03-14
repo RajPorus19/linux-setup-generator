@@ -5,7 +5,10 @@
   "website": "https://httpie.io/",
   "git_repo": "https://github.com/httpie/cli",
   "license": "BSD-3-Clause",
-  "categories": ["internet", "terminal"],
+  "categories": [
+    "internet",
+    "terminal"
+  ],
   "package_names": {
     "default": "httpie",
     "arch": "python-httpie",
@@ -15,5 +18,9 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "httpie",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "pip"
+  ],
+  "logo": "/programs/httpie/logo.png"
 }

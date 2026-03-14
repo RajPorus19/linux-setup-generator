@@ -4,7 +4,10 @@
   "description": "A simple X hotkey daemon.",
   "git_repo": "https://github.com/baskerville/sxhkd",
   "license": "BSD-2-Clause",
-  "categories": ["x11", "utility"],
+  "categories": [
+    "x11",
+    "utility"
+  ],
   "package_names": {
     "default": "sxhkd",
     "arch": "sxhkd",
@@ -14,5 +17,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "sxhkd",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "git"
+  ]
 }

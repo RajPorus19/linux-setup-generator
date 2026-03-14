@@ -5,7 +5,10 @@
   "website": "https://just.systems/",
   "git_repo": "https://github.com/casey/just",
   "license": "CC0",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "just",
     "arch": "just",
@@ -15,5 +18,9 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "just",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ],
+  "logo": "/programs/just/logo.png"
 }

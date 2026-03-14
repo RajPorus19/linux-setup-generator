@@ -5,7 +5,10 @@
   "website": "https://clementtsang.github.io/bottom/",
   "git_repo": "https://github.com/ClementTsang/bottom",
   "license": "MIT",
-  "categories": ["system", "terminal"],
+  "categories": [
+    "system",
+    "terminal"
+  ],
   "package_names": {
     "default": "bottom",
     "arch": "bottom",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "bottom",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

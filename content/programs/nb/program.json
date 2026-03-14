@@ -5,7 +5,10 @@
   "website": "https://xwmx.github.io/nb/",
   "git_repo": "https://github.com/xwmx/nb",
   "license": "MIT",
-  "categories": ["productivity", "terminal"],
+  "categories": [
+    "productivity",
+    "terminal"
+  ],
   "package_names": {
     "default": "nb",
     "arch": "nb",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "curl"
+  ]
 }

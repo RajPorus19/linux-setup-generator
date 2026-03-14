@@ -4,8 +4,14 @@
   "description": "A simple, lightweight terminal emulator from suckless.",
   "website": "https://st.suckless.org/",
   "license": "MIT",
-  "categories": ["terminal"],
-  "dependencies": ["libx11-dev", "libxft-dev"],
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "libx11-dev",
+    "libxft-dev",
+    "git"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "st",

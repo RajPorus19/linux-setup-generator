@@ -5,7 +5,10 @@
   "website": "https://github.com/orf/gping",
   "git_repo": "https://github.com/orf/gping",
   "license": "MIT",
-  "categories": ["network", "terminal"],
+  "categories": [
+    "network",
+    "terminal"
+  ],
   "package_names": {
     "default": "gping",
     "arch": "gping",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "gping",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

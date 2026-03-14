@@ -5,7 +5,10 @@
   "website": "https://github.com/imsnif/bandwhich",
   "git_repo": "https://github.com/imsnif/bandwhich",
   "license": "MIT",
-  "categories": ["network", "terminal"],
+  "categories": [
+    "network",
+    "terminal"
+  ],
   "package_names": {
     "default": "bandwhich",
     "arch": "bandwhich",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "bandwhich",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

@@ -5,7 +5,10 @@
   "website": "https://github.com/ajeetdsouza/zoxide",
   "git_repo": "https://github.com/ajeetdsouza/zoxide",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "zoxide",
     "arch": "zoxide",
@@ -15,5 +18,8 @@
     "opensuse": "zoxide",
     "void": "zoxide",
     "alpine": "zoxide"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

@@ -5,7 +5,10 @@
   "website": "https://github.com/gokcehan/lf",
   "git_repo": "https://github.com/gokcehan/lf",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "lf",
     "arch": "lf",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "lf",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "golang"
+  ]
 }

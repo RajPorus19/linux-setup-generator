@@ -5,7 +5,10 @@
   "website": "https://github.com/skim-rs/skim",
   "git_repo": "https://github.com/skim-rs/skim",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "skim",
     "arch": "skim",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "skim",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

@@ -5,7 +5,10 @@
   "website": "https://github.com/extrawurst/gitui",
   "git_repo": "https://github.com/extrawurst/gitui",
   "license": "MIT",
-  "categories": ["development", "terminal"],
+  "categories": [
+    "development",
+    "terminal"
+  ],
   "package_names": {
     "default": "gitui",
     "arch": "gitui",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "gitui",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

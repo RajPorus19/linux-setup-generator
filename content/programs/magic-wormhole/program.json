@@ -5,7 +5,10 @@
   "website": "https://github.com/magic-wormhole/magic-wormhole",
   "git_repo": "https://github.com/magic-wormhole/magic-wormhole",
   "license": "MIT",
-  "categories": ["internet", "terminal"],
+  "categories": [
+    "internet",
+    "terminal"
+  ],
   "package_names": {
     "default": "magic-wormhole",
     "arch": "magic-wormhole",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "pip"
+  ]
 }

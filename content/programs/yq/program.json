@@ -5,7 +5,10 @@
   "website": "https://mikefarah.gitbook.io/yq/",
   "git_repo": "https://github.com/mikefarah/yq",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "yq",
     "arch": "yq",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "yq",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "golang"
+  ]
 }

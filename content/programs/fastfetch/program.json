@@ -5,7 +5,10 @@
   "website": "https://github.com/fastfetch-cli/fastfetch",
   "git_repo": "https://github.com/fastfetch-cli/fastfetch",
   "license": "MIT",
-  "categories": ["system", "terminal"],
+  "categories": [
+    "system",
+    "terminal"
+  ],
   "package_names": {
     "default": "fastfetch",
     "arch": "fastfetch",
@@ -15,5 +18,9 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "fastfetch",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "git-dep",
+    "cmake"
+  ]
 }

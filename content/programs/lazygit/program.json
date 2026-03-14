@@ -5,7 +5,10 @@
   "website": "https://github.com/jesseduffield/lazygit",
   "git_repo": "https://github.com/jesseduffield/lazygit",
   "license": "MIT",
-  "categories": ["development", "terminal"],
+  "categories": [
+    "development",
+    "terminal"
+  ],
   "package_names": {
     "default": "lazygit",
     "arch": "lazygit",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "lazygit",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "golang"
+  ]
 }

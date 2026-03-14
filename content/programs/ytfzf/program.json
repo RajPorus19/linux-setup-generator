@@ -11,7 +11,8 @@
   "dependencies": [
     "curl",
     "fzf",
-    "mpv"
+    "mpv",
+    "git"
   ],
   "package_names": {
     "default": "CUSTOM_INSTALL",

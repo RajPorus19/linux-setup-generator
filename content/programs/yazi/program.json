@@ -5,7 +5,10 @@
   "website": "https://yazi-rs.github.io/",
   "git_repo": "https://github.com/sxyazi/yazi",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "yazi",
     "arch": "yazi",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "yazi",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

@@ -5,7 +5,10 @@
   "website": "https://zellij.dev/",
   "git_repo": "https://github.com/zellij-org/zellij",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "zellij",
     "arch": "zellij",
@@ -15,5 +18,8 @@
     "opensuse": "zellij",
     "void": "zellij",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

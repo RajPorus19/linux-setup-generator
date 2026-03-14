@@ -5,7 +5,10 @@
   "website": "https://asciinema.org/",
   "git_repo": "https://github.com/asciinema/asciinema",
   "license": "GPL-3.0",
-  "categories": ["terminal", "fun"],
+  "categories": [
+    "terminal",
+    "fun"
+  ],
   "package_names": {
     "default": "asciinema",
     "arch": "asciinema",
@@ -15,5 +18,6 @@
     "opensuse": "asciinema",
     "void": "asciinema",
     "alpine": "asciinema"
-  }
+  },
+  "logo": "/programs/asciinema/logo.png"
 }

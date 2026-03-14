@@ -5,7 +5,10 @@
   "website": "https://github.com/dalance/procs",
   "git_repo": "https://github.com/dalance/procs",
   "license": "MIT",
-  "categories": ["system", "terminal"],
+  "categories": [
+    "system",
+    "terminal"
+  ],
   "package_names": {
     "default": "procs",
     "arch": "procs",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "procs",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

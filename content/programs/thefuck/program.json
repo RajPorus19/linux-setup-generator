@@ -5,7 +5,10 @@
   "website": "https://github.com/nvbn/thefuck",
   "git_repo": "https://github.com/nvbn/thefuck",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "thefuck",
     "arch": "thefuck",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "thefuck",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "pip"
+  ]
 }

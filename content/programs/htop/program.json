@@ -5,7 +5,10 @@
   "website": "https://htop.dev/",
   "git_repo": "https://github.com/htop-dev/htop",
   "license": "GPL-2.0",
-  "categories": ["system", "terminal"],
+  "categories": [
+    "system",
+    "terminal"
+  ],
   "package_names": {
     "default": "htop",
     "arch": "htop",
@@ -15,5 +18,6 @@
     "opensuse": "htop",
     "void": "htop",
     "alpine": "htop"
-  }
+  },
+  "logo": "/programs/htop/logo.png"
 }

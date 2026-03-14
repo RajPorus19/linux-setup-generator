@@ -5,7 +5,10 @@
   "website": "https://github.com/sharkdp/hyperfine",
   "git_repo": "https://github.com/sharkdp/hyperfine",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "hyperfine",
     "arch": "hyperfine",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "hyperfine",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ]
 }

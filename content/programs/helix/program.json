@@ -5,7 +5,10 @@
   "website": "https://helix-editor.com/",
   "git_repo": "https://github.com/helix-editor/helix",
   "license": "MPL-2.0",
-  "categories": ["editor", "terminal"],
+  "categories": [
+    "editor",
+    "terminal"
+  ],
   "package_names": {
     "default": "helix",
     "arch": "helix",
@@ -15,5 +18,10 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "helix",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo",
+    "git"
+  ],
+  "logo": "/programs/helix/logo.png"
 }

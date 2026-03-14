@@ -1,0 +1,16 @@
+{
+  "name": "CMake",
+  "slug": "cmake",
+  "description": "Cross-platform build system generator, required to build C/C++ projects from source.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "cmake",
+    "arch": "cmake",
+    "ubuntu": "cmake",
+    "debian": "cmake",
+    "fedora": "cmake",
+    "opensuse": "cmake",
+    "void": "cmake",
+    "alpine": "cmake"
+  }
+}

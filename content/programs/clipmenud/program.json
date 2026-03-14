@@ -4,7 +4,10 @@
   "description": "The daemon component of clipmenu for managing clipboard history.",
   "git_repo": "https://github.com/cdown/clipmenu",
   "license": "Public Domain",
-  "categories": ["utility", "x11"],
+  "categories": [
+    "utility",
+    "x11"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "clipmenu",
@@ -14,5 +17,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "clipmenu",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "git"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "git (build dep)",
+  "slug": "git-dep",
+  "description": "Git version control system, required to clone source code repositories.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "git",
+    "arch": "git",
+    "ubuntu": "git",
+    "debian": "git",
+    "fedora": "git",
+    "opensuse": "git",
+    "void": "git",
+    "alpine": "git"
+  }
+}

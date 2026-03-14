@@ -5,7 +5,10 @@
   "website": "https://starship.rs/",
   "git_repo": "https://github.com/starship/starship",
   "license": "ISC",
-  "categories": ["terminal", "shell"],
+  "categories": [
+    "terminal",
+    "shell"
+  ],
   "package_names": {
     "default": "starship",
     "arch": "starship",
@@ -15,5 +18,9 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "starship",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "cargo"
+  ],
+  "logo": "/programs/starship/logo.png"
 }

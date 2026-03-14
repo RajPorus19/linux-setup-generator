@@ -5,7 +5,10 @@
   "website": "https://www.visidata.org/",
   "git_repo": "https://github.com/saulpw/visidata",
   "license": "GPL-3.0",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "visidata",
     "arch": "visidata",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "pip"
+  ]
 }

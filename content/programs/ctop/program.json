@@ -5,7 +5,10 @@
   "website": "https://ctop.sh/",
   "git_repo": "https://github.com/bcicen/ctop",
   "license": "MIT",
-  "categories": ["devops", "terminal"],
+  "categories": [
+    "devops",
+    "terminal"
+  ],
   "package_names": {
     "default": "ctop",
     "arch": "ctop",
@@ -15,5 +18,8 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "dependencies": [
+    "golang"
+  ]
 }
