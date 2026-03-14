@@ -1,0 +1,22 @@
+{
+  "name": "Audacity",
+  "slug": "audacity",
+  "description": "Free, cross-platform software for recording and editing sounds.",
+  "website": "https://www.audacityteam.org/",
+  "git_repo": "https://github.com/audacity/audacity",
+  "license": "GPL-2.0",
+  "categories": [
+    "audio"
+  ],
+  "package_names": {
+    "default": "audacity",
+    "arch": "audacity",
+    "ubuntu": "audacity",
+    "debian": "audacity",
+    "fedora": "audacity",
+    "opensuse": "audacity",
+    "void": "audacity",
+    "alpine": "audacity"
+  },
+  "logo": "/programs/audacity/logo.png"
+}

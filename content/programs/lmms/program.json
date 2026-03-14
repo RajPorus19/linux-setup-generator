@@ -1,0 +1,23 @@
+{
+  "name": "LMMS",
+  "slug": "lmms",
+  "description": "Free cross-platform music production software.",
+  "website": "https://lmms.io/",
+  "git_repo": "https://github.com/LMMS/lmms",
+  "license": "GPL-2.0",
+  "categories": [
+    "audio",
+    "music"
+  ],
+  "package_names": {
+    "default": "lmms",
+    "arch": "lmms",
+    "ubuntu": "lmms",
+    "debian": "lmms",
+    "fedora": "lmms",
+    "opensuse": "lmms",
+    "void": "lmms",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/lmms/logo.png"
+}

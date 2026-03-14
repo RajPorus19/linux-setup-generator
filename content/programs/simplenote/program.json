@@ -1,0 +1,25 @@
+{
+  "name": "Simplenote",
+  "slug": "simplenote",
+  "description": "Lightweight note-taking app available everywhere.",
+  "website": "https://simplenote.com/",
+  "git_repo": "https://github.com/Automattic/simplenote-electron",
+  "license": "GPL-2.0",
+  "categories": [
+    "productivity"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "simplenote-electron-bin",
+    "arch": "simplenote-electron-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/simplenote/logo.png"
+}

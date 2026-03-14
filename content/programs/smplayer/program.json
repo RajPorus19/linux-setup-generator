@@ -1,0 +1,19 @@
+{
+  "name": "SMPlayer",
+  "slug": "smplayer",
+  "description": "Free media player with built-in codecs.",
+  "website": "https://www.smplayer.info/",
+  "git_repo": "https://github.com/smplayer-dev/smplayer",
+  "license": "GPL-2.0",
+  "categories": ["media-player"],
+  "package_names": {
+    "default": "smplayer",
+    "arch": "smplayer",
+    "ubuntu": "smplayer",
+    "debian": "smplayer",
+    "fedora": "smplayer",
+    "opensuse": "smplayer",
+    "void": "smplayer",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

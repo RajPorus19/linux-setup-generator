@@ -1,0 +1,20 @@
+{
+  "name": "Ungit",
+  "slug": "ungit",
+  "description": "Clean and intuitive web-based Git UI.",
+  "website": "https://github.com/FredrikNoren/ungit",
+  "git_repo": "https://github.com/FredrikNoren/ungit",
+  "license": "MIT",
+  "categories": ["development", "version-control"],
+  "dependencies": ["npm"],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

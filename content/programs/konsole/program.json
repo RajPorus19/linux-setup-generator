@@ -1,0 +1,19 @@
+{
+  "name": "Konsole",
+  "slug": "konsole",
+  "description": "Terminal emulator for the KDE desktop environment.",
+  "website": "https://konsole.kde.org/",
+  "git_repo": "https://github.com/KDE/konsole",
+  "license": "GPL-2.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "konsole",
+    "arch": "konsole",
+    "ubuntu": "konsole",
+    "debian": "konsole",
+    "fedora": "konsole",
+    "opensuse": "konsole",
+    "void": "konsole",
+    "alpine": "konsole"
+  }
+}

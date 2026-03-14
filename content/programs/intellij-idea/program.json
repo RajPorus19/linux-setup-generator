@@ -1,0 +1,25 @@
+{
+  "name": "IntelliJ IDEA",
+  "slug": "intellij-idea",
+  "description": "Powerful IDE for JVM languages (IntelliJ IDEA Community Edition).",
+  "website": "https://www.jetbrains.com/idea/",
+  "license": "Apache-2.0",
+  "categories": [
+    "ide",
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "intellij-idea-community-edition",
+    "arch": "intellij-idea-community-edition",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/intellij-idea/logo.png"
+}

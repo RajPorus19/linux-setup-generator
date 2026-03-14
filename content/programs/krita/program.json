@@ -1,0 +1,22 @@
+{
+  "name": "Krita",
+  "slug": "krita",
+  "description": "Free and open source digital painting software.",
+  "website": "https://krita.org/",
+  "git_repo": "https://github.com/KDE/krita",
+  "license": "GPL-3.0",
+  "categories": [
+    "image-processing"
+  ],
+  "package_names": {
+    "default": "krita",
+    "arch": "krita",
+    "ubuntu": "krita",
+    "debian": "krita",
+    "fedora": "krita",
+    "opensuse": "krita",
+    "void": "krita",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/krita/logo.png"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Docker",
+  "slug": "docker",
+  "description": "Platform for developing, shipping and running applications in containers.",
+  "website": "https://www.docker.com/",
+  "git_repo": "https://github.com/docker/docker-ce",
+  "license": "Apache-2.0",
+  "categories": [
+    "devops",
+    "system"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "docker",
+    "arch": "docker",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "docker",
+    "opensuse": "docker",
+    "void": "docker",
+    "alpine": "docker"
+  },
+  "logo": "/programs/docker/logo.png"
+}

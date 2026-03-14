@@ -1,0 +1,19 @@
+{
+  "name": "GNOME Boxes",
+  "slug": "gnome-boxes",
+  "description": "Easy to use application for viewing, accessing and managing virtual machines.",
+  "website": "https://apps.gnome.org/Boxes/",
+  "git_repo": "https://gitlab.gnome.org/GNOME/gnome-boxes",
+  "license": "GPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "gnome-boxes",
+    "arch": "gnome-boxes",
+    "ubuntu": "gnome-boxes",
+    "debian": "gnome-boxes",
+    "fedora": "gnome-boxes",
+    "opensuse": "gnome-boxes",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

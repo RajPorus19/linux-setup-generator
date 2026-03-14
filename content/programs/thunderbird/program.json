@@ -1,0 +1,21 @@
+{
+  "name": "Thunderbird",
+  "slug": "thunderbird",
+  "description": "Free email application that's easy to set up and customize.",
+  "website": "https://www.thunderbird.net/",
+  "license": "MPL-2.0",
+  "categories": [
+    "email"
+  ],
+  "package_names": {
+    "default": "thunderbird",
+    "arch": "thunderbird",
+    "ubuntu": "thunderbird",
+    "debian": "thunderbird",
+    "fedora": "thunderbird",
+    "opensuse": "MozillaThunderbird",
+    "void": "thunderbird",
+    "alpine": "thunderbird"
+  },
+  "logo": "/programs/thunderbird/logo.png"
+}

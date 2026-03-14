@@ -1,0 +1,19 @@
+{
+  "name": "Ghostwriter",
+  "slug": "ghostwriter",
+  "description": "Cross-platform, aesthetic, distraction-free Markdown editor.",
+  "website": "https://ghostwriter.kde.org/",
+  "git_repo": "https://github.com/KDE/ghostwriter",
+  "license": "GPL-3.0",
+  "categories": ["editor", "markdown"],
+  "package_names": {
+    "default": "ghostwriter",
+    "arch": "ghostwriter",
+    "ubuntu": "ghostwriter",
+    "debian": "ghostwriter",
+    "fedora": "ghostwriter",
+    "opensuse": "ghostwriter",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

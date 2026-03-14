@@ -1,0 +1,19 @@
+{
+  "name": "Audacious",
+  "slug": "audacious",
+  "description": "Lightweight and feature-rich audio player.",
+  "website": "https://audacious-media-player.org/",
+  "git_repo": "https://github.com/audacious-media-player/audacious",
+  "license": "BSD-2-Clause",
+  "categories": ["audio", "media-player"],
+  "package_names": {
+    "default": "audacious",
+    "arch": "audacious",
+    "ubuntu": "audacious",
+    "debian": "audacious",
+    "fedora": "audacious",
+    "opensuse": "audacious",
+    "void": "audacious",
+    "alpine": "audacious"
+  }
+}

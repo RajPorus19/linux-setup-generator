@@ -1,0 +1,22 @@
+{
+  "name": "Telegram Desktop",
+  "slug": "telegram-desktop",
+  "description": "Fast and secure cloud-based messaging app.",
+  "website": "https://telegram.org/",
+  "git_repo": "https://github.com/telegramdesktop/tdesktop",
+  "license": "GPL-3.0",
+  "categories": [
+    "communication"
+  ],
+  "package_names": {
+    "default": "telegram-desktop",
+    "arch": "telegram-desktop",
+    "ubuntu": "telegram-desktop",
+    "debian": "telegram-desktop",
+    "fedora": "telegram-desktop",
+    "opensuse": "telegram-desktop",
+    "void": "telegram-desktop",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/telegram-desktop/logo.png"
+}

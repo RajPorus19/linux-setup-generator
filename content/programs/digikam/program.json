@@ -1,0 +1,18 @@
+{
+  "name": "digiKam",
+  "slug": "digikam",
+  "description": "Free and open source digital photo management application.",
+  "website": "https://www.digikam.org/",
+  "license": "GPL-2.0",
+  "categories": ["image-processing"],
+  "package_names": {
+    "default": "digikam",
+    "arch": "digikam",
+    "ubuntu": "digikam",
+    "debian": "digikam",
+    "fedora": "digikam",
+    "opensuse": "digikam",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

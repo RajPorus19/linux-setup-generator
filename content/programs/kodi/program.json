@@ -1,0 +1,22 @@
+{
+  "name": "Kodi",
+  "slug": "kodi",
+  "description": "Free and open source media player application.",
+  "website": "https://kodi.tv/",
+  "git_repo": "https://github.com/xbmc/xbmc",
+  "license": "GPL-2.0",
+  "categories": [
+    "media-player"
+  ],
+  "package_names": {
+    "default": "kodi",
+    "arch": "kodi",
+    "ubuntu": "kodi",
+    "debian": "kodi",
+    "fedora": "kodi",
+    "opensuse": "kodi",
+    "void": "kodi",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/kodi/logo.png"
+}

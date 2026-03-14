@@ -1,0 +1,19 @@
+{
+  "name": "DB Browser for SQLite",
+  "slug": "sqlitebrowser",
+  "description": "High quality, visual, open source tool for SQLite databases.",
+  "website": "https://sqlitebrowser.org/",
+  "git_repo": "https://github.com/sqlitebrowser/sqlitebrowser",
+  "license": "GPL-3.0",
+  "categories": ["development"],
+  "package_names": {
+    "default": "sqlitebrowser",
+    "arch": "sqlitebrowser",
+    "ubuntu": "sqlitebrowser",
+    "debian": "sqlitebrowser",
+    "fedora": "sqlitebrowser",
+    "opensuse": "sqlitebrowser",
+    "void": "sqlitebrowser",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

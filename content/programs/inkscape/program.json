@@ -1,0 +1,22 @@
+{
+  "name": "Inkscape",
+  "slug": "inkscape",
+  "description": "Professional vector graphics editor.",
+  "website": "https://inkscape.org/",
+  "git_repo": "https://github.com/inkscape/inkscape",
+  "license": "GPL-2.0",
+  "categories": [
+    "image-processing"
+  ],
+  "package_names": {
+    "default": "inkscape",
+    "arch": "inkscape",
+    "ubuntu": "inkscape",
+    "debian": "inkscape",
+    "fedora": "inkscape",
+    "opensuse": "inkscape",
+    "void": "inkscape",
+    "alpine": "inkscape"
+  },
+  "logo": "/programs/inkscape/logo.png"
+}

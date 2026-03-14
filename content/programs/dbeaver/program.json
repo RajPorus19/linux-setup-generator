@@ -1,0 +1,25 @@
+{
+  "name": "DBeaver",
+  "slug": "dbeaver",
+  "description": "Free universal database tool and SQL client.",
+  "website": "https://dbeaver.io/",
+  "git_repo": "https://github.com/dbeaver/dbeaver",
+  "license": "Apache-2.0",
+  "categories": [
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "dbeaver",
+    "arch": "dbeaver",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/dbeaver/logo.png"
+}

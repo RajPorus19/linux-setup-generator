@@ -1,0 +1,22 @@
+{
+  "name": "Ardour",
+  "slug": "ardour",
+  "description": "Digital audio workstation for recording, editing and mixing.",
+  "website": "https://ardour.org/",
+  "git_repo": "https://github.com/Ardour/ardour",
+  "license": "GPLv2",
+  "categories": [
+    "audio"
+  ],
+  "package_names": {
+    "default": "ardour",
+    "arch": "ardour",
+    "ubuntu": "ardour",
+    "debian": "ardour",
+    "fedora": "ardour",
+    "opensuse": "ardour",
+    "void": "ardour",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/ardour/logo.png"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Steam",
+  "slug": "steam",
+  "description": "Digital distribution platform for video games.",
+  "website": "https://store.steampowered.com/",
+  "license": "proprietary",
+  "categories": [
+    "game"
+  ],
+  "package_names": {
+    "default": "steam",
+    "arch": "steam",
+    "ubuntu": "steam",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "steam",
+    "opensuse": "steam",
+    "void": "steam",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/steam/logo.png"
+}

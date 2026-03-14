@@ -1,0 +1,19 @@
+{
+  "name": "Virt Manager",
+  "slug": "virt-manager",
+  "description": "Graphical tool for managing virtual machines via libvirt.",
+  "website": "https://virt-manager.org/",
+  "git_repo": "https://github.com/virt-manager/virt-manager",
+  "license": "GPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "virt-manager",
+    "arch": "virt-manager",
+    "ubuntu": "virt-manager",
+    "debian": "virt-manager",
+    "fedora": "virt-manager",
+    "opensuse": "virt-manager",
+    "void": "virt-manager",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Pidgin",
+  "slug": "pidgin",
+  "description": "Chat program that lets you log into multiple chat networks simultaneously.",
+  "website": "https://www.pidgin.im/",
+  "license": "GPL-2.0",
+  "categories": ["communication"],
+  "package_names": {
+    "default": "pidgin",
+    "arch": "pidgin",
+    "ubuntu": "pidgin",
+    "debian": "pidgin",
+    "fedora": "pidgin",
+    "opensuse": "pidgin",
+    "void": "pidgin",
+    "alpine": "pidgin"
+  }
+}

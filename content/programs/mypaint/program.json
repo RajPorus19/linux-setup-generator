@@ -1,0 +1,19 @@
+{
+  "name": "MyPaint",
+  "slug": "mypaint",
+  "description": "Fast and simple painting app for artists.",
+  "website": "http://mypaint.org/",
+  "git_repo": "https://github.com/mypaint/mypaint",
+  "license": "GPL-2.0",
+  "categories": ["image-processing"],
+  "package_names": {
+    "default": "mypaint",
+    "arch": "mypaint",
+    "ubuntu": "mypaint",
+    "debian": "mypaint",
+    "fedora": "mypaint",
+    "opensuse": "mypaint",
+    "void": "mypaint",
+    "alpine": "mypaint"
+  }
+}

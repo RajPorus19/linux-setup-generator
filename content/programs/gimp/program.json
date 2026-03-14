@@ -1,0 +1,22 @@
+{
+  "name": "GIMP",
+  "slug": "gimp",
+  "description": "Free and open source image editor.",
+  "website": "https://www.gimp.org/",
+  "git_repo": "https://github.com/GNOME/gimp",
+  "license": "GPL-3.0",
+  "categories": [
+    "image-processing"
+  ],
+  "package_names": {
+    "default": "gimp",
+    "arch": "gimp",
+    "ubuntu": "gimp",
+    "debian": "gimp",
+    "fedora": "gimp",
+    "opensuse": "gimp",
+    "void": "gimp",
+    "alpine": "gimp"
+  },
+  "logo": "/programs/gimp/logo.png"
+}

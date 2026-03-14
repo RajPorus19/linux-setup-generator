@@ -1,0 +1,24 @@
+{
+  "name": "Vivaldi",
+  "slug": "vivaldi",
+  "description": "Powerful, personal and flexible web browser.",
+  "website": "https://vivaldi.com/",
+  "license": "proprietary",
+  "categories": [
+    "browser"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "vivaldi",
+    "arch": "vivaldi",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/vivaldi/logo.png"
+}

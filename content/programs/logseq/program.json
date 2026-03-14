@@ -1,0 +1,26 @@
+{
+  "name": "Logseq",
+  "slug": "logseq",
+  "description": "Privacy-first platform for knowledge management and collaboration.",
+  "website": "https://logseq.com/",
+  "git_repo": "https://github.com/logseq/logseq",
+  "license": "AGPL-3.0",
+  "categories": [
+    "productivity",
+    "markdown"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "logseq-desktop-bin",
+    "arch": "logseq-desktop-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/logseq/logo.png"
+}

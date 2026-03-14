@@ -1,0 +1,22 @@
+{
+  "name": "Nextcloud",
+  "slug": "nextcloud",
+  "description": "Free, open source file sync and cloud storage client.",
+  "website": "https://nextcloud.com/",
+  "git_repo": "https://github.com/nextcloud/desktop",
+  "license": "AGPL-3.0",
+  "categories": [
+    "internet"
+  ],
+  "package_names": {
+    "default": "nextcloud-client",
+    "arch": "nextcloud-client",
+    "ubuntu": "nextcloud-client",
+    "debian": "nextcloud-client",
+    "fedora": "nextcloud-client",
+    "opensuse": "nextcloud-client",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/nextcloud/logo.png"
+}

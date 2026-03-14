@@ -1,0 +1,24 @@
+{
+  "name": "Discord",
+  "slug": "discord",
+  "description": "Free voice, video and text chat platform for communities.",
+  "website": "https://discord.com/",
+  "license": "proprietary",
+  "categories": [
+    "communication"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "discord",
+    "arch": "discord",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/discord/logo.png"
+}

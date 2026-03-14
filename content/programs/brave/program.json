@@ -1,0 +1,25 @@
+{
+  "name": "Brave",
+  "slug": "brave",
+  "description": "Privacy-focused web browser with built-in ad blocking.",
+  "website": "https://brave.com/",
+  "git_repo": "https://github.com/brave/brave-browser",
+  "license": "MPL-2.0",
+  "categories": [
+    "browser"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "brave-bin",
+    "arch": "brave-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/brave/logo.png"
+}

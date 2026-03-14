@@ -1,0 +1,26 @@
+{
+  "name": "Vagrant",
+  "slug": "vagrant",
+  "description": "Tool for building and managing virtual machine environments.",
+  "website": "https://www.vagrantup.com/",
+  "git_repo": "https://github.com/hashicorp/vagrant",
+  "license": "MIT",
+  "categories": [
+    "devops",
+    "system"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "vagrant",
+    "arch": "vagrant",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/vagrant/logo.png"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Restic",
+  "slug": "restic",
+  "description": "Fast, secure and efficient backup program written in Go.",
+  "website": "https://restic.net/",
+  "git_repo": "https://github.com/restic/restic",
+  "license": "BSD-2-Clause",
+  "categories": ["system"],
+  "package_names": {
+    "default": "restic",
+    "arch": "restic",
+    "ubuntu": "restic",
+    "debian": "restic",
+    "fedora": "restic",
+    "opensuse": "restic",
+    "void": "restic",
+    "alpine": "restic"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Hyper",
+  "slug": "hyper",
+  "description": "Terminal built on web technologies (Electron).",
+  "website": "https://hyper.is/",
+  "git_repo": "https://github.com/vercel/hyper",
+  "license": "MIT",
+  "categories": ["terminal"],
+  "dependencies": ["curl"],
+  "package_names": {
+    "default": "hyper",
+    "arch": "hyper",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

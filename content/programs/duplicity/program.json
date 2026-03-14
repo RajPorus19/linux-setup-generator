@@ -1,0 +1,19 @@
+{
+  "name": "Duplicity",
+  "slug": "duplicity",
+  "description": "Encrypted bandwidth-efficient backup using rsync algorithm.",
+  "website": "http://duplicity.nongnu.org/",
+  "git_repo": "https://gitlab.com/duplicity/duplicity",
+  "license": "GPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "duplicity",
+    "arch": "duplicity",
+    "ubuntu": "duplicity",
+    "debian": "duplicity",
+    "fedora": "duplicity",
+    "opensuse": "duplicity",
+    "void": "duplicity",
+    "alpine": "duplicity"
+  }
+}

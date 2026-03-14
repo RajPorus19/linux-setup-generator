@@ -1,0 +1,25 @@
+{
+  "name": "Tor Browser",
+  "slug": "tor-browser",
+  "description": "Anonymous web browser that routes traffic through the Tor network.",
+  "website": "https://www.torproject.org/",
+  "license": "BSD-3-Clause",
+  "categories": [
+    "browser",
+    "security"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "torbrowser-launcher",
+    "arch": "torbrowser-launcher",
+    "ubuntu": "torbrowser-launcher",
+    "debian": "torbrowser-launcher",
+    "fedora": "torbrowser-launcher",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/tor-browser/logo.png"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Lollypop",
+  "slug": "lollypop",
+  "description": "Modern music player for the GNOME desktop.",
+  "website": "https://wiki.gnome.org/Apps/Lollypop",
+  "git_repo": "https://gitlab.gnome.org/World/lollypop",
+  "license": "GPL-3.0",
+  "categories": ["audio", "music"],
+  "package_names": {
+    "default": "lollypop",
+    "arch": "lollypop",
+    "ubuntu": "lollypop",
+    "debian": "lollypop",
+    "fedora": "lollypop",
+    "opensuse": "lollypop",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

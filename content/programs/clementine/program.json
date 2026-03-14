@@ -1,0 +1,19 @@
+{
+  "name": "Clementine",
+  "slug": "clementine",
+  "description": "Cross-platform music player and library organizer.",
+  "website": "https://www.clementine-player.org/",
+  "git_repo": "https://github.com/clementine-player/Clementine",
+  "license": "GPL-3.0",
+  "categories": ["audio", "music"],
+  "package_names": {
+    "default": "clementine",
+    "arch": "clementine",
+    "ubuntu": "clementine",
+    "debian": "clementine",
+    "fedora": "clementine",
+    "opensuse": "clementine",
+    "void": "clementine",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Eclipse",
+  "slug": "eclipse",
+  "description": "Free, open source, extensible IDE for Java and other languages.",
+  "website": "https://www.eclipse.org/",
+  "license": "EPL-2.0",
+  "categories": [
+    "ide",
+    "development"
+  ],
+  "dependencies": [
+    "curl",
+    "java"
+  ],
+  "package_names": {
+    "default": "eclipse-java",
+    "arch": "eclipse-java",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "eclipse",
+    "opensuse": "eclipse",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/eclipse/logo.png"
+}

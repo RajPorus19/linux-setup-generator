@@ -1,0 +1,26 @@
+{
+  "name": "Signal Desktop",
+  "slug": "signal-desktop",
+  "description": "Private, end-to-end encrypted messaging and calling app.",
+  "website": "https://signal.org/",
+  "git_repo": "https://github.com/signalapp/Signal-Desktop",
+  "license": "AGPL-3.0",
+  "categories": [
+    "communication",
+    "security"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "signal-desktop",
+    "arch": "signal-desktop",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/signal-desktop/logo.png"
+}

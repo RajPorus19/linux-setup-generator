@@ -1,0 +1,25 @@
+{
+  "name": "Obsidian",
+  "slug": "obsidian",
+  "description": "Private and flexible knowledge base app in Markdown.",
+  "website": "https://obsidian.md/",
+  "license": "proprietary",
+  "categories": [
+    "productivity",
+    "markdown"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "obsidian",
+    "arch": "obsidian",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/obsidian/logo.png"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "GitKraken",
+  "slug": "gitkraken",
+  "description": "Graphical Git client with efficiency and elegance.",
+  "website": "https://www.gitkraken.com/",
+  "license": "proprietary",
+  "categories": [
+    "development",
+    "version-control"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "gitkraken",
+    "arch": "gitkraken",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/gitkraken/logo.png"
+}

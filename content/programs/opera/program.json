@@ -1,0 +1,24 @@
+{
+  "name": "Opera",
+  "slug": "opera",
+  "description": "Fast and secure web browser with free built-in VPN.",
+  "website": "https://www.opera.com/",
+  "license": "proprietary",
+  "categories": [
+    "browser"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "opera",
+    "arch": "opera",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/opera/logo.png"
+}

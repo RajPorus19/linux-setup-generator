@@ -1,0 +1,19 @@
+{
+  "name": "Rhythmbox",
+  "slug": "rhythmbox",
+  "description": "Music playing and management application for GNOME.",
+  "website": "https://wiki.gnome.org/Apps/Rhythmbox",
+  "git_repo": "https://github.com/GNOME/rhythmbox",
+  "license": "GPL-2.0",
+  "categories": ["audio", "music"],
+  "package_names": {
+    "default": "rhythmbox",
+    "arch": "rhythmbox",
+    "ubuntu": "rhythmbox",
+    "debian": "rhythmbox",
+    "fedora": "rhythmbox",
+    "opensuse": "rhythmbox",
+    "void": "rhythmbox",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

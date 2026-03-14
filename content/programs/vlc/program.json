@@ -1,0 +1,22 @@
+{
+  "name": "VLC",
+  "slug": "vlc",
+  "description": "Free and open source cross-platform multimedia player.",
+  "website": "https://www.videolan.org/vlc/",
+  "git_repo": "https://github.com/videolan/vlc",
+  "license": "GPL-2.0",
+  "categories": [
+    "media-player"
+  ],
+  "package_names": {
+    "default": "vlc",
+    "arch": "vlc",
+    "ubuntu": "vlc",
+    "debian": "vlc",
+    "fedora": "vlc",
+    "opensuse": "vlc",
+    "void": "vlc",
+    "alpine": "vlc"
+  },
+  "logo": "/programs/vlc/logo.png"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "QEMU",
+  "slug": "qemu",
+  "description": "Generic and open source machine emulator and virtualizer.",
+  "website": "https://www.qemu.org/",
+  "git_repo": "https://github.com/qemu/qemu",
+  "license": "GPL-2.0",
+  "categories": [
+    "system"
+  ],
+  "package_names": {
+    "default": "qemu",
+    "arch": "qemu-full",
+    "ubuntu": "qemu",
+    "debian": "qemu",
+    "fedora": "qemu",
+    "opensuse": "qemu",
+    "void": "qemu",
+    "alpine": "qemu"
+  },
+  "logo": "/programs/qemu/logo.png"
+}

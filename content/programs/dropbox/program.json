@@ -1,0 +1,24 @@
+{
+  "name": "Dropbox",
+  "slug": "dropbox",
+  "description": "Cloud storage service with desktop sync client.",
+  "website": "https://www.dropbox.com/",
+  "license": "proprietary",
+  "categories": [
+    "internet"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "dropbox",
+    "arch": "dropbox",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/dropbox/logo.png"
+}

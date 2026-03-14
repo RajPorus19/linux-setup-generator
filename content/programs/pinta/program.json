@@ -1,0 +1,19 @@
+{
+  "name": "Pinta",
+  "slug": "pinta",
+  "description": "Free, open source program for drawing and image editing.",
+  "website": "https://www.pinta-project.com/",
+  "git_repo": "https://github.com/PintaProject/Pinta",
+  "license": "MIT",
+  "categories": ["image-processing"],
+  "package_names": {
+    "default": "pinta",
+    "arch": "pinta",
+    "ubuntu": "pinta",
+    "debian": "pinta",
+    "fedora": "pinta",
+    "opensuse": "pinta",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -131,7 +131,6 @@ class ScriptGenerator {
   }
 
   async get_script() {
-    await new Promise(resolve => setTimeout(resolve, 3000));
     return this._buildScript();
   }
 }

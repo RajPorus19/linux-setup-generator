@@ -1,0 +1,25 @@
+{
+  "name": "Lutris",
+  "slug": "lutris",
+  "description": "Open gaming platform for Linux that supports multiple game sources.",
+  "website": "https://lutris.net/",
+  "git_repo": "https://github.com/lutris/lutris",
+  "license": "GPL-3.0",
+  "categories": [
+    "game"
+  ],
+  "dependencies": [
+    "pip"
+  ],
+  "package_names": {
+    "default": "lutris",
+    "arch": "lutris",
+    "ubuntu": "lutris",
+    "debian": "lutris",
+    "fedora": "lutris",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/lutris/logo.png"
+}

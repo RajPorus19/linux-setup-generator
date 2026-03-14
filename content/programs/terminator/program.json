@@ -1,0 +1,19 @@
+{
+  "name": "Terminator",
+  "slug": "terminator",
+  "description": "Multiple terminals in one window.",
+  "website": "https://gnome-terminator.org/",
+  "git_repo": "https://github.com/gnome-terminator/terminator",
+  "license": "GPL-2.0",
+  "categories": ["terminal"],
+  "package_names": {
+    "default": "terminator",
+    "arch": "terminator",
+    "ubuntu": "terminator",
+    "debian": "terminator",
+    "fedora": "terminator",
+    "opensuse": "terminator",
+    "void": "terminator",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

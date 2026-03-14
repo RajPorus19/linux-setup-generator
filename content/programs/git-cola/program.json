@@ -1,0 +1,20 @@
+{
+  "name": "git-cola",
+  "slug": "git-cola",
+  "description": "Powerful Git GUI with a slick and intuitive user interface.",
+  "website": "https://git-cola.github.io/",
+  "git_repo": "https://github.com/git-cola/git-cola",
+  "license": "GPL-2.0",
+  "categories": ["development", "version-control"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "git-cola",
+    "arch": "git-cola",
+    "ubuntu": "git-cola",
+    "debian": "git-cola",
+    "fedora": "git-cola",
+    "opensuse": "git-cola",
+    "void": "git-cola",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

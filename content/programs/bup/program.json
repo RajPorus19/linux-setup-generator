@@ -1,0 +1,19 @@
+{
+  "name": "bup",
+  "slug": "bup",
+  "description": "Efficient backup system based on git packfile format.",
+  "website": "https://github.com/bup/bup",
+  "git_repo": "https://github.com/bup/bup",
+  "license": "LGPL-2.0",
+  "categories": ["system"],
+  "package_names": {
+    "default": "bup",
+    "arch": "bup",
+    "ubuntu": "bup",
+    "debian": "bup",
+    "fedora": "bup",
+    "opensuse": "bup",
+    "void": "bup",
+    "alpine": "bup"
+  }
+}

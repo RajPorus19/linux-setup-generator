@@ -1,0 +1,18 @@
+{
+  "name": "Bluefish",
+  "slug": "bluefish",
+  "description": "Powerful text editor for web developers and programmers.",
+  "website": "http://bluefish.openoffice.nl/",
+  "license": "GPL-3.0",
+  "categories": ["editor"],
+  "package_names": {
+    "default": "bluefish",
+    "arch": "bluefish",
+    "ubuntu": "bluefish",
+    "debian": "bluefish",
+    "fedora": "bluefish",
+    "opensuse": "bluefish",
+    "void": "bluefish",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

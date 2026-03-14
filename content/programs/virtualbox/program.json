@@ -1,0 +1,24 @@
+{
+  "name": "VirtualBox",
+  "slug": "virtualbox",
+  "description": "Free, open source, enterprise-grade virtualization solution.",
+  "website": "https://www.virtualbox.org/",
+  "license": "GPL-2.0",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "virtualbox",
+    "arch": "virtualbox",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "virtualbox",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/virtualbox/logo.png"
+}
