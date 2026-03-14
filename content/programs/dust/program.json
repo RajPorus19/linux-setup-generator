@@ -1,0 +1,19 @@
+{
+  "name": "dust",
+  "slug": "dust",
+  "description": "More intuitive version of du written in Rust.",
+  "website": "https://github.com/bootandy/dust",
+  "git_repo": "https://github.com/bootandy/dust",
+  "license": "Apache-2.0",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "dust",
+    "arch": "dust",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "dust",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

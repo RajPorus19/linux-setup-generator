@@ -1,0 +1,19 @@
+{
+  "name": "irssi",
+  "slug": "irssi",
+  "description": "Modular IRC client.",
+  "website": "https://irssi.org/",
+  "git_repo": "https://github.com/irssi/irssi",
+  "license": "GPL-2.0",
+  "categories": ["communication", "terminal"],
+  "package_names": {
+    "default": "irssi",
+    "arch": "irssi",
+    "ubuntu": "irssi",
+    "debian": "irssi",
+    "fedora": "irssi",
+    "opensuse": "irssi",
+    "void": "irssi",
+    "alpine": "irssi"
+  }
+}

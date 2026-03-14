@@ -1,0 +1,19 @@
+{
+  "name": "gitui",
+  "slug": "gitui",
+  "description": "Blazing fast terminal UI for Git written in Rust.",
+  "website": "https://github.com/extrawurst/gitui",
+  "git_repo": "https://github.com/extrawurst/gitui",
+  "license": "MIT",
+  "categories": ["development", "terminal"],
+  "package_names": {
+    "default": "gitui",
+    "arch": "gitui",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "gitui",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "gitui",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

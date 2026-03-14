@@ -1,0 +1,19 @@
+{
+  "name": "ctop",
+  "slug": "ctop",
+  "description": "Top-like interface for containers written in Go.",
+  "website": "https://ctop.sh/",
+  "git_repo": "https://github.com/bcicen/ctop",
+  "license": "MIT",
+  "categories": ["devops", "terminal"],
+  "package_names": {
+    "default": "ctop",
+    "arch": "ctop",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

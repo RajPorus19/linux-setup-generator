@@ -1,0 +1,19 @@
+{
+  "name": "beets",
+  "slug": "beets",
+  "description": "Music library manager and tagger.",
+  "website": "https://beets.io/",
+  "git_repo": "https://github.com/beetbox/beets",
+  "license": "MIT",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "beets",
+    "arch": "beets",
+    "ubuntu": "beets",
+    "debian": "beets",
+    "fedora": "beets",
+    "opensuse": "beets",
+    "void": "beets",
+    "alpine": "beets"
+  }
+}

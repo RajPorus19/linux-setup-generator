@@ -1,0 +1,19 @@
+{
+  "name": "streamlink",
+  "slug": "streamlink",
+  "description": "Tool to pipe streams to a video player.",
+  "website": "https://streamlink.github.io/",
+  "git_repo": "https://github.com/streamlink/streamlink",
+  "license": "BSD-2-Clause",
+  "categories": ["media", "terminal"],
+  "package_names": {
+    "default": "streamlink",
+    "arch": "streamlink",
+    "ubuntu": "streamlink",
+    "debian": "streamlink",
+    "fedora": "streamlink",
+    "opensuse": "streamlink",
+    "void": "streamlink",
+    "alpine": "streamlink"
+  }
+}

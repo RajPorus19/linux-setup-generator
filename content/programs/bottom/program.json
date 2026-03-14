@@ -1,0 +1,19 @@
+{
+  "name": "bottom",
+  "slug": "bottom",
+  "description": "Graphical process and system monitor written in Rust.",
+  "website": "https://clementtsang.github.io/bottom/",
+  "git_repo": "https://github.com/ClementTsang/bottom",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "bottom",
+    "arch": "bottom",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "bottom",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "bottom",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

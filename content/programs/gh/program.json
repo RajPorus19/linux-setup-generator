@@ -1,0 +1,19 @@
+{
+  "name": "gh",
+  "slug": "gh",
+  "description": "GitHub CLI.",
+  "website": "https://cli.github.com/",
+  "git_repo": "https://github.com/cli/cli",
+  "license": "MIT",
+  "categories": ["development", "terminal"],
+  "package_names": {
+    "default": "gh",
+    "arch": "github-cli",
+    "ubuntu": "gh",
+    "debian": "gh",
+    "fedora": "gh",
+    "opensuse": "gh",
+    "void": "gh",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

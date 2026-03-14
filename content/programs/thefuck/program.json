@@ -1,0 +1,19 @@
+{
+  "name": "thefuck",
+  "slug": "thefuck",
+  "description": "Corrects previous console command.",
+  "website": "https://github.com/nvbn/thefuck",
+  "git_repo": "https://github.com/nvbn/thefuck",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "thefuck",
+    "arch": "thefuck",
+    "ubuntu": "thefuck",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "thefuck",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "thefuck",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

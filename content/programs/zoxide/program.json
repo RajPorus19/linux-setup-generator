@@ -1,0 +1,19 @@
+{
+  "name": "zoxide",
+  "slug": "zoxide",
+  "description": "Smarter cd command.",
+  "website": "https://github.com/ajeetdsouza/zoxide",
+  "git_repo": "https://github.com/ajeetdsouza/zoxide",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "zoxide",
+    "arch": "zoxide",
+    "ubuntu": "zoxide",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "zoxide",
+    "opensuse": "zoxide",
+    "void": "zoxide",
+    "alpine": "zoxide"
+  }
+}

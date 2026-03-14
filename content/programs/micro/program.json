@@ -1,0 +1,19 @@
+{
+  "name": "micro",
+  "slug": "micro",
+  "description": "Modern terminal-based text editor.",
+  "website": "https://micro-editor.github.io/",
+  "git_repo": "https://github.com/zyedidia/micro",
+  "license": "MIT",
+  "categories": ["editor", "terminal"],
+  "package_names": {
+    "default": "micro",
+    "arch": "micro",
+    "ubuntu": "micro",
+    "debian": "micro",
+    "fedora": "micro",
+    "opensuse": "micro",
+    "void": "micro",
+    "alpine": "micro"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ncdu",
+  "slug": "ncdu",
+  "description": "NCurses Disk Usage.",
+  "website": "https://dev.yorhel.nl/ncdu",
+  "git_repo": "https://code.blicky.net/yorhel/ncdu",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "ncdu",
+    "arch": "ncdu",
+    "ubuntu": "ncdu",
+    "debian": "ncdu",
+    "fedora": "ncdu",
+    "opensuse": "ncdu",
+    "void": "ncdu",
+    "alpine": "ncdu"
+  }
+}

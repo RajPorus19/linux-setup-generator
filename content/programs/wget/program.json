@@ -1,0 +1,18 @@
+{
+  "name": "wget",
+  "slug": "wget",
+  "description": "Non-interactive download tool.",
+  "website": "https://www.gnu.org/software/wget/",
+  "license": "GPL-3.0",
+  "categories": ["internet", "terminal"],
+  "package_names": {
+    "default": "wget",
+    "arch": "wget",
+    "ubuntu": "wget",
+    "debian": "wget",
+    "fedora": "wget",
+    "opensuse": "wget",
+    "void": "wget",
+    "alpine": "wget"
+  }
+}

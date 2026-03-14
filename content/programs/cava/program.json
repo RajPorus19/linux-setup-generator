@@ -1,0 +1,19 @@
+{
+  "name": "cava",
+  "slug": "cava",
+  "description": "Console-based Audio Visualizer for ALSA.",
+  "website": "https://github.com/karlstav/cava",
+  "git_repo": "https://github.com/karlstav/cava",
+  "license": "MIT",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "cava",
+    "arch": "cava",
+    "ubuntu": "cava",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "cava",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "cava",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

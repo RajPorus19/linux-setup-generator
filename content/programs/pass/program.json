@@ -1,0 +1,19 @@
+{
+  "name": "pass",
+  "slug": "pass",
+  "description": "The standard Unix password manager.",
+  "website": "https://www.passwordstore.org/",
+  "git_repo": "https://git.zx2c4.com/password-store/",
+  "license": "GPL-2.0",
+  "categories": ["security", "terminal"],
+  "package_names": {
+    "default": "pass",
+    "arch": "pass",
+    "ubuntu": "pass",
+    "debian": "pass",
+    "fedora": "pass",
+    "opensuse": "password-store",
+    "void": "pass",
+    "alpine": "pass"
+  }
+}

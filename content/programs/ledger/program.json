@@ -1,0 +1,19 @@
+{
+  "name": "ledger",
+  "slug": "ledger",
+  "description": "Double-entry accounting system.",
+  "website": "https://ledger-cli.org/",
+  "git_repo": "https://github.com/ledger/ledger",
+  "license": "BSD-3-Clause",
+  "categories": ["productivity", "terminal"],
+  "package_names": {
+    "default": "ledger",
+    "arch": "ledger",
+    "ubuntu": "ledger",
+    "debian": "ledger",
+    "fedora": "ledger",
+    "opensuse": "ledger",
+    "void": "ledger",
+    "alpine": "ledger"
+  }
+}

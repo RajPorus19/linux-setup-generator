@@ -1,0 +1,19 @@
+{
+  "name": "magic-wormhole",
+  "slug": "magic-wormhole",
+  "description": "Get things from one computer to another safely.",
+  "website": "https://github.com/magic-wormhole/magic-wormhole",
+  "git_repo": "https://github.com/magic-wormhole/magic-wormhole",
+  "license": "MIT",
+  "categories": ["internet", "terminal"],
+  "package_names": {
+    "default": "magic-wormhole",
+    "arch": "magic-wormhole",
+    "ubuntu": "magic-wormhole",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

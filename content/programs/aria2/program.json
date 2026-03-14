@@ -1,0 +1,19 @@
+{
+  "name": "aria2",
+  "slug": "aria2",
+  "description": "Multi-protocol download utility.",
+  "website": "https://aria2.github.io/",
+  "git_repo": "https://github.com/aria2/aria2",
+  "license": "GPL-2.0",
+  "categories": ["internet", "terminal"],
+  "package_names": {
+    "default": "aria2",
+    "arch": "aria2",
+    "ubuntu": "aria2",
+    "debian": "aria2",
+    "fedora": "aria2",
+    "opensuse": "aria2",
+    "void": "aria2",
+    "alpine": "aria2"
+  }
+}

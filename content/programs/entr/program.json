@@ -1,0 +1,19 @@
+{
+  "name": "entr",
+  "slug": "entr",
+  "description": "Run arbitrary commands when files change.",
+  "website": "https://eradman.com/entrproject/",
+  "git_repo": "https://github.com/eradman/entr",
+  "license": "ISC",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "entr",
+    "arch": "entr",
+    "ubuntu": "entr",
+    "debian": "entr",
+    "fedora": "entr",
+    "opensuse": "entr",
+    "void": "entr",
+    "alpine": "entr"
+  }
+}

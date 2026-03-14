@@ -1,0 +1,19 @@
+{
+  "name": "yazi",
+  "slug": "yazi",
+  "description": "Blazing fast terminal file manager written in Rust.",
+  "website": "https://yazi-rs.github.io/",
+  "git_repo": "https://github.com/sxyazi/yazi",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "yazi",
+    "arch": "yazi",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "yazi",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

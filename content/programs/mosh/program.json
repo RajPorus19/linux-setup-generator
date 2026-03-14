@@ -1,0 +1,19 @@
+{
+  "name": "mosh",
+  "slug": "mosh",
+  "description": "Mobile shell, a roaming SSH replacement.",
+  "website": "https://mosh.org/",
+  "git_repo": "https://github.com/mobile-shell/mosh",
+  "license": "GPL-3.0",
+  "categories": ["network", "terminal"],
+  "package_names": {
+    "default": "mosh",
+    "arch": "mosh",
+    "ubuntu": "mosh",
+    "debian": "mosh",
+    "fedora": "mosh",
+    "opensuse": "mosh",
+    "void": "mosh",
+    "alpine": "mosh"
+  }
+}

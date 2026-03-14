@@ -1,0 +1,19 @@
+{
+  "name": "visidata",
+  "slug": "visidata",
+  "description": "Spreadsheet multitool for tabular data.",
+  "website": "https://www.visidata.org/",
+  "git_repo": "https://github.com/saulpw/visidata",
+  "license": "GPL-3.0",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "visidata",
+    "arch": "visidata",
+    "ubuntu": "visidata",
+    "debian": "visidata",
+    "fedora": "visidata",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

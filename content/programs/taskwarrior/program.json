@@ -1,0 +1,19 @@
+{
+  "name": "taskwarrior",
+  "slug": "taskwarrior",
+  "description": "Task management on the command line.",
+  "website": "https://taskwarrior.org/",
+  "git_repo": "https://github.com/GothenburgBitFactory/taskwarrior",
+  "license": "MIT",
+  "categories": ["productivity", "terminal"],
+  "package_names": {
+    "default": "task",
+    "arch": "task",
+    "ubuntu": "taskwarrior",
+    "debian": "taskwarrior",
+    "fedora": "task",
+    "opensuse": "taskwarrior",
+    "void": "task",
+    "alpine": "task"
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+go install github.com/cli/cli/v2/cmd/gh@latest

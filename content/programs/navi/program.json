@@ -1,0 +1,19 @@
+{
+  "name": "navi",
+  "slug": "navi",
+  "description": "Interactive cheatsheet tool.",
+  "website": "https://github.com/denisidoro/navi",
+  "git_repo": "https://github.com/denisidoro/navi",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "navi",
+    "arch": "navi",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

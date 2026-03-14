@@ -1,0 +1,19 @@
+{
+  "name": "neofetch",
+  "slug": "neofetch",
+  "description": "System info displayed with ASCII art.",
+  "website": "https://github.com/dylanaraps/neofetch",
+  "git_repo": "https://github.com/dylanaraps/neofetch",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "neofetch",
+    "arch": "neofetch",
+    "ubuntu": "neofetch",
+    "debian": "neofetch",
+    "fedora": "neofetch",
+    "opensuse": "neofetch",
+    "void": "neofetch",
+    "alpine": "neofetch"
+  }
+}

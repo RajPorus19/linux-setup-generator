@@ -1,0 +1,19 @@
+{
+  "name": "jq",
+  "slug": "jq",
+  "description": "Command-line JSON processor.",
+  "website": "https://jqlang.github.io/jq/",
+  "git_repo": "https://github.com/jqlang/jq",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "jq",
+    "arch": "jq",
+    "ubuntu": "jq",
+    "debian": "jq",
+    "fedora": "jq",
+    "opensuse": "jq",
+    "void": "jq",
+    "alpine": "jq"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "tldr",
+  "slug": "tldr",
+  "description": "Simplified man pages.",
+  "website": "https://tldr.sh/",
+  "git_repo": "https://github.com/tldr-pages/tldr",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "tldr",
+    "arch": "tldr",
+    "ubuntu": "tldr",
+    "debian": "tldr",
+    "fedora": "tldr",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "tldr",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

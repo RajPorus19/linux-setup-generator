@@ -1,0 +1,19 @@
+{
+  "name": "rclone",
+  "slug": "rclone",
+  "description": "Sync files to and from cloud storage.",
+  "website": "https://rclone.org/",
+  "git_repo": "https://github.com/rclone/rclone",
+  "license": "MIT",
+  "categories": ["internet", "terminal"],
+  "package_names": {
+    "default": "rclone",
+    "arch": "rclone",
+    "ubuntu": "rclone",
+    "debian": "rclone",
+    "fedora": "rclone",
+    "opensuse": "rclone",
+    "void": "rclone",
+    "alpine": "rclone"
+  }
+}

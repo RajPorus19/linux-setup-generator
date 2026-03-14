@@ -1,0 +1,19 @@
+{
+  "name": "mtr",
+  "slug": "mtr",
+  "description": "Network diagnostic tool combining ping and traceroute.",
+  "website": "https://www.bitwizard.nl/mtr/",
+  "git_repo": "https://github.com/traviscross/mtr",
+  "license": "GPL-2.0",
+  "categories": ["network", "terminal"],
+  "package_names": {
+    "default": "mtr",
+    "arch": "mtr",
+    "ubuntu": "mtr",
+    "debian": "mtr",
+    "fedora": "mtr",
+    "opensuse": "mtr",
+    "void": "mtr",
+    "alpine": "mtr"
+  }
+}

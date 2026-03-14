@@ -1,0 +1,19 @@
+{
+  "name": "calcurse",
+  "slug": "calcurse",
+  "description": "Text-based calendar and scheduling application.",
+  "website": "https://calcurse.org/",
+  "git_repo": "https://github.com/lfos/calcurse",
+  "license": "BSD-2-Clause",
+  "categories": ["productivity", "terminal"],
+  "package_names": {
+    "default": "calcurse",
+    "arch": "calcurse",
+    "ubuntu": "calcurse",
+    "debian": "calcurse",
+    "fedora": "calcurse",
+    "opensuse": "calcurse",
+    "void": "calcurse",
+    "alpine": "calcurse"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "hyperfine",
+  "slug": "hyperfine",
+  "description": "Command-line benchmarking tool.",
+  "website": "https://github.com/sharkdp/hyperfine",
+  "git_repo": "https://github.com/sharkdp/hyperfine",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "hyperfine",
+    "arch": "hyperfine",
+    "ubuntu": "hyperfine",
+    "debian": "hyperfine",
+    "fedora": "hyperfine",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "hyperfine",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

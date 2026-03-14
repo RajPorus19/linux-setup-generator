@@ -1,0 +1,19 @@
+{
+  "name": "htop",
+  "slug": "htop",
+  "description": "Interactive process viewer.",
+  "website": "https://htop.dev/",
+  "git_repo": "https://github.com/htop-dev/htop",
+  "license": "GPL-2.0",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "htop",
+    "arch": "htop",
+    "ubuntu": "htop",
+    "debian": "htop",
+    "fedora": "htop",
+    "opensuse": "htop",
+    "void": "htop",
+    "alpine": "htop"
+  }
+}

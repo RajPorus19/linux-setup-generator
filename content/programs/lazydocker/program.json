@@ -1,0 +1,19 @@
+{
+  "name": "lazydocker",
+  "slug": "lazydocker",
+  "description": "Terminal UI for Docker written in Go.",
+  "website": "https://github.com/jesseduffield/lazydocker",
+  "git_repo": "https://github.com/jesseduffield/lazydocker",
+  "license": "MIT",
+  "categories": ["devops", "terminal"],
+  "package_names": {
+    "default": "lazydocker",
+    "arch": "lazydocker",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

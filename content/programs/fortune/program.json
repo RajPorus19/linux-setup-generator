@@ -1,0 +1,19 @@
+{
+  "name": "fortune",
+  "slug": "fortune",
+  "description": "Display random fortunes.",
+  "website": "https://github.com/shlomif/fortune-mod",
+  "git_repo": "https://github.com/shlomif/fortune-mod",
+  "license": "MIT",
+  "categories": ["fun", "terminal"],
+  "package_names": {
+    "default": "fortune",
+    "arch": "fortune-mod",
+    "ubuntu": "fortune",
+    "debian": "fortune",
+    "fedora": "fortune-mod",
+    "opensuse": "fortune",
+    "void": "fortune-mod",
+    "alpine": "fortune"
+  }
+}

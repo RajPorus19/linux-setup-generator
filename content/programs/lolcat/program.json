@@ -1,0 +1,19 @@
+{
+  "name": "lolcat",
+  "slug": "lolcat",
+  "description": "Rainbow-colored terminal output.",
+  "website": "https://github.com/busyloop/lolcat",
+  "git_repo": "https://github.com/busyloop/lolcat",
+  "license": "WTFPL",
+  "categories": ["fun", "terminal"],
+  "package_names": {
+    "default": "lolcat",
+    "arch": "lolcat",
+    "ubuntu": "lolcat",
+    "debian": "lolcat",
+    "fedora": "lolcat",
+    "opensuse": "lolcat",
+    "void": "lolcat",
+    "alpine": "lolcat"
+  }
+}

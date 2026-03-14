@@ -1,0 +1,19 @@
+{
+  "name": "skim",
+  "slug": "skim",
+  "description": "Fuzzy finder written in Rust (like fzf).",
+  "website": "https://github.com/skim-rs/skim",
+  "git_repo": "https://github.com/skim-rs/skim",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "skim",
+    "arch": "skim",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "skim",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

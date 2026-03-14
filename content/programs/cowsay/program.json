@@ -1,0 +1,19 @@
+{
+  "name": "cowsay",
+  "slug": "cowsay",
+  "description": "A talking cow in your terminal.",
+  "website": "https://github.com/piuccio/cowsay",
+  "git_repo": "https://github.com/piuccio/cowsay",
+  "license": "GPL-3.0",
+  "categories": ["fun", "terminal"],
+  "package_names": {
+    "default": "cowsay",
+    "arch": "cowsay",
+    "ubuntu": "cowsay",
+    "debian": "cowsay",
+    "fedora": "cowsay",
+    "opensuse": "cowsay",
+    "void": "cowsay",
+    "alpine": "cowsay"
+  }
+}

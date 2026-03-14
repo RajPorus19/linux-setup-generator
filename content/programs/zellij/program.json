@@ -1,0 +1,19 @@
+{
+  "name": "zellij",
+  "slug": "zellij",
+  "description": "Terminal workspace and multiplexer written in Rust.",
+  "website": "https://zellij.dev/",
+  "git_repo": "https://github.com/zellij-org/zellij",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "zellij",
+    "arch": "zellij",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "zellij",
+    "void": "zellij",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

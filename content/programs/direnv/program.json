@@ -1,0 +1,19 @@
+{
+  "name": "direnv",
+  "slug": "direnv",
+  "description": "Load/unload env vars per directory.",
+  "website": "https://direnv.net/",
+  "git_repo": "https://github.com/direnv/direnv",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "direnv",
+    "arch": "direnv",
+    "ubuntu": "direnv",
+    "debian": "direnv",
+    "fedora": "direnv",
+    "opensuse": "direnv",
+    "void": "direnv",
+    "alpine": "direnv"
+  }
+}

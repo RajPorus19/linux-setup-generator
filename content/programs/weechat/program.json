@@ -1,0 +1,19 @@
+{
+  "name": "weechat",
+  "slug": "weechat",
+  "description": "Fast, light, extensible IRC client.",
+  "website": "https://weechat.org/",
+  "git_repo": "https://github.com/weechat/weechat",
+  "license": "GPL-3.0",
+  "categories": ["communication", "terminal"],
+  "package_names": {
+    "default": "weechat",
+    "arch": "weechat",
+    "ubuntu": "weechat",
+    "debian": "weechat",
+    "fedora": "weechat",
+    "opensuse": "weechat",
+    "void": "weechat",
+    "alpine": "weechat"
+  }
+}

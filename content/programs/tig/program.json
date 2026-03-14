@@ -1,0 +1,19 @@
+{
+  "name": "tig",
+  "slug": "tig",
+  "description": "Text-mode interface for Git.",
+  "website": "https://jonas.github.io/tig/",
+  "git_repo": "https://github.com/jonas/tig",
+  "license": "GPL-2.0",
+  "categories": ["development", "terminal"],
+  "package_names": {
+    "default": "tig",
+    "arch": "tig",
+    "ubuntu": "tig",
+    "debian": "tig",
+    "fedora": "tig",
+    "opensuse": "tig",
+    "void": "tig",
+    "alpine": "tig"
+  }
+}

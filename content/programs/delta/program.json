@@ -1,0 +1,19 @@
+{
+  "name": "delta",
+  "slug": "delta",
+  "description": "Syntax-highlighting pager for git and diff output.",
+  "website": "https://dandavison.github.io/delta/",
+  "git_repo": "https://github.com/dandavison/delta",
+  "license": "MIT",
+  "categories": ["development", "terminal"],
+  "package_names": {
+    "default": "git-delta",
+    "arch": "git-delta",
+    "ubuntu": "git-delta",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "git-delta",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "delta",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

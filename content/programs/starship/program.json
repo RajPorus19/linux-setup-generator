@@ -1,0 +1,19 @@
+{
+  "name": "starship",
+  "slug": "starship",
+  "description": "Cross-shell prompt written in Rust.",
+  "website": "https://starship.rs/",
+  "git_repo": "https://github.com/starship/starship",
+  "license": "ISC",
+  "categories": ["terminal", "shell"],
+  "package_names": {
+    "default": "starship",
+    "arch": "starship",
+    "ubuntu": "starship",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "starship",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "starship",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

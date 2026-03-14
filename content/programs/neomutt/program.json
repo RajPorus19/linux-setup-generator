@@ -1,0 +1,19 @@
+{
+  "name": "neomutt",
+  "slug": "neomutt",
+  "description": "Command line email client.",
+  "website": "https://neomutt.org/",
+  "git_repo": "https://github.com/neomutt/neomutt",
+  "license": "GPL-2.0",
+  "categories": ["communication", "terminal"],
+  "package_names": {
+    "default": "neomutt",
+    "arch": "neomutt",
+    "ubuntu": "neomutt",
+    "debian": "neomutt",
+    "fedora": "neomutt",
+    "opensuse": "neomutt",
+    "void": "neomutt",
+    "alpine": "neomutt"
+  }
+}

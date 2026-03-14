@@ -1,0 +1,19 @@
+{
+  "name": "duf",
+  "slug": "duf",
+  "description": "Disk Usage/Free Utility.",
+  "website": "https://github.com/muesli/duf",
+  "git_repo": "https://github.com/muesli/duf",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "duf",
+    "arch": "duf",
+    "ubuntu": "duf",
+    "debian": "duf",
+    "fedora": "duf",
+    "opensuse": "duf",
+    "void": "duf",
+    "alpine": "duf"
+  }
+}

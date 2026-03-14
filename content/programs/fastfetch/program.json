@@ -1,0 +1,19 @@
+{
+  "name": "fastfetch",
+  "slug": "fastfetch",
+  "description": "Fast system info tool, a neofetch alternative.",
+  "website": "https://github.com/fastfetch-cli/fastfetch",
+  "git_repo": "https://github.com/fastfetch-cli/fastfetch",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "fastfetch",
+    "arch": "fastfetch",
+    "ubuntu": "fastfetch",
+    "debian": "fastfetch",
+    "fedora": "fastfetch",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "fastfetch",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

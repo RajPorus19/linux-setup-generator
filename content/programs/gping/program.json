@@ -1,0 +1,19 @@
+{
+  "name": "gping",
+  "slug": "gping",
+  "description": "Ping with a graph written in Rust.",
+  "website": "https://github.com/orf/gping",
+  "git_repo": "https://github.com/orf/gping",
+  "license": "MIT",
+  "categories": ["network", "terminal"],
+  "package_names": {
+    "default": "gping",
+    "arch": "gping",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "gping",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "gping",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

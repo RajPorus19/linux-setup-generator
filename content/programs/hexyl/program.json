@@ -1,0 +1,19 @@
+{
+  "name": "hexyl",
+  "slug": "hexyl",
+  "description": "Command-line hex viewer written in Rust.",
+  "website": "https://github.com/sharkdp/hexyl",
+  "git_repo": "https://github.com/sharkdp/hexyl",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "hexyl",
+    "arch": "hexyl",
+    "ubuntu": "hexyl",
+    "debian": "hexyl",
+    "fedora": "hexyl",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "hexyl",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

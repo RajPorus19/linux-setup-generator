@@ -1,0 +1,19 @@
+{
+  "name": "glances",
+  "slug": "glances",
+  "description": "Cross-platform system monitoring tool.",
+  "website": "https://nicolargo.github.io/glances/",
+  "git_repo": "https://github.com/nicolargo/glances",
+  "license": "LGPL-3.0",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "glances",
+    "arch": "glances",
+    "ubuntu": "glances",
+    "debian": "glances",
+    "fedora": "glances",
+    "opensuse": "glances",
+    "void": "glances",
+    "alpine": "glances"
+  }
+}

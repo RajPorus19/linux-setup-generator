@@ -1,0 +1,19 @@
+{
+  "name": "just",
+  "slug": "just",
+  "description": "Handy command runner.",
+  "website": "https://just.systems/",
+  "git_repo": "https://github.com/casey/just",
+  "license": "CC0",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "just",
+    "arch": "just",
+    "ubuntu": "just",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "just",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "just",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "autojump",
+  "slug": "autojump",
+  "description": "Faster directory navigation.",
+  "website": "https://github.com/wting/autojump",
+  "git_repo": "https://github.com/wting/autojump",
+  "license": "GPL-3.0",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "autojump",
+    "arch": "autojump",
+    "ubuntu": "autojump",
+    "debian": "autojump",
+    "fedora": "autojump",
+    "opensuse": "autojump",
+    "void": "autojump",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

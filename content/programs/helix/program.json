@@ -1,0 +1,19 @@
+{
+  "name": "helix",
+  "slug": "helix",
+  "description": "Post-modern modal text editor.",
+  "website": "https://helix-editor.com/",
+  "git_repo": "https://github.com/helix-editor/helix",
+  "license": "MPL-2.0",
+  "categories": ["editor", "terminal"],
+  "package_names": {
+    "default": "helix",
+    "arch": "helix",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "helix",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "helix",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

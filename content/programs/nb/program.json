@@ -1,0 +1,19 @@
+{
+  "name": "nb",
+  "slug": "nb",
+  "description": "Command line note-taking, bookmarking, and archiving.",
+  "website": "https://xwmx.github.io/nb/",
+  "git_repo": "https://github.com/xwmx/nb",
+  "license": "MIT",
+  "categories": ["productivity", "terminal"],
+  "package_names": {
+    "default": "nb",
+    "arch": "nb",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

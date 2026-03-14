@@ -1,0 +1,19 @@
+{
+  "name": "nmap",
+  "slug": "nmap",
+  "description": "Network exploration and security auditing tool.",
+  "website": "https://nmap.org/",
+  "git_repo": "https://github.com/nmap/nmap",
+  "license": "GPL-2.0+",
+  "categories": ["network", "security"],
+  "package_names": {
+    "default": "nmap",
+    "arch": "nmap",
+    "ubuntu": "nmap",
+    "debian": "nmap",
+    "fedora": "nmap",
+    "opensuse": "nmap",
+    "void": "nmap",
+    "alpine": "nmap"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "yq",
+  "slug": "yq",
+  "description": "YAML/JSON/XML processor.",
+  "website": "https://mikefarah.gitbook.io/yq/",
+  "git_repo": "https://github.com/mikefarah/yq",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "yq",
+    "arch": "yq",
+    "ubuntu": "yq",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "yq",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "yq",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

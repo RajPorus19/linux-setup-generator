@@ -1,0 +1,19 @@
+{
+  "name": "asciinema",
+  "slug": "asciinema",
+  "description": "Record and share terminal sessions.",
+  "website": "https://asciinema.org/",
+  "git_repo": "https://github.com/asciinema/asciinema",
+  "license": "GPL-3.0",
+  "categories": ["terminal", "fun"],
+  "package_names": {
+    "default": "asciinema",
+    "arch": "asciinema",
+    "ubuntu": "asciinema",
+    "debian": "asciinema",
+    "fedora": "asciinema",
+    "opensuse": "asciinema",
+    "void": "asciinema",
+    "alpine": "asciinema"
+  }
+}

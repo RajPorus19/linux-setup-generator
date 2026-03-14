@@ -1,0 +1,19 @@
+{
+  "name": "bandwhich",
+  "slug": "bandwhich",
+  "description": "Terminal bandwidth utilization tool written in Rust.",
+  "website": "https://github.com/imsnif/bandwhich",
+  "git_repo": "https://github.com/imsnif/bandwhich",
+  "license": "MIT",
+  "categories": ["network", "terminal"],
+  "package_names": {
+    "default": "bandwhich",
+    "arch": "bandwhich",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "bandwhich",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "bandwhich",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

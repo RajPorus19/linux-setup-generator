@@ -1,0 +1,19 @@
+{
+  "name": "procs",
+  "slug": "procs",
+  "description": "Modern replacement for ps written in Rust.",
+  "website": "https://github.com/dalance/procs",
+  "git_repo": "https://github.com/dalance/procs",
+  "license": "MIT",
+  "categories": ["system", "terminal"],
+  "package_names": {
+    "default": "procs",
+    "arch": "procs",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "procs",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "procs",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

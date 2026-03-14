@@ -1,0 +1,19 @@
+{
+  "name": "yt-dlp",
+  "slug": "yt-dlp",
+  "description": "YouTube-DL fork with extra features.",
+  "website": "https://github.com/yt-dlp/yt-dlp",
+  "git_repo": "https://github.com/yt-dlp/yt-dlp",
+  "license": "Unlicense",
+  "categories": ["media", "terminal"],
+  "package_names": {
+    "default": "yt-dlp",
+    "arch": "yt-dlp",
+    "ubuntu": "yt-dlp",
+    "debian": "yt-dlp",
+    "fedora": "yt-dlp",
+    "opensuse": "yt-dlp",
+    "void": "yt-dlp",
+    "alpine": "yt-dlp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lazygit",
+  "slug": "lazygit",
+  "description": "Simple terminal UI for Git commands.",
+  "website": "https://github.com/jesseduffield/lazygit",
+  "git_repo": "https://github.com/jesseduffield/lazygit",
+  "license": "MIT",
+  "categories": ["development", "terminal"],
+  "package_names": {
+    "default": "lazygit",
+    "arch": "lazygit",
+    "ubuntu": "lazygit",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "lazygit",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "lazygit",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

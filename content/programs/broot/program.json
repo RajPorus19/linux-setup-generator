@@ -1,0 +1,19 @@
+{
+  "name": "broot",
+  "slug": "broot",
+  "description": "Interactive tree file browser.",
+  "website": "https://dystroy.org/broot/",
+  "git_repo": "https://github.com/Canop/broot",
+  "license": "MIT",
+  "categories": ["terminal", "system"],
+  "package_names": {
+    "default": "broot",
+    "arch": "broot",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "broot",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

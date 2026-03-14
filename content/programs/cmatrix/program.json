@@ -1,0 +1,19 @@
+{
+  "name": "cmatrix",
+  "slug": "cmatrix",
+  "description": "Matrix-like screen animation.",
+  "website": "https://github.com/abishekvashok/cmatrix",
+  "git_repo": "https://github.com/abishekvashok/cmatrix",
+  "license": "GPL-2.0",
+  "categories": ["fun", "terminal"],
+  "package_names": {
+    "default": "cmatrix",
+    "arch": "cmatrix",
+    "ubuntu": "cmatrix",
+    "debian": "cmatrix",
+    "fedora": "cmatrix",
+    "opensuse": "cmatrix",
+    "void": "cmatrix",
+    "alpine": "cmatrix"
+  }
+}

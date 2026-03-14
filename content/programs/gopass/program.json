@@ -1,0 +1,19 @@
+{
+  "name": "gopass",
+  "slug": "gopass",
+  "description": "Slightly better pass (Go implementation).",
+  "website": "https://www.gopass.pw/",
+  "git_repo": "https://github.com/gopasspw/gopass",
+  "license": "MIT",
+  "categories": ["security", "terminal"],
+  "package_names": {
+    "default": "gopass",
+    "arch": "gopass",
+    "ubuntu": "gopass",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "gopass",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

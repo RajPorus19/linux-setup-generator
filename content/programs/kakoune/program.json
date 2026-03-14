@@ -1,0 +1,19 @@
+{
+  "name": "kakoune",
+  "slug": "kakoune",
+  "description": "Modal code editor inspired by Vim.",
+  "website": "https://kakoune.org/",
+  "git_repo": "https://github.com/mawww/kakoune",
+  "license": "Unlicense",
+  "categories": ["editor", "terminal"],
+  "package_names": {
+    "default": "kakoune",
+    "arch": "kakoune",
+    "ubuntu": "kakoune",
+    "debian": "kakoune",
+    "fedora": "kakoune",
+    "opensuse": "kakoune",
+    "void": "kakoune",
+    "alpine": "kakoune"
+  }
+}

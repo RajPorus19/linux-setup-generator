@@ -1,0 +1,19 @@
+{
+  "name": "cmus",
+  "slug": "cmus",
+  "description": "Music player for terminal.",
+  "website": "https://cmus.github.io/",
+  "git_repo": "https://github.com/cmus/cmus",
+  "license": "GPL-2.0",
+  "categories": ["audio", "terminal"],
+  "package_names": {
+    "default": "cmus",
+    "arch": "cmus",
+    "ubuntu": "cmus",
+    "debian": "cmus",
+    "fedora": "cmus",
+    "opensuse": "cmus",
+    "void": "cmus",
+    "alpine": "cmus"
+  }
+}
