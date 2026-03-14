@@ -81,3 +81,11 @@ This means the final generated script will always install prerequisites before t
 - **Keep it minimal** — only include the steps required to install this one program.
 - **No `#!/bin/bash` header** — the generator adds this once at the top of the full script.
 - **Test on a clean system** if possible, to make sure no steps are missing.
+
+## Submit a pull request
+
+Once everything looks good locally, open a pull request against the main repository:
+
+**[github.com/RajPorus19/linux-setup-generator](https://github.com/RajPorus19/linux-setup-generator)**
+
+Fork the repo, push your changes to a branch, and open a PR from that branch to `main`. See the [Contributing](/docs/contributing/) guide for a step-by-step walkthrough.

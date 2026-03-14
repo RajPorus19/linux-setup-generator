@@ -72,3 +72,11 @@ The generator handles this recursively — it will build `my-lib` from source be
 ## Lookup order
 
 When the generator resolves a dependency slug, it searches `content/programs/` first, then `content/dependencies/`. This means a slug that exists in both places will always resolve to the program entry. In practice, slugs should be unique across both folders.
+
+## Submit a pull request
+
+Once your dependency is in place and everything tests correctly, open a pull request against the main repository:
+
+**[github.com/RajPorus19/linux-setup-generator](https://github.com/RajPorus19/linux-setup-generator)**
+
+Fork the repo, push your changes to a branch, and open a PR from that branch to `main`. See the [Contributing](/docs/contributing/) guide for a step-by-step walkthrough.

@@ -67,3 +67,11 @@ hugo server -b http://localhost:1313 -p 1313
 ```
 
 Your new distro should appear as a card in Step 1 with its logo. Select it and verify the generated script uses the correct install command.
+
+## Step 6 — Submit a pull request
+
+Once everything looks good locally, open a pull request against the main repository:
+
+**[github.com/RajPorus19/linux-setup-generator](https://github.com/RajPorus19/linux-setup-generator)**
+
+Fork the repo, push your changes to a branch, and open a PR from that branch to `main`. See the [Contributing](/docs/contributing/) guide for a step-by-step walkthrough.

@@ -160,3 +160,11 @@ hugo server -b http://localhost:1313 -p 1313
 ```
 
 Open the Programs page and search for your program by name. Then go through the Setup Generator and verify your program appears in the selection list and in the generated script.
+
+## Step 4 — Submit a pull request
+
+Once everything looks good locally, open a pull request against the main repository:
+
+**[github.com/RajPorus19/linux-setup-generator](https://github.com/RajPorus19/linux-setup-generator)**
+
+Fork the repo, push your changes to a branch, and open a PR from that branch to `main`. See the [Contributing](/docs/contributing/) guide for a step-by-step walkthrough.
