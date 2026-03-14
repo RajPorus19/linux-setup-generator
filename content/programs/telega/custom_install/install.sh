@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install telega.el via Emacs package system
 emacs --batch --eval "(progn
   (require 'package)
@@ -5,4 +6,4 @@ emacs --batch --eval "(progn
   (package-initialize)
   (package-refresh-contents)
   (package-install 'telega)
-  (message \"telega installed. Note: TDLib server will be compiled on first launch.\"))"
+  (message \"telega installed. TDLib server will be compiled on first launch.\"))"

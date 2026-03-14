@@ -1,3 +1,4 @@
+#!/bin/bash
 # Build opendoas from source on openSUSE
 zypper install -y git make gcc pam-devel
 git clone https://github.com/Duncaen/OpenDoas /tmp/opendoas-build

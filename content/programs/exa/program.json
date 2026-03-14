@@ -1,7 +1,7 @@
 {
   "name": "exa",
   "slug": "exa",
-  "description": "A modern replacement for 'ls' with colors and extra features.",
+  "description": "A modern replacement for ls with colors and extra features.",
   "git_repo": "https://github.com/ogham/exa",
   "license": "MIT",
   "categories": ["terminal"],

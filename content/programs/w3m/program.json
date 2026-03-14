@@ -2,7 +2,6 @@
   "name": "w3m",
   "slug": "w3m",
   "description": "A text-based web browser and pager.",
-  "website": "http://w3m.sourceforge.net/",
   "license": "MIT",
   "categories": ["browser", "terminal"],
   "package_names": {

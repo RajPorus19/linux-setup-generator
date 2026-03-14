@@ -2,7 +2,6 @@
   "name": "conky",
   "slug": "conky",
   "description": "A lightweight, highly configurable system monitor.",
-  "website": "https://github.com/brndnmtthws/conky",
   "git_repo": "https://github.com/brndnmtthws/conky",
   "license": "GPL-3.0",
   "categories": ["system", "x11"],

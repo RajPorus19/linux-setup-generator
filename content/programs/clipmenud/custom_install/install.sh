@@ -1,4 +1,5 @@
-# Install clipmenud (same package as clipmenu)
+#!/bin/bash
+# Install clipmenud (same repo as clipmenu)
 git clone https://github.com/cdown/clipmenu /tmp/clipmenud-build
 cd /tmp/clipmenud-build
 sudo make install

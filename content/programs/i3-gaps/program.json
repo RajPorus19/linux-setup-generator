@@ -1,7 +1,7 @@
 {
   "name": "i3-gaps",
   "slug": "i3-gaps",
-  "description": "A fork of i3 window manager with gaps between windows (merged into i3 4.22+).",
+  "description": "A fork of i3 with gaps between windows (gap support merged into i3 4.22+).",
   "git_repo": "https://github.com/Airblader/i3",
   "license": "BSD-3-Clause",
   "categories": ["wm", "x11"],

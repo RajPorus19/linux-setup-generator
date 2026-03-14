@@ -57,6 +57,7 @@
   /* Step 1 */
   .step-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.3rem; }
   .step-sub { color: #555; font-size: 0.9rem; margin: 0 0 1.25rem; }
+  .distro-logo { width: 52px; height: 52px; object-fit: contain; margin-bottom: 0.6rem; border-radius: 8px; }
 
   /* Step 2 */
   .step2-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.85rem 1.1rem; margin-bottom: 1.25rem; }
@@ -105,6 +106,7 @@
   <div class="distro-grid">
     {{ range $distros }}
     <div class="distro-card" data-slug="{{ .slug }}" data-name="{{ .name }}" onclick="selectDistro(this)">
+      {{ with .logo }}<img class="distro-logo" src="{{ . }}" alt="logo">{{ end }}
       <div class="distro-name">{{ .name }}</div>
       {{ with .description }}<p class="distro-desc">{{ . }}</p>{{ end }}
       <code class="distro-cmd">{{ .install_package_command }} &lt;package&gt;</code>

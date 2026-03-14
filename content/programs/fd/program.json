@@ -1,12 +1,12 @@
 {
   "name": "fd",
   "slug": "fd",
-  "description": "A simple, fast and user-friendly alternative to 'find'.",
+  "description": "A simple, fast and user-friendly alternative to find.",
   "git_repo": "https://github.com/sharkdp/fd",
   "license": "MIT/Apache-2.0",
   "categories": ["terminal"],
   "package_names": {
-    "default": "fd",
+    "default": "fd-find",
     "arch": "fd",
     "ubuntu": "fd-find",
     "debian": "fd-find",

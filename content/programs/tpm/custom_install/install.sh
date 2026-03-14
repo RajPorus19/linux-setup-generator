@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install Tmux Plugin Manager
 TPM_DIR="$HOME/.tmux/plugins/tpm"
 if [ -d "$TPM_DIR" ]; then

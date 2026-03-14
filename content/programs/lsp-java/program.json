@@ -5,7 +5,7 @@
   "git_repo": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
   "license": "EPL-2.0",
   "categories": ["development", "lsp"],
-  "dependencies": ["java"],
+  "dependencies": ["java", "curl"],
   "package_names": {
     "default": "CUSTOM_INSTALL"
   }

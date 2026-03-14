@@ -1,3 +1,4 @@
+#!/bin/bash
 # Build amfora from source using Go
 git clone https://github.com/makew0rld/amfora /tmp/amfora-build
 cd /tmp/amfora-build

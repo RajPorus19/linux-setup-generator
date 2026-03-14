@@ -2,7 +2,6 @@
   "name": "lynx",
   "slug": "lynx",
   "description": "A classic text-based web browser.",
-  "website": "https://lynx.browser.org/",
   "license": "GPL-2.0",
   "categories": ["browser", "terminal"],
   "package_names": {

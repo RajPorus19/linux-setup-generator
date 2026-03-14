@@ -1,7 +1,7 @@
 {
   "name": "libxft-dev",
   "slug": "libxft-dev",
-  "description": "X FreeType library development headers, used for font rendering in X11 programs.",
+  "description": "X FreeType library development headers for font rendering in X11 programs.",
   "categories": ["build"],
   "package_names": {
     "default": "libxft-dev",

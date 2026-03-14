@@ -1,6 +1,7 @@
 {
-    "name": "Void Linux",
-    "slug": "void",
-    "description": "Void Linux is an independent, stable rolling release distribution.",
-    "install_package_command": "xbps-install -S"
+  "name": "Void Linux",
+  "slug": "void",
+  "description": "Void Linux is an independent, stable rolling release distribution.",
+  "install_package_command": "xbps-install -S",
+  "logo": "/img/distros/void.png"
 }

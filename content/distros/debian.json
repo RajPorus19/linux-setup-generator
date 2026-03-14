@@ -1,6 +1,7 @@
 {
-    "name": "Debian",
-    "slug": "debian",
-    "description": "Debian is a stable, community-driven Linux distribution and the base for many others.",
-    "install_package_command": "apt-get install -y"
+  "name": "Debian",
+  "slug": "debian",
+  "description": "Debian is a stable, community-driven Linux distribution and the base for many others.",
+  "install_package_command": "apt-get install -y",
+  "logo": "/img/distros/debian.png"
 }

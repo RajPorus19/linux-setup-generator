@@ -2,7 +2,6 @@
   "name": "tree",
   "slug": "tree",
   "description": "Recursively displays directory contents as a tree structure.",
-  "website": "http://mama.indstate.edu/users/ice/tree/",
   "license": "GPL-2.0",
   "categories": ["terminal"],
   "package_names": {

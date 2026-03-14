@@ -6,7 +6,7 @@
   "license": "GPL-2.0",
   "categories": ["system"],
   "package_names": {
-    "default": "pacman",
+    "default": null,
     "arch": "pacman",
     "ubuntu": null,
     "debian": null,

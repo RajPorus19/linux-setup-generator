@@ -1,0 +1,16 @@
+{
+  "name": "libwebkit2gtk-dev",
+  "slug": "libwebkit2gtk-dev",
+  "description": "WebKit2 GTK+ development headers, required to build WebKit-based browsers.",
+  "categories": ["build"],
+  "package_names": {
+    "default": "libwebkit2gtk-4.0-dev",
+    "arch": "webkit2gtk",
+    "ubuntu": "libwebkit2gtk-4.1-dev",
+    "debian": "libwebkit2gtk-4.0-dev",
+    "fedora": "webkit2gtk4.1-devel",
+    "opensuse": "webkit2gtk3-devel",
+    "void": "webkit2gtk-devel",
+    "alpine": "webkit2gtk-dev"
+  }
+}

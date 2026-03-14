@@ -1,8 +1,8 @@
+#!/bin/bash
 # Install Miniconda
-MINICONDA_INSTALLER="/tmp/miniconda.sh"
-curl -fsSL "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" -o "$MINICONDA_INSTALLER"
-chmod +x "$MINICONDA_INSTALLER"
-bash "$MINICONDA_INSTALLER" -b -p "$HOME/miniconda3"
-rm "$MINICONDA_INSTALLER"
+curl -fsSL "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" -o /tmp/miniconda.sh
+chmod +x /tmp/miniconda.sh
+bash /tmp/miniconda.sh -b -p "$HOME/miniconda3"
+rm /tmp/miniconda.sh
 "$HOME/miniconda3/bin/conda" init bash
 echo "Miniconda installed. Restart your shell or run: source ~/.bashrc"

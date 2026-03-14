@@ -1,7 +1,7 @@
 {
   "name": "clipmenu",
   "slug": "clipmenu",
-  "description": "A clipboard management using dmenu.",
+  "description": "Clipboard management using dmenu.",
   "git_repo": "https://github.com/cdown/clipmenu",
   "license": "Public Domain",
   "categories": ["utility", "x11"],

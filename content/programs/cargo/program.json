@@ -5,7 +5,7 @@
   "website": "https://doc.rust-lang.org/cargo/",
   "git_repo": "https://github.com/rust-lang/cargo",
   "license": "MIT/Apache-2.0",
-  "categories": ["development", "terminal"],
+  "categories": ["development"],
   "package_names": {
     "default": "cargo",
     "arch": "rust",

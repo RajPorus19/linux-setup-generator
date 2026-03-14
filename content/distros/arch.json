@@ -1,6 +1,7 @@
 {
-    "name": "Arch Linux",
-    "slug": "arch",
-    "description": "Arch Linux bleeding edge rolling release distribution",
-    "install_package_command": "pacman -S"
+  "name": "Arch Linux",
+  "slug": "arch",
+  "description": "Arch Linux bleeding edge rolling release distribution",
+  "install_package_command": "pacman -S",
+  "logo": "/img/distros/arch.png"
 }

@@ -1,6 +1,7 @@
 {
-    "name": "Alpine Linux",
-    "slug": "alpine",
-    "description": "Alpine Linux is a minimal, security-oriented distribution popular for containers.",
-    "install_package_command": "apk add"
+  "name": "Alpine Linux",
+  "slug": "alpine",
+  "description": "Alpine Linux is a minimal, security-oriented distribution popular for containers.",
+  "install_package_command": "apk add",
+  "logo": "/img/distros/alpine.png"
 }

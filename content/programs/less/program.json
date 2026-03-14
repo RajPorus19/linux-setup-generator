@@ -1,7 +1,7 @@
 {
   "name": "less",
   "slug": "less",
-  "description": "A terminal pager program that allows backward movement in a file.",
+  "description": "A terminal pager that allows backward movement in a file.",
   "license": "GPL-3.0",
   "categories": ["terminal"],
   "package_names": {

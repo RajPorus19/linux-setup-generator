@@ -1,3 +1,4 @@
+#!/bin/bash
 # Build surf from source
 git clone https://git.suckless.org/surf /tmp/surf-build
 cd /tmp/surf-build

@@ -6,7 +6,7 @@
   "license": "GPL-2.0",
   "categories": ["development", "runtime"],
   "package_names": {
-    "default": "jdk-openjdk",
+    "default": "default-jdk",
     "arch": "jdk-openjdk",
     "ubuntu": "default-jdk",
     "debian": "default-jdk",

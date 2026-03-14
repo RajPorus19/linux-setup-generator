@@ -1,7 +1,7 @@
 {
   "name": "bat",
   "slug": "bat",
-  "description": "A 'cat' clone with syntax highlighting and Git integration.",
+  "description": "A cat clone with syntax highlighting and Git integration.",
   "git_repo": "https://github.com/sharkdp/bat",
   "license": "MIT/Apache-2.0",
   "categories": ["terminal"],

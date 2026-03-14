@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install elfeed via Emacs package system
 emacs --batch --eval "(progn
   (require 'package)
