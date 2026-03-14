@@ -2,3 +2,6 @@ baseURL = 'https://linux-setup-generator.online/'
 languageCode = 'en-us'
 title = 'Linux Setup Generator'
 ignoreFiles = ['README\.md']
+
+[params]
+  description = "Pick your Linux distro, choose your programs, and get a ready-to-run install script in seconds. Free, open-source, no account needed."
