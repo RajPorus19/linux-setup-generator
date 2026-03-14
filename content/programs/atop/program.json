@@ -1,0 +1,20 @@
+{
+  "name": "atop",
+  "slug": "atop",
+  "description": "Advanced interactive monitor for processes and system resources.",
+  "website": "https://github.com/Atoptool/atop",
+  "git_repo": "https://github.com/Atoptool/atop",
+  "license": "GPL-2.0",
+  "categories": ["system-monitor", "terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "atop",
+    "arch": "atop",
+    "ubuntu": "atop",
+    "debian": "atop",
+    "fedora": "atop",
+    "opensuse": "atop",
+    "void": "atop",
+    "alpine": "atop"
+  }
+}

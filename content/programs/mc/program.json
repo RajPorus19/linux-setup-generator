@@ -1,0 +1,20 @@
+{
+  "name": "Midnight Commander",
+  "slug": "mc",
+  "description": "Feature-rich visual file manager for the terminal (Midnight Commander).",
+  "website": "https://midnight-commander.org/",
+  "git_repo": "https://github.com/MidnightCommander/mc",
+  "license": "GPL-3.0",
+  "categories": ["file-manager", "terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "mc",
+    "arch": "mc",
+    "ubuntu": "mc",
+    "debian": "mc",
+    "fedora": "mc",
+    "opensuse": "mc",
+    "void": "mc",
+    "alpine": "mc"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Nitrogen",
+  "slug": "nitrogen",
+  "description": "Background browser and setter for X11 window managers.",
+  "website": "https://github.com/l3ib/nitrogen",
+  "git_repo": "https://github.com/l3ib/nitrogen",
+  "license": "GPL-2.0",
+  "categories": ["display", "theming"],
+  "dependencies": [],
+  "package_names": {
+    "default": "nitrogen",
+    "arch": "nitrogen",
+    "ubuntu": "nitrogen",
+    "debian": "nitrogen",
+    "fedora": "nitrogen",
+    "opensuse": "nitrogen",
+    "void": "nitrogen",
+    "alpine": "nitrogen"
+  }
+}

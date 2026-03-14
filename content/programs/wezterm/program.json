@@ -1,0 +1,25 @@
+{
+  "name": "WezTerm",
+  "slug": "wezterm",
+  "description": "GPU-accelerated cross-platform terminal emulator and multiplexer.",
+  "website": "https://wezfurlong.org/wezterm/",
+  "git_repo": "https://github.com/wez/wezterm",
+  "license": "MIT",
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "wezterm",
+    "arch": "wezterm",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "wezterm",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/wezterm/logo.png"
+}

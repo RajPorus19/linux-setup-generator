@@ -1,0 +1,26 @@
+{
+  "name": "Hyprland",
+  "slug": "hyprland",
+  "description": "Dynamic tiling Wayland compositor with beautiful animations.",
+  "website": "https://hyprland.org/",
+  "git_repo": "https://github.com/hyprwm/Hyprland",
+  "license": "BSD-3-Clause",
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [
+    "git-dep",
+    "cmake"
+  ],
+  "package_names": {
+    "default": "hyprland",
+    "arch": "hyprland",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "hyprland",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/hyprland/logo.png"
+}

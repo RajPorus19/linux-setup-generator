@@ -1,0 +1,20 @@
+{
+  "name": "xwallpaper",
+  "slug": "xwallpaper",
+  "description": "Minimalist wallpaper setting utility for X11.",
+  "website": "https://github.com/stoeckmann/xwallpaper",
+  "git_repo": "https://github.com/stoeckmann/xwallpaper",
+  "license": "ISC",
+  "categories": ["display", "theming"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "xwallpaper",
+    "arch": "xwallpaper",
+    "ubuntu": "xwallpaper",
+    "debian": "xwallpaper",
+    "fedora": "xwallpaper",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "xwallpaper",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

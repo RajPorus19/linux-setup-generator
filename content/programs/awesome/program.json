@@ -1,0 +1,23 @@
+{
+  "name": "awesome",
+  "slug": "awesome",
+  "description": "Highly configurable tiling window manager for X11 written in Lua.",
+  "website": "https://awesomewm.org/",
+  "git_repo": "https://github.com/awesomeWM/awesome",
+  "license": "GPL-2.0",
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "awesome",
+    "arch": "awesome",
+    "ubuntu": "awesome",
+    "debian": "awesome",
+    "fedora": "awesome",
+    "opensuse": "awesome",
+    "void": "awesome",
+    "alpine": "awesome"
+  },
+  "logo": "/programs/awesome/logo.png"
+}

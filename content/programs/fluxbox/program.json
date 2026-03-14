@@ -1,0 +1,20 @@
+{
+  "name": "Fluxbox",
+  "slug": "fluxbox",
+  "description": "Lightweight and highly configurable window manager for X11.",
+  "website": "http://fluxbox.org/",
+  "git_repo": "https://github.com/fluxbox/fluxbox",
+  "license": "MIT",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "fluxbox",
+    "arch": "fluxbox",
+    "ubuntu": "fluxbox",
+    "debian": "fluxbox",
+    "fedora": "fluxbox",
+    "opensuse": "fluxbox",
+    "void": "fluxbox",
+    "alpine": "fluxbox"
+  }
+}

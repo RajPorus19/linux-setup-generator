@@ -1,0 +1,20 @@
+{
+  "name": "tdrop",
+  "slug": "tdrop",
+  "description": "WM-independent dropdown creator for terminals and other applications.",
+  "website": "https://github.com/noctuid/tdrop",
+  "git_repo": "https://github.com/noctuid/tdrop",
+  "license": "GPL-3.0",
+  "categories": ["terminal", "window-management"],
+  "dependencies": ["curl"],
+  "package_names": {
+    "default": "tdrop",
+    "arch": "tdrop",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

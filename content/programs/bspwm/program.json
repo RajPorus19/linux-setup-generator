@@ -1,0 +1,23 @@
+{
+  "name": "bspwm",
+  "slug": "bspwm",
+  "description": "Tiling window manager based on binary space partitioning.",
+  "website": "https://github.com/baskerville/bspwm",
+  "git_repo": "https://github.com/baskerville/bspwm",
+  "license": "BSD-2-Clause",
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "bspwm",
+    "arch": "bspwm",
+    "ubuntu": "bspwm",
+    "debian": "bspwm",
+    "fedora": "bspwm",
+    "opensuse": "bspwm",
+    "void": "bspwm",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/bspwm/logo.png"
+}

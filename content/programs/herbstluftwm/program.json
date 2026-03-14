@@ -1,0 +1,20 @@
+{
+  "name": "herbstluftwm",
+  "slug": "herbstluftwm",
+  "description": "Manual tiling window manager for X11 using Xlib.",
+  "website": "https://herbstluftwm.org/",
+  "git_repo": "https://github.com/herbstluftwm/herbstluftwm",
+  "license": "BSD-2-Clause",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "herbstluftwm",
+    "arch": "herbstluftwm",
+    "ubuntu": "herbstluftwm",
+    "debian": "herbstluftwm",
+    "fedora": "herbstluftwm",
+    "opensuse": "herbstluftwm",
+    "void": "herbstluftwm",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

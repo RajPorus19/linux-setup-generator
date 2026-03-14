@@ -1,0 +1,20 @@
+{
+  "name": "IceWM",
+  "slug": "icewm",
+  "description": "Window manager designed for speed, usability and consistency.",
+  "website": "https://ice-wm.org/",
+  "git_repo": "https://github.com/bbidulock/icewm",
+  "license": "LGPL-2.0",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "icewm",
+    "arch": "icewm",
+    "ubuntu": "icewm",
+    "debian": "icewm",
+    "fedora": "icewm",
+    "opensuse": "icewm",
+    "void": "icewm",
+    "alpine": "icewm"
+  }
+}

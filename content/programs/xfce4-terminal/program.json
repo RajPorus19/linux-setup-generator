@@ -1,0 +1,20 @@
+{
+  "name": "xfce4-terminal",
+  "slug": "xfce4-terminal",
+  "description": "Lightweight and easy-to-use terminal emulator for Xfce.",
+  "website": "https://docs.xfce.org/apps/xfce4-terminal/start",
+  "git_repo": "https://github.com/xfce-mirror/xfce4-terminal",
+  "license": "GPL-2.0",
+  "categories": ["terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "xfce4-terminal",
+    "arch": "xfce4-terminal",
+    "ubuntu": "xfce4-terminal",
+    "debian": "xfce4-terminal",
+    "fedora": "xfce4-terminal",
+    "opensuse": "xfce4-terminal",
+    "void": "xfce4-terminal",
+    "alpine": "xfce4-terminal"
+  }
+}

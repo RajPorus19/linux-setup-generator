@@ -1,0 +1,20 @@
+{
+  "name": "Polybar",
+  "slug": "polybar",
+  "description": "Fast and easy-to-use status bar.",
+  "website": "https://polybar.github.io/",
+  "git_repo": "https://github.com/polybar/polybar",
+  "license": "MIT",
+  "categories": ["status-bar"],
+  "dependencies": ["git-dep", "cmake"],
+  "package_names": {
+    "default": "polybar",
+    "arch": "polybar",
+    "ubuntu": "polybar",
+    "debian": "polybar",
+    "fedora": "polybar",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "polybar",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

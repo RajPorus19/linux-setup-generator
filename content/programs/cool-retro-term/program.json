@@ -1,0 +1,20 @@
+{
+  "name": "cool-retro-term",
+  "slug": "cool-retro-term",
+  "description": "Terminal emulator that mimics old CRT displays.",
+  "website": "https://github.com/Swordfish90/cool-retro-term",
+  "git_repo": "https://github.com/Swordfish90/cool-retro-term",
+  "license": "GPL-3.0",
+  "categories": ["terminal", "fun"],
+  "dependencies": [],
+  "package_names": {
+    "default": "cool-retro-term",
+    "arch": "cool-retro-term",
+    "ubuntu": "cool-retro-term",
+    "debian": "cool-retro-term",
+    "fedora": "cool-retro-term",
+    "opensuse": "cool-retro-term",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

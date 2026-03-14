@@ -1,0 +1,20 @@
+{
+  "name": "XMonad",
+  "slug": "xmonad",
+  "description": "Minimalist tiling window manager for X11 written and configured in Haskell.",
+  "website": "https://xmonad.org/",
+  "git_repo": "https://github.com/xmonad/xmonad",
+  "license": "BSD-3-Clause",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "xmonad",
+    "arch": "xmonad",
+    "ubuntu": "xmonad",
+    "debian": "xmonad",
+    "fedora": "xmonad",
+    "opensuse": "xmonad",
+    "void": "xmonad",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

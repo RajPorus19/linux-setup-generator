@@ -1,0 +1,20 @@
+{
+  "name": "Guake",
+  "slug": "guake",
+  "description": "Drop-down terminal for GNOME desktop.",
+  "website": "http://guake-project.org/",
+  "git_repo": "https://github.com/Guake/guake",
+  "license": "GPL-2.0",
+  "categories": ["terminal"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "guake",
+    "arch": "guake",
+    "ubuntu": "guake",
+    "debian": "guake",
+    "fedora": "guake",
+    "opensuse": "guake",
+    "void": "guake",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

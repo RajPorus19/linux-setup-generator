@@ -1,0 +1,20 @@
+{
+  "name": "clifm",
+  "slug": "clifm",
+  "description": "Shell-like and KISS terminal file manager written in C.",
+  "website": "https://github.com/leo-arch/clifm",
+  "git_repo": "https://github.com/leo-arch/clifm",
+  "license": "GPL-2.0",
+  "categories": ["file-manager", "terminal"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "clifm",
+    "arch": "clifm",
+    "ubuntu": "clifm",
+    "debian": "clifm",
+    "fedora": "clifm",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

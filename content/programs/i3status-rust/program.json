@@ -1,0 +1,20 @@
+{
+  "name": "i3status-rust",
+  "slug": "i3status-rust",
+  "description": "Feature-rich and resource-friendly replacement for i3status written in Rust.",
+  "website": "https://github.com/greshake/i3status-rust",
+  "git_repo": "https://github.com/greshake/i3status-rust",
+  "license": "GPL-3.0",
+  "categories": ["status-bar"],
+  "dependencies": ["cargo"],
+  "package_names": {
+    "default": "i3status-rust",
+    "arch": "i3status-rust",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

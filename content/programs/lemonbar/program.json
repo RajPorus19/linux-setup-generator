@@ -1,0 +1,20 @@
+{
+  "name": "lemonbar",
+  "slug": "lemonbar",
+  "description": "Featherweight, lemon-scented status bar based on XCB.",
+  "website": "https://github.com/LemonBoy/bar",
+  "git_repo": "https://github.com/LemonBoy/bar",
+  "license": "MIT",
+  "categories": ["status-bar"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "lemonbar",
+    "arch": "lemonbar",
+    "ubuntu": "lemonbar",
+    "debian": "lemonbar",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "lemonbar",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "JWM",
+  "slug": "jwm",
+  "description": "Lightweight window manager using Xlib and JPEG/PNG/XPM.",
+  "website": "https://joewing.net/projects/jwm/",
+  "git_repo": "https://github.com/joewing/jwm",
+  "license": "GPL-2.0",
+  "categories": ["window-manager"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "jwm",
+    "arch": "jwm",
+    "ubuntu": "jwm",
+    "debian": "jwm",
+    "fedora": "jwm",
+    "opensuse": "jwm",
+    "void": "jwm",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

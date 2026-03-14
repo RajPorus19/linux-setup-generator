@@ -1,0 +1,20 @@
+{
+  "name": "musikcube",
+  "slug": "musikcube",
+  "description": "Cross-platform, terminal-based music player and server.",
+  "website": "https://musikcube.com/",
+  "git_repo": "https://github.com/clangen/musikcube",
+  "license": "BSD-3-Clause",
+  "categories": ["audio", "terminal"],
+  "dependencies": ["git-dep", "cmake"],
+  "package_names": {
+    "default": "musikcube",
+    "arch": "musikcube",
+    "ubuntu": "musikcube",
+    "debian": "musikcube",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "musikcube",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Liquid Prompt",
+  "slug": "liquidprompt",
+  "description": "Full-featured and adaptive prompt for Bash and Zsh.",
+  "website": "https://github.com/nojhan/liquidprompt",
+  "git_repo": "https://github.com/nojhan/liquidprompt",
+  "license": "AGPL-3.0",
+  "categories": ["shell", "terminal"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "liquidprompt",
+    "arch": "liquidprompt",
+    "ubuntu": "liquidprompt",
+    "debian": "liquidprompt",
+    "fedora": "liquidprompt",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Qtile",
+  "slug": "qtile",
+  "description": "Full-featured, hackable tiling window manager written and configured in Python.",
+  "website": "http://www.qtile.org/",
+  "git_repo": "https://github.com/qtile/qtile",
+  "license": "MIT",
+  "categories": ["window-manager"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "qtile",
+    "arch": "qtile",
+    "ubuntu": "qtile",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "qtile",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

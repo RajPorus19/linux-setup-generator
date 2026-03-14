@@ -1,0 +1,20 @@
+{
+  "name": "tint2",
+  "slug": "tint2",
+  "description": "Lightweight panel and taskbar for Linux and BSD.",
+  "website": "https://gitlab.com/o9000/tint2",
+  "git_repo": "https://gitlab.com/o9000/tint2",
+  "license": "GPL-2.0",
+  "categories": ["status-bar"],
+  "dependencies": [],
+  "package_names": {
+    "default": "tint2",
+    "arch": "tint2",
+    "ubuntu": "tint2",
+    "debian": "tint2",
+    "fedora": "tint2",
+    "opensuse": "tint2",
+    "void": "tint2",
+    "alpine": "tint2"
+  }
+}

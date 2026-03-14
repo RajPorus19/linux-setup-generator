@@ -1,0 +1,23 @@
+{
+  "name": "Sway",
+  "slug": "sway",
+  "description": "i3-compatible tiling Wayland compositor.",
+  "website": "https://swaywm.org/",
+  "git_repo": "https://github.com/swaywm/sway",
+  "license": "MIT",
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "sway",
+    "arch": "sway",
+    "ubuntu": "sway",
+    "debian": "sway",
+    "fedora": "sway",
+    "opensuse": "sway",
+    "void": "sway",
+    "alpine": "sway"
+  },
+  "logo": "/programs/sway/logo.png"
+}

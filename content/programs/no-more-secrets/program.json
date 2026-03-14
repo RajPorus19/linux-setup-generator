@@ -1,0 +1,20 @@
+{
+  "name": "no-more-secrets",
+  "slug": "no-more-secrets",
+  "description": "Recreates the famous data decryption effect from the movie Sneakers.",
+  "website": "https://github.com/bartobri/no-more-secrets",
+  "git_repo": "https://github.com/bartobri/no-more-secrets",
+  "license": "MIT",
+  "categories": ["fun", "terminal"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "no-more-secrets",
+    "arch": "no-more-secrets",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

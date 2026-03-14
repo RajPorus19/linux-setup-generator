@@ -1,0 +1,20 @@
+{
+  "name": "bpytop",
+  "slug": "bpytop",
+  "description": "Resource monitor written in Python with a modern look.",
+  "website": "https://github.com/aristocratos/bpytop",
+  "git_repo": "https://github.com/aristocratos/bpytop",
+  "license": "Apache-2.0",
+  "categories": ["system-monitor", "terminal"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "bpytop",
+    "arch": "bpytop",
+    "ubuntu": "bpytop",
+    "debian": "bpytop",
+    "fedora": "bpytop",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "bpytop",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

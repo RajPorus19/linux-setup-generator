@@ -1,0 +1,20 @@
+{
+  "name": "river",
+  "slug": "river",
+  "description": "Dynamic tiling Wayland compositor.",
+  "website": "https://github.com/riverwm/river",
+  "git_repo": "https://github.com/riverwm/river",
+  "license": "GPL-3.0",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "river",
+    "arch": "river",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "river",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

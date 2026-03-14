@@ -1,0 +1,20 @@
+{
+  "name": "spectrwm",
+  "slug": "spectrwm",
+  "description": "Small dynamic tiling window manager for X11.",
+  "website": "https://github.com/conformal/spectrwm",
+  "git_repo": "https://github.com/conformal/spectrwm",
+  "license": "ISC",
+  "categories": ["window-manager"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "spectrwm",
+    "arch": "spectrwm",
+    "ubuntu": "spectrwm",
+    "debian": "spectrwm",
+    "fedora": "spectrwm",
+    "opensuse": "spectrwm",
+    "void": "spectrwm",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

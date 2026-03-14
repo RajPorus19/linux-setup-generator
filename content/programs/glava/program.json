@@ -1,0 +1,20 @@
+{
+  "name": "GLava",
+  "slug": "glava",
+  "description": "OpenGL audio spectrum visualizer for the desktop.",
+  "website": "https://github.com/jarcode-foss/glava",
+  "git_repo": "https://github.com/jarcode-foss/glava",
+  "license": "GPL-3.0",
+  "categories": ["audio"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "glava",
+    "arch": "glava",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

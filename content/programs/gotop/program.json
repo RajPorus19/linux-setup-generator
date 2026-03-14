@@ -1,0 +1,20 @@
+{
+  "name": "gotop",
+  "slug": "gotop",
+  "description": "Terminal-based graphical activity monitor.",
+  "website": "https://github.com/cjbassi/gotop",
+  "git_repo": "https://github.com/cjbassi/gotop",
+  "license": "MIT",
+  "categories": ["system-monitor", "terminal"],
+  "dependencies": ["golang"],
+  "package_names": {
+    "default": "gotop",
+    "arch": "gotop",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "joshuto",
+  "slug": "joshuto",
+  "description": "Ranger-like terminal file manager written in Rust.",
+  "website": "https://github.com/kamiyaa/joshuto",
+  "git_repo": "https://github.com/kamiyaa/joshuto",
+  "license": "MIT",
+  "categories": ["file-manager", "terminal"],
+  "dependencies": ["cargo"],
+  "package_names": {
+    "default": "joshuto",
+    "arch": "joshuto",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "joshuto",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

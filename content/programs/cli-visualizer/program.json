@@ -1,0 +1,20 @@
+{
+  "name": "cli-visualizer",
+  "slug": "cli-visualizer",
+  "description": "CLI-based audio visualizer using FFTW.",
+  "website": "https://github.com/dpayne/cli-visualizer",
+  "git_repo": "https://github.com/dpayne/cli-visualizer",
+  "license": "MIT",
+  "categories": ["audio", "terminal"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "cli-visualizer",
+    "arch": "cli-visualizer",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

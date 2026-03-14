@@ -1,0 +1,20 @@
+{
+  "name": "bumblebee-status",
+  "slug": "bumblebee-status",
+  "description": "Modular and theme-able status line generator for i3.",
+  "website": "https://github.com/tobi-wan-kenobi/bumblebee-status",
+  "git_repo": "https://github.com/tobi-wan-kenobi/bumblebee-status",
+  "license": "MIT",
+  "categories": ["status-bar"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "bumblebee-status",
+    "arch": "bumblebee-status",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

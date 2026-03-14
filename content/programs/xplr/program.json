@@ -1,0 +1,20 @@
+{
+  "name": "xplr",
+  "slug": "xplr",
+  "description": "Hackable, minimal, fast TUI file explorer written in Rust.",
+  "website": "https://xplr.dev/",
+  "git_repo": "https://github.com/sayanarijit/xplr",
+  "license": "MIT",
+  "categories": ["file-manager", "terminal"],
+  "dependencies": ["cargo"],
+  "package_names": {
+    "default": "xplr",
+    "arch": "xplr",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "xplr",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

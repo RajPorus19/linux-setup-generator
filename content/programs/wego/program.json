@@ -1,0 +1,20 @@
+{
+  "name": "wego",
+  "slug": "wego",
+  "description": "Weather app for the terminal with ASCII art.",
+  "website": "https://github.com/schachmat/wego",
+  "git_repo": "https://github.com/schachmat/wego",
+  "license": "MIT",
+  "categories": ["terminal", "internet"],
+  "dependencies": ["golang"],
+  "package_names": {
+    "default": "wego",
+    "arch": "wego",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

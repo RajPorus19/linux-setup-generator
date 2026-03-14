@@ -1,0 +1,26 @@
+{
+  "name": "Nushell",
+  "slug": "nushell",
+  "description": "Modern shell that treats data as structured tables.",
+  "website": "https://www.nushell.sh/",
+  "git_repo": "https://github.com/nushell/nushell",
+  "license": "MIT",
+  "categories": [
+    "shell",
+    "terminal"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
+  "package_names": {
+    "default": "nushell",
+    "arch": "nushell",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "nushell",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "nushell",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/nushell/logo.png"
+}

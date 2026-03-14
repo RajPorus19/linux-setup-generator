@@ -1,0 +1,20 @@
+{
+  "name": "Powerlevel10k",
+  "slug": "powerlevel10k",
+  "description": "Fast and flexible Zsh theme with extensive customization.",
+  "website": "https://github.com/romkatv/powerlevel10k",
+  "git_repo": "https://github.com/romkatv/powerlevel10k",
+  "license": "MIT",
+  "categories": ["shell", "terminal"],
+  "dependencies": ["git-dep", "zsh"],
+  "package_names": {
+    "default": "zsh-theme-powerlevel10k",
+    "arch": "zsh-theme-powerlevel10k",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

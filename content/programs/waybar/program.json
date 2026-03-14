@@ -1,0 +1,20 @@
+{
+  "name": "Waybar",
+  "slug": "waybar",
+  "description": "Highly customizable Wayland bar for Sway and wlroots compositors.",
+  "website": "https://github.com/Alexays/Waybar",
+  "git_repo": "https://github.com/Alexays/Waybar",
+  "license": "MIT",
+  "categories": ["status-bar"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "waybar",
+    "arch": "waybar",
+    "ubuntu": "waybar",
+    "debian": "waybar",
+    "fedora": "waybar",
+    "opensuse": "waybar",
+    "void": "waybar",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

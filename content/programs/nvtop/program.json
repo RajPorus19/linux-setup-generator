@@ -1,0 +1,20 @@
+{
+  "name": "nvtop",
+  "slug": "nvtop",
+  "description": "GPU process monitoring tool, similar to htop for NVIDIA/AMD GPUs.",
+  "website": "https://github.com/Syllo/nvtop",
+  "git_repo": "https://github.com/Syllo/nvtop",
+  "license": "GPL-3.0",
+  "categories": ["system-monitor", "terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "nvtop",
+    "arch": "nvtop",
+    "ubuntu": "nvtop",
+    "debian": "nvtop",
+    "fedora": "nvtop",
+    "opensuse": "nvtop",
+    "void": "nvtop",
+    "alpine": "nvtop"
+  }
+}

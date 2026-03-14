@@ -1,0 +1,20 @@
+{
+  "name": "s-tui",
+  "slug": "s-tui",
+  "description": "Terminal UI for monitoring CPU temperature, frequency and power.",
+  "website": "https://github.com/amanusk/s-tui",
+  "git_repo": "https://github.com/amanusk/s-tui",
+  "license": "GPL-2.0",
+  "categories": ["system-monitor", "terminal"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "s-tui",
+    "arch": "s-tui",
+    "ubuntu": "s-tui",
+    "debian": "s-tui",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

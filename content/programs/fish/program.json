@@ -1,0 +1,24 @@
+{
+  "name": "fish",
+  "slug": "fish",
+  "description": "User-friendly command line shell with syntax highlighting and autosuggestions.",
+  "website": "https://fishshell.com/",
+  "git_repo": "https://github.com/fish-shell/fish-shell",
+  "license": "GPL-2.0",
+  "categories": [
+    "shell",
+    "terminal"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "fish",
+    "arch": "fish",
+    "ubuntu": "fish",
+    "debian": "fish",
+    "fedora": "fish",
+    "opensuse": "fish",
+    "void": "fish",
+    "alpine": "fish"
+  },
+  "logo": "/programs/fish/logo.png"
+}

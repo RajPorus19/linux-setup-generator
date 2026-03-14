@@ -1,0 +1,20 @@
+{
+  "name": "oomox",
+  "slug": "oomox",
+  "description": "GUI app for generating GTK theme variations.",
+  "website": "https://github.com/themix-project/oomox",
+  "git_repo": "https://github.com/themix-project/oomox",
+  "license": "GPL-3.0",
+  "categories": ["theming"],
+  "dependencies": ["pip"],
+  "package_names": {
+    "default": "oomox",
+    "arch": "oomox",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

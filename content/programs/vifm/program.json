@@ -1,0 +1,20 @@
+{
+  "name": "vifm",
+  "slug": "vifm",
+  "description": "Vim-like terminal file manager.",
+  "website": "https://vifm.info/",
+  "git_repo": "https://github.com/vifm/vifm",
+  "license": "GPL-2.0",
+  "categories": ["file-manager", "terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "vifm",
+    "arch": "vifm",
+    "ubuntu": "vifm",
+    "debian": "vifm",
+    "fedora": "vifm",
+    "opensuse": "vifm",
+    "void": "vifm",
+    "alpine": "vifm"
+  }
+}

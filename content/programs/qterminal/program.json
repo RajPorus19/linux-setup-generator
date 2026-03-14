@@ -1,0 +1,20 @@
+{
+  "name": "QTerminal",
+  "slug": "qterminal",
+  "description": "Lightweight Qt-based terminal emulator.",
+  "website": "https://github.com/lxqt/qterminal",
+  "git_repo": "https://github.com/lxqt/qterminal",
+  "license": "GPL-2.0",
+  "categories": ["terminal"],
+  "dependencies": [],
+  "package_names": {
+    "default": "qterminal",
+    "arch": "qterminal",
+    "ubuntu": "qterminal",
+    "debian": "qterminal",
+    "fedora": "qterminal",
+    "opensuse": "qterminal",
+    "void": "qterminal",
+    "alpine": "qterminal"
+  }
+}

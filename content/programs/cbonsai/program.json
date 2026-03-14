@@ -1,0 +1,20 @@
+{
+  "name": "cbonsai",
+  "slug": "cbonsai",
+  "description": "Grow bonsai trees in your terminal.",
+  "website": "https://gitlab.com/jallbrit/cbonsai",
+  "git_repo": "https://gitlab.com/jallbrit/cbonsai",
+  "license": "GPL-3.0",
+  "categories": ["fun", "terminal"],
+  "dependencies": ["git-dep"],
+  "package_names": {
+    "default": "cbonsai",
+    "arch": "cbonsai",
+    "ubuntu": "cbonsai",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}

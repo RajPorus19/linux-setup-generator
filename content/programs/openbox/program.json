@@ -1,0 +1,20 @@
+{
+  "name": "Openbox",
+  "slug": "openbox",
+  "description": "Highly configurable, standards-compliant floating window manager.",
+  "website": "http://openbox.org/",
+  "git_repo": "https://github.com/danakj/openbox",
+  "license": "GPL-2.0",
+  "categories": ["window-manager"],
+  "dependencies": [],
+  "package_names": {
+    "default": "openbox",
+    "arch": "openbox",
+    "ubuntu": "openbox",
+    "debian": "openbox",
+    "fedora": "openbox",
+    "opensuse": "openbox",
+    "void": "openbox",
+    "alpine": "openbox"
+  }
+}

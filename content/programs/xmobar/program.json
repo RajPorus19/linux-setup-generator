@@ -1,0 +1,20 @@
+{
+  "name": "xmobar",
+  "slug": "xmobar",
+  "description": "Minimalistic, mostly text-based status bar for XMonad.",
+  "website": "https://xmobar.org/",
+  "git_repo": "https://codeberg.org/xmobar/xmobar",
+  "license": "BSD-3-Clause",
+  "categories": ["status-bar"],
+  "dependencies": [],
+  "package_names": {
+    "default": "xmobar",
+    "arch": "xmobar",
+    "ubuntu": "xmobar",
+    "debian": "xmobar",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "xmobar",
+    "alpine": "CUSTOM_INSTALL"
+  }
+}
