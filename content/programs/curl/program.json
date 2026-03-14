@@ -5,7 +5,10 @@
   "website": "https://curl.se/",
   "git_repo": "https://github.com/curl/curl",
   "license": "MIT",
-  "categories": ["network", "terminal"],
+  "categories": [
+    "network",
+    "terminal"
+  ],
   "package_names": {
     "default": "curl",
     "arch": "curl",
@@ -15,5 +18,6 @@
     "opensuse": "curl",
     "void": "curl",
     "alpine": "curl"
-  }
+  },
+  "logo": "/programs/curl/logo.png"
 }

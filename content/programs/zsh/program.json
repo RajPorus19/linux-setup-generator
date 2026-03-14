@@ -4,7 +4,9 @@
   "description": "A powerful shell with interactive features.",
   "website": "https://www.zsh.org/",
   "license": "MIT",
-  "categories": ["shell"],
+  "categories": [
+    "shell"
+  ],
   "package_names": {
     "default": "zsh",
     "arch": "zsh",
@@ -14,5 +16,6 @@
     "opensuse": "zsh",
     "void": "zsh",
     "alpine": "zsh"
-  }
+  },
+  "logo": "/programs/zsh/logo.png"
 }

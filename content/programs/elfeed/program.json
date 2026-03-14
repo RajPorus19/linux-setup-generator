@@ -4,9 +4,14 @@
   "description": "An extensible web feed reader for Emacs (RSS/Atom).",
   "git_repo": "https://github.com/skeeto/elfeed",
   "license": "Unlicense",
-  "categories": ["rss"],
-  "dependencies": ["emacs"],
+  "categories": [
+    "rss"
+  ],
+  "dependencies": [
+    "emacs"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/elfeed/logo.png"
 }

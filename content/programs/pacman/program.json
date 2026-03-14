@@ -4,7 +4,9 @@
   "description": "The package manager for Arch Linux.",
   "website": "https://archlinux.org/pacman/",
   "license": "GPL-2.0",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": null,
     "arch": "pacman",
@@ -14,5 +16,6 @@
     "opensuse": null,
     "void": null,
     "alpine": null
-  }
+  },
+  "logo": "/programs/pacman/logo.png"
 }

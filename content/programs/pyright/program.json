@@ -4,12 +4,18 @@
   "description": "A fast Python type checker and language server by Microsoft.",
   "git_repo": "https://github.com/microsoft/pyright",
   "license": "MIT",
-  "categories": ["development", "lsp"],
-  "dependencies": ["npm"],
+  "categories": [
+    "development",
+    "lsp"
+  ],
+  "dependencies": [
+    "npm"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "pyright",
     "ubuntu": "pyright",
     "void": "pyright"
-  }
+  },
+  "logo": "/programs/pyright/logo.png"
 }

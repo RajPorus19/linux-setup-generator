@@ -4,10 +4,15 @@
   "description": "A full-featured Telegram client inside Emacs.",
   "git_repo": "https://github.com/zevlg/telega.el",
   "license": "GPL-3.0",
-  "categories": ["communication"],
-  "dependencies": ["emacs"],
+  "categories": [
+    "communication"
+  ],
+  "dependencies": [
+    "emacs"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "emacs-telega"
-  }
+  },
+  "logo": "/programs/telega/logo.png"
 }

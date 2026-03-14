@@ -5,7 +5,9 @@
   "website": "https://alacritty.org/",
   "git_repo": "https://github.com/alacritty/alacritty",
   "license": "Apache-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "alacritty",
     "arch": "alacritty",
@@ -15,5 +17,6 @@
     "opensuse": "alacritty",
     "void": "alacritty",
     "alpine": "alacritty"
-  }
+  },
+  "logo": "/programs/alacritty/logo.png"
 }

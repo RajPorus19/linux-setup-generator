@@ -1,10 +1,13 @@
 {
   "name": "Java",
   "slug": "java",
-  "description": "OpenJDK — the open-source Java development kit.",
+  "description": "OpenJDK \u2014 the open-source Java development kit.",
   "website": "https://openjdk.org/",
   "license": "GPL-2.0",
-  "categories": ["development", "runtime"],
+  "categories": [
+    "development",
+    "runtime"
+  ],
   "package_names": {
     "default": "default-jdk",
     "arch": "jdk-openjdk",
@@ -14,5 +17,6 @@
     "opensuse": "java-21-openjdk",
     "void": "openjdk",
     "alpine": "openjdk21"
-  }
+  },
+  "logo": "/programs/java/logo.png"
 }

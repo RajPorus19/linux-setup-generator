@@ -4,7 +4,10 @@
   "description": "A command-line tool to download videos from YouTube and other sites.",
   "git_repo": "https://github.com/ytdl-org/youtube-dl",
   "license": "Unlicense",
-  "categories": ["multimedia", "terminal"],
+  "categories": [
+    "multimedia",
+    "terminal"
+  ],
   "package_names": {
     "default": "youtube-dl",
     "arch": "youtube-dl",
@@ -14,5 +17,6 @@
     "opensuse": "youtube-dl",
     "void": "youtube-dl",
     "alpine": "youtube-dl"
-  }
+  },
+  "logo": "/programs/youtube-dl/logo.png"
 }

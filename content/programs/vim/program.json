@@ -5,7 +5,9 @@
   "website": "https://www.vim.org/",
   "git_repo": "https://github.com/vim/vim",
   "license": "Vim",
-  "categories": ["editor"],
+  "categories": [
+    "editor"
+  ],
   "package_names": {
     "default": "vim",
     "arch": "vim",
@@ -15,5 +17,6 @@
     "opensuse": "vim",
     "void": "vim",
     "alpine": "vim"
-  }
+  },
+  "logo": "/programs/vim/logo.png"
 }

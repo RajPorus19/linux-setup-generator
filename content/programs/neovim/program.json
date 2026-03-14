@@ -5,7 +5,9 @@
   "website": "https://neovim.io/",
   "git_repo": "https://github.com/neovim/neovim",
   "license": "Apache-2.0",
-  "categories": ["editor"],
+  "categories": [
+    "editor"
+  ],
   "package_names": {
     "default": "neovim",
     "arch": "neovim",
@@ -15,5 +17,6 @@
     "opensuse": "neovim",
     "void": "neovim",
     "alpine": "neovim"
-  }
+  },
+  "logo": "/programs/neovim/logo.png"
 }

@@ -1,10 +1,12 @@
 {
   "name": "GCC",
   "slug": "gcc",
-  "description": "The GNU Compiler Collection — supports C, C++, and more.",
+  "description": "The GNU Compiler Collection \u2014 supports C, C++, and more.",
   "website": "https://gcc.gnu.org/",
   "license": "GPL-3.0",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "gcc",
     "arch": "gcc",
@@ -14,5 +16,6 @@
     "opensuse": "gcc",
     "void": "gcc",
     "alpine": "gcc"
-  }
+  },
+  "logo": "/programs/gcc/logo.png"
 }

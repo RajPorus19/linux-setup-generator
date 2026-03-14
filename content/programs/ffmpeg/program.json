@@ -5,7 +5,10 @@
   "website": "https://ffmpeg.org/",
   "git_repo": "https://github.com/FFmpeg/FFmpeg",
   "license": "GPL-2.0",
-  "categories": ["multimedia", "terminal"],
+  "categories": [
+    "multimedia",
+    "terminal"
+  ],
   "package_names": {
     "default": "ffmpeg",
     "arch": "ffmpeg",
@@ -15,5 +18,6 @@
     "opensuse": "ffmpeg",
     "void": "ffmpeg",
     "alpine": "ffmpeg"
-  }
+  },
+  "logo": "/programs/ffmpeg/logo.png"
 }

@@ -4,7 +4,9 @@
   "description": "The open-source web browser project behind Google Chrome.",
   "website": "https://www.chromium.org/",
   "license": "BSD-3-Clause",
-  "categories": ["browser"],
+  "categories": [
+    "browser"
+  ],
   "package_names": {
     "default": "chromium",
     "arch": "chromium",
@@ -14,5 +16,6 @@
     "opensuse": "chromium",
     "void": "chromium",
     "alpine": "chromium"
-  }
+  },
+  "logo": "/programs/chromium/logo.png"
 }

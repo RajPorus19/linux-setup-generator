@@ -4,9 +4,17 @@
   "description": "A batteries-included Emacs configuration framework.",
   "git_repo": "https://github.com/doomemacs/doomemacs",
   "license": "MIT",
-  "categories": ["editor"],
-  "dependencies": ["emacs", "git", "ripgrep", "fd"],
+  "categories": [
+    "editor"
+  ],
+  "dependencies": [
+    "emacs",
+    "git",
+    "ripgrep",
+    "fd"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/doom-emacs/logo.png"
 }

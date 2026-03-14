@@ -4,10 +4,15 @@
   "description": "An open-source package management and environment management system.",
   "website": "https://docs.conda.io/",
   "license": "BSD-3-Clause",
-  "categories": ["development"],
-  "dependencies": ["curl"],
+  "categories": [
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "conda"
-  }
+  },
+  "logo": "/programs/conda/logo.png"
 }

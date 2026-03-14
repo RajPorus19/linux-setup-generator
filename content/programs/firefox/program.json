@@ -5,7 +5,9 @@
   "website": "https://www.mozilla.org/firefox/",
   "git_repo": "https://github.com/mozilla/gecko-dev",
   "license": "MPL-2.0",
-  "categories": ["browser"],
+  "categories": [
+    "browser"
+  ],
   "package_names": {
     "default": "firefox",
     "arch": "firefox",
@@ -15,5 +17,6 @@
     "opensuse": "MozillaFirefox",
     "void": "firefox",
     "alpine": "firefox"
-  }
+  },
+  "logo": "/programs/firefox/logo.png"
 }

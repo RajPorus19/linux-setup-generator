@@ -5,7 +5,9 @@
   "website": "https://mpv.io/",
   "git_repo": "https://github.com/mpv-player/mpv",
   "license": "GPL-2.0",
-  "categories": ["multimedia"],
+  "categories": [
+    "multimedia"
+  ],
   "package_names": {
     "default": "mpv",
     "arch": "mpv",
@@ -15,5 +17,6 @@
     "opensuse": "mpv",
     "void": "mpv",
     "alpine": "mpv"
-  }
+  },
+  "logo": "/programs/mpv/logo.png"
 }

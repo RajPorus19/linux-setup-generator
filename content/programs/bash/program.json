@@ -1,10 +1,12 @@
 {
   "name": "bash",
   "slug": "bash",
-  "description": "The GNU Bourne Again SHell — the most common Linux shell.",
+  "description": "The GNU Bourne Again SHell \u2014 the most common Linux shell.",
   "website": "https://www.gnu.org/software/bash/",
   "license": "GPL-3.0",
-  "categories": ["shell"],
+  "categories": [
+    "shell"
+  ],
   "package_names": {
     "default": "bash",
     "arch": "bash",
@@ -14,5 +16,6 @@
     "opensuse": "bash",
     "void": "bash",
     "alpine": "bash"
-  }
+  },
+  "logo": "/programs/bash/logo.png"
 }

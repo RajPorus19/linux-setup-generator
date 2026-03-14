@@ -1,10 +1,12 @@
 {
   "name": "tmux",
   "slug": "tmux",
-  "description": "A terminal multiplexer — run multiple terminal sessions in one window.",
+  "description": "A terminal multiplexer \u2014 run multiple terminal sessions in one window.",
   "git_repo": "https://github.com/tmux/tmux",
   "license": "ISC",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "tmux",
     "arch": "tmux",
@@ -14,5 +16,6 @@
     "opensuse": "tmux",
     "void": "tmux",
     "alpine": "tmux"
-  }
+  },
+  "logo": "/programs/tmux/logo.png"
 }

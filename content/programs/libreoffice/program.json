@@ -4,7 +4,9 @@
   "description": "A free and open-source office productivity suite.",
   "website": "https://www.libreoffice.org/",
   "license": "MPL-2.0",
-  "categories": ["office"],
+  "categories": [
+    "office"
+  ],
   "package_names": {
     "default": "libreoffice",
     "arch": "libreoffice-fresh",
@@ -14,5 +16,6 @@
     "opensuse": "libreoffice",
     "void": "libreoffice",
     "alpine": "libreoffice"
-  }
+  },
+  "logo": "/programs/libreoffice/logo.png"
 }

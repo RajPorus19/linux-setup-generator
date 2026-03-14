@@ -1,12 +1,19 @@
 {
   "name": "lsp-java",
   "slug": "lsp-java",
-  "description": "Eclipse JDT Language Server — Java LSP support for editors like Neovim or Emacs.",
+  "description": "Eclipse JDT Language Server \u2014 Java LSP support for editors like Neovim or Emacs.",
   "git_repo": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
   "license": "EPL-2.0",
-  "categories": ["development", "lsp"],
-  "dependencies": ["java", "curl"],
+  "categories": [
+    "development",
+    "lsp"
+  ],
+  "dependencies": [
+    "java",
+    "curl"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/lsp-java/logo.png"
 }

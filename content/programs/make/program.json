@@ -1,10 +1,12 @@
 {
   "name": "make",
   "slug": "make",
-  "description": "GNU Make — a build automation tool.",
+  "description": "GNU Make \u2014 a build automation tool.",
   "website": "https://www.gnu.org/software/make/",
   "license": "GPL-3.0",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "make",
     "arch": "make",
@@ -14,5 +16,6 @@
     "opensuse": "make",
     "void": "make",
     "alpine": "make"
-  }
+  },
+  "logo": "/programs/make/logo.png"
 }

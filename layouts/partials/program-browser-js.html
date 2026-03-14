@@ -103,9 +103,10 @@ function renderPrograms() {
     const isSelected = CLICKABLE && typeof selectedPrograms !== "undefined" && selectedPrograms.has(p.slug);
     const clickAttr = CLICKABLE ? `onclick="toggleProgram('${escHtml(p.slug)}')"` : "";
     const linkStop = CLICKABLE ? `onclick="event.stopPropagation()"` : "";
+    const logoHtml = p.logo ? `<img class="prog-logo" src="${escHtml(p.logo)}" alt="">` : `<div class="prog-logo-placeholder"></div>`;
     return `
       <li class="program-item${isSelected ? " selected" : ""}" data-slug="${escHtml(p.slug)}" ${clickAttr}>
-        <div class="program-name"><strong>${escHtml(p.name)}</strong></div>
+        <div class="program-name">${logoHtml}<strong>${escHtml(p.name)}</strong></div>
         ${p.description ? `<p class="program-desc">${escHtml(p.description)}</p>` : ""}
         <div class="program-meta">
           ${p.license ? `<span class="badge">${escHtml(p.license)}</span>` : ""}

@@ -4,7 +4,9 @@
   "description": "The Node.js package manager.",
   "website": "https://www.npmjs.com/",
   "license": "Artistic-2.0",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "npm",
     "arch": "npm",
@@ -14,5 +16,6 @@
     "opensuse": "npm",
     "void": "nodejs",
     "alpine": "npm"
-  }
+  },
+  "logo": "/programs/npm/logo.png"
 }

@@ -4,7 +4,9 @@
   "description": "The Python package installer.",
   "website": "https://pip.pypa.io/",
   "license": "MIT",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "python3-pip",
     "arch": "python-pip",
@@ -14,5 +16,6 @@
     "opensuse": "python3-pip",
     "void": "python3-pip",
     "alpine": "py3-pip"
-  }
+  },
+  "logo": "/programs/pip/logo.png"
 }

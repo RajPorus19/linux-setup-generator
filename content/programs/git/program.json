@@ -5,7 +5,9 @@
   "website": "https://git-scm.com/",
   "git_repo": "https://github.com/git/git",
   "license": "GPL-2.0",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "git",
     "arch": "git",
@@ -15,5 +17,6 @@
     "opensuse": "git",
     "void": "git",
     "alpine": "git"
-  }
+  },
+  "logo": "/programs/git/logo.png"
 }

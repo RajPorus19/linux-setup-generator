@@ -4,7 +4,9 @@
   "description": "Creates isolated Python environments.",
   "website": "https://virtualenv.pypa.io/",
   "license": "MIT",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "python3-virtualenv",
     "arch": "python-virtualenv",
@@ -14,5 +16,6 @@
     "opensuse": "python3-virtualenv",
     "void": "python3-virtualenv",
     "alpine": "py3-virtualenv"
-  }
+  },
+  "logo": "/programs/virtualenv/logo.png"
 }

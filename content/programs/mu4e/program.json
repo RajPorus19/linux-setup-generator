@@ -5,7 +5,9 @@
   "website": "https://www.djcbsoftware.nl/code/mu/mu4e.html",
   "git_repo": "https://github.com/djcb/mu",
   "license": "GPL-3.0",
-  "categories": ["email"],
+  "categories": [
+    "email"
+  ],
   "package_names": {
     "default": "mu",
     "arch": "mu",
@@ -15,5 +17,6 @@
     "opensuse": "mu",
     "void": "mu",
     "alpine": "mu"
-  }
+  },
+  "logo": "/programs/mu4e/logo.png"
 }

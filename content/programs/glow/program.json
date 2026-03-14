@@ -4,12 +4,17 @@
   "description": "A terminal-based Markdown reader with style.",
   "git_repo": "https://github.com/charmbracelet/glow",
   "license": "MIT",
-  "categories": ["terminal"],
-  "dependencies": ["golang"],
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "golang"
+  ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
     "arch": "glow",
     "ubuntu": "glow",
     "void": "glow"
-  }
+  },
+  "logo": "/programs/glow/logo.png"
 }
