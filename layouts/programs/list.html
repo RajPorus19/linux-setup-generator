@@ -24,12 +24,183 @@
   {{ $categories = $categories | append (readFile (printf "content/categories/%s" .Name) | transform.Unmarshal) }}
 {{ end }}
 
+{{/* Load distros */}}
+{{ $distros := slice }}
+{{ range readDir "content/distros" }}
+  {{ $distros = $distros | append (readFile (printf "content/distros/%s" .Name) | transform.Unmarshal) }}
+{{ end }}
+{{ $distros = sort $distros "name" }}
+
+{{/* Embed custom install scripts */}}
+{{ $installScripts := dict }}
+{{ range $programs }}
+  {{ $scriptPath := printf "content/programs/%s/custom_install/install.sh" .slug }}
+  {{ if os.FileExists $scriptPath }}
+    {{ $installScripts = merge $installScripts (dict .slug (readFile $scriptPath)) }}
+  {{ end }}
+{{ end }}
+
 <script>
-const PROGRAMS   = {{ $programs   | jsonify | safeJS }};
-const CATEGORIES = {{ $categories | jsonify | safeJS }};
+const PROGRAMS        = {{ $programs   | jsonify | safeJS }};
+const CATEGORIES      = {{ $categories | jsonify | safeJS }};
+const DISTROS         = {{ $distros    | jsonify | safeJS }};
+const INSTALL_SCRIPTS = {{ $installScripts | jsonify | safeJS }};
 </script>
 
 {{ partial "program-browser.html" . }}
 {{ partial "program-browser-js.html" (dict "clickable" false) }}
+
+{{/* ── Program detail modal ── */}}
+<style>
+  .modal-backdrop { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:1000; align-items:center; justify-content:center; gap:0.75rem; padding:1rem; }
+  .modal-backdrop.open { display:flex; }
+  .modal-nav { flex-shrink:0; width:3rem; height:3rem; border-radius:50%; border:none; font-size:1.35rem; font-weight:700; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:background 0.15s, transform 0.1s; }
+  .modal-nav:not(:disabled) { background:#22c55e; color:#fff; box-shadow:0 2px 12px rgba(34,197,94,0.5); }
+  .modal-nav:not(:disabled):hover { background:#16a34a; transform:scale(1.08); }
+  .modal-nav:disabled { background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.3); cursor:default; }
+  .modal-box { background:#fff; border-radius:12px; width:100%; max-width:680px; max-height:90vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,0.25); }
+  .modal-header { display:flex; align-items:flex-start; gap:0.75rem; padding:1.25rem 1.5rem 1rem; border-bottom:1px solid #e5e7eb; }
+  .modal-header-text { flex:1; min-width:0; }
+  .modal-title { display:flex; align-items:center; gap:0.6rem; margin:0 0 0.3rem; font-size:1.2rem; font-weight:700; }
+  .modal-desc { margin:0; color:#555; font-size:0.9rem; }
+  .modal-close { flex-shrink:0; background:none; border:none; font-size:1.4rem; color:#888; cursor:pointer; padding:0 0.25rem; line-height:1; margin-top:-0.1rem; }
+  .modal-close:hover { color:#333; }
+  .modal-body { padding:1.25rem 1.5rem; display:flex; flex-direction:column; gap:1.5rem; }
+  .modal-section-title { font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#888; margin:0 0 0.6rem; }
+  .distro-support-list { display:flex; flex-direction:column; gap:0.4rem; }
+  .distro-row { display:grid; grid-template-columns:140px 1fr; align-items:center; gap:0.75rem; font-size:0.875rem; }
+  .distro-row-name { color:#444; font-weight:500; }
+  .distro-row-pkg { font-family:ui-monospace,"Cascadia Code","Fira Code",monospace; font-size:0.8rem; color:#1a1a2e; background:#f5f5f5; border-radius:4px; padding:0.2rem 0.55rem; display:inline-block; }
+  .distro-row-custom { font-size:0.75rem; font-weight:600; color:#d97706; background:#fef3c7; border-radius:4px; padding:0.2rem 0.55rem; display:inline-block; }
+  .modal-script pre { background:#1e1e1e; color:#d4d4d4; border-radius:8px; padding:1rem 1.25rem; overflow-x:auto; font-size:0.8rem; line-height:1.6; margin:0; }
+  .modal-script code { font-family:ui-monospace,"Cascadia Code","Fira Code",monospace; }
+  .modal-deps-grid { display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .modal-dep-pill { border:1px solid #e0e0e0; border-radius:6px; padding:0.35rem 0.85rem; font-weight:500; font-size:0.875rem; white-space:nowrap; background:#fff; }
+  .modal-links { display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .modal-link-btn { font-size:0.85rem; font-weight:500; padding:0.35rem 0.85rem; border-radius:6px; border:1px solid #d1d5db; color:#0066cc; text-decoration:none; }
+  .modal-link-btn:hover { background:#f0f6ff; text-decoration:none; }
+  @media (max-width:600px) { .modal-nav { display:none; } }
+</style>
+
+<div class="modal-backdrop" id="prog-modal" onclick="closeModal(event)">
+  <button class="modal-nav" id="modal-prev" onclick="navigateModal(-1)" aria-label="Previous program">&#8592;</button>
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <div class="modal-title" id="modal-title-wrap"></div>
+        <p class="modal-desc" id="modal-desc"></p>
+      </div>
+      <button class="modal-close" onclick="closeProgramModal()" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+  <button class="modal-nav" id="modal-next" onclick="navigateModal(1)" aria-label="Next program">&#8594;</button>
+</div>
+
+<script>
+let _modalIndex = 0;
+
+function _getModalList() {
+  return window.VISIBLE_PROGRAMS || PROGRAMS;
+}
+
+function _renderModalContent(p) {
+  const logoHtml = p.logo
+    ? `<img src="${escHtml(p.logo)}" style="width:28px;height:28px;object-fit:contain;border-radius:5px;flex-shrink:0;" alt="">`
+    : "";
+  document.getElementById("modal-title-wrap").innerHTML =
+    `${logoHtml}<strong>${escHtml(p.name)}</strong>` +
+    (p.license ? ` <span class="badge" style="font-weight:400;font-size:0.75rem;">${escHtml(p.license)}</span>` : "");
+  document.getElementById("modal-desc").textContent = p.description || "";
+
+  const pkgNames = p.package_names || {};
+  const deps     = p.dependencies  || [];
+  const script   = INSTALL_SCRIPTS[p.slug] || null;
+  const sections = [];
+
+  // ── Package support ──
+  const distroRows = DISTROS.map(d => {
+    const raw = pkgNames[d.slug] !== undefined ? pkgNames[d.slug] : pkgNames["default"];
+    if (!raw) return null;
+    const isCustom = raw === "CUSTOM_INSTALL";
+    const cell = isCustom
+      ? `<span class="distro-row-custom">Custom install</span>`
+      : `<span class="distro-row-pkg">${escHtml(d.install_package_command)} ${escHtml(raw)}</span>`;
+    return `<div class="distro-row"><span class="distro-row-name">${escHtml(d.name)}</span>${cell}</div>`;
+  }).filter(Boolean);
+
+  if (distroRows.length) {
+    sections.push(`<div>
+      <p class="modal-section-title">Package support</p>
+      <div class="distro-support-list">${distroRows.join("")}</div>
+    </div>`);
+  }
+
+  // ── Install script ──
+  if (script) {
+    sections.push(`<div class="modal-script">
+      <p class="modal-section-title">Custom install script</p>
+      <pre><code>${escHtml(script.trim())}</code></pre>
+    </div>`);
+  }
+
+  // ── Dependencies ──
+  if (deps.length) {
+    const pills = deps.map(d => `<span class="modal-dep-pill">${escHtml(d)}</span>`).join("");
+    sections.push(`<div>
+      <p class="modal-section-title">Dependencies</p>
+      <div class="modal-deps-grid">${pills}</div>
+    </div>`);
+  }
+
+  // ── Links ──
+  const links = [];
+  if (p.website)  links.push(`<a class="modal-link-btn" href="${escHtml(p.website)}"  target="_blank" rel="noopener">Website ↗</a>`);
+  if (p.git_repo) links.push(`<a class="modal-link-btn" href="${escHtml(p.git_repo)}" target="_blank" rel="noopener">Source ↗</a>`);
+  if (links.length) sections.push(`<div class="modal-links">${links.join("")}</div>`);
+
+  document.getElementById("modal-body").innerHTML = sections.join("");
+  document.getElementById("modal-box")?.scrollTo?.(0, 0);
+}
+
+function _updateNavBtns() {
+  const list = _getModalList();
+  document.getElementById("modal-prev").disabled = _modalIndex === 0;
+  document.getElementById("modal-next").disabled = _modalIndex === list.length - 1;
+}
+
+function openProgramModal(slug) {
+  const list = _getModalList();
+  const idx = list.findIndex(x => x.slug === slug);
+  _modalIndex = idx === -1 ? 0 : idx;
+  _renderModalContent(list[_modalIndex]);
+  _updateNavBtns();
+  document.getElementById("prog-modal").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function navigateModal(dir) {
+  const list = _getModalList();
+  _modalIndex = Math.max(0, Math.min(list.length - 1, _modalIndex + dir));
+  _renderModalContent(list[_modalIndex]);
+  _updateNavBtns();
+}
+
+function closeProgramModal() {
+  document.getElementById("prog-modal").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById("prog-modal")) closeProgramModal();
+}
+
+document.addEventListener("keydown", e => {
+  if (!document.getElementById("prog-modal").classList.contains("open")) return;
+  if (e.key === "Escape")      closeProgramModal();
+  if (e.key === "ArrowLeft")   navigateModal(-1);
+  if (e.key === "ArrowRight")  navigateModal(1);
+});
+</script>
 
 {{ end }}

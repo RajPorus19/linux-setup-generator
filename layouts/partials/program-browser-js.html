@@ -97,12 +97,15 @@ function renderPrograms() {
   if (currentPage > total) currentPage = Math.max(1, total);
   const paged = list.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
+  window.VISIBLE_PROGRAMS = list;
   renderPagination(total);
 
   document.getElementById("prog-list").innerHTML = paged.map(p => {
     const isSelected = CLICKABLE && typeof selectedPrograms !== "undefined" && selectedPrograms.has(p.slug);
-    const clickAttr = CLICKABLE ? `onclick="toggleProgram('${escHtml(p.slug)}')"` : "";
-    const linkStop = CLICKABLE ? `onclick="event.stopPropagation()"` : "";
+    const clickAttr = CLICKABLE
+      ? `onclick="toggleProgram('${escHtml(p.slug)}')"`
+      : (typeof openProgramModal !== "undefined" ? `onclick="openProgramModal('${escHtml(p.slug)}')"` : "");
+    const linkStop = (CLICKABLE || typeof openProgramModal !== "undefined") ? `onclick="event.stopPropagation()"` : "";
     const logoHtml = p.logo ? `<img class="prog-logo" src="${escHtml(p.logo)}" alt="">` : `<div class="prog-logo-placeholder"></div>`;
     return `
       <li class="program-item${isSelected ? " selected" : ""}" data-slug="${escHtml(p.slug)}" ${clickAttr}>
