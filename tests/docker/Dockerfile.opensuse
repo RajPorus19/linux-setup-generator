@@ -1,4 +1,6 @@
 FROM opensuse/leap:latest
-RUN zypper install -y -t pattern devel_basis && zypper install -y curl git cmake nodejs npm python3 python3-pip cargo rust bash \
+# devel_basis pattern is broken on Leap 15.6 — install packages individually
+# Only install what's needed to run the test runner (python3 + build essentials)
+RUN zypper --non-interactive install gcc gcc-c++ make automake curl git cmake python3 python3-pip bash \
     && zypper clean
 CMD ["/bin/bash"]

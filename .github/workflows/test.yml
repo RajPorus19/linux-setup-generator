@@ -40,11 +40,21 @@ jobs:
 
       - name: Generate HTML report
         if: always()
-        run: python3 tests/report.py report.json --html -o report-${{ matrix.distro }}.html
+        run: |
+          if [ -f report.json ]; then
+            python3 tests/report.py report.json --html -o report-${{ matrix.distro }}.html
+          else
+            echo "⚠️  No report.json — Docker build or test runner failed"
+          fi
 
       - name: Generate Markdown summary
         if: always()
-        run: python3 tests/report.py report.json --markdown >> $GITHUB_STEP_SUMMARY
+        run: |
+          if [ -f report.json ]; then
+            python3 tests/report.py report.json --markdown >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ⚠️  ${{ matrix.distro }} — build or runner failed, no report generated" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Upload report (JSON)
         if: always()
