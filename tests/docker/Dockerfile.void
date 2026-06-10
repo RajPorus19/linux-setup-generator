@@ -1,11 +1,13 @@
 FROM voidlinux/voidlinux:latest
 
-# GitHub Actions: image has broken default repos.
-# Wipe config entirely, use --repository flag only.
+# GitHub Actions: image's xbps may be outdated vs the repo.
+# Update xbps first, then install build deps.
 RUN rm -rf /usr/share/xbps.d \
     && mkdir -p /usr/share/xbps.d \
-    && xbps-install -Sy --repository=https://repo-default.voidlinux.org/current \
-        base-devel curl git cmake nodejs python3 cargo bash \
+    && echo 'repository=https://repo-default.voidlinux.org/current' > /usr/share/xbps.d/00-repository-main.conf \
+    && xbps-install -S \
+    && xbps-install -yu xbps \
+    && xbps-install -y base-devel curl git cmake nodejs python3 cargo bash \
     && rm -rf /var/cache/xbps/*
 
 CMD ["/bin/bash"]
