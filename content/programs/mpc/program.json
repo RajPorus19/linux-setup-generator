@@ -4,7 +4,10 @@
   "description": "A command-line client for the Music Player Daemon.",
   "website": "https://www.musicpd.org/clients/mpc/",
   "license": "GPL-2.0",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "mpc",
     "arch": "mpc",
@@ -14,5 +17,6 @@
     "opensuse": "mpc",
     "void": "mpc",
     "alpine": "mpc"
-  }
+  },
+  "logo": "/programs/mpc/logo.png"
 }

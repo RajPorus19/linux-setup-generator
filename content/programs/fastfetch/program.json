@@ -22,5 +22,6 @@
   "dependencies": [
     "git-dep",
     "cmake"
-  ]
+  ],
+  "logo": "/programs/fastfetch/logo.png"
 }

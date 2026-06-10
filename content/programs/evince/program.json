@@ -1,0 +1,24 @@
+{
+  "name": "Evince",
+  "slug": "evince",
+  "description": "GNOME document viewer for PDF, PostScript, and more.",
+  "website": "https://wiki.gnome.org/Apps/Evince",
+  "git_repo": "https://gitlab.gnome.org/GNOME/evince",
+  "license": "GPL-2.0+",
+  "categories": [
+    "document-viewer",
+    "office"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "evince",
+    "arch": "evince",
+    "ubuntu": "evince",
+    "debian": "evince",
+    "fedora": "evince",
+    "opensuse": "evince",
+    "void": "evince",
+    "alpine": "evince"
+  },
+  "logo": "/programs/evince/logo.png"
+}

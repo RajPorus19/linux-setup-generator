@@ -5,8 +5,13 @@
   "website": "https://github.com/nwg-piotr/azote",
   "git_repo": "https://github.com/nwg-piotr/azote",
   "license": "GPL-3.0",
-  "categories": ["display", "theming"],
-  "dependencies": ["pip"],
+  "categories": [
+    "display",
+    "theming"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "azote",
     "arch": "azote",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/azote/logo.png"
 }

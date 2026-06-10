@@ -5,7 +5,10 @@
   "website": "https://www.passwordstore.org/",
   "git_repo": "https://git.zx2c4.com/password-store/",
   "license": "GPL-2.0",
-  "categories": ["security", "terminal"],
+  "categories": [
+    "security",
+    "terminal"
+  ],
   "package_names": {
     "default": "pass",
     "arch": "pass",
@@ -15,5 +18,6 @@
     "opensuse": "password-store",
     "void": "pass",
     "alpine": "pass"
-  }
+  },
+  "logo": "/programs/pass/logo.png"
 }

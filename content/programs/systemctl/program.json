@@ -1,10 +1,12 @@
 {
   "name": "systemctl",
   "slug": "systemctl",
-  "description": "The systemd service manager — controls system services.",
+  "description": "The systemd service manager \u2014 controls system services.",
   "website": "https://systemd.io/",
   "license": "LGPL-2.1",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": "systemd",
     "arch": "systemd",
@@ -14,5 +16,6 @@
     "opensuse": "systemd",
     "void": null,
     "alpine": null
-  }
+  },
+  "logo": "/programs/systemctl/logo.png"
 }

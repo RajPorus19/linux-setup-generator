@@ -1,0 +1,24 @@
+{
+  "name": "Kdenlive",
+  "slug": "kdenlive",
+  "description": "Professional open-source video editor by KDE.",
+  "website": "https://kdenlive.org/",
+  "git_repo": "https://invent.kde.org/multimedia/kdenlive",
+  "license": "GPL-2.0+",
+  "categories": [
+    "media",
+    "media-processing"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "kdenlive",
+    "arch": "kdenlive",
+    "ubuntu": "kdenlive",
+    "debian": "kdenlive",
+    "fedora": "kdenlive",
+    "opensuse": "kdenlive",
+    "void": "kdenlive",
+    "alpine": "kdenlive"
+  },
+  "logo": "/programs/kdenlive/logo.png"
+}

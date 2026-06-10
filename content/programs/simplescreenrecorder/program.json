@@ -5,8 +5,13 @@
   "website": "https://www.maartenbaert.be/simplescreenrecorder/",
   "git_repo": "https://github.com/MaartenBaert/ssr",
   "license": "GPL-3.0",
-  "categories": ["screenshot", "media-processing"],
-  "dependencies": ["git"],
+  "categories": [
+    "screenshot",
+    "media-processing"
+  ],
+  "dependencies": [
+    "git"
+  ],
   "package_names": {
     "default": "simplescreenrecorder",
     "arch": "simplescreenrecorder",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/simplescreenrecorder/logo.png"
 }

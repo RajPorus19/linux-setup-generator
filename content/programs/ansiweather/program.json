@@ -5,7 +5,10 @@
   "website": "https://github.com/fcambus/ansiweather",
   "git_repo": "https://github.com/fcambus/ansiweather",
   "license": "BSD-2-Clause",
-  "categories": ["terminal", "internet"],
+  "categories": [
+    "terminal",
+    "internet"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "ansiweather",
@@ -16,5 +19,6 @@
     "opensuse": "ansiweather",
     "void": "ansiweather",
     "alpine": "ansiweather"
-  }
+  },
+  "logo": "/programs/ansiweather/logo.png"
 }

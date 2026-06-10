@@ -5,8 +5,12 @@
   "website": "https://github.com/tobi-wan-kenobi/bumblebee-status",
   "git_repo": "https://github.com/tobi-wan-kenobi/bumblebee-status",
   "license": "MIT",
-  "categories": ["status-bar"],
-  "dependencies": ["pip"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "bumblebee-status",
     "arch": "bumblebee-status",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/bumblebee-status/logo.png"
 }

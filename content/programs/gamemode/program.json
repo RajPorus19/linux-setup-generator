@@ -1,0 +1,24 @@
+{
+  "name": "GameMode",
+  "slug": "gamemode",
+  "description": "Daemon/lib combo to optimize Linux system performance for gaming.",
+  "website": "https://github.com/FeralInteractive/gamemode",
+  "git_repo": "https://github.com/FeralInteractive/gamemode",
+  "license": "BSD-3-Clause",
+  "categories": [
+    "game",
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "gamemode",
+    "arch": "gamemode",
+    "ubuntu": "gamemode",
+    "debian": "gamemode",
+    "fedora": "gamemode",
+    "opensuse": "gamemode",
+    "void": "gamemode",
+    "alpine": "gamemode"
+  },
+  "logo": "/programs/gamemode/logo.png"
+}

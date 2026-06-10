@@ -5,7 +5,10 @@
   "website": "https://weechat.org/",
   "git_repo": "https://github.com/weechat/weechat",
   "license": "GPL-3.0",
-  "categories": ["communication", "terminal"],
+  "categories": [
+    "communication",
+    "terminal"
+  ],
   "package_names": {
     "default": "weechat",
     "arch": "weechat",
@@ -15,5 +18,6 @@
     "opensuse": "weechat",
     "void": "weechat",
     "alpine": "weechat"
-  }
+  },
+  "logo": "/programs/weechat/logo.png"
 }

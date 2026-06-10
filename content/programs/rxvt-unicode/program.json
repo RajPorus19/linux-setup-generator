@@ -4,7 +4,9 @@
   "description": "Fork of rxvt terminal emulator with Unicode support.",
   "website": "http://software.schmorp.de/pkg/rxvt-unicode.html",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "rxvt-unicode",
@@ -15,5 +17,6 @@
     "opensuse": "rxvt-unicode",
     "void": "rxvt-unicode",
     "alpine": "rxvt-unicode"
-  }
+  },
+  "logo": "/programs/rxvt-unicode/logo.png"
 }

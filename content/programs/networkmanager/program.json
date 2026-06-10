@@ -4,7 +4,10 @@
   "description": "A network management tool that makes network configuration automatic.",
   "website": "https://networkmanager.dev/",
   "license": "GPL-2.0",
-  "categories": ["network", "system"],
+  "categories": [
+    "network",
+    "system"
+  ],
   "package_names": {
     "default": "networkmanager",
     "arch": "networkmanager",
@@ -14,5 +17,6 @@
     "opensuse": "NetworkManager",
     "void": "NetworkManager",
     "alpine": "networkmanager"
-  }
+  },
+  "logo": "/programs/networkmanager/logo.png"
 }

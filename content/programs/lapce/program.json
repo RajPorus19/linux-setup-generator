@@ -1,0 +1,24 @@
+{
+  "name": "Lapce",
+  "slug": "lapce",
+  "description": "Lightning-fast and powerful code editor written in Rust.",
+  "website": "https://lapce.dev/",
+  "git_repo": "https://github.com/lapce/lapce",
+  "license": "Apache-2.0",
+  "categories": [
+    "editor",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "lapce",
+    "arch": "lapce",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/lapce/logo.png"
+}

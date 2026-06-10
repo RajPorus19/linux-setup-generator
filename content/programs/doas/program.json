@@ -4,7 +4,10 @@
   "description": "A minimal alternative to sudo from OpenBSD.",
   "git_repo": "https://github.com/Duncaen/OpenDoas",
   "license": "ISC",
-  "categories": ["system", "security"],
+  "categories": [
+    "system",
+    "security"
+  ],
   "package_names": {
     "default": "opendoas",
     "arch": "opendoas",
@@ -14,5 +17,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "opendoas",
     "alpine": "doas"
-  }
+  },
+  "logo": "/programs/doas/logo.png"
 }

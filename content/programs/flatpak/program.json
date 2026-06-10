@@ -1,0 +1,23 @@
+{
+  "name": "Flatpak",
+  "slug": "flatpak",
+  "description": "Next-generation app distribution and sandboxing for Linux.",
+  "website": "https://flatpak.org/",
+  "git_repo": "https://github.com/flatpak/flatpak",
+  "license": "LGPL-2.1+",
+  "categories": [
+    "package-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "flatpak",
+    "arch": "flatpak",
+    "ubuntu": "flatpak",
+    "debian": "flatpak",
+    "fedora": "flatpak",
+    "opensuse": "flatpak",
+    "void": "flatpak",
+    "alpine": "flatpak"
+  },
+  "logo": "/programs/flatpak/logo.png"
+}

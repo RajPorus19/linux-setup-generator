@@ -5,8 +5,13 @@
   "website": "https://gitlab.com/jallbrit/cbonsai",
   "git_repo": "https://gitlab.com/jallbrit/cbonsai",
   "license": "GPL-3.0",
-  "categories": ["fun", "terminal"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "cbonsai",
     "arch": "cbonsai",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/cbonsai/logo.png"
 }

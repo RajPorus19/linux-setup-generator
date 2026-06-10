@@ -5,7 +5,10 @@
   "website": "https://taskwarrior.org/",
   "git_repo": "https://github.com/GothenburgBitFactory/taskwarrior",
   "license": "MIT",
-  "categories": ["productivity", "terminal"],
+  "categories": [
+    "productivity",
+    "terminal"
+  ],
   "package_names": {
     "default": "task",
     "arch": "task",
@@ -15,5 +18,6 @@
     "opensuse": "taskwarrior",
     "void": "task",
     "alpine": "task"
-  }
+  },
+  "logo": "/programs/taskwarrior/logo.png"
 }

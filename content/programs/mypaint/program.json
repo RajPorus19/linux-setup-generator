@@ -5,7 +5,9 @@
   "website": "http://mypaint.org/",
   "git_repo": "https://github.com/mypaint/mypaint",
   "license": "GPL-2.0",
-  "categories": ["image-processing"],
+  "categories": [
+    "image-processing"
+  ],
   "package_names": {
     "default": "mypaint",
     "arch": "mypaint",
@@ -15,5 +17,6 @@
     "opensuse": "mypaint",
     "void": "mypaint",
     "alpine": "mypaint"
-  }
+  },
+  "logo": "/programs/mypaint/logo.png"
 }

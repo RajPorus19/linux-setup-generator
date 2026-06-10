@@ -1,0 +1,23 @@
+{
+  "name": "KeePassXC",
+  "slug": "keepassxc",
+  "description": "Cross-platform password manager with strong encryption.",
+  "website": "https://keepassxc.org/",
+  "git_repo": "https://github.com/keepassxreboot/keepassxc",
+  "license": "GPL-2.0/3.0",
+  "categories": [
+    "security"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "keepassxc",
+    "arch": "keepassxc",
+    "ubuntu": "keepassxc",
+    "debian": "keepassxc",
+    "fedora": "keepassxc",
+    "opensuse": "keepassxc",
+    "void": "keepassxc",
+    "alpine": "keepassxc"
+  },
+  "logo": "/programs/keepassxc/logo.png"
+}

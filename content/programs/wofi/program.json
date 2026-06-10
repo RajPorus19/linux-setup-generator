@@ -1,0 +1,23 @@
+{
+  "name": "Wofi",
+  "slug": "wofi",
+  "description": "Native Wayland launcher, inspired by rofi.",
+  "website": "https://hg.sr.ht/~scoopta/wofi",
+  "git_repo": "https://hg.sr.ht/~scoopta/wofi",
+  "license": "GPL-3.0+",
+  "categories": [
+    "launcher"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "wofi",
+    "arch": "wofi",
+    "ubuntu": "wofi",
+    "debian": "wofi",
+    "fedora": "wofi",
+    "opensuse": "wofi",
+    "void": "wofi",
+    "alpine": "wofi"
+  },
+  "logo": "/programs/wofi/logo.png"
+}

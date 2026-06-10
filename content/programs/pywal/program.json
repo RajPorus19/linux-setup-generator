@@ -5,8 +5,13 @@
   "website": "https://github.com/dylanaraps/pywal",
   "git_repo": "https://github.com/dylanaraps/pywal",
   "license": "MIT",
-  "categories": ["theming", "terminal"],
-  "dependencies": ["pip"],
+  "categories": [
+    "theming",
+    "terminal"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "python-pywal",
     "arch": "python-pywal",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/pywal/logo.png"
 }

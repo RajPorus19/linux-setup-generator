@@ -4,7 +4,10 @@
   "description": "A small program for generating a status bar for i3bar.",
   "git_repo": "https://github.com/i3/i3status",
   "license": "BSD-3-Clause",
-  "categories": ["x11", "desktop"],
+  "categories": [
+    "x11",
+    "desktop"
+  ],
   "package_names": {
     "default": "i3status",
     "arch": "i3status",
@@ -14,5 +17,6 @@
     "opensuse": "i3status",
     "void": "i3status",
     "alpine": "i3status"
-  }
+  },
+  "logo": "/programs/i3status/logo.png"
 }

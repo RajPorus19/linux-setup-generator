@@ -1,0 +1,26 @@
+{
+  "name": "Ventoy",
+  "slug": "ventoy",
+  "description": "Multiboot USB creator \u2014 just copy ISO files and boot.",
+  "website": "https://www.ventoy.net/",
+  "git_repo": "https://github.com/ventoy/Ventoy",
+  "license": "GPL-3.0",
+  "categories": [
+    "devops",
+    "system"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "ventoy-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/ventoy/logo.png"
+}

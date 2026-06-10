@@ -5,7 +5,9 @@
   "website": "https://www.pinta-project.com/",
   "git_repo": "https://github.com/PintaProject/Pinta",
   "license": "MIT",
-  "categories": ["image-processing"],
+  "categories": [
+    "image-processing"
+  ],
   "package_names": {
     "default": "pinta",
     "arch": "pinta",
@@ -15,5 +17,6 @@
     "opensuse": "pinta",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/pinta/logo.png"
 }

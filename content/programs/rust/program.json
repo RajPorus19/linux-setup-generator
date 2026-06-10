@@ -1,0 +1,26 @@
+{
+  "name": "Rust",
+  "slug": "rust",
+  "description": "Systems programming language focused on safety and performance.",
+  "website": "https://www.rust-lang.org/",
+  "git_repo": "https://github.com/rust-lang/rust",
+  "license": "MIT/Apache-2.0",
+  "categories": [
+    "language",
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "rust",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "rust",
+    "opensuse": "rust",
+    "void": "rust",
+    "alpine": "rust"
+  },
+  "logo": "/programs/rust/logo.png"
+}

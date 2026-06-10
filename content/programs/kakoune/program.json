@@ -5,7 +5,10 @@
   "website": "https://kakoune.org/",
   "git_repo": "https://github.com/mawww/kakoune",
   "license": "Unlicense",
-  "categories": ["editor", "terminal"],
+  "categories": [
+    "editor",
+    "terminal"
+  ],
   "package_names": {
     "default": "kakoune",
     "arch": "kakoune",
@@ -15,5 +18,6 @@
     "opensuse": "kakoune",
     "void": "kakoune",
     "alpine": "kakoune"
-  }
+  },
+  "logo": "/programs/kakoune/logo.png"
 }

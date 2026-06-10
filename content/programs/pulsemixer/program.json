@@ -4,7 +4,10 @@
   "description": "A CLI and curses mixer for PulseAudio.",
   "git_repo": "https://github.com/GeorgeFilipkin/pulsemixer",
   "license": "MIT",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "pulsemixer",
     "arch": "pulsemixer",
@@ -14,5 +17,6 @@
     "opensuse": "pulsemixer",
     "void": "pulsemixer",
     "alpine": "pulsemixer"
-  }
+  },
+  "logo": "/programs/pulsemixer/logo.png"
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Dolphin",
+  "slug": "dolphin",
+  "description": "KDE's powerful and user-friendly file manager.",
+  "website": "https://apps.kde.org/dolphin/",
+  "git_repo": "https://invent.kde.org/system/dolphin",
+  "license": "GPL-2.0+",
+  "categories": [
+    "file-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "dolphin",
+    "arch": "dolphin",
+    "ubuntu": "dolphin",
+    "debian": "dolphin",
+    "fedora": "dolphin",
+    "opensuse": "dolphin",
+    "void": "dolphin",
+    "alpine": "dolphin"
+  },
+  "logo": "/programs/dolphin/logo.png"
+}

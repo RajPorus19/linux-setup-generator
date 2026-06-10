@@ -5,7 +5,9 @@
   "website": "https://pwmt.org/projects/zathura/",
   "git_repo": "https://github.com/pwmt/zathura",
   "license": "Zlib",
-  "categories": ["viewer"],
+  "categories": [
+    "viewer"
+  ],
   "package_names": {
     "default": "zathura",
     "arch": "zathura",
@@ -15,5 +17,6 @@
     "opensuse": "zathura",
     "void": "zathura",
     "alpine": "zathura"
-  }
+  },
+  "logo": "/programs/zathura/logo.png"
 }

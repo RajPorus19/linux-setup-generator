@@ -1,0 +1,24 @@
+{
+  "name": "KDE Plasma",
+  "slug": "kde-plasma",
+  "description": "Full-featured, modern desktop environment by KDE.",
+  "website": "https://kde.org/plasma-desktop/",
+  "git_repo": "https://invent.kde.org/plasma",
+  "license": "GPL-2.0+",
+  "categories": [
+    "window-manager",
+    "compositor"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "plasma-desktop",
+    "arch": "plasma-meta",
+    "ubuntu": "kde-plasma-desktop",
+    "debian": "kde-plasma-desktop",
+    "fedora": "@kde-desktop",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "kde5",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/kde-plasma/logo.png"
+}

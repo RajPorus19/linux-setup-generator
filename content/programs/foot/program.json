@@ -1,0 +1,23 @@
+{
+  "name": "foot",
+  "slug": "foot",
+  "description": "Fast, lightweight Wayland terminal emulator.",
+  "website": "https://codeberg.org/dnkl/foot",
+  "git_repo": "https://codeberg.org/dnkl/foot",
+  "license": "MIT",
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "foot",
+    "arch": "foot",
+    "ubuntu": "foot",
+    "debian": "foot",
+    "fedora": "foot",
+    "opensuse": "foot",
+    "void": "foot",
+    "alpine": "foot"
+  },
+  "logo": "/programs/foot/logo.png"
+}

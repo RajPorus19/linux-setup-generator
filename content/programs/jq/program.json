@@ -5,7 +5,10 @@
   "website": "https://jqlang.github.io/jq/",
   "git_repo": "https://github.com/jqlang/jq",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "jq",
     "arch": "jq",
@@ -15,5 +18,6 @@
     "opensuse": "jq",
     "void": "jq",
     "alpine": "jq"
-  }
+  },
+  "logo": "/programs/jq/logo.png"
 }

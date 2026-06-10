@@ -5,8 +5,13 @@
   "website": "https://code.visualstudio.com/",
   "git_repo": "https://github.com/microsoft/vscode",
   "license": "MIT",
-  "categories": ["editor", "development"],
-  "dependencies": ["curl"],
+  "categories": [
+    "editor",
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "code",
     "arch": "code",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/code/logo.png"
 }

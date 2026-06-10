@@ -1,0 +1,25 @@
+{
+  "name": "Blender",
+  "slug": "blender",
+  "description": "Free and open source 3D creation suite.",
+  "website": "https://www.blender.org/",
+  "git_repo": "https://projects.blender.org/blender/blender",
+  "license": "GPL-3.0",
+  "categories": [
+    "media",
+    "media-processing",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "blender",
+    "arch": "blender",
+    "ubuntu": "blender",
+    "debian": "blender",
+    "fedora": "blender",
+    "opensuse": "blender",
+    "void": "blender",
+    "alpine": "blender"
+  },
+  "logo": "/programs/blender/logo.png"
+}

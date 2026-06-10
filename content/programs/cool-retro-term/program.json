@@ -5,7 +5,10 @@
   "website": "https://github.com/Swordfish90/cool-retro-term",
   "git_repo": "https://github.com/Swordfish90/cool-retro-term",
   "license": "GPL-3.0",
-  "categories": ["terminal", "fun"],
+  "categories": [
+    "terminal",
+    "fun"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "cool-retro-term",
@@ -16,5 +19,6 @@
     "opensuse": "cool-retro-term",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/cool-retro-term/logo.png"
 }

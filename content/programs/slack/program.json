@@ -1,0 +1,26 @@
+{
+  "name": "Slack",
+  "slug": "slack",
+  "description": "Team collaboration and communication platform.",
+  "website": "https://slack.com/",
+  "git_repo": "https://github.com/slackapi",
+  "license": "Proprietary",
+  "categories": [
+    "communication",
+    "messaging"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/slack/logo.png"
+}

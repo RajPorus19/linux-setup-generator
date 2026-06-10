@@ -5,7 +5,9 @@
   "website": "https://www.smplayer.info/",
   "git_repo": "https://github.com/smplayer-dev/smplayer",
   "license": "GPL-2.0",
-  "categories": ["media-player"],
+  "categories": [
+    "media-player"
+  ],
   "package_names": {
     "default": "smplayer",
     "arch": "smplayer",
@@ -15,5 +17,6 @@
     "opensuse": "smplayer",
     "void": "smplayer",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/smplayer/logo.png"
 }

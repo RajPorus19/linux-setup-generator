@@ -4,7 +4,10 @@
   "description": "The status bar included with the i3 window manager.",
   "website": "https://i3wm.org/",
   "license": "BSD-3-Clause",
-  "categories": ["x11", "desktop"],
+  "categories": [
+    "x11",
+    "desktop"
+  ],
   "package_names": {
     "default": "i3",
     "arch": "i3-wm",
@@ -14,5 +17,6 @@
     "opensuse": "i3",
     "void": "i3",
     "alpine": "i3wm"
-  }
+  },
+  "logo": "/programs/i3bar/logo.png"
 }

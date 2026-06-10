@@ -4,7 +4,10 @@
   "description": "A feed generator for the i3bar status bar.",
   "git_repo": "https://github.com/vivien/i3blocks",
   "license": "GPL-3.0",
-  "categories": ["x11", "desktop"],
+  "categories": [
+    "x11",
+    "desktop"
+  ],
   "package_names": {
     "default": "i3blocks",
     "arch": "i3blocks",
@@ -14,5 +17,6 @@
     "opensuse": "i3blocks",
     "void": "i3blocks",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/i3blocks/logo.png"
 }

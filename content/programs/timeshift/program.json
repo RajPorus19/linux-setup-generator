@@ -5,8 +5,12 @@
   "website": "https://github.com/linuxmint/timeshift",
   "git_repo": "https://github.com/linuxmint/timeshift",
   "license": "GPL-3.0",
-  "categories": ["system"],
-  "dependencies": ["git"],
+  "categories": [
+    "system"
+  ],
+  "dependencies": [
+    "git"
+  ],
   "package_names": {
     "default": "timeshift",
     "arch": "timeshift",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/timeshift/logo.png"
 }

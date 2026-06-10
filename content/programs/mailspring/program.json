@@ -5,8 +5,12 @@
   "website": "https://getmailspring.com/",
   "git_repo": "https://github.com/Foundry376/Mailspring",
   "license": "GPL-3.0",
-  "categories": ["email"],
-  "dependencies": ["curl"],
+  "categories": [
+    "email"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "mailspring",
     "arch": "mailspring",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/mailspring/logo.png"
 }

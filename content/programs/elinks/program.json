@@ -4,7 +4,10 @@
   "description": "An advanced text-mode web browser.",
   "git_repo": "https://github.com/rkd77/elinks",
   "license": "GPL-2.0",
-  "categories": ["browser", "terminal"],
+  "categories": [
+    "browser",
+    "terminal"
+  ],
   "package_names": {
     "default": "elinks",
     "arch": "elinks",
@@ -14,5 +17,6 @@
     "opensuse": "elinks",
     "void": "elinks",
     "alpine": "elinks"
-  }
+  },
+  "logo": "/programs/elinks/logo.png"
 }

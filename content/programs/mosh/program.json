@@ -5,7 +5,10 @@
   "website": "https://mosh.org/",
   "git_repo": "https://github.com/mobile-shell/mosh",
   "license": "GPL-3.0",
-  "categories": ["network", "terminal"],
+  "categories": [
+    "network",
+    "terminal"
+  ],
   "package_names": {
     "default": "mosh",
     "arch": "mosh",
@@ -15,5 +18,6 @@
     "opensuse": "mosh",
     "void": "mosh",
     "alpine": "mosh"
-  }
+  },
+  "logo": "/programs/mosh/logo.png"
 }

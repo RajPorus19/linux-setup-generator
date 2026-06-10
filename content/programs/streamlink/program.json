@@ -5,7 +5,10 @@
   "website": "https://streamlink.github.io/",
   "git_repo": "https://github.com/streamlink/streamlink",
   "license": "BSD-2-Clause",
-  "categories": ["media", "terminal"],
+  "categories": [
+    "media",
+    "terminal"
+  ],
   "package_names": {
     "default": "streamlink",
     "arch": "streamlink",
@@ -15,5 +18,6 @@
     "opensuse": "streamlink",
     "void": "streamlink",
     "alpine": "streamlink"
-  }
+  },
+  "logo": "/programs/streamlink/logo.png"
 }

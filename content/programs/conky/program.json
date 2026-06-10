@@ -4,7 +4,10 @@
   "description": "A lightweight, highly configurable system monitor.",
   "git_repo": "https://github.com/brndnmtthws/conky",
   "license": "GPL-3.0",
-  "categories": ["system", "x11"],
+  "categories": [
+    "system",
+    "x11"
+  ],
   "package_names": {
     "default": "conky",
     "arch": "conky",
@@ -14,5 +17,6 @@
     "opensuse": "conky",
     "void": "conky",
     "alpine": "conky"
-  }
+  },
+  "logo": "/programs/conky/logo.png"
 }

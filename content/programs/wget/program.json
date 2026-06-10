@@ -4,7 +4,10 @@
   "description": "Non-interactive download tool.",
   "website": "https://www.gnu.org/software/wget/",
   "license": "GPL-3.0",
-  "categories": ["internet", "terminal"],
+  "categories": [
+    "internet",
+    "terminal"
+  ],
   "package_names": {
     "default": "wget",
     "arch": "wget",
@@ -14,5 +17,6 @@
     "opensuse": "wget",
     "void": "wget",
     "alpine": "wget"
-  }
+  },
+  "logo": "/programs/wget/logo.png"
 }

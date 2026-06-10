@@ -5,7 +5,10 @@
   "website": "https://i3wm.org/",
   "git_repo": "https://github.com/i3/i3",
   "license": "BSD-3-Clause",
-  "categories": ["wm", "x11"],
+  "categories": [
+    "wm",
+    "x11"
+  ],
   "package_names": {
     "default": "i3",
     "arch": "i3-wm",
@@ -15,5 +18,6 @@
     "opensuse": "i3",
     "void": "i3",
     "alpine": "i3wm"
-  }
+  },
+  "logo": "/programs/i3/logo.png"
 }

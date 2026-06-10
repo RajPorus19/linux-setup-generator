@@ -4,7 +4,9 @@
   "description": "Frontend for Wine that simplifies installing Windows applications on Linux.",
   "website": "https://www.playonlinux.com/",
   "license": "GPL-3.0",
-  "categories": ["game"],
+  "categories": [
+    "game"
+  ],
   "package_names": {
     "default": "playonlinux",
     "arch": "playonlinux",
@@ -14,5 +16,6 @@
     "opensuse": "playonlinux",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/playonlinux/logo.png"
 }

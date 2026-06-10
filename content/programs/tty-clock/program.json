@@ -5,8 +5,13 @@
   "website": "https://github.com/xorg62/tty-clock",
   "git_repo": "https://github.com/xorg62/tty-clock",
   "license": "BSD-2-Clause",
-  "categories": ["fun", "terminal"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "tty-clock",
     "arch": "tty-clock",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/tty-clock/logo.png"
 }

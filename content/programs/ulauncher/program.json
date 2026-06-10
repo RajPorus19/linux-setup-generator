@@ -1,0 +1,26 @@
+{
+  "name": "Ulauncher",
+  "slug": "ulauncher",
+  "description": "Fast application launcher for Linux, inspired by Spotlight.",
+  "website": "https://ulauncher.io/",
+  "git_repo": "https://github.com/Ulauncher/Ulauncher",
+  "license": "MIT",
+  "categories": [
+    "launcher"
+  ],
+  "dependencies": [
+    "python3",
+    "pip"
+  ],
+  "package_names": {
+    "default": "ulauncher",
+    "arch": "ulauncher",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/ulauncher/logo.png"
+}

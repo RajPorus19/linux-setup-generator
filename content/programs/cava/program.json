@@ -5,7 +5,10 @@
   "website": "https://github.com/karlstav/cava",
   "git_repo": "https://github.com/karlstav/cava",
   "license": "MIT",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "cava",
     "arch": "cava",
@@ -15,5 +18,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "cava",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/cava/logo.png"
 }

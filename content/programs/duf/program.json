@@ -5,7 +5,10 @@
   "website": "https://github.com/muesli/duf",
   "git_repo": "https://github.com/muesli/duf",
   "license": "MIT",
-  "categories": ["system", "terminal"],
+  "categories": [
+    "system",
+    "terminal"
+  ],
   "package_names": {
     "default": "duf",
     "arch": "duf",
@@ -15,5 +18,6 @@
     "opensuse": "duf",
     "void": "duf",
     "alpine": "duf"
-  }
+  },
+  "logo": "/programs/duf/logo.png"
 }

@@ -5,8 +5,13 @@
   "website": "https://www.marktext.cc/",
   "git_repo": "https://github.com/marktext/marktext",
   "license": "MIT",
-  "categories": ["editor", "markdown"],
-  "dependencies": ["curl"],
+  "categories": [
+    "editor",
+    "markdown"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "marktext",
     "arch": "marktext",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/marktext/logo.png"
 }

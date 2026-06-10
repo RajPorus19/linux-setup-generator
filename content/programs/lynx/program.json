@@ -3,7 +3,10 @@
   "slug": "lynx",
   "description": "A classic text-based web browser.",
   "license": "GPL-2.0",
-  "categories": ["browser", "terminal"],
+  "categories": [
+    "browser",
+    "terminal"
+  ],
   "package_names": {
     "default": "lynx",
     "arch": "lynx",
@@ -13,5 +16,6 @@
     "opensuse": "lynx",
     "void": "lynx",
     "alpine": "lynx"
-  }
+  },
+  "logo": "/programs/lynx/logo.png"
 }

@@ -5,7 +5,10 @@
   "website": "https://jonas.github.io/tig/",
   "git_repo": "https://github.com/jonas/tig",
   "license": "GPL-2.0",
-  "categories": ["development", "terminal"],
+  "categories": [
+    "development",
+    "terminal"
+  ],
   "package_names": {
     "default": "tig",
     "arch": "tig",
@@ -15,5 +18,6 @@
     "opensuse": "tig",
     "void": "tig",
     "alpine": "tig"
-  }
+  },
+  "logo": "/programs/tig/logo.png"
 }

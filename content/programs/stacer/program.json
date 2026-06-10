@@ -1,0 +1,24 @@
+{
+  "name": "Stacer",
+  "slug": "stacer",
+  "description": "Linux system optimizer and application monitor.",
+  "website": "https://oguzhaninan.github.io/Stacer-Web/",
+  "git_repo": "https://github.com/oguzhaninan/Stacer",
+  "license": "GPL-3.0",
+  "categories": [
+    "system",
+    "system-monitor"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "stacer",
+    "arch": "stacer",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/stacer/logo.png"
+}

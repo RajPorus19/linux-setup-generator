@@ -5,7 +5,10 @@
   "website": "https://nmap.org/",
   "git_repo": "https://github.com/nmap/nmap",
   "license": "GPL-2.0+",
-  "categories": ["network", "security"],
+  "categories": [
+    "network",
+    "security"
+  ],
   "package_names": {
     "default": "nmap",
     "arch": "nmap",
@@ -15,5 +18,6 @@
     "opensuse": "nmap",
     "void": "nmap",
     "alpine": "nmap"
-  }
+  },
+  "logo": "/programs/nmap/logo.png"
 }

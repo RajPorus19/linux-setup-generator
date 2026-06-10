@@ -5,8 +5,12 @@
   "website": "https://github.com/deviantfero/wpgtk",
   "git_repo": "https://github.com/deviantfero/wpgtk",
   "license": "GPL-3.0",
-  "categories": ["theming"],
-  "dependencies": ["pip"],
+  "categories": [
+    "theming"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "python-wpgtk",
     "arch": "python-wpgtk",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/wpgtk/logo.png"
 }

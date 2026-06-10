@@ -5,7 +5,10 @@
   "website": "https://aria2.github.io/",
   "git_repo": "https://github.com/aria2/aria2",
   "license": "GPL-2.0",
-  "categories": ["internet", "terminal"],
+  "categories": [
+    "internet",
+    "terminal"
+  ],
   "package_names": {
     "default": "aria2",
     "arch": "aria2",
@@ -15,5 +18,6 @@
     "opensuse": "aria2",
     "void": "aria2",
     "alpine": "aria2"
-  }
+  },
+  "logo": "/programs/aria2/logo.png"
 }

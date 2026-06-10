@@ -1,0 +1,24 @@
+{
+  "name": "HandBrake",
+  "slug": "handbrake",
+  "description": "Open-source video transcoder.",
+  "website": "https://handbrake.fr/",
+  "git_repo": "https://github.com/HandBrake/HandBrake",
+  "license": "GPL-2.0",
+  "categories": [
+    "media",
+    "media-processing"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "handbrake",
+    "arch": "handbrake",
+    "ubuntu": "handbrake",
+    "debian": "handbrake",
+    "fedora": "handbrake",
+    "opensuse": "handbrake",
+    "void": "handbrake",
+    "alpine": "handbrake"
+  },
+  "logo": "/programs/handbrake/logo.png"
+}

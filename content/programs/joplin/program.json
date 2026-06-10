@@ -1,0 +1,24 @@
+{
+  "name": "Joplin",
+  "slug": "joplin",
+  "description": "Open-source note taking and to-do app with sync.",
+  "website": "https://joplinapp.org/",
+  "git_repo": "https://github.com/laurent22/joplin",
+  "license": "AGPL-3.0",
+  "categories": [
+    "productivity",
+    "markdown"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "joplin",
+    "arch": "joplin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/joplin/logo.png"
+}

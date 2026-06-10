@@ -1,0 +1,26 @@
+{
+  "name": "Zoom",
+  "slug": "zoom",
+  "description": "Video conferencing and online meetings.",
+  "website": "https://zoom.us/",
+  "git_repo": "https://github.com/zoom",
+  "license": "Proprietary",
+  "categories": [
+    "communication",
+    "messaging"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/zoom/logo.png"
+}

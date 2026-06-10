@@ -5,7 +5,9 @@
   "website": "https://virt-manager.org/",
   "git_repo": "https://github.com/virt-manager/virt-manager",
   "license": "GPL-2.0",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": "virt-manager",
     "arch": "virt-manager",
@@ -15,5 +17,6 @@
     "opensuse": "virt-manager",
     "void": "virt-manager",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/virt-manager/logo.png"
 }

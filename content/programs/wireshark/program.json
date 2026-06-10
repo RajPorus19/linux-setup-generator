@@ -1,0 +1,24 @@
+{
+  "name": "Wireshark",
+  "slug": "wireshark",
+  "description": "World's foremost network protocol analyzer.",
+  "website": "https://www.wireshark.org/",
+  "git_repo": "https://gitlab.com/wireshark/wireshark",
+  "license": "GPL-2.0",
+  "categories": [
+    "network",
+    "security"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "wireshark",
+    "arch": "wireshark-qt",
+    "ubuntu": "wireshark",
+    "debian": "wireshark",
+    "fedora": "wireshark",
+    "opensuse": "wireshark",
+    "void": "wireshark",
+    "alpine": "wireshark"
+  },
+  "logo": "/programs/wireshark/logo.png"
+}

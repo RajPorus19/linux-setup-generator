@@ -1,0 +1,26 @@
+{
+  "name": "Nix",
+  "slug": "nix",
+  "description": "Purely functional package manager and build system.",
+  "website": "https://nixos.org/",
+  "git_repo": "https://github.com/NixOS/nix",
+  "license": "LGPL-2.1",
+  "categories": [
+    "package-manager",
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/nix/logo.png"
+}

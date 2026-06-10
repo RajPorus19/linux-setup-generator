@@ -1,0 +1,24 @@
+{
+  "name": "Syncthing",
+  "slug": "syncthing",
+  "description": "Continuous, decentralized file synchronization.",
+  "website": "https://syncthing.net/",
+  "git_repo": "https://github.com/syncthing/syncthing",
+  "license": "MPL-2.0",
+  "categories": [
+    "backup",
+    "network"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "syncthing",
+    "arch": "syncthing",
+    "ubuntu": "syncthing",
+    "debian": "syncthing",
+    "fedora": "syncthing",
+    "opensuse": "syncthing",
+    "void": "syncthing",
+    "alpine": "syncthing"
+  },
+  "logo": "/programs/syncthing/logo.png"
+}

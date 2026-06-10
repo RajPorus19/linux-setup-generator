@@ -4,7 +4,9 @@
   "description": "Lightweight, fast and free web browser.",
   "website": "https://www.midori-browser.org/",
   "license": "LGPL-2.1",
-  "categories": ["browser"],
+  "categories": [
+    "browser"
+  ],
   "package_names": {
     "default": "midori",
     "arch": "midori",
@@ -14,5 +16,6 @@
     "opensuse": "midori",
     "void": "midori",
     "alpine": "midori"
-  }
+  },
+  "logo": "/programs/midori/logo.png"
 }

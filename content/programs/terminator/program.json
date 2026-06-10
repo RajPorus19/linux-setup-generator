@@ -5,7 +5,9 @@
   "website": "https://gnome-terminator.org/",
   "git_repo": "https://github.com/gnome-terminator/terminator",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "terminator",
     "arch": "terminator",
@@ -15,5 +17,6 @@
     "opensuse": "terminator",
     "void": "terminator",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/terminator/logo.png"
 }

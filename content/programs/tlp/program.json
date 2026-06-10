@@ -1,0 +1,23 @@
+{
+  "name": "TLP",
+  "slug": "tlp",
+  "description": "Advanced power management for Linux \u2014 save battery life.",
+  "website": "https://linrunner.de/tlp/",
+  "git_repo": "https://github.com/linrunner/TLP",
+  "license": "GPL-2.0+",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "tlp",
+    "arch": "tlp",
+    "ubuntu": "tlp",
+    "debian": "tlp",
+    "fedora": "tlp",
+    "opensuse": "tlp",
+    "void": "tlp",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/tlp/logo.png"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "CPU-X",
+  "slug": "cpu-x",
+  "description": "Free software for gathering detailed CPU and system information.",
+  "website": "https://thetumultuousunicornofdarkness.github.io/CPU-X/",
+  "git_repo": "https://github.com/TheTumultuousUnicornOfDarkness/CPU-X",
+  "license": "GPL-3.0",
+  "categories": [
+    "system",
+    "system-monitor"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "cpu-x",
+    "arch": "cpu-x",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/cpu-x/logo.png"
+}

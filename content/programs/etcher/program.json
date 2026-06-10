@@ -1,0 +1,24 @@
+{
+  "name": "balenaEtcher",
+  "slug": "etcher",
+  "description": "Flash OS images to SD cards & USB drives, safely.",
+  "website": "https://etcher.balena.io/",
+  "git_repo": "https://github.com/balena-io/etcher",
+  "license": "Apache-2.0",
+  "categories": [
+    "devops",
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "etcher",
+    "arch": "etcher-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/etcher/logo.png"
+}

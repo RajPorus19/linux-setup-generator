@@ -1,0 +1,23 @@
+{
+  "name": "Snapd",
+  "slug": "snapd",
+  "description": "Snap package manager daemon by Canonical.",
+  "website": "https://snapcraft.io/",
+  "git_repo": "https://github.com/snapcore/snapd",
+  "license": "GPL-3.0",
+  "categories": [
+    "package-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "snapd",
+    "arch": "snapd",
+    "ubuntu": "snapd",
+    "debian": "snapd",
+    "fedora": "snapd",
+    "opensuse": "snapd",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/snapd/logo.png"
+}

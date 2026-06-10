@@ -5,7 +5,9 @@
   "website": "https://konsole.kde.org/",
   "git_repo": "https://github.com/KDE/konsole",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "konsole",
     "arch": "konsole",
@@ -15,5 +17,6 @@
     "opensuse": "konsole",
     "void": "konsole",
     "alpine": "konsole"
-  }
+  },
+  "logo": "/programs/konsole/logo.png"
 }

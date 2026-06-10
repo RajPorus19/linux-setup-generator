@@ -5,7 +5,9 @@
   "website": "https://xmonad.org/",
   "git_repo": "https://github.com/xmonad/xmonad",
   "license": "BSD-3-Clause",
-  "categories": ["window-manager"],
+  "categories": [
+    "window-manager"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "xmonad",
@@ -16,5 +18,6 @@
     "opensuse": "xmonad",
     "void": "xmonad",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/xmonad/logo.png"
 }

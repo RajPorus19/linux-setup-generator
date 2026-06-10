@@ -5,7 +5,9 @@
   "website": "https://www.shotcut.org/",
   "git_repo": "https://github.com/mltframework/shotcut",
   "license": "GPL-3.0",
-  "categories": ["media-processing"],
+  "categories": [
+    "media-processing"
+  ],
   "package_names": {
     "default": "shotcut",
     "arch": "shotcut",
@@ -15,5 +17,6 @@
     "opensuse": "shotcut",
     "void": "shotcut",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/shotcut/logo.png"
 }

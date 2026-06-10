@@ -21,5 +21,6 @@
   },
   "dependencies": [
     "cargo"
-  ]
+  ],
+  "logo": "/programs/zoxide/logo.png"
 }

@@ -21,5 +21,6 @@
   },
   "dependencies": [
     "curl"
-  ]
+  ],
+  "logo": "/programs/nb/logo.png"
 }

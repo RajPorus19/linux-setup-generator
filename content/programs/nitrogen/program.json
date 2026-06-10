@@ -5,7 +5,10 @@
   "website": "https://github.com/l3ib/nitrogen",
   "git_repo": "https://github.com/l3ib/nitrogen",
   "license": "GPL-2.0",
-  "categories": ["display", "theming"],
+  "categories": [
+    "display",
+    "theming"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "nitrogen",
@@ -16,5 +19,6 @@
     "opensuse": "nitrogen",
     "void": "nitrogen",
     "alpine": "nitrogen"
-  }
+  },
+  "logo": "/programs/nitrogen/logo.png"
 }

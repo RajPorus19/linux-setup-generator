@@ -4,7 +4,10 @@
   "description": "A full-featured terminal file manager.",
   "git_repo": "https://github.com/jarun/nnn",
   "license": "BSD-2-Clause",
-  "categories": ["file-manager", "terminal"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
   "package_names": {
     "default": "nnn",
     "arch": "nnn",
@@ -14,5 +17,6 @@
     "opensuse": "nnn",
     "void": "nnn",
     "alpine": "nnn"
-  }
+  },
+  "logo": "/programs/nnn/logo.png"
 }

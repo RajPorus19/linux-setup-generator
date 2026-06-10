@@ -5,7 +5,10 @@
   "website": "https://github.com/shlomif/fortune-mod",
   "git_repo": "https://github.com/shlomif/fortune-mod",
   "license": "MIT",
-  "categories": ["fun", "terminal"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
   "package_names": {
     "default": "fortune",
     "arch": "fortune-mod",
@@ -15,5 +18,6 @@
     "opensuse": "fortune",
     "void": "fortune-mod",
     "alpine": "fortune"
-  }
+  },
+  "logo": "/programs/fortune/logo.png"
 }

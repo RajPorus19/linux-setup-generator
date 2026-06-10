@@ -1,10 +1,12 @@
 {
   "name": "pdftoppm",
   "slug": "pdftoppm",
-  "description": "Converts PDF pages to images — part of the poppler utilities.",
+  "description": "Converts PDF pages to images \u2014 part of the poppler utilities.",
   "website": "https://poppler.freedesktop.org/",
   "license": "GPL-2.0",
-  "categories": ["utility"],
+  "categories": [
+    "utility"
+  ],
   "package_names": {
     "default": "poppler-utils",
     "arch": "poppler",
@@ -14,5 +16,6 @@
     "opensuse": "poppler-tools",
     "void": "poppler-utils",
     "alpine": "poppler-utils"
-  }
+  },
+  "logo": "/programs/pdftoppm/logo.png"
 }

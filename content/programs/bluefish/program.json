@@ -4,7 +4,9 @@
   "description": "Powerful text editor for web developers and programmers.",
   "website": "http://bluefish.openoffice.nl/",
   "license": "GPL-3.0",
-  "categories": ["editor"],
+  "categories": [
+    "editor"
+  ],
   "package_names": {
     "default": "bluefish",
     "arch": "bluefish",
@@ -14,5 +16,6 @@
     "opensuse": "bluefish",
     "void": "bluefish",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/bluefish/logo.png"
 }

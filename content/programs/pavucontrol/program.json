@@ -1,0 +1,24 @@
+{
+  "name": "Pavucontrol",
+  "slug": "pavucontrol",
+  "description": "PulseAudio Volume Control \u2014 simple GTK mixer.",
+  "website": "https://freedesktop.org/software/pulseaudio/pavucontrol/",
+  "git_repo": "https://gitlab.freedesktop.org/pulseaudio/pavucontrol",
+  "license": "GPL-2.0+",
+  "categories": [
+    "audio",
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "pavucontrol",
+    "arch": "pavucontrol",
+    "ubuntu": "pavucontrol",
+    "debian": "pavucontrol",
+    "fedora": "pavucontrol",
+    "opensuse": "pavucontrol",
+    "void": "pavucontrol",
+    "alpine": "pavucontrol"
+  },
+  "logo": "/programs/pavucontrol/logo.png"
+}

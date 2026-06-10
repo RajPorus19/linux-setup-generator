@@ -17,5 +17,6 @@
     "opensuse": "i3",
     "void": "i3-gaps",
     "alpine": "i3wm"
-  }
+  },
+  "logo": "/programs/i3-gaps/logo.png"
 }

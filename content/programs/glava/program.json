@@ -5,8 +5,12 @@
   "website": "https://github.com/jarcode-foss/glava",
   "git_repo": "https://github.com/jarcode-foss/glava",
   "license": "GPL-3.0",
-  "categories": ["audio"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "audio"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "glava",
     "arch": "glava",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/glava/logo.png"
 }

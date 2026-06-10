@@ -4,7 +4,10 @@
   "description": "The X Window System display server.",
   "website": "https://www.x.org/",
   "license": "MIT",
-  "categories": ["x11", "system"],
+  "categories": [
+    "x11",
+    "system"
+  ],
   "package_names": {
     "default": "xorg",
     "arch": "xorg",
@@ -14,5 +17,6 @@
     "opensuse": "xorg-x11-server",
     "void": "xorg",
     "alpine": "xorg-server"
-  }
+  },
+  "logo": "/programs/xorg/logo.png"
 }

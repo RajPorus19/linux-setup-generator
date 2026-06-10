@@ -5,7 +5,10 @@
   "website": "https://github.com/busyloop/lolcat",
   "git_repo": "https://github.com/busyloop/lolcat",
   "license": "WTFPL",
-  "categories": ["fun", "terminal"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
   "package_names": {
     "default": "lolcat",
     "arch": "lolcat",
@@ -15,5 +18,6 @@
     "opensuse": "lolcat",
     "void": "lolcat",
     "alpine": "lolcat"
-  }
+  },
+  "logo": "/programs/lolcat/logo.png"
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Go",
+  "slug": "go",
+  "description": "Open source programming language by Google.",
+  "website": "https://go.dev/",
+  "git_repo": "https://github.com/golang/go",
+  "license": "BSD-3-Clause",
+  "categories": [
+    "language",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "golang",
+    "arch": "go",
+    "ubuntu": "golang-go",
+    "debian": "golang-go",
+    "fedora": "golang",
+    "opensuse": "go",
+    "void": "go",
+    "alpine": "go"
+  },
+  "logo": "/programs/go/logo.png"
+}

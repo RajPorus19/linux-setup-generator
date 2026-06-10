@@ -5,7 +5,10 @@
   "website": "https://wiki.gnome.org/Apps/Rhythmbox",
   "git_repo": "https://github.com/GNOME/rhythmbox",
   "license": "GPL-2.0",
-  "categories": ["audio", "music"],
+  "categories": [
+    "audio",
+    "music"
+  ],
   "package_names": {
     "default": "rhythmbox",
     "arch": "rhythmbox",
@@ -15,5 +18,6 @@
     "opensuse": "rhythmbox",
     "void": "rhythmbox",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/rhythmbox/logo.png"
 }

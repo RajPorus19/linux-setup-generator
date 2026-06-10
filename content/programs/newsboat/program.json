@@ -5,7 +5,10 @@
   "website": "https://newsboat.org/",
   "git_repo": "https://github.com/newsboat/newsboat",
   "license": "MIT",
-  "categories": ["rss", "terminal"],
+  "categories": [
+    "rss",
+    "terminal"
+  ],
   "package_names": {
     "default": "newsboat",
     "arch": "newsboat",
@@ -15,5 +18,6 @@
     "opensuse": "newsboat",
     "void": "newsboat",
     "alpine": "newsboat"
-  }
+  },
+  "logo": "/programs/newsboat/logo.png"
 }

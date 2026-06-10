@@ -3,7 +3,10 @@
   "slug": "pactl",
   "description": "Command-line control for PulseAudio sound server.",
   "license": "LGPL-2.1",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "pulseaudio-utils",
     "arch": "libpulse",
@@ -13,5 +16,6 @@
     "opensuse": "pulseaudio-utils",
     "void": "pulseaudio-utils",
     "alpine": "pulseaudio-utils"
-  }
+  },
+  "logo": "/programs/pactl/logo.png"
 }

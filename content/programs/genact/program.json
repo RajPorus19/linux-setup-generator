@@ -5,8 +5,13 @@
   "website": "https://github.com/svenstaro/genact",
   "git_repo": "https://github.com/svenstaro/genact",
   "license": "MIT",
-  "categories": ["fun", "terminal"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "genact",
     "arch": "genact",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/genact/logo.png"
 }

@@ -5,7 +5,10 @@
   "website": "https://audacious-media-player.org/",
   "git_repo": "https://github.com/audacious-media-player/audacious",
   "license": "BSD-2-Clause",
-  "categories": ["audio", "media-player"],
+  "categories": [
+    "audio",
+    "media-player"
+  ],
   "package_names": {
     "default": "audacious",
     "arch": "audacious",
@@ -15,5 +18,6 @@
     "opensuse": "audacious",
     "void": "audacious",
     "alpine": "audacious"
-  }
+  },
+  "logo": "/programs/audacious/logo.png"
 }

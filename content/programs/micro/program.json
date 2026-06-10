@@ -5,7 +5,10 @@
   "website": "https://micro-editor.github.io/",
   "git_repo": "https://github.com/zyedidia/micro",
   "license": "MIT",
-  "categories": ["editor", "terminal"],
+  "categories": [
+    "editor",
+    "terminal"
+  ],
   "package_names": {
     "default": "micro",
     "arch": "micro",
@@ -15,5 +18,6 @@
     "opensuse": "micro",
     "void": "micro",
     "alpine": "micro"
-  }
+  },
+  "logo": "/programs/micro/logo.png"
 }

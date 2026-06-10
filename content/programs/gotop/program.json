@@ -5,8 +5,13 @@
   "website": "https://github.com/cjbassi/gotop",
   "git_repo": "https://github.com/cjbassi/gotop",
   "license": "MIT",
-  "categories": ["system-monitor", "terminal"],
-  "dependencies": ["golang"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
+  "dependencies": [
+    "golang"
+  ],
   "package_names": {
     "default": "gotop",
     "arch": "gotop",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/gotop/logo.png"
 }

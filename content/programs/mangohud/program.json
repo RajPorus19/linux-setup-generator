@@ -1,0 +1,24 @@
+{
+  "name": "MangoHud",
+  "slug": "mangohud",
+  "description": "Vulkan/OpenGL overlay for monitoring FPS, temperatures, and more.",
+  "website": "https://github.com/flightlessmango/MangoHud",
+  "git_repo": "https://github.com/flightlessmango/MangoHud",
+  "license": "MIT",
+  "categories": [
+    "game",
+    "system-monitor"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "mangohud",
+    "arch": "mangohud",
+    "ubuntu": "mangohud",
+    "debian": "mangohud",
+    "fedora": "mangohud",
+    "opensuse": "mangohud",
+    "void": "mangohud",
+    "alpine": "mangohud"
+  },
+  "logo": "/programs/mangohud/logo.png"
+}
