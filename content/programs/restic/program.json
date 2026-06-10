@@ -17,6 +17,5 @@
     "opensuse": "restic",
     "void": "restic",
     "alpine": "restic"
-  },
-  "logo": "/programs/restic/logo.png"
+  }
 }

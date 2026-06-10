@@ -16,6 +16,5 @@
     "opensuse": "fzf",
     "void": "fzf",
     "alpine": "fzf"
-  },
-  "logo": "/programs/fzf/logo.png"
+  }
 }

@@ -17,6 +17,5 @@
     "opensuse": "emacs",
     "void": "emacs",
     "alpine": "emacs"
-  },
-  "logo": "/programs/emacs/logo.png"
+  }
 }

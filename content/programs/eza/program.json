@@ -19,6 +19,5 @@
     "opensuse": "eza",
     "void": "eza",
     "alpine": "eza"
-  },
-  "logo": "/programs/eza/logo.png"
+  }
 }

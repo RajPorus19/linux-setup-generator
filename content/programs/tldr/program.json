@@ -21,6 +21,5 @@
   },
   "dependencies": [
     "pip"
-  ],
-  "logo": "/programs/tldr/logo.png"
+  ]
 }

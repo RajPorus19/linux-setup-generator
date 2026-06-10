@@ -17,6 +17,5 @@
     "opensuse": "ccls",
     "void": "ccls",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/ccls/logo.png"
+  }
 }

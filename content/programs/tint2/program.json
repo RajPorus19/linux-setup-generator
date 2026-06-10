@@ -18,6 +18,5 @@
     "opensuse": "tint2",
     "void": "tint2",
     "alpine": "tint2"
-  },
-  "logo": "/programs/tint2/logo.png"
+  }
 }

@@ -19,6 +19,5 @@
     "opensuse": "atop",
     "void": "atop",
     "alpine": "atop"
-  },
-  "logo": "/programs/atop/logo.png"
+  }
 }

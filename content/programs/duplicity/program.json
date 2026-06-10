@@ -17,6 +17,5 @@
     "opensuse": "duplicity",
     "void": "duplicity",
     "alpine": "duplicity"
-  },
-  "logo": "/programs/duplicity/logo.png"
+  }
 }

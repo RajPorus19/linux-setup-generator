@@ -22,6 +22,5 @@
     "opensuse": "CUSTOM_INSTALL",
     "ubuntu": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/doom-emacs/logo.png"
+  }
 }

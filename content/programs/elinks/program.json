@@ -17,6 +17,5 @@
     "opensuse": "elinks",
     "void": "elinks",
     "alpine": "elinks"
-  },
-  "logo": "/programs/elinks/logo.png"
+  }
 }

@@ -19,6 +19,5 @@
     "opensuse": "CUSTOM_INSTALL",
     "ubuntu": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/elfeed/logo.png"
+  }
 }

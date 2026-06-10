@@ -18,6 +18,5 @@
     "opensuse": "clementine",
     "void": "clementine",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/clementine/logo.png"
+  }
 }

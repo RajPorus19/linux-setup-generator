@@ -16,6 +16,5 @@
     "opensuse": "chromium",
     "void": "chromium",
     "alpine": "chromium"
-  },
-  "logo": "/programs/chromium/logo.png"
+  }
 }

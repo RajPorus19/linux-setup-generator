@@ -19,6 +19,5 @@
     "opensuse": "handbrake",
     "void": "handbrake",
     "alpine": "handbrake"
-  },
-  "logo": "/programs/handbrake/logo.png"
+  }
 }

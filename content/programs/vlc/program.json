@@ -17,6 +17,5 @@
     "opensuse": "vlc",
     "void": "vlc",
     "alpine": "vlc"
-  },
-  "logo": "/programs/vlc/logo.png"
+  }
 }

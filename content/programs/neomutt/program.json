@@ -18,6 +18,5 @@
     "opensuse": "neomutt",
     "void": "neomutt",
     "alpine": "neomutt"
-  },
-  "logo": "/programs/neomutt/logo.png"
+  }
 }

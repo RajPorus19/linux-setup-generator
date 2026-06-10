@@ -18,6 +18,5 @@
     "opensuse": "direnv",
     "void": "direnv",
     "alpine": "direnv"
-  },
-  "logo": "/programs/direnv/logo.png"
+  }
 }

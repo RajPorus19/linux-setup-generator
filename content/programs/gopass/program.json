@@ -21,6 +21,5 @@
   },
   "dependencies": [
     "golang"
-  ],
-  "logo": "/programs/gopass/logo.png"
+  ]
 }

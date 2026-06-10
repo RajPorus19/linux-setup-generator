@@ -16,6 +16,5 @@
     "opensuse": "ripgrep",
     "void": "ripgrep",
     "alpine": "ripgrep"
-  },
-  "logo": "/programs/ripgrep/logo.png"
+  }
 }

@@ -16,6 +16,5 @@
     "opensuse": "fd",
     "void": "fd",
     "alpine": "fd"
-  },
-  "logo": "/programs/fd/logo.png"
+  }
 }

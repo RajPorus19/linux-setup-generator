@@ -18,6 +18,5 @@
     "opensuse": "mosh",
     "void": "mosh",
     "alpine": "mosh"
-  },
-  "logo": "/programs/mosh/logo.png"
+  }
 }

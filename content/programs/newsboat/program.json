@@ -18,6 +18,5 @@
     "opensuse": "newsboat",
     "void": "newsboat",
     "alpine": "newsboat"
-  },
-  "logo": "/programs/newsboat/logo.png"
+  }
 }

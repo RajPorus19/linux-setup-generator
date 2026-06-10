@@ -18,6 +18,5 @@
     "opensuse": "beets",
     "void": "beets",
     "alpine": "beets"
-  },
-  "logo": "/programs/beets/logo.png"
+  }
 }

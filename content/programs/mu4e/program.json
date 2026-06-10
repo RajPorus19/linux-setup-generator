@@ -18,7 +18,6 @@
     "void": "mu",
     "alpine": "mu"
   },
-  "logo": "/programs/mu4e/logo.png",
   "dependencies": [
     "git-dep",
     "cmake",

@@ -16,6 +16,5 @@
     "opensuse": "pidgin",
     "void": "pidgin",
     "alpine": "pidgin"
-  },
-  "logo": "/programs/pidgin/logo.png"
+  }
 }

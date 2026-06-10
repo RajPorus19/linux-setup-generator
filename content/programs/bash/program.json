@@ -16,6 +16,5 @@
     "opensuse": "bash",
     "void": "bash",
     "alpine": "bash"
-  },
-  "logo": "/programs/bash/logo.png"
+  }
 }

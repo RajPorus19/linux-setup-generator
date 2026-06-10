@@ -19,6 +19,5 @@
     "opensuse": "darktable",
     "void": "darktable",
     "alpine": "darktable"
-  },
-  "logo": "/programs/darktable/logo.png"
+  }
 }

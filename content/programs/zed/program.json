@@ -21,6 +21,5 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/zed/logo.png"
+  }
 }
