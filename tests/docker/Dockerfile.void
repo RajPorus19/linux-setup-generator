@@ -1,11 +1,5 @@
-FROM voidlinux/voidlinux:latest
-# The base image's default repos point to alpha.de.repo.voidlinux.org
-# which has SSL cert issues on GitHub Actions runners.
-# Remove default repos, use HTTP mirror instead.
-RUN rm -f /usr/share/xbps.d/*-repository-*.conf \
-    && echo 'repository=http://mirrors.servercentral.com/voidlinux/current' > /usr/share/xbps.d/00-repository-main.conf \
-    && echo 'repository=http://mirrors.servercentral.com/voidlinux/current/nonfree' > /usr/share/xbps.d/10-repository-nonfree.conf \
-    && xbps-install -S \
+FROM ghcr.io/void-linux/void-linux:latest
+RUN xbps-install -Syu \
     && xbps-install -y base-devel curl git cmake nodejs python3 cargo bash \
     && rm -rf /var/cache/xbps/*
 CMD ["/bin/bash"]
