@@ -1,10 +1,13 @@
 FROM voidlinux/voidlinux:latest
-# Void mirrors often have SSL issues on GitHub Actions runners.
-# Try without sync — use repos already configured in the base image.
-RUN xbps-install -y base-devel curl git cmake nodejs python3 cargo bash 2>&1 || \
-    (echo "Trying fallback mirror..." && \
-     xbps-install -y --repository=https://mirrors.servercentral.com/voidlinux/current \
-     --repository=https://mirrors.servercentral.com/voidlinux/current/nonfree \
-     base-devel curl git cmake nodejs python3 cargo bash)
+# Void mirrors have SSL issues on GitHub Actions runners.
+# Use HTTP mirrors to bypass SSL, with multiple fallbacks.
+RUN xbps-install -y --repository=http://mirrors.servercentral.com/voidlinux/current \
+    --repository=http://mirrors.servercentral.com/voidlinux/current/nonfree \
+    base-devel curl git cmake nodejs python3 cargo bash \
+    || xbps-install -y --repository=http://alpha.us.repo.voidlinux.org/current \
+    --repository=http://alpha.us.repo.voidlinux.org/current/nonfree \
+    base-devel curl git cmake nodejs python3 cargo bash \
+    || xbps-install -y --repository=http://repo-default.voidlinux.org/current \
+    base-devel curl git cmake nodejs python3 cargo bash
 RUN rm -rf /var/cache/xbps/*
 CMD ["/bin/bash"]
