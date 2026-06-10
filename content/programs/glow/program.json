@@ -14,7 +14,11 @@
     "default": "CUSTOM_INSTALL",
     "arch": "glow",
     "ubuntu": "glow",
-    "void": "glow"
+    "void": "glow",
+    "alpine": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL"
   },
   "logo": "/programs/glow/logo.png"
 }

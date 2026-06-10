@@ -12,7 +12,13 @@
   ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
-    "arch": "emacs-telega"
+    "arch": "emacs-telega",
+    "alpine": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL"
   },
   "logo": "/programs/telega/logo.png"
 }
