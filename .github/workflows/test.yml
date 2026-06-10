@@ -77,3 +77,4 @@ jobs:
           path: |
             report.json
             report-${{ matrix.distro }}.html
+            docker-build.log
