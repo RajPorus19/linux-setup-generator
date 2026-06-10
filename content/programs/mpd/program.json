@@ -18,5 +18,5 @@
     "void": "mpd",
     "alpine": "mpd"
   },
-  "logo": "/programs/mpd/logo.png"
+  "logo": "/programs/mpd/logo.svg"
 }

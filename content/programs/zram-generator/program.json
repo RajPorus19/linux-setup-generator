@@ -19,5 +19,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/zram-generator/logo.png"
+  "logo": "/programs/zram-generator/logo.svg"
 }

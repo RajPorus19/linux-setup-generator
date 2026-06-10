@@ -19,5 +19,5 @@
     "void": "asciinema",
     "alpine": "asciinema"
   },
-  "logo": "/programs/asciinema/logo.png"
+  "logo": "/programs/asciinema/logo.svg"
 }

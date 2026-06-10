@@ -19,5 +19,5 @@
     "void": "xmobar",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/xmobar/logo.png"
+  "logo": "/programs/xmobar/logo.svg"
 }

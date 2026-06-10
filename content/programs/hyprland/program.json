@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/hyprland/logo.png"
+  "logo": "/programs/hyprland/logo.svg"
 }

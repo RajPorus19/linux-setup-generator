@@ -18,5 +18,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/gnome-boxes/logo.png"
+  "logo": "/programs/gnome-boxes/logo.svg"
 }

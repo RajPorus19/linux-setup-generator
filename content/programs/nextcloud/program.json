@@ -18,5 +18,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/nextcloud/logo.png"
+  "logo": "/programs/nextcloud/logo.svg"
 }

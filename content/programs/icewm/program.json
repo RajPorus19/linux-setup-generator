@@ -19,5 +19,5 @@
     "void": "icewm",
     "alpine": "icewm"
   },
-  "logo": "/programs/icewm/logo.png"
+  "logo": "/programs/icewm/logo.svg"
 }

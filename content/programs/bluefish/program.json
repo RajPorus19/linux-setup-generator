@@ -17,5 +17,5 @@
     "void": "bluefish",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/bluefish/logo.png"
+  "logo": "/programs/bluefish/logo.svg"
 }

@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/broot/logo.png"
+  "logo": "/programs/broot/logo.svg"
 }

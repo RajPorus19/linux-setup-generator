@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/gitui/logo.png"
+  "logo": "/programs/gitui/logo.svg"
 }

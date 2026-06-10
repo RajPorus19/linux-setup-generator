@@ -19,5 +19,5 @@
     "void": "openbox",
     "alpine": "openbox"
   },
-  "logo": "/programs/openbox/logo.png"
+  "logo": "/programs/openbox/logo.svg"
 }

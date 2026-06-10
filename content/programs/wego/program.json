@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/wego/logo.png"
+  "logo": "/programs/wego/logo.svg"
 }

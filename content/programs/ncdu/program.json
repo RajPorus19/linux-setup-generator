@@ -19,5 +19,5 @@
     "void": "ncdu",
     "alpine": "ncdu"
   },
-  "logo": "/programs/ncdu/logo.png"
+  "logo": "/programs/ncdu/logo.svg"
 }

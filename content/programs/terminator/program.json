@@ -18,5 +18,5 @@
     "void": "terminator",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/terminator/logo.png"
+  "logo": "/programs/terminator/logo.svg"
 }

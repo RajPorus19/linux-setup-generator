@@ -19,5 +19,5 @@
     "void": "keepassxc",
     "alpine": "keepassxc"
   },
-  "logo": "/programs/keepassxc/logo.png"
+  "logo": "/programs/keepassxc/logo.svg"
 }

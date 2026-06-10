@@ -19,5 +19,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/bitwarden/logo.png"
+  "logo": "/programs/bitwarden/logo.svg"
 }

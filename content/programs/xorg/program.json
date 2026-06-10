@@ -18,5 +18,5 @@
     "void": "xorg",
     "alpine": "xorg-server"
   },
-  "logo": "/programs/xorg/logo.png"
+  "logo": "/programs/xorg/logo.svg"
 }

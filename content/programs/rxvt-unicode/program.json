@@ -18,5 +18,5 @@
     "void": "rxvt-unicode",
     "alpine": "rxvt-unicode"
   },
-  "logo": "/programs/rxvt-unicode/logo.png"
+  "logo": "/programs/rxvt-unicode/logo.svg"
 }

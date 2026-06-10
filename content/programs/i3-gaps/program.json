@@ -18,5 +18,5 @@
     "void": "i3-gaps",
     "alpine": "i3wm"
   },
-  "logo": "/programs/i3-gaps/logo.png"
+  "logo": "/programs/i3-gaps/logo.svg"
 }

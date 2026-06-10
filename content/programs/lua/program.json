@@ -20,5 +20,5 @@
     "void": "lua54",
     "alpine": "lua5.4"
   },
-  "logo": "/programs/lua/logo.png"
+  "logo": "/programs/lua/logo.svg"
 }

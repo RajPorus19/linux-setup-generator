@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/localsend/logo.png"
+  "logo": "/programs/localsend/logo.svg"
 }

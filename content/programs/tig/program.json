@@ -19,5 +19,5 @@
     "void": "tig",
     "alpine": "tig"
   },
-  "logo": "/programs/tig/logo.png"
+  "logo": "/programs/tig/logo.svg"
 }

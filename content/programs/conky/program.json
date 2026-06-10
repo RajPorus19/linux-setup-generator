@@ -18,5 +18,5 @@
     "void": "conky",
     "alpine": "conky"
   },
-  "logo": "/programs/conky/logo.png"
+  "logo": "/programs/conky/logo.svg"
 }

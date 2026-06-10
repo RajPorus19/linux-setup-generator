@@ -22,5 +22,5 @@
     "void": "bpytop",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/bpytop/logo.png"
+  "logo": "/programs/bpytop/logo.svg"
 }

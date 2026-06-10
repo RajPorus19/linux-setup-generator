@@ -20,5 +20,5 @@
     "void": "nitrogen",
     "alpine": "nitrogen"
   },
-  "logo": "/programs/nitrogen/logo.png"
+  "logo": "/programs/nitrogen/logo.svg"
 }

@@ -20,5 +20,5 @@
     "void": "gamemode",
     "alpine": "gamemode"
   },
-  "logo": "/programs/gamemode/logo.png"
+  "logo": "/programs/gamemode/logo.svg"
 }

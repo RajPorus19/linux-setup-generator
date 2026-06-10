@@ -20,5 +20,5 @@
     "void": "podman",
     "alpine": "podman"
   },
-  "logo": "/programs/podman/logo.png"
+  "logo": "/programs/podman/logo.svg"
 }

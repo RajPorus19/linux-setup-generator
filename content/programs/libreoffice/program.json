@@ -17,5 +17,5 @@
     "void": "libreoffice",
     "alpine": "libreoffice"
   },
-  "logo": "/programs/libreoffice/logo.png"
+  "logo": "/programs/libreoffice/logo.svg"
 }

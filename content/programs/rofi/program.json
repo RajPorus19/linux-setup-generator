@@ -20,5 +20,5 @@
     "void": "rofi",
     "alpine": "rofi"
   },
-  "logo": "/programs/rofi/logo.png"
+  "logo": "/programs/rofi/logo.svg"
 }

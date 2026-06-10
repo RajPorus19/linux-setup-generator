@@ -19,5 +19,5 @@
     "void": "thunar",
     "alpine": "thunar"
   },
-  "logo": "/programs/thunar/logo.png"
+  "logo": "/programs/thunar/logo.svg"
 }

@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/ventoy/logo.png"
+  "logo": "/programs/ventoy/logo.svg"
 }

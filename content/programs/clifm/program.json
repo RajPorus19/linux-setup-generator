@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/clifm/logo.png"
+  "logo": "/programs/clifm/logo.svg"
 }

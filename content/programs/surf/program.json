@@ -22,5 +22,5 @@
     "void": "surf",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/surf/logo.png"
+  "logo": "/programs/surf/logo.svg"
 }

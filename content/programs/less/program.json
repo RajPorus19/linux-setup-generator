@@ -16,5 +16,5 @@
     "void": "less",
     "alpine": "less"
   },
-  "logo": "/programs/less/logo.png"
+  "logo": "/programs/less/logo.svg"
 }

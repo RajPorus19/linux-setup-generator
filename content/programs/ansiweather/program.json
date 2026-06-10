@@ -20,5 +20,5 @@
     "void": "ansiweather",
     "alpine": "ansiweather"
   },
-  "logo": "/programs/ansiweather/logo.png"
+  "logo": "/programs/ansiweather/logo.svg"
 }

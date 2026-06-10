@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/discord/logo.png"
+  "logo": "/programs/discord/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "htop",
     "alpine": "htop"
   },
-  "logo": "/programs/htop/logo.png"
+  "logo": "/programs/htop/logo.svg"
 }

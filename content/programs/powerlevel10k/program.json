@@ -23,5 +23,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/powerlevel10k/logo.png"
+  "logo": "/programs/powerlevel10k/logo.svg"
 }

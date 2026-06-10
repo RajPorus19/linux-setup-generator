@@ -18,5 +18,5 @@
     "void": "sqlitebrowser",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/sqlitebrowser/logo.png"
+  "logo": "/programs/sqlitebrowser/logo.svg"
 }

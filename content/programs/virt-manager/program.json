@@ -18,5 +18,5 @@
     "void": "virt-manager",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/virt-manager/logo.png"
+  "logo": "/programs/virt-manager/logo.svg"
 }

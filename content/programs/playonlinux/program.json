@@ -17,5 +17,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/playonlinux/logo.png"
+  "logo": "/programs/playonlinux/logo.svg"
 }

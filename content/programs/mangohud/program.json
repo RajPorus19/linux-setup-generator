@@ -20,5 +20,5 @@
     "void": "mangohud",
     "alpine": "mangohud"
   },
-  "logo": "/programs/mangohud/logo.png"
+  "logo": "/programs/mangohud/logo.svg"
 }

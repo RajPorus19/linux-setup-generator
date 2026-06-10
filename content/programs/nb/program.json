@@ -22,5 +22,5 @@
   "dependencies": [
     "curl"
   ],
-  "logo": "/programs/nb/logo.png"
+  "logo": "/programs/nb/logo.svg"
 }

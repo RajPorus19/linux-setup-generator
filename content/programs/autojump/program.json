@@ -22,5 +22,5 @@
   "dependencies": [
     "pip"
   ],
-  "logo": "/programs/autojump/logo.png"
+  "logo": "/programs/autojump/logo.svg"
 }

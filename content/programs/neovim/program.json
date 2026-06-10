@@ -18,5 +18,5 @@
     "void": "neovim",
     "alpine": "neovim"
   },
-  "logo": "/programs/neovim/logo.png"
+  "logo": "/programs/neovim/logo.svg"
 }

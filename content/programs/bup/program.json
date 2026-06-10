@@ -18,5 +18,5 @@
     "void": "bup",
     "alpine": "bup"
   },
-  "logo": "/programs/bup/logo.png"
+  "logo": "/programs/bup/logo.svg"
 }

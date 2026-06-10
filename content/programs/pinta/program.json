@@ -18,5 +18,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/pinta/logo.png"
+  "logo": "/programs/pinta/logo.svg"
 }

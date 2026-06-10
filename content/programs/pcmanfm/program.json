@@ -17,5 +17,5 @@
     "void": "pcmanfm",
     "alpine": "pcmanfm"
   },
-  "logo": "/programs/pcmanfm/logo.png"
+  "logo": "/programs/pcmanfm/logo.svg"
 }

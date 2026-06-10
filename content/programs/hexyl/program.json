@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/hexyl/logo.png"
+  "logo": "/programs/hexyl/logo.svg"
 }

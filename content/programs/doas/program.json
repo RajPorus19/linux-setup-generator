@@ -18,5 +18,5 @@
     "void": "opendoas",
     "alpine": "doas"
   },
-  "logo": "/programs/doas/logo.png"
+  "logo": "/programs/doas/logo.svg"
 }

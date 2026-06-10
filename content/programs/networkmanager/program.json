@@ -18,5 +18,5 @@
     "void": "NetworkManager",
     "alpine": "networkmanager"
   },
-  "logo": "/programs/networkmanager/logo.png"
+  "logo": "/programs/networkmanager/logo.svg"
 }

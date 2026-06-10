@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/bandwhich/logo.png"
+  "logo": "/programs/bandwhich/logo.svg"
 }

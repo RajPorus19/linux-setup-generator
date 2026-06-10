@@ -22,5 +22,5 @@
     "void": "joshuto",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/joshuto/logo.png"
+  "logo": "/programs/joshuto/logo.svg"
 }

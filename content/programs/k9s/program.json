@@ -22,5 +22,5 @@
   "dependencies": [
     "golang"
   ],
-  "logo": "/programs/k9s/logo.png"
+  "logo": "/programs/k9s/logo.svg"
 }

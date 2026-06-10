@@ -18,5 +18,5 @@
     "void": "picom",
     "alpine": "picom"
   },
-  "logo": "/programs/picom/logo.png"
+  "logo": "/programs/picom/logo.svg"
 }

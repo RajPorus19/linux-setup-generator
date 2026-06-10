@@ -17,5 +17,5 @@
     "void": "w3m",
     "alpine": "w3m"
   },
-  "logo": "/programs/w3m/logo.png"
+  "logo": "/programs/w3m/logo.svg"
 }

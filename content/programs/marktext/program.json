@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/marktext/logo.png"
+  "logo": "/programs/marktext/logo.svg"
 }

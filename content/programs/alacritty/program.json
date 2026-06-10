@@ -18,5 +18,5 @@
     "void": "alacritty",
     "alpine": "alacritty"
   },
-  "logo": "/programs/alacritty/logo.png"
+  "logo": "/programs/alacritty/logo.svg"
 }

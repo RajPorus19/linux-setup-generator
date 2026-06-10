@@ -18,5 +18,5 @@
     "void": "kodi",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/kodi/logo.png"
+  "logo": "/programs/kodi/logo.svg"
 }

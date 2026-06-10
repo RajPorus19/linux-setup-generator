@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/retext/logo.png"
+  "logo": "/programs/retext/logo.svg"
 }

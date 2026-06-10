@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/procs/logo.png"
+  "logo": "/programs/procs/logo.svg"
 }

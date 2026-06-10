@@ -20,5 +20,5 @@
     "void": "dwm",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/dwm/logo.png"
+  "logo": "/programs/dwm/logo.svg"
 }

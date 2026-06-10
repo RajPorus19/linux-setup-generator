@@ -17,5 +17,5 @@
     "void": "dbus",
     "alpine": "dbus"
   },
-  "logo": "/programs/dbus/logo.png"
+  "logo": "/programs/dbus/logo.svg"
 }

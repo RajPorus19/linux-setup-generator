@@ -18,5 +18,5 @@
     "void": "pulsemixer",
     "alpine": "pulsemixer"
   },
-  "logo": "/programs/pulsemixer/logo.png"
+  "logo": "/programs/pulsemixer/logo.svg"
 }

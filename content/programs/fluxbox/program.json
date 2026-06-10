@@ -19,5 +19,5 @@
     "void": "fluxbox",
     "alpine": "fluxbox"
   },
-  "logo": "/programs/fluxbox/logo.png"
+  "logo": "/programs/fluxbox/logo.svg"
 }

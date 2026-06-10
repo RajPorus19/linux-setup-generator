@@ -18,5 +18,5 @@
     "void": "audacity",
     "alpine": "audacity"
   },
-  "logo": "/programs/audacity/logo.png"
+  "logo": "/programs/audacity/logo.svg"
 }

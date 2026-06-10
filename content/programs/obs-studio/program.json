@@ -18,5 +18,5 @@
     "void": "obs-studio",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/obs-studio/logo.png"
+  "logo": "/programs/obs-studio/logo.svg"
 }

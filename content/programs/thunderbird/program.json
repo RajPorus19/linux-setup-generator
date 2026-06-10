@@ -17,5 +17,5 @@
     "void": "thunderbird",
     "alpine": "thunderbird"
   },
-  "logo": "/programs/thunderbird/logo.png"
+  "logo": "/programs/thunderbird/logo.svg"
 }

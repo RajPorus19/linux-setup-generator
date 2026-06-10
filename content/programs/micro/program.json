@@ -19,5 +19,5 @@
     "void": "micro",
     "alpine": "micro"
   },
-  "logo": "/programs/micro/logo.png"
+  "logo": "/programs/micro/logo.svg"
 }

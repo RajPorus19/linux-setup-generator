@@ -18,5 +18,5 @@
     "void": "telegram-desktop",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/telegram-desktop/logo.png"
+  "logo": "/programs/telegram-desktop/logo.svg"
 }

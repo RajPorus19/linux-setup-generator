@@ -19,5 +19,5 @@
     "void": "qterminal",
     "alpine": "qterminal"
   },
-  "logo": "/programs/qterminal/logo.png"
+  "logo": "/programs/qterminal/logo.svg"
 }

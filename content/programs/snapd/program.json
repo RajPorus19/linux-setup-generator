@@ -19,5 +19,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/snapd/logo.png"
+  "logo": "/programs/snapd/logo.svg"
 }

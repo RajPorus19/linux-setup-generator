@@ -20,5 +20,5 @@
     "void": "go",
     "alpine": "go"
   },
-  "logo": "/programs/go/logo.png"
+  "logo": "/programs/go/logo.svg"
 }

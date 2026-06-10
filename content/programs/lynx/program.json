@@ -17,5 +17,5 @@
     "void": "lynx",
     "alpine": "lynx"
   },
-  "logo": "/programs/lynx/logo.png"
+  "logo": "/programs/lynx/logo.svg"
 }

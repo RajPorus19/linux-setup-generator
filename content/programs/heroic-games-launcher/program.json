@@ -19,5 +19,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/heroic-games-launcher/logo.png"
+  "logo": "/programs/heroic-games-launcher/logo.svg"
 }

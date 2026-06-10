@@ -19,5 +19,5 @@
     "void": "ffmpeg",
     "alpine": "ffmpeg"
   },
-  "logo": "/programs/ffmpeg/logo.png"
+  "logo": "/programs/ffmpeg/logo.svg"
 }

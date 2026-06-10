@@ -22,5 +22,5 @@
   "dependencies": [
     "pip"
   ],
-  "logo": "/programs/httpie/logo.png"
+  "logo": "/programs/httpie/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "dunst",
     "alpine": "dunst"
   },
-  "logo": "/programs/dunst/logo.png"
+  "logo": "/programs/dunst/logo.svg"
 }

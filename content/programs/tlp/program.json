@@ -19,5 +19,5 @@
     "void": "tlp",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/tlp/logo.png"
+  "logo": "/programs/tlp/logo.svg"
 }

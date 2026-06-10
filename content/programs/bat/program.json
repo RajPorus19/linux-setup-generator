@@ -17,5 +17,5 @@
     "void": "bat",
     "alpine": "bat"
   },
-  "logo": "/programs/bat/logo.png"
+  "logo": "/programs/bat/logo.svg"
 }

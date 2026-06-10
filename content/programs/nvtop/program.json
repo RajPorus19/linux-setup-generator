@@ -20,5 +20,5 @@
     "void": "nvtop",
     "alpine": "nvtop"
   },
-  "logo": "/programs/nvtop/logo.png"
+  "logo": "/programs/nvtop/logo.svg"
 }

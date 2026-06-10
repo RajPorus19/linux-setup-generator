@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/gping/logo.png"
+  "logo": "/programs/gping/logo.svg"
 }

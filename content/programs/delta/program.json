@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/delta/logo.png"
+  "logo": "/programs/delta/logo.svg"
 }

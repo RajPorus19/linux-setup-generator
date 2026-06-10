@@ -19,5 +19,5 @@
     "void": "gparted",
     "alpine": "gparted"
   },
-  "logo": "/programs/gparted/logo.png"
+  "logo": "/programs/gparted/logo.svg"
 }

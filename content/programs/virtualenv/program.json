@@ -17,5 +17,5 @@
     "void": "python3-virtualenv",
     "alpine": "py3-virtualenv"
   },
-  "logo": "/programs/virtualenv/logo.png"
+  "logo": "/programs/virtualenv/logo.svg"
 }

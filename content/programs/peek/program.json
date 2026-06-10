@@ -20,5 +20,5 @@
     "void": "peek",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/peek/logo.png"
+  "logo": "/programs/peek/logo.svg"
 }

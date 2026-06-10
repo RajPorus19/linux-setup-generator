@@ -22,5 +22,5 @@
     "void": "nushell",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/nushell/logo.png"
+  "logo": "/programs/nushell/logo.svg"
 }

@@ -17,5 +17,5 @@
     "void": "zsh",
     "alpine": "zsh"
   },
-  "logo": "/programs/zsh/logo.png"
+  "logo": "/programs/zsh/logo.svg"
 }

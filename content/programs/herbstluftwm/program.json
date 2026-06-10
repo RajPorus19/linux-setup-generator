@@ -19,5 +19,5 @@
     "void": "herbstluftwm",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/herbstluftwm/logo.png"
+  "logo": "/programs/herbstluftwm/logo.svg"
 }

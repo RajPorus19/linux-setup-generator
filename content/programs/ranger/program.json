@@ -19,5 +19,5 @@
     "void": "ranger",
     "alpine": "ranger"
   },
-  "logo": "/programs/ranger/logo.png"
+  "logo": "/programs/ranger/logo.svg"
 }

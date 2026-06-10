@@ -20,5 +20,5 @@
     "void": "kde5",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/kde-plasma/logo.png"
+  "logo": "/programs/kde-plasma/logo.svg"
 }

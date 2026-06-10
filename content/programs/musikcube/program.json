@@ -23,5 +23,5 @@
     "void": "musikcube",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/musikcube/logo.png"
+  "logo": "/programs/musikcube/logo.svg"
 }

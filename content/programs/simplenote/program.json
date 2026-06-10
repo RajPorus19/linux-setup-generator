@@ -21,5 +21,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/simplenote/logo.png"
+  "logo": "/programs/simplenote/logo.svg"
 }

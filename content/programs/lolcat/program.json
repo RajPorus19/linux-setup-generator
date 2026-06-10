@@ -19,5 +19,5 @@
     "void": "lolcat",
     "alpine": "lolcat"
   },
-  "logo": "/programs/lolcat/logo.png"
+  "logo": "/programs/lolcat/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "yakuake",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/yakuake/logo.png"
+  "logo": "/programs/yakuake/logo.svg"
 }

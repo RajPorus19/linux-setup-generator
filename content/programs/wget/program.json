@@ -18,5 +18,5 @@
     "void": "wget",
     "alpine": "wget"
   },
-  "logo": "/programs/wget/logo.png"
+  "logo": "/programs/wget/logo.svg"
 }

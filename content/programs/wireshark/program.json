@@ -20,5 +20,5 @@
     "void": "wireshark",
     "alpine": "wireshark"
   },
-  "logo": "/programs/wireshark/logo.png"
+  "logo": "/programs/wireshark/logo.svg"
 }

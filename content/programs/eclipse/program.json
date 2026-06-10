@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/eclipse/logo.png"
+  "logo": "/programs/eclipse/logo.svg"
 }

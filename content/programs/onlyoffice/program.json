@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/onlyoffice/logo.png"
+  "logo": "/programs/onlyoffice/logo.svg"
 }

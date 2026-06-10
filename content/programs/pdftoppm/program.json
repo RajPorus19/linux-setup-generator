@@ -17,5 +17,5 @@
     "void": "poppler-utils",
     "alpine": "poppler-utils"
   },
-  "logo": "/programs/pdftoppm/logo.png"
+  "logo": "/programs/pdftoppm/logo.svg"
 }

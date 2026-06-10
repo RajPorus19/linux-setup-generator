@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/hyperfine/logo.png"
+  "logo": "/programs/hyperfine/logo.svg"
 }

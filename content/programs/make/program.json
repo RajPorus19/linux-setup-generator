@@ -17,5 +17,5 @@
     "void": "make",
     "alpine": "make"
   },
-  "logo": "/programs/make/logo.png"
+  "logo": "/programs/make/logo.svg"
 }
