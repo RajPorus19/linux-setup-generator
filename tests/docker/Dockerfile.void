@@ -1,7 +1,6 @@
 FROM voidlinux/voidlinux:latest
-# GitHub Actions runners sometimes hit SSL cert mismatches on Void mirrors
-# Disable SSL verification for repo sync (testing only, not production)
-ENV SSL_NO_VERIFY_PEER=1
-RUN xbps-install -S && xbps-install -y base-devel curl git cmake nodejs python3 cargo rust bash \
+# Use the main Void repo directly (bypass alpha mirror SSL issues on CI)
+RUN xbps-install -S --repository=https://repo-default.voidlinux.org/current --repository=https://repo-default.voidlinux.org/current/nonfree \
+    && xbps-install -y base-devel curl git cmake nodejs python3 cargo bash \
     && rm -rf /var/cache/xbps/*
 CMD ["/bin/bash"]
