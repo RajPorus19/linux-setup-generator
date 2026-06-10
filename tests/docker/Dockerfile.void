@@ -1,0 +1,4 @@
+FROM voidlinux/voidlinux:latest
+RUN xbps-install -Syu && xbps-install -y base-devel curl git cmake nodejs npm python3 python3-pip cargo rust bash \
+    && rm -rf /var/cache/xbps/*
+CMD ["/bin/bash"]

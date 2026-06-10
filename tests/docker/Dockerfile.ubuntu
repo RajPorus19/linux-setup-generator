@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    build-essential curl git cmake nodejs npm python3 python3-pip cargo rustc bash \
+    && rm -rf /var/lib/apt/lists/*
+CMD ["/bin/bash"]

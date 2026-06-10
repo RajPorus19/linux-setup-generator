@@ -1,0 +1,3 @@
+FROM alpine:latest
+RUN apk add --no-cache bash curl git build-base cmake nodejs npm python3 py3-pip cargo rust cargo
+CMD ["/bin/bash"]

@@ -6,3 +6,7 @@ public/
 
 # macOS
 .DS_Store
+__pycache__/
+test_script.sh
+report.json
+report-*.html
