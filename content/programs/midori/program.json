@@ -16,6 +16,5 @@
     "opensuse": "midori",
     "void": "midori",
     "alpine": "midori"
-  },
-  "logo": "/programs/midori/logo.png"
+  }
 }

@@ -18,6 +18,5 @@
     "opensuse": "ledger",
     "void": "ledger",
     "alpine": "ledger"
-  },
-  "logo": "/programs/ledger/logo.png"
+  }
 }

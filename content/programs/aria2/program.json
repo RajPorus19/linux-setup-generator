@@ -18,6 +18,5 @@
     "opensuse": "aria2",
     "void": "aria2",
     "alpine": "aria2"
-  },
-  "logo": "/programs/aria2/logo.png"
+  }
 }

@@ -18,6 +18,5 @@
     "opensuse": "redshift",
     "void": "redshift",
     "alpine": "redshift"
-  },
-  "logo": "/programs/redshift/logo.png"
+  }
 }

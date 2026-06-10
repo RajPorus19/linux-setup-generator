@@ -17,6 +17,5 @@
     "opensuse": "kitty",
     "void": "kitty",
     "alpine": "kitty"
-  },
-  "logo": "/programs/kitty/logo.png"
+  }
 }

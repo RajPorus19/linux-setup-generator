@@ -18,6 +18,5 @@
     "opensuse": "cowsay",
     "void": "cowsay",
     "alpine": "cowsay"
-  },
-  "logo": "/programs/cowsay/logo.png"
+  }
 }

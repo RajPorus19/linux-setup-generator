@@ -18,6 +18,5 @@
     "opensuse": "taskwarrior",
     "void": "task",
     "alpine": "task"
-  },
-  "logo": "/programs/taskwarrior/logo.png"
+  }
 }

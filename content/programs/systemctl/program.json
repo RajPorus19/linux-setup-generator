@@ -16,6 +16,5 @@
     "opensuse": "systemd",
     "void": null,
     "alpine": null
-  },
-  "logo": "/programs/systemctl/logo.png"
+  }
 }

@@ -18,6 +18,5 @@
     "opensuse": "ghostwriter",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/ghostwriter/logo.png"
+  }
 }

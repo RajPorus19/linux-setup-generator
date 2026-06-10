@@ -18,6 +18,5 @@
     "opensuse": "jq",
     "void": "jq",
     "alpine": "jq"
-  },
-  "logo": "/programs/jq/logo.png"
+  }
 }

@@ -18,6 +18,5 @@
     "opensuse": "weechat",
     "void": "weechat",
     "alpine": "weechat"
-  },
-  "logo": "/programs/weechat/logo.png"
+  }
 }

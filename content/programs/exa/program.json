@@ -16,6 +16,5 @@
     "opensuse": "exa",
     "void": "exa",
     "alpine": "exa"
-  },
-  "logo": "/programs/exa/logo.png"
+  }
 }

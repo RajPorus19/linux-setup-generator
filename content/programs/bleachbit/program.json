@@ -20,6 +20,5 @@
     "opensuse": "bleachbit",
     "void": "bleachbit",
     "alpine": "bleachbit"
-  },
-  "logo": "/programs/bleachbit/logo.png"
+  }
 }

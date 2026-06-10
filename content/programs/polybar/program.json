@@ -21,6 +21,5 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "polybar",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/polybar/logo.png"
+  }
 }

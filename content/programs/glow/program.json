@@ -19,6 +19,5 @@
     "debian": "CUSTOM_INSTALL",
     "fedora": "CUSTOM_INSTALL",
     "opensuse": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/glow/logo.png"
+  }
 }

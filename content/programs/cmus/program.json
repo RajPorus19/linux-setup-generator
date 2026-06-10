@@ -18,6 +18,5 @@
     "opensuse": "cmus",
     "void": "cmus",
     "alpine": "cmus"
-  },
-  "logo": "/programs/cmus/logo.png"
+  }
 }

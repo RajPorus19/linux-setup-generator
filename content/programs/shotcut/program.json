@@ -17,6 +17,5 @@
     "opensuse": "shotcut",
     "void": "shotcut",
     "alpine": "CUSTOM_INSTALL"
-  },
-  "logo": "/programs/shotcut/logo.png"
+  }
 }

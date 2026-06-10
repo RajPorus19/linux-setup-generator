@@ -19,6 +19,5 @@
     "opensuse": "evince",
     "void": "evince",
     "alpine": "evince"
-  },
-  "logo": "/programs/evince/logo.png"
+  }
 }

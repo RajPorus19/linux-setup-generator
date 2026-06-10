@@ -18,6 +18,5 @@
     "opensuse": "nmap",
     "void": "nmap",
     "alpine": "nmap"
-  },
-  "logo": "/programs/nmap/logo.png"
+  }
 }

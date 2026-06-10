@@ -18,6 +18,5 @@
     "opensuse": "kakoune",
     "void": "kakoune",
     "alpine": "kakoune"
-  },
-  "logo": "/programs/kakoune/logo.png"
+  }
 }

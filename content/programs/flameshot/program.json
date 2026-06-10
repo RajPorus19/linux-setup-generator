@@ -18,6 +18,5 @@
     "opensuse": "flameshot",
     "void": "flameshot",
     "alpine": "flameshot"
-  },
-  "logo": "/programs/flameshot/logo.png"
+  }
 }
