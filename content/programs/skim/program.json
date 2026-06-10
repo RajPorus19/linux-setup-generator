@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/skim/logo.png"
+  "logo": "/programs/skim/logo.svg"
 }

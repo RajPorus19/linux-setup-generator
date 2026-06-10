@@ -24,5 +24,5 @@
     "ubuntu": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/ytfzf/logo.png"
+  "logo": "/programs/ytfzf/logo.svg"
 }

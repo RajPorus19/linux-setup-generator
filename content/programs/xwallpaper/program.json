@@ -22,5 +22,5 @@
     "void": "xwallpaper",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/xwallpaper/logo.png"
+  "logo": "/programs/xwallpaper/logo.svg"
 }

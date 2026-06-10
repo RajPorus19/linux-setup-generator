@@ -19,5 +19,5 @@
     "void": "cava",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/cava/logo.png"
+  "logo": "/programs/cava/logo.svg"
 }

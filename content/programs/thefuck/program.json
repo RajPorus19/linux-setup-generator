@@ -22,5 +22,5 @@
   "dependencies": [
     "pip"
   ],
-  "logo": "/programs/thefuck/logo.png"
+  "logo": "/programs/thefuck/logo.svg"
 }

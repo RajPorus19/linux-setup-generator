@@ -17,5 +17,5 @@
     "void": "tmux",
     "alpine": "tmux"
   },
-  "logo": "/programs/tmux/logo.png"
+  "logo": "/programs/tmux/logo.svg"
 }

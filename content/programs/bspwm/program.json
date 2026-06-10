@@ -19,5 +19,5 @@
     "void": "bspwm",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/bspwm/logo.png"
+  "logo": "/programs/bspwm/logo.svg"
 }

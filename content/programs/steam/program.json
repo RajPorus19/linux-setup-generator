@@ -17,5 +17,5 @@
     "void": "steam",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/steam/logo.png"
+  "logo": "/programs/steam/logo.svg"
 }

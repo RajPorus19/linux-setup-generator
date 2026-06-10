@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/lapce/logo.png"
+  "logo": "/programs/lapce/logo.svg"
 }

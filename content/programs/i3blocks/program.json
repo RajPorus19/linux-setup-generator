@@ -18,5 +18,5 @@
     "void": "i3blocks",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/i3blocks/logo.png"
+  "logo": "/programs/i3blocks/logo.svg"
 }

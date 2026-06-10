@@ -23,5 +23,5 @@
     "cargo",
     "git"
   ],
-  "logo": "/programs/helix/logo.png"
+  "logo": "/programs/helix/logo.svg"
 }

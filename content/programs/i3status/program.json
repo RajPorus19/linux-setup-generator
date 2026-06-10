@@ -18,5 +18,5 @@
     "void": "i3status",
     "alpine": "i3status"
   },
-  "logo": "/programs/i3status/logo.png"
+  "logo": "/programs/i3status/logo.svg"
 }

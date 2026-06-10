@@ -19,5 +19,5 @@
     "void": "dolphin",
     "alpine": "dolphin"
   },
-  "logo": "/programs/dolphin/logo.png"
+  "logo": "/programs/dolphin/logo.svg"
 }

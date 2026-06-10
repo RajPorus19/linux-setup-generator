@@ -20,5 +20,5 @@
     "void": "mc",
     "alpine": "mc"
   },
-  "logo": "/programs/mc/logo.png"
+  "logo": "/programs/mc/logo.svg"
 }

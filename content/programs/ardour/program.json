@@ -18,5 +18,5 @@
     "void": "ardour",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/ardour/logo.png"
+  "logo": "/programs/ardour/logo.svg"
 }

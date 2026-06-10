@@ -22,5 +22,5 @@
     "void": "rust",
     "alpine": "rust"
   },
-  "logo": "/programs/rust/logo.png"
+  "logo": "/programs/rust/logo.svg"
 }

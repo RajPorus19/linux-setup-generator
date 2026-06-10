@@ -19,5 +19,5 @@
     "void": "wofi",
     "alpine": "wofi"
   },
-  "logo": "/programs/wofi/logo.png"
+  "logo": "/programs/wofi/logo.svg"
 }

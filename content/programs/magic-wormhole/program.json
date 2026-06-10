@@ -22,5 +22,5 @@
   "dependencies": [
     "pip"
   ],
-  "logo": "/programs/magic-wormhole/logo.png"
+  "logo": "/programs/magic-wormhole/logo.svg"
 }

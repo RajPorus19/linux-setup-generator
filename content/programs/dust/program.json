@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/dust/logo.png"
+  "logo": "/programs/dust/logo.svg"
 }

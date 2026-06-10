@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/virtualbox/logo.png"
+  "logo": "/programs/virtualbox/logo.svg"
 }

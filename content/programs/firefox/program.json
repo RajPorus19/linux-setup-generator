@@ -18,5 +18,5 @@
     "void": "firefox",
     "alpine": "firefox"
   },
-  "logo": "/programs/firefox/logo.png"
+  "logo": "/programs/firefox/logo.svg"
 }

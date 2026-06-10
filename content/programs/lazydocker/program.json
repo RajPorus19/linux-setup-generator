@@ -22,5 +22,5 @@
   "dependencies": [
     "golang"
   ],
-  "logo": "/programs/lazydocker/logo.png"
+  "logo": "/programs/lazydocker/logo.svg"
 }

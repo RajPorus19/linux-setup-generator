@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/cool-retro-term/logo.png"
+  "logo": "/programs/cool-retro-term/logo.svg"
 }

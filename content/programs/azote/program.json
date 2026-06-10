@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/azote/logo.png"
+  "logo": "/programs/azote/logo.svg"
 }

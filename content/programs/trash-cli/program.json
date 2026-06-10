@@ -18,5 +18,5 @@
     "void": "trash-cli",
     "alpine": "trash-cli"
   },
-  "logo": "/programs/trash-cli/logo.png"
+  "logo": "/programs/trash-cli/logo.svg"
 }

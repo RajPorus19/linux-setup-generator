@@ -18,5 +18,5 @@
     "void": "qemu",
     "alpine": "qemu"
   },
-  "logo": "/programs/qemu/logo.png"
+  "logo": "/programs/qemu/logo.svg"
 }

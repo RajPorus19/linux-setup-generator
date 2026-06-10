@@ -21,5 +21,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/wezterm/logo.png"
+  "logo": "/programs/wezterm/logo.svg"
 }

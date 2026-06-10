@@ -19,5 +19,5 @@
     "void": "mtr",
     "alpine": "mtr"
   },
-  "logo": "/programs/mtr/logo.png"
+  "logo": "/programs/mtr/logo.svg"
 }

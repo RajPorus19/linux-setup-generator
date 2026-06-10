@@ -20,5 +20,5 @@
     "void": "pavucontrol",
     "alpine": "pavucontrol"
   },
-  "logo": "/programs/pavucontrol/logo.png"
+  "logo": "/programs/pavucontrol/logo.svg"
 }

@@ -20,5 +20,5 @@
     "ubuntu": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/conda/logo.png"
+  "logo": "/programs/conda/logo.svg"
 }

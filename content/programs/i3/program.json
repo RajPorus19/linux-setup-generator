@@ -19,5 +19,5 @@
     "void": "i3",
     "alpine": "i3wm"
   },
-  "logo": "/programs/i3/logo.png"
+  "logo": "/programs/i3/logo.svg"
 }

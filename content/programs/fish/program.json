@@ -20,5 +20,5 @@
     "void": "fish",
     "alpine": "fish"
   },
-  "logo": "/programs/fish/logo.png"
+  "logo": "/programs/fish/logo.svg"
 }

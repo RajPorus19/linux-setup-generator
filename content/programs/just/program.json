@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/just/logo.png"
+  "logo": "/programs/just/logo.svg"
 }

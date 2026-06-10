@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/cbonsai/logo.png"
+  "logo": "/programs/cbonsai/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "zathura",
     "alpine": "zathura"
   },
-  "logo": "/programs/zathura/logo.png"
+  "logo": "/programs/zathura/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "xfce4-terminal",
     "alpine": "xfce4-terminal"
   },
-  "logo": "/programs/xfce4-terminal/logo.png"
+  "logo": "/programs/xfce4-terminal/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "i3lock",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/i3lock/logo.png"
+  "logo": "/programs/i3lock/logo.svg"
 }

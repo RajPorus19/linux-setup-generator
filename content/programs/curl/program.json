@@ -19,5 +19,5 @@
     "void": "curl",
     "alpine": "curl"
   },
-  "logo": "/programs/curl/logo.png"
+  "logo": "/programs/curl/logo.svg"
 }

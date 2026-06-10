@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/joplin/logo.png"
+  "logo": "/programs/joplin/logo.svg"
 }

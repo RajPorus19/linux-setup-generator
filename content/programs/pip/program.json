@@ -17,5 +17,5 @@
     "void": "python3-pip",
     "alpine": "py3-pip"
   },
-  "logo": "/programs/pip/logo.png"
+  "logo": "/programs/pip/logo.svg"
 }

@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/gpick/logo.png"
+  "logo": "/programs/gpick/logo.svg"
 }

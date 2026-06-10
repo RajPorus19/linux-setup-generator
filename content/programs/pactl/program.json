@@ -17,5 +17,5 @@
     "void": "pulseaudio-utils",
     "alpine": "pulseaudio-utils"
   },
-  "logo": "/programs/pactl/logo.png"
+  "logo": "/programs/pactl/logo.svg"
 }

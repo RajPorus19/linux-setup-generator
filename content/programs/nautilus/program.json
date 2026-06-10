@@ -19,5 +19,5 @@
     "void": "nautilus",
     "alpine": "nautilus"
   },
-  "logo": "/programs/nautilus/logo.png"
+  "logo": "/programs/nautilus/logo.svg"
 }

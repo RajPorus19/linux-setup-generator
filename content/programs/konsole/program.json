@@ -18,5 +18,5 @@
     "void": "konsole",
     "alpine": "konsole"
   },
-  "logo": "/programs/konsole/logo.png"
+  "logo": "/programs/konsole/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "dmenu",
     "alpine": "dmenu"
   },
-  "logo": "/programs/dmenu/logo.png"
+  "logo": "/programs/dmenu/logo.svg"
 }

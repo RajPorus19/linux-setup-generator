@@ -18,5 +18,5 @@
     "void": "smplayer",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/smplayer/logo.png"
+  "logo": "/programs/smplayer/logo.svg"
 }

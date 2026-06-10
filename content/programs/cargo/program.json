@@ -18,5 +18,5 @@
     "void": "cargo",
     "alpine": "cargo"
   },
-  "logo": "/programs/cargo/logo.png"
+  "logo": "/programs/cargo/logo.svg"
 }

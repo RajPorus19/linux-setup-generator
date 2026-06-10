@@ -22,5 +22,5 @@
     "void": "docker",
     "alpine": "docker"
   },
-  "logo": "/programs/docker/logo.png"
+  "logo": "/programs/docker/logo.svg"
 }

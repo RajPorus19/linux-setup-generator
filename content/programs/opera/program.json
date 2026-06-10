@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/opera/logo.png"
+  "logo": "/programs/opera/logo.svg"
 }

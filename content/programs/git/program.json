@@ -18,5 +18,5 @@
     "void": "git",
     "alpine": "git"
   },
-  "logo": "/programs/git/logo.png"
+  "logo": "/programs/git/logo.svg"
 }

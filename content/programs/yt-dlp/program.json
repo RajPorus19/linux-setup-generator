@@ -19,5 +19,5 @@
     "void": "yt-dlp",
     "alpine": "yt-dlp"
   },
-  "logo": "/programs/yt-dlp/logo.png"
+  "logo": "/programs/yt-dlp/logo.svg"
 }

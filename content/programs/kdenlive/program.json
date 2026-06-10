@@ -20,5 +20,5 @@
     "void": "kdenlive",
     "alpine": "kdenlive"
   },
-  "logo": "/programs/kdenlive/logo.png"
+  "logo": "/programs/kdenlive/logo.svg"
 }

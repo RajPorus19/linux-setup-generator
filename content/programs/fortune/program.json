@@ -19,5 +19,5 @@
     "void": "fortune-mod",
     "alpine": "fortune"
   },
-  "logo": "/programs/fortune/logo.png"
+  "logo": "/programs/fortune/logo.svg"
 }

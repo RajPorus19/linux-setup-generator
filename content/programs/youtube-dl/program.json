@@ -18,5 +18,5 @@
     "void": "youtube-dl",
     "alpine": "youtube-dl"
   },
-  "logo": "/programs/youtube-dl/logo.png"
+  "logo": "/programs/youtube-dl/logo.svg"
 }

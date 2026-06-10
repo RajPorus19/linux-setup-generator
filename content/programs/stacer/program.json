@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/stacer/logo.png"
+  "logo": "/programs/stacer/logo.svg"
 }

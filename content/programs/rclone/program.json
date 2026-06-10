@@ -19,5 +19,5 @@
     "void": "rclone",
     "alpine": "rclone"
   },
-  "logo": "/programs/rclone/logo.png"
+  "logo": "/programs/rclone/logo.svg"
 }

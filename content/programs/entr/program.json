@@ -19,5 +19,5 @@
     "void": "entr",
     "alpine": "entr"
   },
-  "logo": "/programs/entr/logo.png"
+  "logo": "/programs/entr/logo.svg"
 }

@@ -22,5 +22,5 @@
   "dependencies": [
     "golang"
   ],
-  "logo": "/programs/ctop/logo.png"
+  "logo": "/programs/ctop/logo.svg"
 }

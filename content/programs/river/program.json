@@ -19,5 +19,5 @@
     "void": "river",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/river/logo.png"
+  "logo": "/programs/river/logo.svg"
 }

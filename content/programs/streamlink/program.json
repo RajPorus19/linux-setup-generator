@@ -19,5 +19,5 @@
     "void": "streamlink",
     "alpine": "streamlink"
   },
-  "logo": "/programs/streamlink/logo.png"
+  "logo": "/programs/streamlink/logo.svg"
 }

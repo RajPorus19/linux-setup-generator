@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/zellij/logo.png"
+  "logo": "/programs/zellij/logo.svg"
 }

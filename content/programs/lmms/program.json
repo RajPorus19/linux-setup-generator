@@ -19,5 +19,5 @@
     "void": "lmms",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/lmms/logo.png"
+  "logo": "/programs/lmms/logo.svg"
 }

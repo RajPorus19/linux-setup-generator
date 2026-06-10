@@ -22,5 +22,5 @@
   "dependencies": [
     "pip"
   ],
-  "logo": "/programs/visidata/logo.png"
+  "logo": "/programs/visidata/logo.svg"
 }

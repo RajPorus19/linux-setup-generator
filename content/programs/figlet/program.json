@@ -18,5 +18,5 @@
     "void": "figlet",
     "alpine": "figlet"
   },
-  "logo": "/programs/figlet/logo.png"
+  "logo": "/programs/figlet/logo.svg"
 }

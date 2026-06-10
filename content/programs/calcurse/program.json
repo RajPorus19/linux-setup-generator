@@ -19,5 +19,5 @@
     "void": "calcurse",
     "alpine": "calcurse"
   },
-  "logo": "/programs/calcurse/logo.png"
+  "logo": "/programs/calcurse/logo.svg"
 }

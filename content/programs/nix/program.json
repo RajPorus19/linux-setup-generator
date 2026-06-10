@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/nix/logo.png"
+  "logo": "/programs/nix/logo.svg"
 }

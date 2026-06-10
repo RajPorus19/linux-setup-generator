@@ -18,5 +18,5 @@
     "void": "maim",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/maim/logo.png"
+  "logo": "/programs/maim/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "pass",
     "alpine": "pass"
   },
-  "logo": "/programs/pass/logo.png"
+  "logo": "/programs/pass/logo.svg"
 }

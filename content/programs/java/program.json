@@ -18,5 +18,5 @@
     "void": "openjdk",
     "alpine": "openjdk21"
   },
-  "logo": "/programs/java/logo.png"
+  "logo": "/programs/java/logo.svg"
 }

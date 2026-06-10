@@ -19,5 +19,5 @@
     "void": "neofetch",
     "alpine": "neofetch"
   },
-  "logo": "/programs/neofetch/logo.png"
+  "logo": "/programs/neofetch/logo.svg"
 }

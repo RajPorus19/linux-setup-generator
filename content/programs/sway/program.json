@@ -19,5 +19,5 @@
     "void": "sway",
     "alpine": "sway"
   },
-  "logo": "/programs/sway/logo.png"
+  "logo": "/programs/sway/logo.svg"
 }

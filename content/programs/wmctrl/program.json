@@ -17,5 +17,5 @@
     "void": "wmctrl",
     "alpine": "wmctrl"
   },
-  "logo": "/programs/wmctrl/logo.png"
+  "logo": "/programs/wmctrl/logo.svg"
 }

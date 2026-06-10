@@ -17,5 +17,5 @@
     "void": "nodejs",
     "alpine": "npm"
   },
-  "logo": "/programs/npm/logo.png"
+  "logo": "/programs/npm/logo.svg"
 }

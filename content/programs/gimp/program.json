@@ -18,5 +18,5 @@
     "void": "gimp",
     "alpine": "gimp"
   },
-  "logo": "/programs/gimp/logo.png"
+  "logo": "/programs/gimp/logo.svg"
 }

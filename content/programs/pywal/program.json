@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/pywal/logo.png"
+  "logo": "/programs/pywal/logo.svg"
 }

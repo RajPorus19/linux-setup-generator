@@ -20,5 +20,5 @@
     "void": "syncthing",
     "alpine": "syncthing"
   },
-  "logo": "/programs/syncthing/logo.png"
+  "logo": "/programs/syncthing/logo.svg"
 }

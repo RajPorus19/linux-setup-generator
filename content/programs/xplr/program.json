@@ -22,5 +22,5 @@
     "void": "xplr",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/xplr/logo.png"
+  "logo": "/programs/xplr/logo.svg"
 }

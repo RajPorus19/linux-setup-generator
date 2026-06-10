@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/dropbox/logo.png"
+  "logo": "/programs/dropbox/logo.svg"
 }

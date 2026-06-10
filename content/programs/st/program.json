@@ -22,5 +22,5 @@
     "void": "st",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/st/logo.png"
+  "logo": "/programs/st/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "flatpak",
     "alpine": "flatpak"
   },
-  "logo": "/programs/flatpak/logo.png"
+  "logo": "/programs/flatpak/logo.svg"
 }

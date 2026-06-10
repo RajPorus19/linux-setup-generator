@@ -19,5 +19,5 @@
     "void": "audacious",
     "alpine": "audacious"
   },
-  "logo": "/programs/audacious/logo.png"
+  "logo": "/programs/audacious/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "vim",
     "alpine": "vim"
   },
-  "logo": "/programs/vim/logo.png"
+  "logo": "/programs/vim/logo.svg"
 }

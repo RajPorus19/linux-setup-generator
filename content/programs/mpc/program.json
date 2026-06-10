@@ -18,5 +18,5 @@
     "void": "mpc",
     "alpine": "mpc"
   },
-  "logo": "/programs/mpc/logo.png"
+  "logo": "/programs/mpc/logo.svg"
 }

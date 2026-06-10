@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/zoom/logo.png"
+  "logo": "/programs/zoom/logo.svg"
 }

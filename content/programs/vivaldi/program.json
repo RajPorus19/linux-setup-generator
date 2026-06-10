@@ -20,5 +20,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/vivaldi/logo.png"
+  "logo": "/programs/vivaldi/logo.svg"
 }

@@ -17,5 +17,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/digikam/logo.png"
+  "logo": "/programs/digikam/logo.svg"
 }

@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/sampler/logo.png"
+  "logo": "/programs/sampler/logo.svg"
 }

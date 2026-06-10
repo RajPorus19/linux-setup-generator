@@ -19,5 +19,5 @@
     "void": "rhythmbox",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/rhythmbox/logo.png"
+  "logo": "/programs/rhythmbox/logo.svg"
 }

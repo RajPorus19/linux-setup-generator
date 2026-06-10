@@ -17,5 +17,5 @@
     "void": "libnotify",
     "alpine": "libnotify"
   },
-  "logo": "/programs/notify-send/logo.png"
+  "logo": "/programs/notify-send/logo.svg"
 }

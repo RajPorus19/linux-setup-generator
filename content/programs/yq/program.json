@@ -22,5 +22,5 @@
   "dependencies": [
     "golang"
   ],
-  "logo": "/programs/yq/logo.png"
+  "logo": "/programs/yq/logo.svg"
 }

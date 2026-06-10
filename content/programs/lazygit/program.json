@@ -22,5 +22,5 @@
   "dependencies": [
     "golang"
   ],
-  "logo": "/programs/lazygit/logo.png"
+  "logo": "/programs/lazygit/logo.svg"
 }

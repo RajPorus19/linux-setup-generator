@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/liquidprompt/logo.png"
+  "logo": "/programs/liquidprompt/logo.svg"
 }

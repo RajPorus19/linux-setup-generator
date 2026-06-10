@@ -22,5 +22,5 @@
     "void": "git-cola",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/git-cola/logo.png"
+  "logo": "/programs/git-cola/logo.svg"
 }

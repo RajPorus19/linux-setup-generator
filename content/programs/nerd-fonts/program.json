@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/nerd-fonts/logo.png"
+  "logo": "/programs/nerd-fonts/logo.svg"
 }

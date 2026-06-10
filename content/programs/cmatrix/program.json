@@ -19,5 +19,5 @@
     "void": "cmatrix",
     "alpine": "cmatrix"
   },
-  "logo": "/programs/cmatrix/logo.png"
+  "logo": "/programs/cmatrix/logo.svg"
 }

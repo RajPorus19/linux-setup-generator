@@ -18,5 +18,5 @@
     "void": "ncmpcpp",
     "alpine": "ncmpcpp"
   },
-  "logo": "/programs/ncmpcpp/logo.png"
+  "logo": "/programs/ncmpcpp/logo.svg"
 }

@@ -18,5 +18,5 @@
     "void": "krita",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/krita/logo.png"
+  "logo": "/programs/krita/logo.svg"
 }

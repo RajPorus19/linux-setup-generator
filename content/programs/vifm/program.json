@@ -20,5 +20,5 @@
     "void": "vifm",
     "alpine": "vifm"
   },
-  "logo": "/programs/vifm/logo.png"
+  "logo": "/programs/vifm/logo.svg"
 }

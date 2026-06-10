@@ -22,5 +22,5 @@
   "dependencies": [
     "cargo"
   ],
-  "logo": "/programs/starship/logo.png"
+  "logo": "/programs/starship/logo.svg"
 }

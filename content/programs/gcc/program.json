@@ -17,5 +17,5 @@
     "void": "gcc",
     "alpine": "gcc"
   },
-  "logo": "/programs/gcc/logo.png"
+  "logo": "/programs/gcc/logo.svg"
 }

@@ -22,5 +22,5 @@
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/xonsh/logo.png"
+  "logo": "/programs/xonsh/logo.svg"
 }

@@ -19,5 +19,5 @@
     "void": "xmonad",
     "alpine": "CUSTOM_INSTALL"
   },
-  "logo": "/programs/xmonad/logo.png"
+  "logo": "/programs/xmonad/logo.svg"
 }

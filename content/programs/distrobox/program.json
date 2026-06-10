@@ -22,5 +22,5 @@
     "void": "distrobox",
     "alpine": "distrobox"
   },
-  "logo": "/programs/distrobox/logo.png"
+  "logo": "/programs/distrobox/logo.svg"
 }
