@@ -11,7 +11,7 @@
   ],
   "package_names": {
     "default": "httpie",
-    "arch": "python-httpie",
+    "arch": "httpie",
     "ubuntu": "httpie",
     "debian": "httpie",
     "fedora": "httpie",

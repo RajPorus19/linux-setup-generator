@@ -4,10 +4,13 @@
   "description": "A fork of i3 with gaps between windows (gap support merged into i3 4.22+).",
   "git_repo": "https://github.com/Airblader/i3",
   "license": "BSD-3-Clause",
-  "categories": ["wm", "x11"],
+  "categories": [
+    "wm",
+    "x11"
+  ],
   "package_names": {
     "default": "i3",
-    "arch": "i3-gaps",
+    "arch": "i3-wm",
     "ubuntu": "i3-gaps",
     "debian": "i3",
     "fedora": "i3",
