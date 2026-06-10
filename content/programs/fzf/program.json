@@ -4,7 +4,9 @@
   "description": "A command-line fuzzy finder for files, history, and more.",
   "git_repo": "https://github.com/junegunn/fzf",
   "license": "MIT",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "fzf",
     "arch": "fzf",
@@ -14,5 +16,6 @@
     "opensuse": "fzf",
     "void": "fzf",
     "alpine": "fzf"
-  }
+  },
+  "logo": "/programs/fzf/logo.png"
 }

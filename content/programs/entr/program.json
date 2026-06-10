@@ -5,7 +5,10 @@
   "website": "https://eradman.com/entrproject/",
   "git_repo": "https://github.com/eradman/entr",
   "license": "ISC",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "entr",
     "arch": "entr",
@@ -15,5 +18,6 @@
     "opensuse": "entr",
     "void": "entr",
     "alpine": "entr"
-  }
+  },
+  "logo": "/programs/entr/logo.png"
 }

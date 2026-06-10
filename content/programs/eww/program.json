@@ -1,12 +1,16 @@
 {
   "name": "eww",
   "slug": "eww",
-  "description": "ElKowar's wacky widgets — desktop widget system.",
+  "description": "ElKowar's wacky widgets \u2014 desktop widget system.",
   "website": "https://elkowar.github.io/eww/",
   "git_repo": "https://github.com/elkowar/eww",
   "license": "MIT",
-  "categories": ["status-bar"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "eww",
     "arch": "eww",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/eww/logo.png"
 }

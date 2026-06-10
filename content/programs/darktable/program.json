@@ -1,0 +1,24 @@
+{
+  "name": "darktable",
+  "slug": "darktable",
+  "description": "Open source photography workflow and RAW developer.",
+  "website": "https://www.darktable.org/",
+  "git_repo": "https://github.com/darktable-org/darktable",
+  "license": "GPL-3.0+",
+  "categories": [
+    "media",
+    "image-processing"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "darktable",
+    "arch": "darktable",
+    "ubuntu": "darktable",
+    "debian": "darktable",
+    "fedora": "darktable",
+    "opensuse": "darktable",
+    "void": "darktable",
+    "alpine": "darktable"
+  },
+  "logo": "/programs/darktable/logo.png"
+}

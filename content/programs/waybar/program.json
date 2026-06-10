@@ -5,8 +5,12 @@
   "website": "https://github.com/Alexays/Waybar",
   "git_repo": "https://github.com/Alexays/Waybar",
   "license": "MIT",
-  "categories": ["status-bar"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "waybar",
     "arch": "waybar",
@@ -16,5 +20,6 @@
     "opensuse": "waybar",
     "void": "waybar",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/waybar/logo.png"
 }

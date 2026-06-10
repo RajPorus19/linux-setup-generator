@@ -5,8 +5,12 @@
   "website": "https://github.com/greshake/i3status-rust",
   "git_repo": "https://github.com/greshake/i3status-rust",
   "license": "GPL-3.0",
-  "categories": ["status-bar"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "i3status-rust",
     "arch": "i3status-rust",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/i3status-rust/logo.png"
 }

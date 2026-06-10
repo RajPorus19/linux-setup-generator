@@ -1,0 +1,23 @@
+{
+  "name": "Font Manager",
+  "slug": "font-manager",
+  "description": "Simple font management application for GTK desktop environments.",
+  "website": "https://fontmanager.github.io/",
+  "git_repo": "https://github.com/FontManager/font-manager",
+  "license": "GPL-3.0",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "font-manager",
+    "arch": "font-manager",
+    "ubuntu": "font-manager",
+    "debian": "font-manager",
+    "fedora": "font-manager",
+    "opensuse": "font-manager",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/font-manager/logo.png"
+}

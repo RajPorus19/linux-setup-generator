@@ -4,7 +4,9 @@
   "description": "A cat clone with syntax highlighting and Git integration.",
   "git_repo": "https://github.com/sharkdp/bat",
   "license": "MIT/Apache-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "bat",
     "arch": "bat",
@@ -14,5 +16,6 @@
     "opensuse": "bat",
     "void": "bat",
     "alpine": "bat"
-  }
+  },
+  "logo": "/programs/bat/logo.png"
 }

@@ -1,0 +1,24 @@
+{
+  "name": "LocalSend",
+  "slug": "localsend",
+  "description": "Open-source AirDrop alternative for cross-platform file sharing.",
+  "website": "https://localsend.org/",
+  "git_repo": "https://github.com/localsend/localsend",
+  "license": "MIT",
+  "categories": [
+    "network",
+    "file-management"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "localsend",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/localsend/logo.png"
+}

@@ -5,8 +5,12 @@
   "website": "http://www.qtile.org/",
   "git_repo": "https://github.com/qtile/qtile",
   "license": "MIT",
-  "categories": ["window-manager"],
-  "dependencies": ["pip"],
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "qtile",
     "arch": "qtile",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/qtile/logo.png"
 }

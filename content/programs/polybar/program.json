@@ -5,8 +5,13 @@
   "website": "https://polybar.github.io/",
   "git_repo": "https://github.com/polybar/polybar",
   "license": "MIT",
-  "categories": ["status-bar"],
-  "dependencies": ["git-dep", "cmake"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "git-dep",
+    "cmake"
+  ],
   "package_names": {
     "default": "polybar",
     "arch": "polybar",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "polybar",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/polybar/logo.png"
 }

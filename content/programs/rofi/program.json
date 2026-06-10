@@ -1,0 +1,24 @@
+{
+  "name": "Rofi",
+  "slug": "rofi",
+  "description": "Window switcher, application launcher, and dmenu replacement.",
+  "website": "https://github.com/davatorium/rofi",
+  "git_repo": "https://github.com/davatorium/rofi",
+  "license": "MIT",
+  "categories": [
+    "launcher",
+    "cli"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "rofi",
+    "arch": "rofi",
+    "ubuntu": "rofi",
+    "debian": "rofi",
+    "fedora": "rofi",
+    "opensuse": "rofi",
+    "void": "rofi",
+    "alpine": "rofi"
+  },
+  "logo": "/programs/rofi/logo.png"
+}

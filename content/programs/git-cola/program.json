@@ -5,8 +5,13 @@
   "website": "https://git-cola.github.io/",
   "git_repo": "https://github.com/git-cola/git-cola",
   "license": "GPL-2.0",
-  "categories": ["development", "version-control"],
-  "dependencies": ["pip"],
+  "categories": [
+    "development",
+    "version-control"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "git-cola",
     "arch": "git-cola",
@@ -16,5 +21,6 @@
     "opensuse": "git-cola",
     "void": "git-cola",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/git-cola/logo.png"
 }

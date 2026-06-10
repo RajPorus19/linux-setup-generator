@@ -4,7 +4,9 @@
   "description": "Drop-down terminal emulator based on KDE Konsole technology.",
   "website": "https://apps.kde.org/yakuake/",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "yakuake",
@@ -15,5 +17,6 @@
     "opensuse": "yakuake",
     "void": "yakuake",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/yakuake/logo.png"
 }

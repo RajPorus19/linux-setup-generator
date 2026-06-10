@@ -5,8 +5,13 @@
   "website": "https://xon.sh/",
   "git_repo": "https://github.com/xonsh/xonsh",
   "license": "BSD-2-Clause",
-  "categories": ["shell", "terminal"],
-  "dependencies": ["pip"],
+  "categories": [
+    "shell",
+    "terminal"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "xonsh",
     "arch": "xonsh",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/xonsh/logo.png"
 }

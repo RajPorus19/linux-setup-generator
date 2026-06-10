@@ -5,7 +5,10 @@
   "website": "https://direnv.net/",
   "git_repo": "https://github.com/direnv/direnv",
   "license": "MIT",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "direnv",
     "arch": "direnv",
@@ -15,5 +18,6 @@
     "opensuse": "direnv",
     "void": "direnv",
     "alpine": "direnv"
-  }
+  },
+  "logo": "/programs/direnv/logo.png"
 }

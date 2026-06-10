@@ -5,7 +5,10 @@
   "website": "https://midnight-commander.org/",
   "git_repo": "https://github.com/MidnightCommander/mc",
   "license": "GPL-3.0",
-  "categories": ["file-manager", "terminal"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "mc",
@@ -16,5 +19,6 @@
     "opensuse": "mc",
     "void": "mc",
     "alpine": "mc"
-  }
+  },
+  "logo": "/programs/mc/logo.png"
 }

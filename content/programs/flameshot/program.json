@@ -1,0 +1,23 @@
+{
+  "name": "Flameshot",
+  "slug": "flameshot",
+  "description": "Powerful yet simple to use screenshot software.",
+  "website": "https://flameshot.org/",
+  "git_repo": "https://github.com/flameshot-org/flameshot",
+  "license": "GPL-3.0",
+  "categories": [
+    "screenshot"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "flameshot",
+    "arch": "flameshot",
+    "ubuntu": "flameshot",
+    "debian": "flameshot",
+    "fedora": "flameshot",
+    "opensuse": "flameshot",
+    "void": "flameshot",
+    "alpine": "flameshot"
+  },
+  "logo": "/programs/flameshot/logo.png"
+}

@@ -5,8 +5,12 @@
   "website": "https://backintime.readthedocs.io/",
   "git_repo": "https://github.com/bit-team/backintime",
   "license": "GPL-2.0",
-  "categories": ["system"],
-  "dependencies": ["git"],
+  "categories": [
+    "system"
+  ],
+  "dependencies": [
+    "git"
+  ],
   "package_names": {
     "default": "backintime",
     "arch": "backintime",
@@ -16,5 +20,6 @@
     "opensuse": "backintime",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/backintime/logo.png"
 }

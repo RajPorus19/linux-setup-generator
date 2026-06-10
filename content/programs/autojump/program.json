@@ -21,5 +21,6 @@
   },
   "dependencies": [
     "pip"
-  ]
+  ],
+  "logo": "/programs/autojump/logo.png"
 }

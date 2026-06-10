@@ -14,7 +14,7 @@
   ],
   "package_names": {
     "default": "eclipse-java",
-    "arch": "eclipse-java",
+    "arch": "CUSTOM_INSTALL",
     "ubuntu": "CUSTOM_INSTALL",
     "debian": "CUSTOM_INSTALL",
     "fedora": "eclipse",

@@ -4,7 +4,10 @@
   "description": "A fast and lightweight dynamic menu for X.",
   "website": "https://tools.suckless.org/dmenu/",
   "license": "MIT",
-  "categories": ["launcher", "x11"],
+  "categories": [
+    "launcher",
+    "x11"
+  ],
   "package_names": {
     "default": "dmenu",
     "arch": "dmenu",
@@ -14,5 +17,6 @@
     "opensuse": "dmenu",
     "void": "dmenu",
     "alpine": "dmenu"
-  }
+  },
+  "logo": "/programs/dmenu/logo.png"
 }

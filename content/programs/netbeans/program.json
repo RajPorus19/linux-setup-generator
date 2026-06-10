@@ -4,8 +4,14 @@
   "description": "Free, open source IDE for Java, HTML5, PHP and C/C++ development.",
   "website": "https://netbeans.apache.org/",
   "license": "Apache-2.0",
-  "categories": ["ide", "development"],
-  "dependencies": ["curl", "java"],
+  "categories": [
+    "ide",
+    "development"
+  ],
+  "dependencies": [
+    "curl",
+    "java"
+  ],
   "package_names": {
     "default": "netbeans",
     "arch": "netbeans",
@@ -15,5 +21,6 @@
     "opensuse": "netbeans",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/netbeans/logo.png"
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Gpick",
+  "slug": "gpick",
+  "description": "Advanced color picker and palette editor.",
+  "website": "http://www.gpick.org/",
+  "git_repo": "https://github.com/thezbyg/gpick",
+  "license": "BSD-3-Clause",
+  "categories": [
+    "image-processing",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "gpick",
+    "arch": "gpick",
+    "ubuntu": "gpick",
+    "debian": "gpick",
+    "fedora": "gpick",
+    "opensuse": "gpick",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/gpick/logo.png"
+}

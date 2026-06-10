@@ -3,7 +3,10 @@
   "slug": "w3m",
   "description": "A text-based web browser and pager.",
   "license": "MIT",
-  "categories": ["browser", "terminal"],
+  "categories": [
+    "browser",
+    "terminal"
+  ],
   "package_names": {
     "default": "w3m",
     "arch": "w3m",
@@ -13,5 +16,6 @@
     "opensuse": "w3m",
     "void": "w3m",
     "alpine": "w3m"
-  }
+  },
+  "logo": "/programs/w3m/logo.png"
 }

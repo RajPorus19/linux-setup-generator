@@ -5,7 +5,10 @@
   "website": "http://jonls.dk/redshift/",
   "git_repo": "https://github.com/jonls/redshift",
   "license": "GPL-3.0",
-  "categories": ["x11", "utility"],
+  "categories": [
+    "x11",
+    "utility"
+  ],
   "package_names": {
     "default": "redshift",
     "arch": "redshift",
@@ -15,5 +18,6 @@
     "opensuse": "redshift",
     "void": "redshift",
     "alpine": "redshift"
-  }
+  },
+  "logo": "/programs/redshift/logo.png"
 }

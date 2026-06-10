@@ -5,8 +5,13 @@
   "website": "https://github.com/noctuid/tdrop",
   "git_repo": "https://github.com/noctuid/tdrop",
   "license": "GPL-3.0",
-  "categories": ["terminal", "window-management"],
-  "dependencies": ["curl"],
+  "categories": [
+    "terminal",
+    "window-management"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "tdrop",
     "arch": "tdrop",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/tdrop/logo.png"
 }

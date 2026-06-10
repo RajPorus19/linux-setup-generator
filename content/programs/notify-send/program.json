@@ -3,7 +3,10 @@
   "slug": "notify-send",
   "description": "A command-line tool to send desktop notifications.",
   "license": "LGPL-2.1",
-  "categories": ["utility", "x11"],
+  "categories": [
+    "utility",
+    "x11"
+  ],
   "package_names": {
     "default": "libnotify",
     "arch": "libnotify",
@@ -13,5 +16,6 @@
     "opensuse": "libnotify-tools",
     "void": "libnotify",
     "alpine": "libnotify"
-  }
+  },
+  "logo": "/programs/notify-send/logo.png"
 }

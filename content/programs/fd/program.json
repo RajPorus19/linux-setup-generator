@@ -4,7 +4,9 @@
   "description": "A simple, fast and user-friendly alternative to find.",
   "git_repo": "https://github.com/sharkdp/fd",
   "license": "MIT/Apache-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "fd-find",
     "arch": "fd",
@@ -14,5 +16,6 @@
     "opensuse": "fd",
     "void": "fd",
     "alpine": "fd"
-  }
+  },
+  "logo": "/programs/fd/logo.png"
 }

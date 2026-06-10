@@ -5,7 +5,9 @@
   "website": "https://sqlitebrowser.org/",
   "git_repo": "https://github.com/sqlitebrowser/sqlitebrowser",
   "license": "GPL-3.0",
-  "categories": ["development"],
+  "categories": [
+    "development"
+  ],
   "package_names": {
     "default": "sqlitebrowser",
     "arch": "sqlitebrowser",
@@ -15,5 +17,6 @@
     "opensuse": "sqlitebrowser",
     "void": "sqlitebrowser",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/sqlitebrowser/logo.png"
 }

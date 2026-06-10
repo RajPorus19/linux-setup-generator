@@ -4,7 +4,10 @@
   "description": "A fast, lightweight image viewer for the terminal and X.",
   "git_repo": "https://github.com/derf/feh",
   "license": "MIT",
-  "categories": ["viewer", "x11"],
+  "categories": [
+    "viewer",
+    "x11"
+  ],
   "package_names": {
     "default": "feh",
     "arch": "feh",
@@ -14,5 +17,6 @@
     "opensuse": "feh",
     "void": "feh",
     "alpine": "feh"
-  }
+  },
+  "logo": "/programs/feh/logo.png"
 }

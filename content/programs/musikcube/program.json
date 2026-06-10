@@ -5,8 +5,14 @@
   "website": "https://musikcube.com/",
   "git_repo": "https://github.com/clangen/musikcube",
   "license": "BSD-3-Clause",
-  "categories": ["audio", "terminal"],
-  "dependencies": ["git-dep", "cmake"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
+  "dependencies": [
+    "git-dep",
+    "cmake"
+  ],
   "package_names": {
     "default": "musikcube",
     "arch": "musikcube",
@@ -16,5 +22,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "musikcube",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/musikcube/logo.png"
 }

@@ -5,8 +5,14 @@
   "website": "https://github.com/romkatv/powerlevel10k",
   "git_repo": "https://github.com/romkatv/powerlevel10k",
   "license": "MIT",
-  "categories": ["shell", "terminal"],
-  "dependencies": ["git-dep", "zsh"],
+  "categories": [
+    "shell",
+    "terminal"
+  ],
+  "dependencies": [
+    "git-dep",
+    "zsh"
+  ],
   "package_names": {
     "default": "zsh-theme-powerlevel10k",
     "arch": "zsh-theme-powerlevel10k",
@@ -16,5 +22,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/powerlevel10k/logo.png"
 }

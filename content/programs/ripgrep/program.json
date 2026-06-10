@@ -4,7 +4,9 @@
   "description": "A line-oriented search tool that recursively searches directories.",
   "git_repo": "https://github.com/BurntSushi/ripgrep",
   "license": "MIT/Unlicense",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "ripgrep",
     "arch": "ripgrep",
@@ -14,5 +16,6 @@
     "opensuse": "ripgrep",
     "void": "ripgrep",
     "alpine": "ripgrep"
-  }
+  },
+  "logo": "/programs/ripgrep/logo.png"
 }

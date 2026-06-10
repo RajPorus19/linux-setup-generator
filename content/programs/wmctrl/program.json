@@ -3,7 +3,10 @@
   "slug": "wmctrl",
   "description": "A command-line tool to interact with an EWMH/NetWM compatible X Window Manager.",
   "license": "GPL-2.0",
-  "categories": ["x11", "terminal"],
+  "categories": [
+    "x11",
+    "terminal"
+  ],
   "package_names": {
     "default": "wmctrl",
     "arch": "wmctrl",
@@ -13,5 +16,6 @@
     "opensuse": "wmctrl",
     "void": "wmctrl",
     "alpine": "wmctrl"
-  }
+  },
+  "logo": "/programs/wmctrl/logo.png"
 }

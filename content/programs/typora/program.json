@@ -4,8 +4,13 @@
   "description": "Minimal Markdown editor with seamless live preview.",
   "website": "https://typora.io/",
   "license": "proprietary",
-  "categories": ["editor", "markdown"],
-  "dependencies": ["curl"],
+  "categories": [
+    "editor",
+    "markdown"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "typora",
     "arch": "typora",
@@ -15,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/typora/logo.png"
 }

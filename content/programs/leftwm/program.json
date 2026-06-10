@@ -5,8 +5,12 @@
   "website": "https://leftwm.org/",
   "git_repo": "https://github.com/leftwm/leftwm",
   "license": "MIT",
-  "categories": ["window-manager"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "leftwm",
     "arch": "leftwm",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/leftwm/logo.png"
 }

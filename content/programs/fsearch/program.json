@@ -1,0 +1,24 @@
+{
+  "name": "FSearch",
+  "slug": "fsearch",
+  "description": "Fast file search utility for Unix-like systems, inspired by Everything.",
+  "website": "https://github.com/cboxdoerfer/fsearch",
+  "git_repo": "https://github.com/cboxdoerfer/fsearch",
+  "license": "GPL-2.0+",
+  "categories": [
+    "search",
+    "file-management"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "fsearch",
+    "arch": "fsearch",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/fsearch/logo.png"
+}

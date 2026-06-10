@@ -16,7 +16,13 @@
   ],
   "package_names": {
     "default": "CUSTOM_INSTALL",
-    "arch": "ytfzf"
+    "arch": "ytfzf",
+    "alpine": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL"
   },
   "logo": "/programs/ytfzf/logo.png"
 }

@@ -5,7 +5,9 @@
   "website": "https://apps.gnome.org/Boxes/",
   "git_repo": "https://gitlab.gnome.org/GNOME/gnome-boxes",
   "license": "GPL-2.0",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": "gnome-boxes",
     "arch": "gnome-boxes",
@@ -15,5 +17,6 @@
     "opensuse": "gnome-boxes",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/gnome-boxes/logo.png"
 }

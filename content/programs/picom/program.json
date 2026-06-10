@@ -1,10 +1,13 @@
 {
   "name": "picom",
   "slug": "picom",
-  "description": "A compositor for X11 — adds transparency, shadows, and smooth transitions.",
+  "description": "A compositor for X11 \u2014 adds transparency, shadows, and smooth transitions.",
   "git_repo": "https://github.com/yshui/picom",
   "license": "MIT",
-  "categories": ["x11", "desktop"],
+  "categories": [
+    "x11",
+    "desktop"
+  ],
   "package_names": {
     "default": "picom",
     "arch": "picom",
@@ -14,5 +17,6 @@
     "opensuse": "picom",
     "void": "picom",
     "alpine": "picom"
-  }
+  },
+  "logo": "/programs/picom/logo.png"
 }

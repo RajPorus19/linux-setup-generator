@@ -1,0 +1,23 @@
+{
+  "name": "Heroic Games Launcher",
+  "slug": "heroic-games-launcher",
+  "description": "Open-source Epic Games and GOG launcher.",
+  "website": "https://heroicgameslauncher.com/",
+  "git_repo": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+  "license": "GPL-3.0",
+  "categories": [
+    "game"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "heroic-games-launcher",
+    "arch": "heroic-games-launcher-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/heroic-games-launcher/logo.png"
+}

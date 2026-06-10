@@ -5,8 +5,13 @@
   "website": "https://github.com/dpayne/cli-visualizer",
   "git_repo": "https://github.com/dpayne/cli-visualizer",
   "license": "MIT",
-  "categories": ["audio", "terminal"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "cli-visualizer",
     "arch": "cli-visualizer",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/cli-visualizer/logo.png"
 }

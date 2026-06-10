@@ -4,7 +4,10 @@
   "description": "A command-line interface to the FreeDesktop.org trash can.",
   "git_repo": "https://github.com/andreafrancia/trash-cli",
   "license": "GPL-2.0",
-  "categories": ["terminal", "system"],
+  "categories": [
+    "terminal",
+    "system"
+  ],
   "package_names": {
     "default": "trash-cli",
     "arch": "trash-cli",
@@ -14,5 +17,6 @@
     "opensuse": "python3-trash-cli",
     "void": "trash-cli",
     "alpine": "trash-cli"
-  }
+  },
+  "logo": "/programs/trash-cli/logo.png"
 }

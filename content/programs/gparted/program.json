@@ -1,0 +1,23 @@
+{
+  "name": "GParted",
+  "slug": "gparted",
+  "description": "GNOME Partition Editor for managing disk partitions.",
+  "website": "https://gparted.org/",
+  "git_repo": "https://gitlab.gnome.org/GNOME/gparted",
+  "license": "GPL-2.0+",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "gparted",
+    "arch": "gparted",
+    "ubuntu": "gparted",
+    "debian": "gparted",
+    "fedora": "gparted",
+    "opensuse": "gparted",
+    "void": "gparted",
+    "alpine": "gparted"
+  },
+  "logo": "/programs/gparted/logo.png"
+}

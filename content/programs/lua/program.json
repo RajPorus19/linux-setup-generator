@@ -1,0 +1,24 @@
+{
+  "name": "Lua",
+  "slug": "lua",
+  "description": "Lightweight embeddable scripting language.",
+  "website": "https://www.lua.org/",
+  "git_repo": "https://github.com/lua/lua",
+  "license": "MIT",
+  "categories": [
+    "language",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "lua",
+    "arch": "lua",
+    "ubuntu": "lua5.4",
+    "debian": "lua5.4",
+    "fedora": "lua",
+    "opensuse": "lua",
+    "void": "lua54",
+    "alpine": "lua5.4"
+  },
+  "logo": "/programs/lua/logo.png"
+}

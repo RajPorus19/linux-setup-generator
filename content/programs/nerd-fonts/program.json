@@ -1,0 +1,26 @@
+{
+  "name": "Nerd Fonts",
+  "slug": "nerd-fonts",
+  "description": "Patched fonts with extra glyphs/icons for development.",
+  "website": "https://www.nerdfonts.com/",
+  "git_repo": "https://github.com/ryanoasis/nerd-fonts",
+  "license": "MIT",
+  "categories": [
+    "system",
+    "development"
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "nerd-fonts-complete",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/nerd-fonts/logo.png"
+}

@@ -10,7 +10,7 @@
   ],
   "package_names": {
     "default": "mu",
-    "arch": "mu",
+    "arch": "CUSTOM_INSTALL",
     "ubuntu": "maildir-utils",
     "debian": "maildir-utils",
     "fedora": "maildir-utils",
@@ -18,5 +18,10 @@
     "void": "mu",
     "alpine": "mu"
   },
-  "logo": "/programs/mu4e/logo.png"
+  "logo": "/programs/mu4e/logo.png",
+  "dependencies": [
+    "git-dep",
+    "cmake",
+    "emacs"
+  ]
 }

@@ -4,7 +4,10 @@
   "description": "A simple screen locker for X.",
   "git_repo": "https://github.com/i3/i3lock",
   "license": "BSD-3-Clause",
-  "categories": ["x11", "security"],
+  "categories": [
+    "x11",
+    "security"
+  ],
   "package_names": {
     "default": "i3lock",
     "arch": "i3lock",
@@ -14,5 +17,6 @@
     "opensuse": "i3lock",
     "void": "i3lock",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/i3lock/logo.png"
 }

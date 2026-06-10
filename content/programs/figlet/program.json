@@ -4,7 +4,10 @@
   "description": "Program for making large letters out of ordinary text.",
   "website": "http://www.figlet.org/",
   "license": "Artistic",
-  "categories": ["fun", "terminal"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
   "package_names": {
     "default": "figlet",
     "arch": "figlet",
@@ -14,5 +17,6 @@
     "opensuse": "figlet",
     "void": "figlet",
     "alpine": "figlet"
-  }
+  },
+  "logo": "/programs/figlet/logo.png"
 }

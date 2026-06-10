@@ -5,7 +5,10 @@
   "website": "https://github.com/Syllo/nvtop",
   "git_repo": "https://github.com/Syllo/nvtop",
   "license": "GPL-3.0",
-  "categories": ["system-monitor", "terminal"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "nvtop",
@@ -16,5 +19,6 @@
     "opensuse": "nvtop",
     "void": "nvtop",
     "alpine": "nvtop"
-  }
+  },
+  "logo": "/programs/nvtop/logo.png"
 }

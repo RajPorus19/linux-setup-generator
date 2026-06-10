@@ -1,12 +1,25 @@
 {
   "name": "tpm",
   "slug": "tpm",
-  "description": "Tmux Plugin Manager — installs and manages tmux plugins.",
+  "description": "Tmux Plugin Manager \u2014 installs and manages tmux plugins.",
   "git_repo": "https://github.com/tmux-plugins/tpm",
   "license": "MIT",
-  "categories": ["terminal"],
-  "dependencies": ["git", "tmux"],
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "git",
+    "tmux"
+  ],
   "package_names": {
-    "default": "CUSTOM_INSTALL"
-  }
+    "default": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL",
+    "arch": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "ubuntu": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/tpm/logo.png"
 }

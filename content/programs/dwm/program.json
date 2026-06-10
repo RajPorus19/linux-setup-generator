@@ -4,8 +4,12 @@
   "description": "Dynamic window manager for X, extremely small and fast.",
   "website": "https://dwm.suckless.org/",
   "license": "MIT",
-  "categories": ["window-manager"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "dwm",
     "arch": "dwm",
@@ -15,5 +19,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "dwm",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/dwm/logo.png"
 }

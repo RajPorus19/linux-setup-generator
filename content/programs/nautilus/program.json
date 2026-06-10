@@ -1,0 +1,23 @@
+{
+  "name": "Nautilus (Files)",
+  "slug": "nautilus",
+  "description": "GNOME's file manager, simple and integrated.",
+  "website": "https://apps.gnome.org/Nautilus/",
+  "git_repo": "https://gitlab.gnome.org/GNOME/nautilus",
+  "license": "GPL-3.0+",
+  "categories": [
+    "file-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "nautilus",
+    "arch": "nautilus",
+    "ubuntu": "nautilus",
+    "debian": "nautilus",
+    "fedora": "nautilus",
+    "opensuse": "nautilus",
+    "void": "nautilus",
+    "alpine": "nautilus"
+  },
+  "logo": "/programs/nautilus/logo.png"
+}

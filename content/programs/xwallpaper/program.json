@@ -5,8 +5,13 @@
   "website": "https://github.com/stoeckmann/xwallpaper",
   "git_repo": "https://github.com/stoeckmann/xwallpaper",
   "license": "ISC",
-  "categories": ["display", "theming"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "display",
+    "theming"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "xwallpaper",
     "arch": "xwallpaper",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "xwallpaper",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/xwallpaper/logo.png"
 }

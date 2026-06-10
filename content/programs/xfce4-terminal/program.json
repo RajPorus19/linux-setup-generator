@@ -5,7 +5,9 @@
   "website": "https://docs.xfce.org/apps/xfce4-terminal/start",
   "git_repo": "https://github.com/xfce-mirror/xfce4-terminal",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "xfce4-terminal",
@@ -16,5 +18,6 @@
     "opensuse": "xfce4-terminal",
     "void": "xfce4-terminal",
     "alpine": "xfce4-terminal"
-  }
+  },
+  "logo": "/programs/xfce4-terminal/logo.png"
 }

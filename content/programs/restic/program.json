@@ -5,7 +5,9 @@
   "website": "https://restic.net/",
   "git_repo": "https://github.com/restic/restic",
   "license": "BSD-2-Clause",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": "restic",
     "arch": "restic",
@@ -15,5 +17,6 @@
     "opensuse": "restic",
     "void": "restic",
     "alpine": "restic"
-  }
+  },
+  "logo": "/programs/restic/logo.png"
 }

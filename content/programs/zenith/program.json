@@ -5,8 +5,13 @@
   "website": "https://github.com/bvaisvil/zenith",
   "git_repo": "https://github.com/bvaisvil/zenith",
   "license": "MIT",
-  "categories": ["system-monitor", "terminal"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "zenith",
     "arch": "zenith",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/zenith/logo.png"
 }

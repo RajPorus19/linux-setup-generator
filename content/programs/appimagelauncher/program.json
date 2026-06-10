@@ -1,0 +1,24 @@
+{
+  "name": "AppImageLauncher",
+  "slug": "appimagelauncher",
+  "description": "Integrate AppImages into your application launcher.",
+  "website": "https://github.com/TheAssassin/AppImageLauncher",
+  "git_repo": "https://github.com/TheAssassin/AppImageLauncher",
+  "license": "MIT",
+  "categories": [
+    "system",
+    "package-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "appimagelauncher",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/appimagelauncher/logo.png"
+}

@@ -5,8 +5,13 @@
   "website": "https://github.com/aristocratos/bpytop",
   "git_repo": "https://github.com/aristocratos/bpytop",
   "license": "Apache-2.0",
-  "categories": ["system-monitor", "terminal"],
-  "dependencies": ["pip"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "bpytop",
     "arch": "bpytop",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "bpytop",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/bpytop/logo.png"
 }

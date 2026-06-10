@@ -21,5 +21,6 @@
   },
   "dependencies": [
     "pip"
-  ]
+  ],
+  "logo": "/programs/visidata/logo.png"
 }

@@ -4,7 +4,10 @@
   "description": "A simple screenshot utility for X.",
   "git_repo": "https://github.com/naelstrof/maim",
   "license": "GPL-3.0",
-  "categories": ["x11", "utility"],
+  "categories": [
+    "x11",
+    "utility"
+  ],
   "package_names": {
     "default": "maim",
     "arch": "maim",
@@ -14,5 +17,6 @@
     "opensuse": "maim",
     "void": "maim",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/maim/logo.png"
 }

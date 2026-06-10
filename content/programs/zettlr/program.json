@@ -1,0 +1,25 @@
+{
+  "name": "Zettlr",
+  "slug": "zettlr",
+  "description": "Markdown editor for the 21st century, aimed at academic writing.",
+  "website": "https://www.zettlr.com/",
+  "git_repo": "https://github.com/Zettlr/Zettlr",
+  "license": "GPL-3.0",
+  "categories": [
+    "editor",
+    "markdown",
+    "productivity"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "zettlr",
+    "arch": "zettlr",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/zettlr/logo.png"
+}

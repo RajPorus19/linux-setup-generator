@@ -5,7 +5,10 @@
   "website": "https://vifm.info/",
   "git_repo": "https://github.com/vifm/vifm",
   "license": "GPL-2.0",
-  "categories": ["file-manager", "terminal"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "vifm",
@@ -16,5 +19,6 @@
     "opensuse": "vifm",
     "void": "vifm",
     "alpine": "vifm"
-  }
+  },
+  "logo": "/programs/vifm/logo.png"
 }

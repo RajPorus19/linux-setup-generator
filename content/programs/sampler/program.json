@@ -5,8 +5,13 @@
   "website": "https://sampler.dev/",
   "git_repo": "https://github.com/sqshq/sampler",
   "license": "Apache-2.0",
-  "categories": ["system-monitor", "terminal"],
-  "dependencies": ["golang"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
+  "dependencies": [
+    "golang"
+  ],
   "package_names": {
     "default": "sampler",
     "arch": "sampler",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/sampler/logo.png"
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Thunar",
+  "slug": "thunar",
+  "description": "Fast and lightweight file manager for Xfce.",
+  "website": "https://docs.xfce.org/xfce/thunar/start",
+  "git_repo": "https://gitlab.xfce.org/xfce/thunar",
+  "license": "GPL-2.0+",
+  "categories": [
+    "file-manager"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "thunar",
+    "arch": "thunar",
+    "ubuntu": "thunar",
+    "debian": "thunar",
+    "fedora": "thunar",
+    "opensuse": "thunar",
+    "void": "thunar",
+    "alpine": "thunar"
+  },
+  "logo": "/programs/thunar/logo.png"
+}

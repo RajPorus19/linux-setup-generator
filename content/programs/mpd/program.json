@@ -1,11 +1,13 @@
 {
   "name": "MPD",
   "slug": "mpd",
-  "description": "Music Player Daemon — a flexible server-side music player.",
+  "description": "Music Player Daemon \u2014 a flexible server-side music player.",
   "website": "https://www.musicpd.org/",
   "git_repo": "https://github.com/MusicPlayerDaemon/MPD",
   "license": "GPL-2.0",
-  "categories": ["audio"],
+  "categories": [
+    "audio"
+  ],
   "package_names": {
     "default": "mpd",
     "arch": "mpd",
@@ -15,5 +17,6 @@
     "opensuse": "mpd",
     "void": "mpd",
     "alpine": "mpd"
-  }
+  },
+  "logo": "/programs/mpd/logo.png"
 }

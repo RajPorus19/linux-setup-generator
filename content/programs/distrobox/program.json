@@ -1,0 +1,26 @@
+{
+  "name": "Distrobox",
+  "slug": "distrobox",
+  "description": "Use any Linux distribution inside your terminal.",
+  "website": "https://distrobox.it/",
+  "git_repo": "https://github.com/89luca89/distrobox",
+  "license": "GPL-3.0",
+  "categories": [
+    "devops",
+    "development"
+  ],
+  "dependencies": [
+    "podman"
+  ],
+  "package_names": {
+    "default": "distrobox",
+    "arch": "distrobox",
+    "ubuntu": "distrobox",
+    "debian": "distrobox",
+    "fedora": "distrobox",
+    "opensuse": "distrobox",
+    "void": "distrobox",
+    "alpine": "distrobox"
+  },
+  "logo": "/programs/distrobox/logo.png"
+}

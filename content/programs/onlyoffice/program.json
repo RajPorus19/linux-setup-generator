@@ -1,0 +1,24 @@
+{
+  "name": "OnlyOffice",
+  "slug": "onlyoffice",
+  "description": "Powerful online and offline office suite.",
+  "website": "https://www.onlyoffice.com/",
+  "git_repo": "https://github.com/ONLYOFFICE/DesktopEditors",
+  "license": "AGPL-3.0",
+  "categories": [
+    "office",
+    "productivity"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "CUSTOM_INSTALL",
+    "arch": "onlyoffice-bin",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/onlyoffice/logo.png"
+}

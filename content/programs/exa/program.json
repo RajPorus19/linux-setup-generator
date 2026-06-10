@@ -4,7 +4,9 @@
   "description": "A modern replacement for ls with colors and extra features.",
   "git_repo": "https://github.com/ogham/exa",
   "license": "MIT",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "exa",
     "arch": "exa",
@@ -14,5 +16,6 @@
     "opensuse": "exa",
     "void": "exa",
     "alpine": "exa"
-  }
+  },
+  "logo": "/programs/exa/logo.png"
 }

@@ -15,7 +15,11 @@
     "default": "CUSTOM_INSTALL",
     "arch": "pyright",
     "ubuntu": "pyright",
-    "void": "pyright"
+    "void": "pyright",
+    "alpine": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL"
   },
   "logo": "/programs/pyright/logo.png"
 }

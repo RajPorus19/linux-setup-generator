@@ -5,7 +5,10 @@
   "website": "https://calcurse.org/",
   "git_repo": "https://github.com/lfos/calcurse",
   "license": "BSD-2-Clause",
-  "categories": ["productivity", "terminal"],
+  "categories": [
+    "productivity",
+    "terminal"
+  ],
   "package_names": {
     "default": "calcurse",
     "arch": "calcurse",
@@ -15,5 +18,6 @@
     "opensuse": "calcurse",
     "void": "calcurse",
     "alpine": "calcurse"
-  }
+  },
+  "logo": "/programs/calcurse/logo.png"
 }

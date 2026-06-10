@@ -5,7 +5,10 @@
   "website": "https://cmus.github.io/",
   "git_repo": "https://github.com/cmus/cmus",
   "license": "GPL-2.0",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "cmus",
     "arch": "cmus",
@@ -15,5 +18,6 @@
     "opensuse": "cmus",
     "void": "cmus",
     "alpine": "cmus"
-  }
+  },
+  "logo": "/programs/cmus/logo.png"
 }

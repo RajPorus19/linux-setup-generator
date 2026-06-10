@@ -5,8 +5,13 @@
   "website": "https://github.com/retext-project/retext",
   "git_repo": "https://github.com/retext-project/retext",
   "license": "GPL-3.0",
-  "categories": ["editor", "markdown"],
-  "dependencies": ["pip"],
+  "categories": [
+    "editor",
+    "markdown"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "retext",
     "arch": "retext",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/retext/logo.png"
 }

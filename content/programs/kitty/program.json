@@ -5,7 +5,9 @@
   "website": "https://sw.kovidgoyal.net/kitty/",
   "git_repo": "https://github.com/kovidgoyal/kitty",
   "license": "GPL-3.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "kitty",
     "arch": "kitty",
@@ -15,5 +17,6 @@
     "opensuse": "kitty",
     "void": "kitty",
     "alpine": "kitty"
-  }
+  },
+  "logo": "/programs/kitty/logo.png"
 }

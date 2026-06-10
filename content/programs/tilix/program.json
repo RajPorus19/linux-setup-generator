@@ -5,7 +5,9 @@
   "website": "https://gnunn1.github.io/tilix-web/",
   "git_repo": "https://github.com/gnunn1/tilix",
   "license": "MPL-2.0",
-  "categories": ["terminal"],
+  "categories": [
+    "terminal"
+  ],
   "package_names": {
     "default": "tilix",
     "arch": "tilix",
@@ -15,5 +17,6 @@
     "opensuse": "tilix",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/tilix/logo.png"
 }

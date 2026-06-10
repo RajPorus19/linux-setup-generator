@@ -1,0 +1,25 @@
+{
+  "name": "BleachBit",
+  "slug": "bleachbit",
+  "description": "Free system cleaner and privacy manager.",
+  "website": "https://www.bleachbit.org/",
+  "git_repo": "https://github.com/bleachbit/bleachbit",
+  "license": "GPL-3.0",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [
+    "python3"
+  ],
+  "package_names": {
+    "default": "bleachbit",
+    "arch": "bleachbit",
+    "ubuntu": "bleachbit",
+    "debian": "bleachbit",
+    "fedora": "bleachbit",
+    "opensuse": "bleachbit",
+    "void": "bleachbit",
+    "alpine": "bleachbit"
+  },
+  "logo": "/programs/bleachbit/logo.png"
+}

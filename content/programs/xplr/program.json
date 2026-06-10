@@ -5,8 +5,13 @@
   "website": "https://xplr.dev/",
   "git_repo": "https://github.com/sayanarijit/xplr",
   "license": "MIT",
-  "categories": ["file-manager", "terminal"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "xplr",
     "arch": "xplr",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "xplr",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/xplr/logo.png"
 }

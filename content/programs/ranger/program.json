@@ -5,7 +5,10 @@
   "website": "https://ranger.github.io/",
   "git_repo": "https://github.com/ranger/ranger",
   "license": "GPL-3.0",
-  "categories": ["file-manager", "terminal"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
   "package_names": {
     "default": "ranger",
     "arch": "ranger",
@@ -15,5 +18,6 @@
     "opensuse": "ranger",
     "void": "ranger",
     "alpine": "ranger"
-  }
+  },
+  "logo": "/programs/ranger/logo.png"
 }

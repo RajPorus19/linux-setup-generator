@@ -5,8 +5,12 @@
   "website": "http://guake-project.org/",
   "git_repo": "https://github.com/Guake/guake",
   "license": "GPL-2.0",
-  "categories": ["terminal"],
-  "dependencies": ["pip"],
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "pip"
+  ],
   "package_names": {
     "default": "guake",
     "arch": "guake",
@@ -16,5 +20,6 @@
     "opensuse": "guake",
     "void": "guake",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/guake/logo.png"
 }

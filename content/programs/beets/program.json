@@ -5,7 +5,10 @@
   "website": "https://beets.io/",
   "git_repo": "https://github.com/beetbox/beets",
   "license": "MIT",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "beets",
     "arch": "beets",
@@ -15,5 +18,6 @@
     "opensuse": "beets",
     "void": "beets",
     "alpine": "beets"
-  }
+  },
+  "logo": "/programs/beets/logo.png"
 }

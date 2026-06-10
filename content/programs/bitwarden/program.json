@@ -1,0 +1,23 @@
+{
+  "name": "Bitwarden",
+  "slug": "bitwarden",
+  "description": "Open source password management solution.",
+  "website": "https://bitwarden.com/",
+  "git_repo": "https://github.com/bitwarden/clients",
+  "license": "GPL-3.0/AGPL-3.0",
+  "categories": [
+    "security"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "bitwarden",
+    "arch": "bitwarden",
+    "ubuntu": "CUSTOM_INSTALL",
+    "debian": "CUSTOM_INSTALL",
+    "fedora": "CUSTOM_INSTALL",
+    "opensuse": "CUSTOM_INSTALL",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/bitwarden/logo.png"
+}

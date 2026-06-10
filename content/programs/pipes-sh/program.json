@@ -5,8 +5,13 @@
   "website": "https://github.com/pipeseroni/pipes.sh",
   "git_repo": "https://github.com/pipeseroni/pipes.sh",
   "license": "MIT",
-  "categories": ["fun", "terminal"],
-  "dependencies": ["curl"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "pipes.sh",
     "arch": "pipes.sh",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/pipes-sh/logo.png"
 }

@@ -4,7 +4,10 @@
   "description": "A C/C++/Objective-C language server with clang backend.",
   "git_repo": "https://github.com/MaskRay/ccls",
   "license": "Apache-2.0",
-  "categories": ["development", "lsp"],
+  "categories": [
+    "development",
+    "lsp"
+  ],
   "package_names": {
     "default": "ccls",
     "arch": "ccls",
@@ -14,5 +17,6 @@
     "opensuse": "ccls",
     "void": "ccls",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/ccls/logo.png"
 }

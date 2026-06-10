@@ -5,7 +5,10 @@
   "website": "https://ghostwriter.kde.org/",
   "git_repo": "https://github.com/KDE/ghostwriter",
   "license": "GPL-3.0",
-  "categories": ["editor", "markdown"],
+  "categories": [
+    "editor",
+    "markdown"
+  ],
   "package_names": {
     "default": "ghostwriter",
     "arch": "ghostwriter",
@@ -15,5 +18,6 @@
     "opensuse": "ghostwriter",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/ghostwriter/logo.png"
 }

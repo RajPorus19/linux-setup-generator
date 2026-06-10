@@ -5,8 +5,13 @@
   "website": "https://github.com/schachmat/wego",
   "git_repo": "https://github.com/schachmat/wego",
   "license": "MIT",
-  "categories": ["terminal", "internet"],
-  "dependencies": ["golang"],
+  "categories": [
+    "terminal",
+    "internet"
+  ],
+  "dependencies": [
+    "golang"
+  ],
   "package_names": {
     "default": "wego",
     "arch": "wego",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/wego/logo.png"
 }

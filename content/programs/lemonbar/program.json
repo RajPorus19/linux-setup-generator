@@ -5,8 +5,12 @@
   "website": "https://github.com/LemonBoy/bar",
   "git_repo": "https://github.com/LemonBoy/bar",
   "license": "MIT",
-  "categories": ["status-bar"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "status-bar"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "lemonbar",
     "arch": "lemonbar",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "lemonbar",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/lemonbar/logo.png"
 }

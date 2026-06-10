@@ -5,8 +5,13 @@
   "website": "https://github.com/kamiyaa/joshuto",
   "git_repo": "https://github.com/kamiyaa/joshuto",
   "license": "MIT",
-  "categories": ["file-manager", "terminal"],
-  "dependencies": ["cargo"],
+  "categories": [
+    "file-manager",
+    "terminal"
+  ],
+  "dependencies": [
+    "cargo"
+  ],
   "package_names": {
     "default": "joshuto",
     "arch": "joshuto",
@@ -16,5 +21,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "joshuto",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/joshuto/logo.png"
 }

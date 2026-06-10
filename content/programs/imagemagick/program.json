@@ -5,7 +5,10 @@
   "website": "https://imagemagick.org/",
   "git_repo": "https://github.com/ImageMagick/ImageMagick",
   "license": "ImageMagick",
-  "categories": ["utility", "multimedia"],
+  "categories": [
+    "utility",
+    "multimedia"
+  ],
   "package_names": {
     "default": "imagemagick",
     "arch": "imagemagick",
@@ -15,5 +18,6 @@
     "opensuse": "ImageMagick",
     "void": "ImageMagick",
     "alpine": "imagemagick"
-  }
+  },
+  "logo": "/programs/imagemagick/logo.png"
 }

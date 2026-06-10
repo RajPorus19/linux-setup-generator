@@ -1,0 +1,24 @@
+{
+  "name": "Podman",
+  "slug": "podman",
+  "description": "Daemonless container engine for developing, managing, and running OCI containers.",
+  "website": "https://podman.io/",
+  "git_repo": "https://github.com/containers/podman",
+  "license": "Apache-2.0",
+  "categories": [
+    "devops",
+    "development"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "podman",
+    "arch": "podman",
+    "ubuntu": "podman",
+    "debian": "podman",
+    "fedora": "podman",
+    "opensuse": "podman",
+    "void": "podman",
+    "alpine": "podman"
+  },
+  "logo": "/programs/podman/logo.png"
+}

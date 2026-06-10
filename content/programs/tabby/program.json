@@ -5,8 +5,12 @@
   "website": "https://tabby.sh/",
   "git_repo": "https://github.com/Eugeny/tabby",
   "license": "MIT",
-  "categories": ["terminal"],
-  "dependencies": ["curl"],
+  "categories": [
+    "terminal"
+  ],
+  "dependencies": [
+    "curl"
+  ],
   "package_names": {
     "default": "tabby",
     "arch": "tabby",
@@ -16,5 +20,6 @@
     "opensuse": "CUSTOM_INSTALL",
     "void": "CUSTOM_INSTALL",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/tabby/logo.png"
 }

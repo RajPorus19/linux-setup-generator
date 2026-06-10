@@ -4,7 +4,10 @@
   "description": "A fully featured ncurses-based MPD client.",
   "git_repo": "https://github.com/ncmpcpp/ncmpcpp",
   "license": "GPL-2.0",
-  "categories": ["audio", "terminal"],
+  "categories": [
+    "audio",
+    "terminal"
+  ],
   "package_names": {
     "default": "ncmpcpp",
     "arch": "ncmpcpp",
@@ -14,5 +17,6 @@
     "opensuse": "ncmpcpp",
     "void": "ncmpcpp",
     "alpine": "ncmpcpp"
-  }
+  },
+  "logo": "/programs/ncmpcpp/logo.png"
 }

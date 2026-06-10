@@ -1,0 +1,24 @@
+{
+  "name": "RawTherapee",
+  "slug": "rawtherapee",
+  "description": "Powerful cross-platform RAW photo processing software.",
+  "website": "https://rawtherapee.com/",
+  "git_repo": "https://github.com/Beep6581/RawTherapee",
+  "license": "GPL-3.0+",
+  "categories": [
+    "media",
+    "image-processing"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "rawtherapee",
+    "arch": "rawtherapee",
+    "ubuntu": "rawtherapee",
+    "debian": "rawtherapee",
+    "fedora": "rawtherapee",
+    "opensuse": "rawtherapee",
+    "void": "rawtherapee",
+    "alpine": "rawtherapee"
+  },
+  "logo": "/programs/rawtherapee/logo.png"
+}

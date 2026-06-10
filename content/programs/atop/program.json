@@ -5,7 +5,10 @@
   "website": "https://github.com/Atoptool/atop",
   "git_repo": "https://github.com/Atoptool/atop",
   "license": "GPL-2.0",
-  "categories": ["system-monitor", "terminal"],
+  "categories": [
+    "system-monitor",
+    "terminal"
+  ],
   "dependencies": [],
   "package_names": {
     "default": "atop",
@@ -16,5 +19,6 @@
     "opensuse": "atop",
     "void": "atop",
     "alpine": "atop"
-  }
+  },
+  "logo": "/programs/atop/logo.png"
 }

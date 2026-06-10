@@ -5,7 +5,10 @@
   "website": "https://dunst-project.org/",
   "git_repo": "https://github.com/dunst-project/dunst",
   "license": "BSD-3-Clause",
-  "categories": ["x11", "system"],
+  "categories": [
+    "x11",
+    "system"
+  ],
   "package_names": {
     "default": "dunst",
     "arch": "dunst",
@@ -15,5 +18,6 @@
     "opensuse": "dunst",
     "void": "dunst",
     "alpine": "dunst"
-  }
+  },
+  "logo": "/programs/dunst/logo.png"
 }

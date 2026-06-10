@@ -1,0 +1,24 @@
+{
+  "name": "eza",
+  "slug": "eza",
+  "description": "Modern replacement for ls, written in Rust (exa successor).",
+  "website": "https://eza.rocks/",
+  "git_repo": "https://github.com/eza-community/eza",
+  "license": "MIT",
+  "categories": [
+    "cli",
+    "file-management"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "eza",
+    "arch": "eza",
+    "ubuntu": "eza",
+    "debian": "eza",
+    "fedora": "eza",
+    "opensuse": "eza",
+    "void": "eza",
+    "alpine": "eza"
+  },
+  "logo": "/programs/eza/logo.png"
+}

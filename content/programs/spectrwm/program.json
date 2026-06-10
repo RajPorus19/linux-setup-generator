@@ -5,8 +5,12 @@
   "website": "https://github.com/conformal/spectrwm",
   "git_repo": "https://github.com/conformal/spectrwm",
   "license": "ISC",
-  "categories": ["window-manager"],
-  "dependencies": ["git-dep"],
+  "categories": [
+    "window-manager"
+  ],
+  "dependencies": [
+    "git-dep"
+  ],
   "package_names": {
     "default": "spectrwm",
     "arch": "spectrwm",
@@ -16,5 +20,6 @@
     "opensuse": "spectrwm",
     "void": "spectrwm",
     "alpine": "CUSTOM_INSTALL"
-  }
+  },
+  "logo": "/programs/spectrwm/logo.png"
 }

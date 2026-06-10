@@ -5,7 +5,10 @@
   "website": "https://github.com/piuccio/cowsay",
   "git_repo": "https://github.com/piuccio/cowsay",
   "license": "GPL-3.0",
-  "categories": ["fun", "terminal"],
+  "categories": [
+    "fun",
+    "terminal"
+  ],
   "package_names": {
     "default": "cowsay",
     "arch": "cowsay",
@@ -15,5 +18,6 @@
     "opensuse": "cowsay",
     "void": "cowsay",
     "alpine": "cowsay"
-  }
+  },
+  "logo": "/programs/cowsay/logo.png"
 }

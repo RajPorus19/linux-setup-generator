@@ -1,0 +1,23 @@
+{
+  "name": "zram-generator",
+  "slug": "zram-generator",
+  "description": "Systemd generator to set up zram swap devices.",
+  "website": "https://github.com/systemd/zram-generator",
+  "git_repo": "https://github.com/systemd/zram-generator",
+  "license": "MIT",
+  "categories": [
+    "system"
+  ],
+  "dependencies": [],
+  "package_names": {
+    "default": "zram-generator",
+    "arch": "zram-generator",
+    "ubuntu": "zram-generator",
+    "debian": "zram-generator",
+    "fedora": "zram-generator",
+    "opensuse": "zram-generator",
+    "void": "CUSTOM_INSTALL",
+    "alpine": "CUSTOM_INSTALL"
+  },
+  "logo": "/programs/zram-generator/logo.png"
+}

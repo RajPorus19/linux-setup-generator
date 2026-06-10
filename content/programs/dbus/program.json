@@ -4,7 +4,9 @@
   "description": "A message bus system for inter-process communication.",
   "website": "https://www.freedesktop.org/wiki/Software/dbus/",
   "license": "GPL-2.0",
-  "categories": ["system"],
+  "categories": [
+    "system"
+  ],
   "package_names": {
     "default": "dbus",
     "arch": "dbus",
@@ -14,5 +16,6 @@
     "opensuse": "dbus-1",
     "void": "dbus",
     "alpine": "dbus"
-  }
+  },
+  "logo": "/programs/dbus/logo.png"
 }
